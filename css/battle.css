@@ -1,0 +1,360 @@
+/* --- Battle Overlay (Bright Style) --- */
+#battle-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Using a brighter placeholder or gradient until new BG is ready */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    z-index: 10000;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text-primary);
+}
+
+#battle-header {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    color: var(--text-primary);
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--border-tech);
+}
+
+#battle-stage {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* Ground level */
+    padding: 50px 10%;
+}
+
+/* Entities */
+.battle-entity {
+    width: 150px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s;
+    /* Pixel art style preserved, but added soft shadow */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.battle-entity img {
+    width: 100%;
+    animation: idleInfo 2s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes idleInfo {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.anim-attack-right {
+    animation: attackRight 0.3s forwards;
+}
+
+@keyframes attackRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.anim-attack-left {
+    animation: attackLeft 0.3s forwards;
+}
+
+@keyframes attackLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50px) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.anim-hit {
+    animation: shake 0.4s cubic-bezier(.36, .07, .19, .97) both;
+    filter: brightness(2) saturate(2) hue-rotate(-50deg);
+    /* Red flash */
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* HP Bar (Modern) */
+.hp-bar-container {
+    background: #dfe6e9;
+    /* Light grey */
+    height: 12px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #b2bec3;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hp-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff7675, #d63031);
+    transition: width 0.3s;
+    border-radius: 6px;
+}
+
+/* Damage Number */
+.damage-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d63031;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 #fff, 0 0 10px rgba(214, 48, 49, 0.5);
+    /* Pop text border */
+    pointer-events: none;
+    animation: floatUp 1s forwards;
+    z-index: 100;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        top: -30px;
+        transform: translateX(-50%) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        top: -100px;
+        transform: translateX(-50%) scale(1.5);
+    }
+}
+
+/* Battle Controls */
+#battle-controls {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid var(--border-tech);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#battle-header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#battle-stage {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* Ground level */
+    padding: 50px 10%;
+}
+
+/* Entities */
+.battle-entity {
+    width: 150px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s;
+    image-rendering: pixelated;
+    /* [NEW] Pixel Art Style */
+}
+
+.battle-entity img {
+    width: 100%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+    animation: idleInfo 2s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes idleInfo {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.anim-attack-right {
+    animation: attackRight 0.3s forwards;
+}
+
+@keyframes attackRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.anim-attack-left {
+    animation: attackLeft 0.3s forwards;
+}
+
+@keyframes attackLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50px) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.anim-hit {
+    animation: shake 0.4s cubic-bezier(.36, .07, .19, .97) both;
+    filter: brightness(2) red;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* HP Bar */
+.hp-bar-container {
+    background: #333;
+    height: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.hp-bar-fill {
+    height: 100%;
+    background: #e74c3c;
+    transition: width 0.3s;
+}
+
+/* Damage Number */
+.damage-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #000;
+    pointer-events: none;
+    animation: floatUp 1s forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        top: -20px;
+        transform: translateX(-50%) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        top: -80px;
+        transform: translateX(-50%) scale(1.5);
+    }
+}
+
+#battle-controls {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

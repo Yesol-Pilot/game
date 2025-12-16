@@ -1,0 +1,56 @@
+[
+    {
+        "id": "creature_angel_arch",
+        "name": "대천사 미카엘",
+        "rarity": "SSR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Archangel Michael\" personified as a divine warrior angel girl. Mythic SSR grade quality. She has large brilliant white wings, wearing shining silver armor and holding a flaming sword. Background is a bright heavenly sky with light rays. Holy, radiant, powerful. Style reference: Blue Archive, Nikke."
+    },
+    {
+        "id": "creature_demon_king",
+        "name": "마왕 바알",
+        "rarity": "SSR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Demon King Baal\" personified as a charismatic Demon Lord girl. Mythic SSR grade quality. She has curled horns, bat wings, and wears a dark, regal military uniform or dress. She sits on a throne or stands confidently. Background is a dark castle interior. Mischievous, powerful, dark charm. Style reference: Blue Archive, Nikke."
+    },
+    {
+        "id": "creature_titan_atlas",
+        "name": "거신 아틀라스",
+        "rarity": "SSR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Titan Atlas\" personified as a strong, athletic titan warrior girl. Mythic SSR grade quality. She has tanned skin, impressive physique, and wears heavy plate armor gauntlets. She is holding up a celestial sphere or huge rock effortlessly. Background is a mountain peak or sky. Strength, endurance, determination. Style reference: Blue Archive, Nikke."
+    },
+    {
+        "id": "creature_phoenix_eternal",
+        "name": "불멸의 화조 페이",
+        "rarity": "SSR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Eternal Phoenix\" personified as a Phoenix girl. Mythic SSR grade quality. She has flame-colored hair and wings made of fire. Wearing a dress that looks like burning feathers. She is rising from ashes or surrounded by fire. Background is a volcanic landscape or firestorm. Passionate, immortal, bright red and orange. Style reference: Blue Archive, Nikke."
+    },
+    {
+        "id": "creature_dragon_drake",
+        "name": "화염의 용기사 이그니스",
+        "rarity": "SR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Fire Drake\" personified as a fiery dragon knight girl. Legendary SR grade quality. She wears red dragon scale armor and wields a lance. Small dragon wings and tail. Background involves volcanic rocks or fire. Dynamic action pose. Style reference: Blue Archive, Nikke."
+    },
+    {
+        "id": "creature_giant_hill",
+        "name": "대지의 방패 그로트",
+        "rarity": "SR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Hill Giant\" personified as a tall, gentle giantess girl with earth powers. Legendary SR grade quality. Brown hair, wearing primitive but cute leather/fur outfit. Holding a large club or rock. Background is a green hill or mountain. Strength with a gentle smile. Style reference: Blue Archive, Nikke."
+    },
+    {
+        "id": "creature_vampire_lord",
+        "name": "진홍의 여왕 카밀라",
+        "rarity": "SR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Vampire Lord\" personified as an elegance vampire noble girl. Legendary SR grade quality. Pale skin, red eyes, gothic lolita dress or victorian suit. Holding a wine glass with red liquid. Background is a moonlit gothic mansion. Mysterious, elegant, dangerous. Style reference: Blue Archive, Nikke."
+    },
+    {
+        "id": "creature_valkyrie",
+        "name": "전장의 깃발 브륀힐트",
+        "rarity": "SR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Valkyrie\" personified as a nordic battle maiden. Legendary SR grade quality. Winged helmet, silver armor, holding a spear and shield. Blue and white color scheme. Background is the sky of Valhalla. Heroic, disciplined, beautiful. Style reference: Blue Archive, Nikke."
+    },
+    {
+        "id": "creature_kraken_baby",
+        "name": "심해의 아이돌 루루",
+        "rarity": "SR",
+        "prompt": "Japanese anime style game card illustration, full body character. \"Baby Kraken\" personified as a cute squid/octopus girl (Cephalopod). Legendary SR grade quality. Tentacles for hair or dress accents. Wearing a sailor outfit or swimsuit style armor. Background is the deep ocean or a ship deck. Playful, wet, cute. Style reference: Blue Archive, Nikke."
+    }
+]

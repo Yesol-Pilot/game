@@ -1,0 +1,284 @@
+/* =========================================
+   Neo-Laboratory Theme (Style v3)
+   Concept: Dark Science Fantasy / Glassmorphism
+   ========================================= */
+
+:root {
+    /* --- Color Palette --- */
+    /* Backgrounds */
+    --bg-main: #0A0E14;
+    /* Deep Space Dark */
+    --bg-panel: rgba(20, 25, 35, 0.75);
+    /* Glass Panel Base */
+    --bg-overlay: rgba(0, 0, 0, 0.6);
+    /* Modal Overlay */
+
+    /* Accents */
+    --accent-cyan: #00F0FF;
+    /* Primary Neon */
+    --accent-cyan-dim: rgba(0, 240, 255, 0.2);
+    --accent-purple: #7000FF;
+    /* Secondary Neon */
+    --accent-purple-dim: rgba(112, 0, 255, 0.2);
+    --accent-gold: #FFD700;
+    /* UR / Warning */
+    --accent-red: #FF4444;
+    /* Danger / Attack */
+    --accent-green: #00FF9D;
+    /* Success / Heal */
+
+    /* Text */
+    --text-main: #E0E6ED;
+    /* Main Content */
+    --text-muted: #94A3B8;
+    /* Subtitles, Descriptions */
+    --text-highlight: #FFFFFF;
+    /* Headings */
+
+    /* --- System --- */
+    --glass-blur: blur(12px);
+    --border-radius-lg: 16px;
+    --border-radius-md: 8px;
+    --border-radius-sm: 4px;
+
+    --shadow-neon: 0 0 10px rgba(0, 240, 255, 0.3);
+    --shadow-depth: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+
+    /* --- Constraints --- */
+    --sidebar-width: 280px;
+    --sidebar-width-collapsed: 80px;
+    --header-height: 60px;
+}
+
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    /* App-like feel */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    /* Prevent scrolling, app container handles it */
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-cyan);
+}
+
+/* =========================================
+   Layout Structure
+   ========================================= */
+#app-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar */
+#sidebar {
+    width: var(--sidebar-width);
+    background: var(--bg-panel);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    /* Safari */
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: width 0.3s ease;
+    z-index: 100;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-cyan);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 0 0 15px var(--accent-cyan-dim);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-item {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-md);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+}
+
+.nav-item.active {
+    background: var(--accent-cyan-dim);
+    color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+    border-left: 3px solid var(--accent-cyan);
+}
+
+/* Main Area */
+#main-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at 50% 50%, #1a202c 0%, #0A0E14 70%);
+    /* Subtle Ambient */
+}
+
+/* Header */
+#game-header {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: rgba(10, 14, 20, 0.8);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.resource-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.res-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.res-icon {
+    font-size: 1.1rem;
+}
+
+.res-value {
+    font-weight: 600;
+    font-family: 'Consolas', monospace;
+    color: var(--accent-gold);
+}
+
+/* Content Viewport */
+#content-viewport {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.content-panel {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-panel);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: var(--glass-blur);
+    overflow: hidden;
+    /* Internal scrolling if needed */
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.content-panel.active {
+    display: block;
+    /* or flex/grid depending on specific panel */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   Utility Classes
+   ========================================= */
+.cyber-btn {
+    background: transparent;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    padding: 10px 24px;
+    border-radius: var(--border-radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cyber-btn:hover {
+    background: var(--accent-cyan);
+    color: #000;
+    box-shadow: 0 0 15px var(--accent-cyan-dim);
+}
+
+/* Card Style (Universal) */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius-md);
+    padding: 15px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.glass-card:hover {
+    border-color: var(--accent-cyan);
+    transform: translateY(-2px);
+}

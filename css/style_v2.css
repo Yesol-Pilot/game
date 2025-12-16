@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Rajdhani:wght@500;600;700&display=swap');
+
+/* [Phase 3] Holographic Labcore Theme */
+:root {
+    /* Backgrounds */
+    --bg-primary: #0f172a;
+    /* Deep Slate */
+    --bg-secondary: #1e293b;
+    /* Lighter Slate */
+    --bg-tertiary: #334155;
+
+    /* Panel Materials */
+    --glass-panel: rgba(15, 23, 42, 0.85);
+    /* Dark Glass */
+    --glass-border: 1px solid rgba(6, 182, 212, 0.3);
+    /* Cyan Tint */
+    --glass-blur: blur(12px);
+
+    /* Accents */
+    --accent-cyan: #06b6d4;
+    /* Neon Cyan */
+    --accent-cyan-dim: rgba(6, 182, 212, 0.1);
+    --accent-amber: #f59e0b;
+    /* Warning/Action */
+    --accent-magenta: #d946ef;
+    /* UR/Special */
+
+    /* Text */
+    --text-primary: #f1f5f9;
+    /* Slate 100 */
+    --text-secondary: #94a3b8;
+    /* Slate 400 */
+    --text-muted: #64748b;
+    /* Slate 500 */
+
+    /* Typography */
+    --font-heading: 'Rajdhani', sans-serif;
+    /* Tech feel */
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Shadows */
+    --glow-cyan: 0 0 15px rgba(6, 182, 212, 0.4);
+    --shadow-depth: 0 10px 40px rgba(0, 0, 0, 0.6);
+
+    /* Mappings for Legacy Compatibility if needed (Optional) */
+    --c-primary: var(--accent-cyan);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-body);
+    background-color: var(--bg-primary);
+    background-image:
+        radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.05) 0%, transparent 70%),
+        linear-gradient(0deg, rgba(15, 23, 42, 1) 0%, rgba(15, 23, 42, 0.8) 100%),
+        url('../images/bg_hex_mesh.png');
+    /* Ensure this asset exists or is placeholder */
+    background-size: cover;
+    color: var(--text-primary);
+    overflow: hidden;
+    /* Desktop default */
+}
+
+/* --- Layout --- */
+#app-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 70px 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    background: var(--bg-secondary);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 10;
+}
+
+.brand-text {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.nav-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-secondary);
+    text-align: left;
+    padding: 12px 20px;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-item:hover {
+    background: var(--accent-cyan-dim);
+    border-color: rgba(6, 182, 212, 0.3);
+    color: var(--accent-cyan);
+    box-shadow: var(--glow-cyan);
+}
+
+.nav-item.active {
+    background: var(--accent-cyan-dim);
+    border-left: 3px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+/* Header Styling */
+header {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(15, 23, 42, 0.5);
+}
+
+#page-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#status-bar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.res-pill {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.res-pill img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Content Area */
+#content-area {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    padding: 20px;
+    overflow: hidden;
+    /* Prevent global scroll */
+    position: relative;
+}
+
+/* Glass Panels */
+.glass-panel {
+    background: var(--glass-panel);
+    border: var(--glass-border);
+    -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
+    border-radius: 8px;
+    /* Sharper */
+    box-shadow: var(--shadow-depth);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.glass-panel.full-height {
+    height: 100%;
+}
+
+.panel-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(6, 182, 212, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-header h3,
+.panel-header h2 {
+    margin: 0;
+    font-family: var(--font-heading);
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+/* Dashboard Grid */
+.layout-dashboard {
+    display: grid;
+    grid-template-columns: 320px 1fr 280px;
+    grid-template-rows: 100%;
+    gap: 20px;
+}
+
+#left-panel,
+#center-panel,
+#right-panel {
+    height: 100%;
+}
+
+/* Feature Views (Force Hide/Show is handled by JS but we add defaults) */
+.feature-view {
+    display: none;
+    /* JS will toggle block/none */
+    width: 100%;
+    height: 100%;
+}
+
+/* Cyber Buttons */
+.cyber-btn {
+    background: linear-gradient(45deg, #0f172a, #1e293b);
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    padding: 10px 20px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.cyber-btn:hover {
+    background: var(--accent-cyan);
+    color: #000;
+    box-shadow: var(--glow-cyan);
+}
+
+.cyber-btn.danger {
+    border-color: var(--accent-magenta);
+    color: var(--accent-magenta);
+}
+
+.cyber-btn.danger:hover {
+    background: var(--accent-magenta);
+    color: #fff;
+}
+
+/* Creature Cards (High Quality) */
+/* Creature Cards (High Quality) */
+#creature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    /* Increased padding to prevent shadow clipping */
+    overflow-y: auto;
+}
+
+.creature-card-mini {
+    position: relative;
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    /* Border handled by ::after for better visibility over images */
+    background: #121212;
+    /* Dark solid background to hide transparency artifacts */
+    transition: transform 0.2s;
+    /* Default shadow */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.creature-card-mini::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 2;
+    transition: border-color 0.2s;
+}
+
+.creature-card-mini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    /* Focus on face/top */
+    transition: transform 0.3s;
+    display: block;
+    /* Remove gap */
+}
+
+.creature-card-mini:hover {
+    z-index: 10;
+    /* Pop over others */
+    box-shadow: var(--glow-cyan);
+}
+
+.creature-card-mini:hover::after {
+    border-color: var(--accent-cyan);
+}
+
+.creature-card-mini:hover img {
+    transform: scale(1.1);
+}
+
+/* Rarity Colors (Aligned with RankData.js) */
+.creature-card-mini.rarity-Normal::after {
+    border-color: #9E9E9E;
+}
+
+.creature-card-mini.rarity-Normal {
+    box-shadow: 0 0 5px rgba(158, 158, 158, 0.3);
+}
+
+.creature-card-mini.rarity-Unique::after {
+    border-color: #66BB6A;
+}
+
+.creature-card-mini.rarity-Unique {
+    box-shadow: 0 0 8px rgba(102, 187, 106, 0.4);
+}
+
+.creature-card-mini.rarity-Rare::after {
+    border-color: #42A5F5;
+}
+
+.creature-card-mini.rarity-Rare {
+    box-shadow: 0 0 10px rgba(66, 165, 245, 0.5);
+}
+
+.creature-card-mini.rarity-Special::after {
+    border-color: #AB47BC;
+}
+
+.creature-card-mini.rarity-Special {
+    box-shadow: 0 0 12px rgba(171, 71, 188, 0.6);
+}
+
+.creature-card-mini.rarity-SR::after {
+    border-color: #FF7043;
+}
+
+.creature-card-mini.rarity-SR {
+    box-shadow: 0 0 15px rgba(255, 112, 67, 0.7);
+}
+
+.creature-card-mini.rarity-SSR::after {
+    border-color: #EF5350;
+}
+
+.creature-card-mini.rarity-SSR {
+    box-shadow: 0 0 20px rgba(239, 83, 80, 0.8);
+}
+
+.creature-card-mini.rarity-UR::after {
+    border-color: #FFD700;
+}
+
+.creature-card-mini.rarity-UR {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.8), inset 0 0 10px rgba(255, 215, 0, 0.5);
+    border-radius: 6px;
+    /* Slightly rounder for UR */
+}
+
+
+
+/* ----------------------------------------------------------- */
+/* [RESPONSIVE DESIGN] Mobile & Tablet                         */
+/* ----------------------------------------------------------- */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        /* Allow body scroll on mobile if needed */
+    }
+
+    /* Main Layout: Stack Vertical, Nav at Bottom */
+    #app-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 1fr 60px;
+        /* Header / Content / Nav */
+    }
+
+    /* Move Sidebar to Bottom (Nav Bar) */
+    #sidebar {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        flex-direction: row;
+        padding: 0;
+        border-right: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(15, 23, 42, 0.95);
+        z-index: 999;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .nav-footer {
+        display: none;
+    }
+
+    .brand-text {
+        display: none;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav-item {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        font-size: 0.7rem;
+        gap: 2px;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        flex: 1;
+        text-align: center;
+    }
+
+    .nav-item .label {
+        display: block;
+        font-size: 0.6rem;
+    }
+
+    .nav-item.active {
+        border-left: none;
+        border-top: 2px solid var(--accent-cyan);
+        background: transparent;
+    }
+
+    /* Header adjustments */
+    header {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        padding: 0 15px;
+    }
+
+    #page-title {
+        font-size: 1.2rem;
+    }
+
+    #status-bar {
+        gap: 8px;
+    }
+
+    .res-pill {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+
+    .res-pill span {
+        font-size: 0.8rem;
+    }
+
+    /* Content Area */
+    #content-area {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        padding: 10px;
+        overflow-y: auto;
+        /* Scrollable content */
+    }
+
+    /* Dashboard Layout: Stack Columns */
+    .layout-dashboard {
+        display: flex !important;
+        /* Force flex stack via important to override inline style */
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+
+    #left-panel,
+    #center-panel,
+    #right-panel {
+        min-height: 300px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    /* Summon Gate */
+    .summon-stage {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
