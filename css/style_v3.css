@@ -282,3 +282,107 @@ body {
     border-color: var(--accent-cyan);
     transform: translateY(-2px);
 }
+
+/* =========================================
+   FX & Animations
+   ========================================= */
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 5px var(--glow-color, var(--accent-cyan));
+    }
+
+    50% {
+        box-shadow: 0 0 20px var(--glow-color, var(--accent-cyan));
+    }
+
+    100% {
+        box-shadow: 0 0 5px var(--glow-color, var(--accent-cyan));
+    }
+}
+
+@keyframes card-reveal {
+    0% {
+        transform: scale(0.5) rotateY(90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.fx-glow {
+    animation: pulse-glow 2s infinite ease-in-out;
+}
+
+/* Rarity-specific styles for Summon Results */
+.creature-card-mini {
+    position: relative;
+    width: 120px;
+    height: 160px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.creature-card-mini:hover {
+    transform: scale(1.05) translateY(-5px);
+    z-index: 10;
+}
+
+.rarity-Normal {
+    border-color: #9E9E9E;
+    --glow-color: #9E9E9E;
+}
+
+.rarity-Unique {
+    border-color: #66BB6A;
+    --glow-color: #66BB6A;
+}
+
+.rarity-Rare {
+    border-color: #42A5F5;
+    --glow-color: #42A5F5;
+}
+
+.rarity-Special {
+    border-color: #AB47BC;
+    --glow-color: #AB47BC;
+}
+
+.rarity-SR {
+    border-color: #FF7043;
+    --glow-color: #FF7043;
+    border-width: 2px;
+}
+
+.rarity-SSR {
+    border-color: #EF5350;
+    --glow-color: #EF5350;
+    border-width: 2px;
+    box-shadow: 0 0 10px rgba(239, 83, 80, 0.5);
+}
+
+.rarity-UR {
+    border-color: #FFD700;
+    --glow-color: #FFD700;
+    border-width: 3px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    animation: pulse-glow 1.5s infinite ease-in-out;
+}
+
+.creature-card-mini .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: center;
+}

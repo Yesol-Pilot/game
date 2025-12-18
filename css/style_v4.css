@@ -1,0 +1,989 @@
+/* =========================================
+   M.C.LAB v4 - Premium Collector Theme
+   Concept: Clean, Modern, Character-Focused
+   (Compatible with Nikke/Blue Archive Art Style)
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+    /* --- 컬러 팔레트 (밝고 화사한 프리미엄 테마) --- */
+    /* 배경 - 깊은 보라/남색 그라디언트 */
+    --bg-base: #12101f;
+    /* 딥 인디고 */
+    --bg-surface: rgba(30, 25, 55, 0.9);
+    /* 글래스 패널 - 보랏빛 */
+    --bg-elevated: rgba(50, 40, 80, 0.95);
+    /* 활성화된 요소 */
+    --bg-card: #1e1a35;
+    /* 카드 기본 배경 */
+
+    /* 액센트 - 밝고 화사한 네온 */
+    --accent-primary: #00e5ff;
+    /* 브라이트 시안 */
+    --accent-secondary: #e040fb;
+    /* 네온 핑크/퍼플 */
+    --accent-tertiary: #76ff03;
+    /* 라임 그린 */
+    --accent-gold: #ffd740;
+    /* 골드 (화폐, UR) */
+    --accent-success: #69f0ae;
+    /* 민트 그린 (성공) */
+    --accent-danger: #ff5252;
+    /* 코랄 레드 (경고) */
+    --accent-blue: #448aff;
+    /* 브라이트 블루 */
+
+    /* 텍스트 */
+    --text-primary: #f0f4ff;
+    /* 메인 텍스트 - 밝게 */
+    --text-secondary: #b8c5e8;
+    /* 보조 텍스트 */
+    --text-highlight: #ffffff;
+    /* 강조 텍스트 */
+
+    /* 테두리 & 효과 */
+    --border-subtle: rgba(255, 255, 255, 0.12);
+    --border-accent: rgba(0, 229, 255, 0.5);
+    --glow-primary: 0 0 25px rgba(0, 229, 255, 0.4);
+    --glow-secondary: 0 0 20px rgba(224, 64, 251, 0.4);
+    --glow-gold: 0 0 20px rgba(255, 215, 64, 0.5);
+
+    /* 시스템 */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --sidebar-width: 220px;
+    --header-height: 60px;
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =========================================
+   기본 리셋 & 타이포그래피
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #12101f 0%, #1a1535 50%, #0d1520 100%);
+    color: var(--text-primary);
+    font-family: 'Noto Sans KR', 'Outfit', system-ui, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    color: var(--text-highlight);
+    letter-spacing: -0.02em;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(79, 195, 247, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* =========================================
+   레이아웃 구조
+   ========================================= */
+#app-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- 사이드바 (네비게이션) --- */
+#sidebar {
+    width: var(--sidebar-width);
+    background: var(--bg-surface);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-right: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    z-index: 100;
+    flex-shrink: 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 8px;
+    margin-bottom: 30px;
+}
+
+.brand .icon {
+    font-size: 1.8rem;
+}
+
+.brand-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--accent-primary);
+    text-shadow: var(--glow-primary);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    text-align: left;
+}
+
+.nav-item .icon {
+    font-size: 1.2rem;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.nav-item.active {
+    background: linear-gradient(90deg, rgba(79, 195, 247, 0.15), transparent);
+    color: var(--accent-primary);
+    border-left: 3px solid var(--accent-primary);
+    font-weight: 600;
+}
+
+/* --- 메인 영역 --- */
+#main-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* --- 헤더 (상태 바) --- */
+#game-header {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background: var(--bg-surface);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border-subtle);
+    flex-shrink: 0;
+}
+
+#user-info-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+#user-info-area>div:first-child {
+    color: var(--accent-primary);
+    font-size: 0.85rem;
+}
+
+.resource-bar {
+    display: flex;
+    gap: 16px;
+}
+
+.res-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid var(--border-subtle);
+}
+
+.res-icon {
+    font-size: 1rem;
+}
+
+.res-value {
+    font-weight: 700;
+    font-family: 'Outfit', monospace;
+    min-width: 50px;
+}
+
+.res-item:nth-child(1) .res-value {
+    color: var(--accent-gold);
+}
+
+.res-item:nth-child(2) .res-value {
+    color: var(--accent-primary);
+}
+
+.res-item:nth-child(3) .res-value {
+    color: var(--accent-success);
+}
+
+/* --- 콘텐츠 뷰포트 --- */
+#content-viewport {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* =========================================
+   공용 컴포넌트
+   ========================================= */
+/* --- 글래스 패널 --- */
+.glass-panel {
+    background: var(--bg-surface);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.panel-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-header h2,
+.panel-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-highlight);
+}
+
+/* --- 버튼 --- */
+.cyber-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    border: 1px solid var(--accent-primary);
+    background: transparent;
+    color: var(--accent-primary);
+}
+
+.cyber-btn:hover {
+    background: var(--accent-primary);
+    color: var(--bg-base);
+    box-shadow: var(--glow-primary);
+}
+
+.cyber-btn.premium {
+    border-color: var(--accent-secondary);
+    color: var(--accent-secondary);
+}
+
+.cyber-btn.premium:hover {
+    background: var(--accent-secondary);
+    color: var(--bg-base);
+}
+
+.cyber-btn.action {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border: none;
+    color: #fff;
+}
+
+.cyber-btn.action:hover {
+    filter: brightness(1.15);
+    box-shadow: 0 4px 20px rgba(79, 195, 247, 0.4);
+}
+
+.cyber-btn.small {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
+.cyber-btn.danger {
+    border-color: var(--accent-danger);
+    color: var(--accent-danger);
+}
+
+.cyber-btn.danger:hover {
+    background: var(--accent-danger);
+    color: #fff;
+}
+
+.cyber-btn:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* --- 입력창 --- */
+.cyber-input,
+.cyber-select {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+}
+
+.cyber-input:focus,
+.cyber-select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(79, 195, 247, 0.15);
+}
+
+/* =========================================
+   크리처 카드 (Character Card - Illustration Focused)
+   ========================================= */
+.creature-card {
+    position: relative;
+    width: 140px;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: 2px solid transparent;
+}
+
+.creature-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    z-index: 10;
+}
+
+.creature-card img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+}
+
+.creature-card .card-info {
+    padding: 10px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.creature-card .card-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.creature-card .card-level {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+/* 미니 카드 (그리드용) - 네임태그 강화 */
+.creature-card-mini {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: 2px solid var(--border-subtle);
+}
+
+.creature-card-mini:hover {
+    transform: scale(1.08) translateY(-5px);
+    z-index: 5;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.creature-card-mini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 카드 오버레이 (네임태그 표시) */
+.creature-card-mini .card-overlay,
+.creature-card-mini .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 6px 8px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+    text-align: center;
+}
+
+.creature-card-mini .card-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+}
+
+.creature-card-mini .card-stats {
+    font-size: 0.7rem;
+    color: var(--accent-gold);
+}
+
+/* 등급별 스타일 (니케/블아 스타일과 조화) */
+.rarity-Normal {
+    border-color: #9E9E9E;
+}
+
+.rarity-Unique {
+    border-color: #66BB6A;
+}
+
+.rarity-Rare {
+    border-color: #42A5F5;
+}
+
+.rarity-Special {
+    border-color: #AB47BC;
+}
+
+.rarity-SR {
+    border-color: #FF7043;
+    box-shadow: 0 0 12px rgba(255, 112, 67, 0.3);
+}
+
+.rarity-SSR {
+    border-color: #EF5350;
+    box-shadow: 0 0 15px rgba(239, 83, 80, 0.4);
+}
+
+.rarity-UR {
+    border-color: var(--accent-gold);
+    box-shadow: var(--glow-gold);
+    animation: pulse-gold 2s infinite;
+}
+
+@keyframes pulse-gold {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px rgba(255, 213, 79, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(255, 213, 79, 0.7);
+    }
+}
+
+/* =========================================
+   탭 콘텐츠 레이아웃
+   ========================================= */
+.tab-content {
+    display: none;
+    height: 100%;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 2단 대시보드 레이아웃 (홈) - 상세보기는 모달로 전환 */
+.layout-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    height: 100%;
+}
+
+.layout-dashboard.active {
+    display: grid;
+}
+
+/* 왼쪽 패널(#left-panel): 크리처 리스트 전체 화면 */
+#left-panel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 중앙 패널(#center-panel): 숨김 (모달로 대체) */
+#center-panel {
+    display: none !important;
+}
+
+/* 오른쪽 패널: 로그 */
+#right-panel {
+    height: 100%;
+    max-height: 400px;
+}
+
+/* 전체 높이 패널 */
+.full-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-height>*:last-child {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* 크리처 리스트 그리드 - 여러 줄 표시 */
+#creature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 12px;
+    padding: 15px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* 탐사대 관리 - 보유 크리처 영역 확장 (3-4줄) */
+#deck-pool {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 8px !important;
+    min-height: 320px !important;
+    max-height: 450px !important;
+    overflow-y: auto;
+    padding: 10px !important;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* 소환 화면 */
+.summon-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px;
+    flex: 1;
+}
+
+.summon-gate {
+    text-align: center;
+    padding: 30px 40px;
+    background: var(--bg-elevated);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+}
+
+.summon-gate h3 {
+    margin-bottom: 8px;
+}
+
+.summon-gate p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.summon-gate .cyber-btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* =========================================
+   애니메이션
+   ========================================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.slide-in {
+    animation: slideIn 0.4s ease-out;
+}
+
+/* =========================================
+   오버레이 & 모달
+   ========================================= */
+#login-overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #0a0f14 0%, #1a2535 100%);
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#auth-card {
+    width: 90%;
+    max-width: 420px;
+    background: var(--bg-surface);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-accent);
+    overflow: hidden;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 16px;
+    background: transparent;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.auth-tab.active {
+    color: var(--accent-primary);
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+.auth-tab:not(.active) {
+    color: var(--text-secondary);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* 전투 오버레이 */
+#battle-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 50000;
+    display: none;
+    flex-direction: column;
+}
+
+#battle-overlay.active {
+    display: flex;
+}
+
+/* =========================================
+   반응형 (모바일)
+   ========================================= */
+@media (max-width: 1024px) {
+    :root {
+        --sidebar-width: 70px;
+    }
+
+    .nav-item .label {
+        display: none;
+    }
+
+    .brand-text {
+        display: none;
+    }
+
+    .layout-dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+
+    #game-header {
+        padding: 0 12px;
+    }
+
+    .resource-bar {
+        gap: 8px;
+    }
+
+    .res-item {
+        padding: 6px 10px;
+    }
+}
+
+/* =========================================
+   탐사/연구소/미션/보급소 카드 스타일
+   ========================================= */
+
+/* 공통 기능 카드 */
+.feature-card {
+    background: linear-gradient(145deg, var(--bg-elevated), var(--bg-card));
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow: var(--glow-primary);
+    transform: translateY(-3px);
+}
+
+/* 탐사 카드 */
+.expedition-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding: 16px 20px;
+    background: linear-gradient(90deg, rgba(0, 229, 255, 0.1), transparent);
+    border-left: 4px solid var(--accent-primary);
+}
+
+.expedition-card .exp-icon {
+    font-size: 2rem;
+}
+
+.expedition-card .exp-info {
+    flex: 1;
+}
+
+.expedition-card .exp-info h4 {
+    color: var(--text-highlight);
+    margin-bottom: 4px;
+}
+
+.expedition-card .exp-info p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.expedition-card .exp-rewards {
+    display: flex;
+    gap: 12px;
+    font-size: 0.85rem;
+}
+
+.expedition-card .exp-rewards span {
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+/* 연구소 카드 */
+.facility-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding: 16px 20px;
+    background: linear-gradient(90deg, rgba(224, 64, 251, 0.1), transparent);
+    border-left: 4px solid var(--accent-secondary);
+}
+
+.facility-card .facility-icon {
+    font-size: 2rem;
+}
+
+.facility-card .facility-info {
+    flex: 1;
+}
+
+.facility-card .facility-info h4 {
+    color: var(--text-highlight);
+}
+
+.facility-card .facility-level {
+    font-size: 0.8rem;
+    color: var(--accent-secondary);
+}
+
+/* 미션 카드 */
+.mission-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    padding: 14px 18px;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--accent-tertiary);
+}
+
+.mission-card.completed {
+    opacity: 0.6;
+    border-left-color: var(--accent-success);
+}
+
+.mission-card .mission-info {
+    flex: 1;
+}
+
+.mission-card .mission-info h5 {
+    color: var(--text-highlight);
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.mission-card .mission-progress {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.mission-card .mission-reward {
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    padding: 6px 12px;
+    background: rgba(255, 215, 64, 0.15);
+    border-radius: 20px;
+}
+
+/* 미션 진행률 바 */
+.progress-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress-bar .fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+/* 보급소 카드 (상품) */
+.shop-card {
+    background: linear-gradient(145deg, var(--bg-elevated), var(--bg-card));
+    border: 2px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    text-align: center;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-card:hover {
+    border-color: var(--accent-gold);
+    box-shadow: var(--glow-gold);
+    transform: scale(1.03);
+}
+
+.shop-card.premium {
+    border-color: var(--accent-secondary);
+    background: linear-gradient(145deg, rgba(224, 64, 251, 0.2), var(--bg-card));
+}
+
+.shop-card .shop-icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.shop-card .shop-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-highlight);
+    margin-bottom: 6px;
+}
+
+.shop-card .shop-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.shop-card .shop-price {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, var(--accent-gold), #ff9800);
+    color: #000;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+.shop-card .shop-price.gem {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: #fff;
+}
+
+/* 보급소 그리드 */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+/* 탐사/연구 리스트 */
+#expedition-list,
+#facility-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+}

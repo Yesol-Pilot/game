@@ -84,6 +84,7 @@ export default class CreatureManager extends EventEmitter {
 
         // Execute 11 Summons (10 + 1 Bonus)
         const results = [];
+        // [10+1 Logic] 10회 비용으로 11회 소환
         for (let i = 0; i < 11; i++) {
             const rarity = (type === 'normal') ? this._pickRarityNormal() : this._pickRarityPremium();
             const creature = this._createCreatureByRarity(rarity);

@@ -177,10 +177,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnLogout = document.getElementById('btn-logout');
     if (btnLogout) {
         btnLogout.addEventListener('click', () => {
-            if (confirm("로그아웃 하시겠습니까?")) {
+            showConfirm("로그아웃 하시겠습니까?", () => {
                 game.authManager.logout();
-                location.reload();
-            }
+                // Instead of reloading, we might just show the login overlay again
+                const loginOverlay = document.getElementById('login-overlay');
+                if (loginOverlay) loginOverlay.style.display = 'flex';
+                addLog("로그아웃 되었습니다.");
+            });
         });
     }
 
@@ -774,27 +777,27 @@ document.addEventListener('DOMContentLoaded', () => {
     ui.btnNormal.addEventListener('click', () => game.creatureManager.tryNormalSummon());
     ui.btnPremium.addEventListener('click', () => game.creatureManager.tryPremiumSummon());
 
-    // [New] 10x Summon
+    // [New] 10x Summon (10+1)
     const btnNormal10 = document.getElementById('btn-normal-summon-10');
     const btnPremium10 = document.getElementById('btn-premium-summon-10');
 
     if (btnNormal10) {
-        btnNormal10.addEventListener('click', () => {
+        btnNormal10.innerText = "10+1 소환 (3000골드)";
+        btnNormal10.onclick = () => {
             const res = game.creatureManager.summonBatch('normal');
-            if (res.success) {
-                // UI feedback handled by event 'summon:batch_result', but for now alert
-                // Later: SummonScene
-                addLog(`10+1 일반 소환 완료!`);
+            if (!res.success) {
+                addLog(`[소환 실패] ${res.reason}`);
             }
-        });
+        };
     }
     if (btnPremium10) {
-        btnPremium10.addEventListener('click', () => {
+        btnPremium10.innerText = "10+1 소환 (10젬)";
+        btnPremium10.onclick = () => {
             const res = game.creatureManager.summonBatch('premium');
-            if (res.success) {
-                addLog(`10+1 엘리트 소환 완료!`);
+            if (!res.success) {
+                addLog(`[소환 실패] ${res.reason}`);
             }
-        });
+        };
     }
 
     if (ui.devFill) {
@@ -835,11 +838,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card-inner">
                 <div class="card-grade" style="color:${rarityColor}">${creature.def.rarity}</div>
                 <div class="card-img">
-                     <img src="images/creatures/${creature.def.id}.png" 
-                          onerror="this.src='images/creatures/default.png'" 
-                          alt="${creature.def.name}" 
-                          style="width:100%; height:100%; object-fit:cover;">
-                </div>
+                 <img src="${creature.def.image}" 
+                      alt="${creature.def.name}" 
+                      style="width:100%; height:100%; object-fit:cover;">
+            </div>
                 <div class="card-name">${creature.def.name}</div>
             </div>
         `;
@@ -862,12 +864,18 @@ document.addEventListener('DOMContentLoaded', () => {
         ui.expeditionList.innerHTML = '';
         EXPEDITIONS.forEach(exp => {
             const card = document.createElement('div');
-            card.className = 'expedition-card';
+            card.className = 'expedition-card feature-card';
             card.innerHTML = `
-                <h4>${exp.name}</h4>
-                <p>시간: ${exp.durationSec}초 / 에너지: ${exp.energyCost}</p>
-                <p>보상: ${exp.baseGoldReward} G + 연구보너스</p>
-                <button class="btn-start-exp" data-id="${exp.id}">탐사 보내기</button>
+                <div class="exp-icon">🚀</div>
+                <div class="exp-info">
+                    <h4>${exp.name}</h4>
+                    <p>소요 시간: ${exp.durationSec}초 | 에너지: ${exp.energyCost}</p>
+                </div>
+                <div class="exp-rewards">
+                    <span>💰 ${exp.baseGoldReward}G</span>
+                    <span>⭐ EXP</span>
+                </div>
+                <button class="cyber-btn small btn-start-exp" data-id="${exp.id}">탐사 보내기</button>
             `;
             ui.expeditionList.appendChild(card);
         });
@@ -932,16 +940,20 @@ document.addEventListener('DOMContentLoaded', () => {
             if (def.effectType === "gold_bonus_percent") effectStr += "%";
 
             const card = document.createElement('div');
-            card.className = 'expedition-card';
+            card.className = 'facility-card feature-card';
             card.innerHTML = `
-                <div style="display:flex; justify-content:space-between;">
-                    <h4>${def.name} (Lv.${level}/${def.maxLevel})</h4>
+                <div class="facility-icon">🧪</div>
+                <div class="facility-info">
+                    <h4>${def.name}</h4>
+                    <span class="facility-level">Lv.${level} / ${def.maxLevel}</span>
+                    <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">${def.description}</p>
                 </div>
-                <p>${def.description}</p>
-                <p style="color: #27ae60; font-weight:bold;">${effectStr}</p>
-                <button class="btn-upgrade" data-id="${def.id}" ${isMax ? 'disabled' : ''}>
-                    ${isMax ? '최대 레벨' : `업그레이드 (${cost} G)`}
-                </button>
+                <div style="text-align:right;">
+                    <p style="color: var(--accent-tertiary); font-weight:600; font-size:0.9rem;">${effectStr}</p>
+                    <button class="cyber-btn small btn-upgrade" data-id="${def.id}" ${isMax ? 'disabled' : ''}>
+                        ${isMax ? '최대 레벨' : `업그레이드 (${cost}G)`}
+                    </button>
+                </div>
             `;
             ui.facilityList.appendChild(card);
         });
@@ -1133,23 +1145,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!items || items.length === 0) return;
             const h4 = document.createElement('h4');
             h4.textContent = title;
-            h4.style.borderBottom = "1px solid #ddd";
+            h4.style.cssText = "grid-column: 1 / -1; margin: 10px 0; padding-bottom: 8px; border-bottom: 1px solid var(--border-subtle); color: var(--text-highlight);";
             ui.shopList.appendChild(h4);
 
             items.forEach(item => {
                 const isPurchased = game.shopManager.isPurchased(item.id);
+                const isPremium = item.priceType === 'real';
+                const icon = item.priceType === 'gem' ? '💎' : (item.priceType === 'gold' ? '💰' : '🎁');
+
                 const div = document.createElement('div');
-                div.className = 'shop-card'; // [NEW] Distinct class for shop items
+                div.className = `shop-card ${isPremium ? 'premium' : ''}`;
                 div.innerHTML = `
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <div style="flex:1;">
-                            <div style="font-weight:bold;">${item.name}</div>
-                            <div style="font-size:0.9em; color:#666;">${item.description}</div>
-                        </div>
-                        <button class="btn-buy" data-id="${item.id}" ${isPurchased ? 'disabled' : ''}>
-                            ${isPurchased ? '구매 완료' : (item.priceLabel || `${item.priceValue} ${item.priceType === 'gem' ? 'Gem' : 'Gold'}`)}
-                        </button>
-                    </div>
+                    <div class="shop-icon">${icon}</div>
+                    <div class="shop-name">${item.name}</div>
+                    <div class="shop-desc">${item.description}</div>
+                    <button class="shop-price ${item.priceType === 'gem' || item.priceType === 'real' ? 'gem' : ''} btn-buy" data-id="${item.id}" ${isPurchased ? 'disabled' : ''}>
+                        ${isPurchased ? '구매 완료' : (item.priceLabel || `${item.priceValue} ${item.priceType === 'gem' ? '젬' : '골드'}`)}
+                    </button>
                 `;
                 ui.shopList.appendChild(div);
             });
@@ -1784,7 +1796,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ui.btnReset) ui.btnReset.addEventListener('click', () => {
         showConfirm("정말로 **초기화** 하시겠습니까?\n모든 데이터가 삭제됩니다.", () => {
             game.clearSave();
-            location.reload();
+            // Just notify and let user refresh if they want, or try a safer redirect
+            alert("데이터가 초기화되었습니다. 페이지를 새로고침해주세요.");
         });
     });
 
