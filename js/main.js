@@ -463,6 +463,10 @@ const COUPON_CODES = {
         type: 'gem',
         description: '젬 500',
         amount: 500
+    },
+    'EVO_TEST': {
+        type: 'evolution_test',
+        description: '진화 테스트용 미호 세트 (5성 N + 만렙 SR)'
     }
 };
 
@@ -535,6 +539,56 @@ function initCouponSystem() {
 
             cm.emit('creatures:updated', cm.owned);
             rewards.push(`🎴 크리처 ${addedCount}마리 획득!`);
+        } else if (coupon.type === 'evolution_test') {
+            // 진화 테스트용 특별 로직
+            const module = await import('./data/CreatureData.js');
+            const cm = game.creatureManager;
+            let addedCount = 0;
+
+            // 1. 아기여우 (5성, Lv.1) -> SR 진화용
+            const babyDef = module.CREATURE_DEF_MAP['fox_baby'];
+            if (babyDef) {
+                const baby = {
+                    instanceId: cm.nextInstanceId++,
+                    dataId: babyDef.id,
+                    def: babyDef,
+                    level: 1,
+                    exp: 0,
+                    star: 5, // 진화 조건 충족
+                    affection: 0,
+                    battleCount: 0,
+                    expeditionCount: 0,
+                    acquiredAt: new Date(),
+                    stats: {}
+                };
+                cm.recalculateStats(baby);
+                cm.owned.push(baby);
+                addedCount++;
+            }
+
+            // 2. 여우요괴 (5성, Lv.50, 호감도3) -> 히든 UR 진화용
+            const nineDef = module.CREATURE_DEF_MAP['fox_nine'];
+            if (nineDef) {
+                const nine = {
+                    instanceId: cm.nextInstanceId++,
+                    dataId: nineDef.id,
+                    def: nineDef,
+                    level: 50, // 진화 조건
+                    exp: 0,
+                    star: 5, // 진화 조건
+                    affection: 3, // 진화 조건 (Level 3)
+                    battleCount: 0,
+                    expeditionCount: 0,
+                    acquiredAt: new Date(),
+                    stats: {}
+                };
+                cm.recalculateStats(nine);
+                cm.owned.push(nine);
+                addedCount++;
+            }
+
+            cm.emit('creatures:updated', cm.owned);
+            rewards.push(`🧪 진화 테스트용 미호 세트 (N+SR) 지급 완료!`);
         }
 
         game.save();

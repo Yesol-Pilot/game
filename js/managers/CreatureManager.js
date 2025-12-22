@@ -415,7 +415,7 @@ export default class CreatureManager extends EventEmitter {
         if (!def.evolvesTo) return { canEvolve: false, reason: "진화 불가능한 크리처" };
 
         const conditions = def.evolveConditions || {};
-        const targetDef = allCreatures.find(c => c.id === def.evolvesTo);
+        const targetDef = CREATURE_DEFS.find(c => c.id === def.evolvesTo);
         if (!targetDef) return { canEvolve: false, reason: "진화 대상이 존재하지 않음" };
 
         // 조건 체크
