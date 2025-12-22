@@ -543,52 +543,69 @@ function initCouponSystem() {
             // 진화 테스트용 특별 로직
             const module = await import('./data/CreatureData.js');
             const cm = game.creatureManager;
-            let addedCount = 0;
+            let msg = [];
 
             // 1. 아기여우 (5성, Lv.1) -> SR 진화용
-            const babyDef = module.CREATURE_DEF_MAP['fox_baby'];
-            if (babyDef) {
-                const baby = {
-                    instanceId: cm.nextInstanceId++,
-                    dataId: babyDef.id,
-                    def: babyDef,
-                    level: 1,
-                    exp: 0,
-                    star: 5, // 진화 조건 충족
-                    affection: 0,
-                    battleCount: 0,
-                    expeditionCount: 0,
-                    acquiredAt: new Date(),
-                    stats: {}
-                };
+            let baby = cm.owned.find(c => c.dataId === 'fox_baby');
+            if (baby) {
+                baby.star = 5;
+                baby.level = 1; // 리셋
                 cm.recalculateStats(baby);
-                cm.owned.push(baby);
-                addedCount++;
+                msg.push(`기존 '아기여우'를 5성으로 진급시켰습니다.`);
+            } else {
+                const babyDef = module.CREATURE_DEF_MAP['fox_baby'];
+                if (babyDef) {
+                    baby = {
+                        instanceId: cm.nextInstanceId++,
+                        dataId: babyDef.id,
+                        def: babyDef,
+                        level: 1,
+                        exp: 0,
+                        star: 5,
+                        affection: 0,
+                        battleCount: 0,
+                        expeditionCount: 0,
+                        acquiredAt: new Date(),
+                        stats: {}
+                    };
+                    cm.recalculateStats(baby);
+                    cm.owned.push(baby);
+                    msg.push(`'아기여우'(5성)를 지급했습니다.`);
+                }
             }
 
             // 2. 여우요괴 (5성, Lv.50, 호감도3) -> 히든 UR 진화용
-            const nineDef = module.CREATURE_DEF_MAP['fox_nine'];
-            if (nineDef) {
-                const nine = {
-                    instanceId: cm.nextInstanceId++,
-                    dataId: nineDef.id,
-                    def: nineDef,
-                    level: 50, // 진화 조건
-                    exp: 0,
-                    star: 5, // 진화 조건
-                    affection: 3, // 진화 조건 (Level 3)
-                    battleCount: 0,
-                    expeditionCount: 0,
-                    acquiredAt: new Date(),
-                    stats: {}
-                };
+            let nine = cm.owned.find(c => c.dataId === 'fox_nine');
+            if (nine) {
+                nine.star = 5;
+                nine.level = 50;
+                nine.affection = 3;
                 cm.recalculateStats(nine);
-                cm.owned.push(nine);
-                addedCount++;
+                msg.push(`기존 '여우요괴 미호'를 만렙/5성/호감도MAX로 설정했습니다.`);
+            } else {
+                const nineDef = module.CREATURE_DEF_MAP['fox_nine'];
+                if (nineDef) {
+                    nine = {
+                        instanceId: cm.nextInstanceId++,
+                        dataId: nineDef.id,
+                        def: nineDef,
+                        level: 50,
+                        exp: 0,
+                        star: 5,
+                        affection: 3,
+                        battleCount: 0,
+                        expeditionCount: 0,
+                        acquiredAt: new Date(),
+                        stats: {}
+                    };
+                    cm.recalculateStats(nine);
+                    cm.owned.push(nine);
+                    msg.push(`'여우요괴 미호'(5성/만렙)를 지급했습니다.`);
+                }
             }
 
             cm.emit('creatures:updated', cm.owned);
-            rewards.push(`🧪 진화 테스트용 미호 세트 (N+SR) 지급 완료!`);
+            rewards.push(`🧪 [테스트] ${msg.join('<br>')}`);
         }
 
         game.save();
