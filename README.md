@@ -1,81 +1,113 @@
-# 🌌 멀티버스 크리처 랩
+<div align="center">
 
-> **"신화는 다시 쓰여진다. 나의 손끝에서."**
+# 🌌 Multiverse Creature Lab
 
-[![Live Demo](https://img.shields.io/badge/🎮_Play_Now-ysh1537.github.io/game-blueviolet?style=for-the-badge)](https://ysh1537.github.io/game/)
+### 신화의 충돌 (Clash of Myths)
 
----
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg?style=flat-square)](#)
+[![Play Now](https://img.shields.io/badge/🎮_PLAY_NOW-ysh1537.github.io/game-blueviolet?style=for-the-badge)](https://ysh1537.github.io/game/)
 
-## 🎭 게임 소개
+> *"신화는 다시 쓰여진다. 나의 손끝에서."*
 
-**장르**: 서브컬처 수집형 RPG / 비주얼 노벨  
-**타겟**: 성인 서브컬처 매니아  
-**컨셉**: Neo-Laboratory × Mythology Crossover
+<br>
 
-<p align="center">
-  <img src="images/creature_god_zeus.jpg" width="200"/>
-  <img src="images/creature_fox9.jpg" width="200"/>
-  <img src="images/creature_fenrir.jpg" width="200"/>
-</p>
+<img src="images/creature_fox_nine_ur.png" width="280" alt="미호"/>
 
-**대융합(The Great Convergence)**으로 차원의 벽이 붕괴되었습니다.  
-제우스의 번개가 발할라를 때리고, 드래곤의 화염이 심연을 비추는 혼란의 시대.  
-당신은 이 모든 신화적 존재를 제어할 수 있는 유일한 **총괄 디렉터**가 됩니다.
+</div>
 
 ---
 
-## ✨ 핵심 특징
+## 📖 Overview
 
-| 특징 | 설명 |
-|------|------|
-| 🎨 **프리미엄 비주얼** | 블루아카이브 + 니케 스타일의 고퀄리티 2D 일러스트 |
-| 🦊 **진화 시스템** | 아기여우 → 여우요괴 → 구미호로 성장하는 진화 체인 |
-| ⚔️ **신화 시너지** | 올림푸스, 아스가르드, 심연 등 5개 세계관 조합 |
-| 💕 **교감 시스템** | 크리처와의 터치 상호작용 및 호감도 |
+**Multiverse Creature Lab**은 고퀄리티 2D 캐릭터 일러스트와 깊이 있는 육성 시스템을 결합한 **서브컬처 수집형 RPG**입니다. 차원의 벽이 붕괴된 세계에서 올림푸스의 신들, 북유럽의 전사들, 심연의 마물들을 수집하고 육성하세요.
 
----
+<br>
 
-## 🌍 5대 세계관
+<div align="center">
 
-| 월드 | 테마 | 특성 |
-|------|------|------|
-| 🏛️ **올림푸스** | 그리스 신화 | 치명타 특화 |
-| ⚔️ **아스가르드** | 북유럽 신화 | 불굴/생존 |
-| 🌸 **무릉도원** | 동양 신화 | 회복/조화 |
-| 🌑 **심연** | 크툴루/악마 | 공포/디버프 |
-| 🌿 **야생** | 드래곤/정령 | 야생의 법칙 |
+|  |  |  |
+|:---:|:---:|:---:|
+| <img src="images/creature_god_zeus.jpg" width="180"/> | <img src="images/creature_demon_king.png" width="180"/> | <img src="images/creature_creator_gaia.png" width="180"/> |
+| ⚡ **제우스** | 👿 **마왕 바알** | 🌿 **창조주 가이아** |
+
+</div>
 
 ---
 
-## 🚀 로컬 실행
+## ✨ Key Features
 
-```bash
-git clone https://github.com/ysh1537/game.git
-cd game
-npx http-server . -p 8080 -c-1
+### 🎨 Premium Visual Quality
+
+- **블루아카이브 × 니케** 스타일의 하이퀄리티 2D 일러스트
+- 등급에 따른 비주얼 차별화 (N → SR → UR)
+- 터치 상호작용 및 교감 시스템
+
+### 🦊 Evolution System
+
+진화를 통해 크리처를 성장시키세요!
+
+```
+아기여우 미호 (N) ─[5성]─▶ 여우요괴 미호 (SR) ─[5성+Lv50+서약]─▶ 천년 구미호 (UR Hidden)
 ```
 
-👉 **브라우저에서** `http://localhost:8080` 접속
+### ⚔️ Myth Synergy
+
+5대 세계관의 크리처를 조합하여 강력한 시너지를 발동하세요.
+
+| World | Theme | Synergy |
+|:-----:|:-----:|:-------:|
+| 🏛️ Olympus | 그리스 신화 | 치명타 강화 |
+| ⚔️ Asgard | 북유럽 신화 | 불굴/생존 |
+| 🌸 Shangri-La | 동양 신화 | 회복/조화 |
+| 🌑 Abyss | 심연/악마 | 공포/디버프 |
+| 🌿 Wild | 드래곤/정령 | 야생의 법칙 |
 
 ---
 
-## 🛠️ 기술 스택
+## 🚀 Quick Start
 
-- **Core**: Vanilla JavaScript (ES6+)
-- **Architecture**: Event-Driven + MVC Pattern
-- **Rendering**: HTML5 Canvas + CSS3 Animation
+```bash
+# Clone repository
+git clone https://github.com/ysh1537/game.git
+cd game
+
+# Run local server
+npx http-server . -p 8080 -c-1
+
+# Open browser
+# http://localhost:8080
+```
 
 ---
 
-## 📚 문서
+## 🛠️ Tech Stack
 
-- [🎮 게임 디자인 바이블](docs/game_design_bible.md)
-- [🌍 세계관 설정](docs/worldview.md)
-- [🎨 크리처 이미지 가이드](docs/creature_image_master_guide.md)
+| Category | Technology |
+|:--------:|:----------:|
+| **Core** | Vanilla JavaScript (ES6+) |
+| **Architecture** | Event-Driven MVC |
+| **Rendering** | HTML5 Canvas + CSS3 |
+| **Style** | Glassmorphism UI |
 
 ---
 
-<p align="center">
-  <b>Managed by Director</b><br>
-  <i>Multiverse Creature Lab</i>
-</p>
+## 📚 Documentation
+
+- 📖 [Game Design Bible](docs/game_design_bible.md)
+- 🌍 [Worldview](docs/worldview.md)
+- 🎨 [Creature Image Guide](docs/creature_image_master_guide.md)
+- ✏️ [AI Art Guidelines](docs/ai_art_guidelines.md)
+
+---
+
+<div align="center">
+
+### 🎮 [Play Now →](https://ysh1537.github.io/game/)
+
+<br>
+
+**Managed by Director**  
+*Multiverse Creature Lab* © 2025
+
+</div>
