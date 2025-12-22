@@ -259,21 +259,179 @@ export default class CreatureView extends BaseView {
             return;
         }
 
+        const creature = this.game.creatureManager.getCreature(instanceId);
+        const oldImage = creature.def.image; // 진화 전 이미지 저장
+
         const targetName = check.evolvesTo.name;
         this.uiManager.showConfirm(
             `${targetName}(으)로 진화하시겠습니까?\n\n⚠️ 진화 시 레벨과 별이 초기화됩니다!`,
             () => {
+                // 연출을 위해 여기서 먼저 데이터를 바꾸지 않고, 연출 시작
+                // 하지만 tryEvolve가 데이터를 바꾸므로, 순서는:
+                // 1. tryEvolve 실행 (데이터 변경)
+                // 2. 결과 받음
+                // 3. 연출 재생 (이전 이미지 -> 새 이미지)
+
                 const result = this.game.creatureManager.tryEvolve(instanceId);
                 if (result.success) {
-                    alert(`🎉 진화 성공!\n${result.newCreature.def.name}(이)가 되었습니다!`);
-                    this.addLog(`[진화] ${result.newCreature.def.name}(으)로 진화 성공!`, 'success');
-                    this.renderDetailPanel(result.newCreature);
-                    this.renderCreatureList();
+                    // 성공 시 모달 닫고 연출 재생
+                    const detailModal = document.getElementById('creature-detail-modal');
+                    if (detailModal) detailModal.style.display = 'none';
+
+                    this._playEvolutionCutscene(oldImage, result.newCreature, () => {
+                        this.addLog(`🦋 [진화] ${result.newCreature.def.name}(으)로 진화 성공!`, 'success');
+                        this.renderDetailPanel(result.newCreature); // 연출 끝나면 상세창 다시 열기
+                        this.renderCreatureList();
+                    });
                 } else {
                     alert(`진화 실패: ${result.reason}`);
                 }
             }
         );
+    }
+
+    _playEvolutionCutscene(oldInfoOrImage, newCreature, callback) {
+        // 동적으로 컷신용 DOM 생성
+        const cutsceneId = 'evolution-cutscene-overlay';
+        let overlay = document.getElementById(cutsceneId);
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = cutsceneId;
+            document.body.appendChild(overlay);
+
+            // CSS 스타일 주입
+            const style = document.createElement('style');
+            style.innerHTML = `
+                #${cutsceneId} {
+                    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                    background: black; z-index: 10000;
+                    display: flex; flex-direction: column; align-items: center; justify-content: center;
+                    opacity: 0; transition: opacity 0.5s; pointer-events: none;
+                }
+                .evo-stage { position: relative; width: 400px; height: 400px; display: flex; justify-content: center; align-items: center; }
+                .evo-img { 
+                    max-width: 100%; max-height: 100%; object-fit: contain; 
+                    filter: drop-shadow(0 0 20px rgba(255,255,255,0.5));
+                    transition: all 1s ease-in-out;
+                }
+                .evo-flash {
+                    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                    background: white; opacity: 0; pointer-events: none; mix-blend-mode: overlay;
+                }
+                .evo-text {
+                    margin-top: 30px; color: white; font-family: 'Orbitron', sans-serif;
+                    text-align: center; opacity: 0; transform: translateY(20px); transition: all 0.5s;
+                }
+                .evo-particles {
+                    position: absolute; width: 100%; height: 100%; pointer-events: none;
+                }
+                .particle {
+                    position: absolute; background: gold; border-radius: 50%;
+                    animation: floatParticle 1s linear forwards;
+                }
+                @keyframes floatParticle {
+                    0% { transform: translateY(0) scale(1); opacity: 1; }
+                    100% { transform: translateY(-100px) scale(0); opacity: 0; }
+                }
+                @keyframes shake {
+                    0% { transform: translate(1px, 1px) rotate(0deg); }
+                    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                    20% { transform: translate(-3px, 0px) rotate(1deg); }
+                    30% { transform: translate(3px, 2px) rotate(0deg); }
+                    40% { transform: translate(1px, -1px) rotate(1deg); }
+                    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                    60% { transform: translate(-3px, 1px) rotate(0deg); }
+                    70% { transform: translate(3px, 1px) rotate(-1deg); }
+                    80% { transform: translate(-1px, -1px) rotate(1deg); }
+                    90% { transform: translate(1px, 2px) rotate(0deg); }
+                    100% { transform: translate(1px, -2px) rotate(-1deg); }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        const oldImgSrc = typeof oldInfoOrImage === 'string' ? oldInfoOrImage : (oldInfoOrImage.def ? oldInfoOrImage.def.image : '');
+
+        overlay.innerHTML = `
+            <div class="evo-stage">
+                <div class="evo-particles"></div>
+                <img src="${oldImgSrc}" class="evo-img" id="evo-target-img">
+                <div class="evo-flash" id="evo-flash"></div>
+            </div>
+            <div class="evo-text" id="evo-text">
+                <h2 style="font-size: 2rem; color:#aaa; margin-bottom:10px;">Evolution...</h2>
+            </div>
+        `;
+
+        overlay.style.pointerEvents = 'auto';
+        overlay.style.display = 'flex';
+
+        // Phase 0: Fade In
+        requestAnimationFrame(() => {
+            overlay.style.opacity = '1';
+        });
+
+        const imgEl = document.getElementById('evo-target-img');
+        const flashEl = document.getElementById('evo-flash');
+        const textEl = document.getElementById('evo-text');
+
+        // Phase 1: Shake & Light (0~2s)
+        setTimeout(() => {
+            imgEl.style.animation = 'shake 0.5s infinite';
+            imgEl.style.filter = 'brightness(2) drop-shadow(0 0 30px gold)';
+        }, 500);
+
+        // Phase 2: Flash & Swap (2s)
+        setTimeout(() => {
+            flashEl.style.transition = 'opacity 0.2s';
+            flashEl.style.opacity = '1'; // Blind white
+            flashEl.style.background = 'white';
+            flashEl.style.mixBlendMode = 'normal';
+
+            setTimeout(() => {
+                // Swap Image
+                imgEl.src = newCreature.def.image;
+                imgEl.style.animation = '';
+                imgEl.style.filter = 'brightness(1) drop-shadow(0 0 50px orange)';
+                imgEl.style.transform = 'scale(1.2)';
+
+                flashEl.style.opacity = '0'; // Fade out flash
+            }, 200);
+        }, 2000);
+
+        // Phase 3: Text & Particles (2.5s~)
+        setTimeout(() => {
+            textEl.innerHTML = `
+                <div style="font-size: 1.2rem; color: #gold;">EVOLUTION COMPLETE</div>
+                <h1 style="font-size: 2.5rem; background: linear-gradient(to right, #ff9800, #ffeb3b); -webkit-background-clip: text; color: transparent;">${newCreature.def.name}</h1>
+                <div style="margin-top:10px; font-size:1rem; color:#ccc;">${newCreature.star + 1} Star ${newCreature.def.rarity} Class</div>
+            `;
+            textEl.style.opacity = '1';
+            textEl.style.transform = 'translateY(0)';
+
+            // Particles
+            const stage = overlay.querySelector('.evo-particles');
+            for (let i = 0; i < 30; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                p.style.left = 50 + (Math.random() * 60 - 30) + '%';
+                p.style.top = 50 + (Math.random() * 60 - 30) + '%';
+                const size = Math.random() * 10 + 5;
+                p.style.width = size + 'px';
+                p.style.height = size + 'px';
+                p.style.animationDelay = Math.random() * 0.5 + 's';
+                stage.appendChild(p);
+            }
+        }, 2500);
+
+        // Phase 4: End (5s)
+        setTimeout(() => {
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                if (callback) callback();
+            }, 500);
+        }, 5000);
     }
 
     /**
