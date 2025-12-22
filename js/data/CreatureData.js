@@ -630,7 +630,7 @@ export const CREATURE_DEFS = [
         elements: ["Fire", "Nature", "Beast"],
         ego: "Warlord",
         baseStr: 50, baseInt: 18,
-        image: "images/creature_chimera.jpg",
+        image: "images/creature_chimera.png",
         lines: { normal: "크아앙! 셋이서 덤비는 셈이지." }
     },
 
