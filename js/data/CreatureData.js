@@ -314,6 +314,27 @@ export const CREATURE_DEFS = [
         }
     },
 
+    // --- UR Hidden (진화 체인 최종 단계) ---
+    {
+        id: "fox_nine_hidden",
+        name: "천년 구미호 미호",
+        rarity: RANKS.UR,
+        world: WORLDS.SHANGRILA,
+        elements: ["Fire", "Dark", "Charm", "Time"],
+        ego: "Star",
+        baseStr: 55, baseInt: 75,
+        isHidden: true, // 히든 플래그
+        image: "images/creature_fox_nine_ur.png",
+        lines: {
+            normal: "천 년을 기다렸어... 드디어 너를 만났구나.",
+            touch_head: "이 꼬리들... 전부 너만을 위해 기른 거야.",
+            touch_chest: "심장이 뛰어? 천 년 동안 멈춰있던 내 심장도 그래.",
+            touch_chest_love: "이리 와... 영원히 내 곁에 있어줘.",
+            touch_legs: "도망가지 마... 내 꼬리가 널 놓아주지 않을 거야.",
+            touch_special: "요호... 이젠 너도 내 것이야. 영원히."
+        }
+    },
+
     // --- SSR (터치 상호작용 O) ---
     {
         id: "phoenix_eternal",
@@ -336,13 +357,16 @@ export const CREATURE_DEFS = [
     // --- SR (터치 상호작용 X) ---
     {
         id: "fox_nine",
-        name: "구미호 미호",
+        name: "여우요괴 미호",
         rarity: RANKS.SR,
         world: WORLDS.SHANGRILA,
         elements: ["Fire", "Dark", "Charm"],
         ego: "Star",
         baseStr: 25, baseInt: 50,
-        image: "images/creature_fox9.jpg",
+        image: "images/creature_fox_yokai_sr.png",
+        // [진화 시스템] 5성 + Lv.50 + 서약 시 히든 UR로 진화
+        evolvesTo: "fox_nine_hidden",
+        evolveConditions: { star: 5, level: 50, affectionLevel: 3 },
         lines: { normal: "어머, 간 좀 내어줄래? 농담이야~" }
     },
 
@@ -380,7 +404,21 @@ export const CREATURE_DEFS = [
         lines: { normal: "허허, 대나무 차 한잔 하게." }
     },
 
-    // --- Normal ---
+    // --- Normal (진화 체인 시작점) ---
+    {
+        id: "fox_baby",
+        name: "아기여우 미호",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.SHANGRILA,
+        elements: ["Fire", "Charm"],
+        ego: "Star",
+        baseStr: 5, baseInt: 10,
+        image: "images/creature_fox_baby_n.png",
+        // [진화 시스템] 5성 달성 시 SR로 진화
+        evolvesTo: "fox_nine",
+        evolveConditions: { star: 5 },
+        lines: { normal: "콩콩! 같이 놀아줘요~" }
+    },
     {
         id: "ink_spirit",
         name: "먹물 요정",

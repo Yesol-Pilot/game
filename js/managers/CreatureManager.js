@@ -398,6 +398,83 @@ export default class CreatureManager extends EventEmitter {
         }
     }
 
+    // ==========================================
+    // [진화 시스템] Evolution System
+    // ==========================================
+
+    /**
+     * 크리처 진화 가능 여부 확인
+     * @param {number} instanceId - 크리처 인스턴스 ID
+     * @returns {{ canEvolve: boolean, reason?: string, evolvesTo?: object }}
+     */
+    canEvolve(instanceId) {
+        const creature = this.getCreature(instanceId);
+        if (!creature) return { canEvolve: false, reason: "크리처를 찾을 수 없음" };
+
+        const def = creature.def;
+        if (!def.evolvesTo) return { canEvolve: false, reason: "진화 불가능한 크리처" };
+
+        const conditions = def.evolveConditions || {};
+        const targetDef = allCreatures.find(c => c.id === def.evolvesTo);
+        if (!targetDef) return { canEvolve: false, reason: "진화 대상이 존재하지 않음" };
+
+        // 조건 체크
+        if (conditions.star !== undefined && creature.star < conditions.star) {
+            return { canEvolve: false, reason: `${conditions.star}성 달성 필요 (현재: ${creature.star}성)` };
+        }
+        if (conditions.level !== undefined && creature.level < conditions.level) {
+            return { canEvolve: false, reason: `Lv.${conditions.level} 달성 필요 (현재: Lv.${creature.level})` };
+        }
+        if (conditions.affectionLevel !== undefined) {
+            const affection = creature.affection || 0;
+            if (affection < conditions.affectionLevel) {
+                return { canEvolve: false, reason: `호감도 ${conditions.affectionLevel}단계 필요 (현재: ${affection}단계)` };
+            }
+        }
+
+        return { canEvolve: true, evolvesTo: targetDef };
+    }
+
+    /**
+     * 크리처 진화 실행
+     * @param {number} instanceId - 크리처 인스턴스 ID
+     * @returns {{ success: boolean, reason?: string, newCreature?: object }}
+     */
+    tryEvolve(instanceId) {
+        const check = this.canEvolve(instanceId);
+        if (!check.canEvolve) {
+            return { success: false, reason: check.reason };
+        }
+
+        const creature = this.getCreature(instanceId);
+        const oldName = creature.def.name;
+        const targetDef = check.evolvesTo;
+
+        // 진화 실행: 크리처 데이터 변환
+        console.log(`[진화] ${oldName} -> ${targetDef.name} 진화!`);
+
+        // 새 정의로 변경
+        creature.def = targetDef;
+        creature.dataId = targetDef.id;
+
+        // 진화 시 초기화 (레벨/별은 1로, 경험치 0)
+        creature.level = 1;
+        creature.star = 0;
+        creature.exp = 0;
+
+        // 스탯 재계산
+        this.recalculateStats(creature);
+
+        // 이벤트 발생
+        this.emit('creatures:updated', this.owned);
+        this.emit('evolve:success', { creature, oldName, newName: targetDef.name });
+        if (this.selectedId === instanceId) {
+            this.emit('creatures:selected', creature);
+        }
+
+        return { success: true, newCreature: creature };
+    }
+
     removeCreature(instanceId) {
         const idx = this.owned.findIndex(c => c.instanceId === instanceId);
         if (idx !== -1) {

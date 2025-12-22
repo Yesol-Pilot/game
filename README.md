@@ -1,74 +1,81 @@
-# 🌌 멀티버스 크리처 랩: 신화의 충돌 (Clash of Myths)
+# 🌌 멀티버스 크리처 랩
 
 > **"신화는 다시 쓰여진다. 나의 손끝에서."**
 
-**장르**: 서브컬처 비주얼 노벨풍 수집형 RPG  
-**타겟**: 성인 남성향 (High-End Visual)  
-**테마**: Neo-Laboratory X Mythology Crossover
-
-![Main Visual](images/creature_valkyrie.png)
+[![Live Demo](https://img.shields.io/badge/🎮_Play_Now-ysh1537.github.io/game-blueviolet?style=for-the-badge)](https://ysh1537.github.io/game/)
 
 ---
 
-## 📖 세계관 (Worldview)
+## 🎭 게임 소개
 
-**[대융합 (The Great Convergence)]**으로 인해 차원의 벽이 붕괴되었습니다.  
+**장르**: 서브컬처 수집형 RPG / 비주얼 노벨  
+**타겟**: 성인 서브컬처 매니아  
+**컨셉**: Neo-Laboratory × Mythology Crossover
+
+<p align="center">
+  <img src="images/creature_god_zeus.jpg" width="200"/>
+  <img src="images/creature_fox9.jpg" width="200"/>
+  <img src="images/creature_fenrir.jpg" width="200"/>
+</p>
+
+**대융합(The Great Convergence)**으로 차원의 벽이 붕괴되었습니다.  
 제우스의 번개가 발할라를 때리고, 드래곤의 화염이 심연을 비추는 혼란의 시대.  
-당신은 이 모든 신화적 존재를 제어할 수 있는 유일한 **총괄 디렉터 (Director)**가 되어 연구소(방주)를 이끌어야 합니다.
-
-[👉 자세한 세계관 설정 보기 (worldview.md)](docs/worldview.md)
+당신은 이 모든 신화적 존재를 제어할 수 있는 유일한 **총괄 디렉터**가 됩니다.
 
 ---
 
-## 💎 핵심 특징 (Key Features)
+## ✨ 핵심 특징
 
-### 1. 매혹적인 비주얼 (Sensual Visuals)
-
-* **Adult-Oriented Art**: 성인 타겟의 고퀄리티 2D 일러스트.
-* **Live2D Physics**: 숨쉬는 듯한 바스트 모핑과 터치 반응.
-* **Cinematic Summon**: UR/SSR 등급 소환 시 제공되는 전용 등장 컷신.
-
-### 2. 신화의 충돌 & 시너지 (Myth Synergy)
-
-서로 다른 신화(Origin)를 조합하여 강력한 **[공명 효과]**를 발동하세요.
-
-* **🏛️ 올림푸스 (Olympus)**: 치명타 확률/피해 대폭 증가.
-* **🌲 아스가르드 (Asgard)**: 체력이 낮을수록 강해지는 불굴의 전사들.
-* **...그리고 더 많은 신화들**: [디자인 바이블 확인하기](docs/game_design_bible.md)
-
-### 3. 심도 있는 연구 & 교감 (Research & Bond)
-
-* **상호작용**: 크리처와의 교감(터치)을 통해 호감도를 올리세요.
-* **시크릿 모드**: 호감도 MAX 달성 시 해금되는 침실 배경의 전용 연출.
+| 특징 | 설명 |
+|------|------|
+| 🎨 **프리미엄 비주얼** | 블루아카이브 + 니케 스타일의 고퀄리티 2D 일러스트 |
+| 🦊 **진화 시스템** | 아기여우 → 여우요괴 → 구미호로 성장하는 진화 체인 |
+| ⚔️ **신화 시너지** | 올림푸스, 아스가르드, 심연 등 5개 세계관 조합 |
+| 💕 **교감 시스템** | 크리처와의 터치 상호작용 및 호감도 |
 
 ---
 
-## 🛠️ 기술 스택 (Tech Stack)
+## 🌍 5대 세계관
 
-* **Core**: Vanilla JavaScript (ES6+), Event-Driven Architecture
-* **Rendering**: HTML5 Canvas + CSS3 Animation (Glassmorphism)
-* **Data**: JSON-based Creature & Synergy Data System
+| 월드 | 테마 | 특성 |
+|------|------|------|
+| 🏛️ **올림푸스** | 그리스 신화 | 치명타 특화 |
+| ⚔️ **아스가르드** | 북유럽 신화 | 불굴/생존 |
+| 🌸 **무릉도원** | 동양 신화 | 회복/조화 |
+| 🌑 **심연** | 크툴루/악마 | 공포/디버프 |
+| 🌿 **야생** | 드래곤/정령 | 야생의 법칙 |
 
 ---
 
-## 🚀 설치 및 실행
+## 🚀 로컬 실행
 
 ```bash
-# 저장소 클론
 git clone https://github.com/ysh1537/game.git
-
-# 로컬 서버 실행 (필수: CORS 정책 우회)
+cd game
 npx http-server . -p 8080 -c-1
 ```
 
----
-
-## 🤝 Contribution
-
-이 프로젝트는 **철저한 세계관 및 아트 가이드라인**을 준수합니다.
-PR 제출 전 반드시 `docs/game_design_bible.md`를 숙지해주세요.
+👉 **브라우저에서** `http://localhost:8080` 접속
 
 ---
 
-**Managed by Director**  
-*Multiverse Creature Lab*
+## 🛠️ 기술 스택
+
+- **Core**: Vanilla JavaScript (ES6+)
+- **Architecture**: Event-Driven + MVC Pattern
+- **Rendering**: HTML5 Canvas + CSS3 Animation
+
+---
+
+## 📚 문서
+
+- [🎮 게임 디자인 바이블](docs/game_design_bible.md)
+- [🌍 세계관 설정](docs/worldview.md)
+- [🎨 크리처 이미지 가이드](docs/creature_image_master_guide.md)
+
+---
+
+<p align="center">
+  <b>Managed by Director</b><br>
+  <i>Multiverse Creature Lab</i>
+</p>
