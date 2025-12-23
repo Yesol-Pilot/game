@@ -91,13 +91,9 @@ export default class Game {
     // 사용자 데이터 로드 (로그인 후 main.js에서 호출)
     loadUserData() {
         const user = this.authManager.currentUser;
-        if (!user) {
-            console.error("[Game] loadUserData called without user.");
-            return;
-        }
+        const saveKey = user ? user.username : 'guest';
 
-        console.log(`[Game] Loading data for ${user.username}...`);
-        const saveKey = user.username;
+        console.log(`[Game] Loading data for ${saveKey}...`);
 
         const saveData = SaveManager.loadGame(saveKey);
         if (saveData) {
@@ -153,10 +149,10 @@ export default class Game {
     // [저장/로드 시스템]
     save() {
         const user = this.authManager.currentUser;
-        if (!user) return; // No save for guests/errors
+        const saveKey = user ? user.username : 'guest';
 
         const state = this.buildSaveState();
-        SaveManager.saveGame(state, user.username);
+        SaveManager.saveGame(state, saveKey);
     }
 
     clearSave() {
