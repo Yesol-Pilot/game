@@ -2,11 +2,12 @@ import EventEmitter from '../utils/EventEmitter.js';
 import { EXPEDITIONS } from '../data/ExpeditionData.js';
 
 export default class ExpeditionManager extends EventEmitter {
-    constructor(eventBus, resourceManager, creatureManager) {
+    constructor(eventBus, resourceManager, creatureManager, facilityManager) {
         super();
         this.eventBus = eventBus;
         this.resourceManager = resourceManager;
         this.creatureManager = creatureManager;
+        this.facilityManager = facilityManager; // [Fix] Missing dependency
 
         this.activeExpeditions = []; // 진행 중인 탐사 목록
         // 구조: { id, expeditionId, creatureInstanceId, startTime, durationSec, endTime }

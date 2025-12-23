@@ -54,7 +54,13 @@ export default class AuthView extends BaseView {
         // 3. 폼 제출 버튼 (btn-auth-action)
         const btnAction = document.getElementById('btn-auth-action');
         if (btnAction) {
-            btnAction.addEventListener('click', () => this.handleAuthSubmit());
+            console.log("[AuthView] Binding auth action button");
+            btnAction.addEventListener('click', () => {
+                console.log("[AuthView] Auth button clicked");
+                this.handleAuthSubmit();
+            });
+        } else {
+            console.error("[AuthView] Auth action button not found!");
         }
 
         // 4. 로그아웃 버튼 (있을 경우) - 커스텀 모달 사용
@@ -74,6 +80,7 @@ export default class AuthView extends BaseView {
         // 세션 복구 시 처리
         this.game.authManager.events.on('auth:restored', (user) => {
             console.log(`[AuthView] Session restored for ${user.username}`);
+            this._updateHeaderUserName(user.username);
             if (this.ui.loginOverlay) this.ui.loginOverlay.style.display = 'none';
             this.game.startMainGame(); // 게임 시작 로직 트리거
         });
@@ -81,6 +88,11 @@ export default class AuthView extends BaseView {
         // 초기화 시 UI 업데이트
         this._updatePersonaInfo();
         this._updateAuthFormUI();
+    }
+
+    _updateHeaderUserName(name) {
+        const el = document.getElementById('header-user-name');
+        if (el) el.innerText = name;
     }
 
     async handleAuthSubmit() {
@@ -111,6 +123,7 @@ export default class AuthView extends BaseView {
 
         const result = await this.game.authManager.login(username, password);
         if (result.success) {
+            this._updateHeaderUserName(username);
             // this._setAuthMessage('접속 성공! 시스템 초기화 중...', 'success');
             this.game.startMainGame(); // This will be handled by the 'auth:login' event listener
         } else {
@@ -137,6 +150,7 @@ export default class AuthView extends BaseView {
 
         const res = await this.game.authManager.signup(username, password, this.selectedPersona);
         if (res.success) {
+            this._updateHeaderUserName(username);
             alert(this.langManager.t('auth.welcome', { name: username }));
             this.game.startMainGame();
         } else {

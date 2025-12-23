@@ -1,8 +1,9 @@
-
+import EventEmitter from '../utils/EventEmitter.js';
 import { getStage } from '../data/StageData.js';
 
-export default class StageManager {
+export default class StageManager extends EventEmitter {
     constructor(game) {
+        super();
         this.game = game;
         this.currentMaxStage = 1; // Default starts at 1
         this.currentViewingStage = 1; // Currently selected stage
@@ -28,8 +29,14 @@ export default class StageManager {
     unlockNextStage() {
         if (this.currentMaxStage < 100) {
             this.currentMaxStage++;
+            // [Fix] 새 스테이지가 열리면 자동으로 그 스테이지를 보게 함
+            this.currentViewingStage = this.currentMaxStage;
             this.save();
-            console.log(`[StageManager] Unlocked Stage ${this.currentMaxStage}`);
+            this.emit('stages:updated', {
+                max: this.currentMaxStage,
+                current: this.currentViewingStage
+            });
+            console.log(`[StageManager] Unlocked & Focused Stage ${this.currentMaxStage}`);
             return true;
         }
         return false;
@@ -51,12 +58,15 @@ export default class StageManager {
         if (this.currentViewingStage > 1) {
             this.currentViewingStage--;
             this.save();
+            this.emit('stages:updated', { current: this.currentViewingStage });
         }
     }
 
     nextStage() {
         if (this.currentViewingStage < this.currentMaxStage) {
             this.currentViewingStage++;
+            this.save();
+            this.emit('stages:updated', { current: this.currentViewingStage });
         }
     }
 

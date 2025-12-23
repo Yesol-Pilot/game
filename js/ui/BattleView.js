@@ -22,13 +22,18 @@ export default class BattleView extends BaseView {
             };
         }
 
-        // 자동 전투 토글 연결
-        const checkAutoBattle = document.getElementById('check-auto-battle');
-        if (checkAutoBattle) {
-            checkAutoBattle.checked = this.game.battleManager.isAutoBattle;
-            checkAutoBattle.onchange = (e) => {
-                this.game.battleManager.setAutoBattle(e.target.checked);
+        // 자동 전투 Select 연결
+        const autoBattleSelect = document.getElementById('select-auto-battle');
+        if (autoBattleSelect) {
+            autoBattleSelect.value = this.game.battleManager.autoBattleMode;
+            autoBattleSelect.onchange = (e) => {
+                this.game.battleManager.setAutoBattle(e.target.value);
             };
+
+            // 외부(배틀 종료)에서 모드가 변경되었을 때 UI 동기화
+            this.game.events.on('battle:autoAdjusted', (mode) => {
+                autoBattleSelect.value = mode;
+            });
         }
 
         // [NEW] 배속 버튼 연결
@@ -92,6 +97,12 @@ export default class BattleView extends BaseView {
             if (tabId === 'battle') {
                 this.render();
             }
+        });
+
+        // [Fix] 스테이지 정보 변경 시 즉시 UI 갱신 (자동 진행 등)
+        this.game.stageManager.on('stages:updated', (data) => {
+            console.log("[BattleView] Stage updated, refreshing UI...");
+            this.renderStageUI();
         });
 
         // 초기 렌더링

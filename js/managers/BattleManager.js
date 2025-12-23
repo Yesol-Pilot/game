@@ -150,6 +150,46 @@ export default class BattleManager extends EventEmitter {
         };
     }
 
+    async startBattleProcess(isPvP = false) {
+        this.isPvP = isPvP;
+        // Use global events for Scene communication
+        this.events.emit('battle:start', {
+            heroTeam: this.heroTeam,
+            enemyTeam: this.enemyTeam,
+            isPvP: this.isPvP,
+            enemyName: this.enemyName
+        });
+
+        // [NEW] Calculate and Apply Synergies
+        this.calculateSynergies();
+        this.applySynergyEffects();
+
+        while (this.inBattle) {
+            this.turnCount++;
+            this.events.emit('battle:turn', this.turnCount);
+            console.log(`[BattleManager] TURN ${this.turnCount}`);
+
+            await this.nextTurn();
+
+            if (!this.inBattle) break;
+            await new Promise(resolve => setTimeout(resolve, 1000 / this.battleSpeed));
+        }
+    }
+
+    spawnMockFriend(id) {
+        return {
+            isHero: false,
+            uid: Math.random().toString(36).substr(2, 9),
+            id: id,
+            name: "Rival " + id,
+            maxHp: 150, hp: 150,
+            atk: 15, def: 8,
+            level: 10, rarity: 'SR',
+            image: `images/creature_bear_ice.png`,
+            sp: 0, maxSp: 100
+        };
+    }
+
     createBattleEntity(creature, isHero) {
         return {
             isHero: isHero,
@@ -164,115 +204,103 @@ export default class BattleManager extends EventEmitter {
             level: creature.level,
             rarity: creature.def.rarity,
             world: creature.def.world || 'WILD', // [NEW] Default to WILD
-            elements: creature.def.elements || [] // [NEW]
+            elements: creature.def.elements || [], // [NEW]
+            // [NEW] 스킬 게이지 시스템
+            sp: 0,
+            maxSp: 100
         };
     }
 
-    spawnEnemy(dungeonId) {
-        // Simple mock enemy
+    spawnEnemy(type) {
         return {
             isHero: false,
-            id: `enemy_mob_${Date.now()}_${Math.floor(Math.random() * 1000)}`,
-            name: "광산 코볼트",
-            maxHp: 200,
-            hp: 200,
-            atk: 15,
-            def: 5,
-            image: "images/creature_goblin_scout.png",
-            level: 3
+            uid: Math.random().toString(36).substr(2, 9),
+            id: 'enemy_' + Date.now(),
+            name: "Wild Slime",
+            maxHp: 80, hp: 80,
+            atk: 10, def: 5,
+            level: 5, rarity: 'Normal',
+            image: `images/creature_slime_fire.png`,
+            sp: 0, maxSp: 100
         };
     }
 
-    nextTurn() {
-        if (!this.inBattle) return;
-        this.turnCount++;
+    async nextTurn() {
+        // [Hero Team Attack]
+        await this.processTeamAttack(this.heroTeam, this.enemyTeam);
 
-        // Team Battle Logic: Simply Attack Random Alive Target
-        const heroAlive = this.heroTeam.some(u => u.hp > 0);
-        const enemyAlive = this.enemyTeam.some(u => u.hp > 0);
-
-        if (!heroAlive || !enemyAlive) {
-            this.checkWinCondition();
+        // Check if all enemies dead
+        if (this.enemyTeam.every(e => e.hp <= 0)) {
+            this.endBattle(true, "적군을 모두 물리쳤습니다!");
             return;
         }
 
-        // Base delay (1500ms / speed)
-        const delay = 1500 / (this.battleSpeed || 1);
+        await new Promise(resolve => setTimeout(resolve, 500 / this.battleSpeed));
 
-        // Simulate One Round of Attacks
-        setTimeout(() => {
-            if (!this.inBattle) return;
-            this.processTeamAttack(this.heroTeam, this.enemyTeam);
+        // [Enemy Team Attack]
+        await this.processTeamAttack(this.enemyTeam, this.heroTeam);
 
-            if (this.checkWinCondition()) return;
-
-            setTimeout(() => {
-                if (!this.inBattle) return;
-                this.processTeamAttack(this.enemyTeam, this.heroTeam);
-
-                if (this.checkWinCondition()) return;
-                this.nextTurn();
-            }, delay);
-        }, delay);
+        // Check if all heroes dead
+        if (this.heroTeam.every(h => h.hp <= 0)) {
+            this.endBattle(false, "아군이 전멸했습니다...");
+            return;
+        }
     }
 
-    processTeamAttack(attackers, defenders) {
-        attackers.forEach(attacker => {
-            if (attacker.hp <= 0) return;
-            const aliveDefenders = defenders.filter(d => d.hp > 0);
-            if (aliveDefenders.length === 0) return;
-            // Basic AI
-            const target = aliveDefenders[Math.floor(Math.random() * aliveDefenders.length)];
-            this.attack(attacker, target);
-        });
+    async processTeamAttack(attackers, targets) {
+        for (let attacker of attackers) {
+            if (!this.inBattle) break;
+            if (attacker.hp <= 0) continue;
+
+            const target = targets.find(t => t.hp > 0);
+            if (!target) break;
+
+            await this.attack(attacker, target);
+            await new Promise(resolve => setTimeout(resolve, 600 / this.battleSpeed));
+        }
     }
 
-    attack(attacker, defender) {
+    async attack(attacker, defender) {
         if (attacker.hp <= 0 || defender.hp <= 0) return;
 
-        let damage = Math.max(1, attacker.atk - (defender.def * 0.5));
+        // [NEW] 스킬 발동 체크
+        const isSkill = attacker.sp >= attacker.maxSp;
+        let skillName = "";
 
-        // [NEW] Elemental Logic
+        // Base Damage calculation
+        let damage = Math.max(1, attacker.atk - (defender.def * 0.5));
         const advantage = this.checkElementalAdvantage(attacker.elements, defender.elements);
         let isCrit = false;
         let isGlancing = false;
 
-        if (advantage === 1) { // Advantage
-            damage *= 1.5;
-            // CC Logic could go here
-        } else if (advantage === -1) { // Disadvantage
-            damage *= 0.7;
-            isGlancing = Math.random() < 0.3; // 30% Miss chance
-        }
-
-        // [NEW] Synergy Logic (Olympus Crit)
-        if (attacker.isHero && this.activeSynergies[WORLDS.OLYMPUS] >= 2) {
-            const critRate = 0.15 + (this.activeSynergies[WORLDS.OLYMPUS] >= 4 ? 0.0 : 0); // 15% base
-            if (Math.random() < critRate) {
-                isCrit = true;
-                const critDmg = 1.5 + (this.activeSynergies[WORLDS.OLYMPUS] >= 4 ? 0.6 : 0); // +60% at 4set
-                damage *= critDmg;
+        if (isSkill) {
+            damage *= 2.5; // Skill is powerful
+            skillName = this.getSkillName(attacker);
+            attacker.sp = 0; // Reset
+        } else {
+            if (advantage === 1) { // Advantage
+                damage *= 1.2;
+            } else if (advantage === -1) { // Disadvantage
+                damage *= 0.8;
+                isGlancing = Math.random() < 0.2;
             }
-        }
-        // [NEW] Olympus God Tier (6 set)
-        if (attacker.isHero && this.activeSynergies[WORLDS.OLYMPUS] >= 6) {
-            isCrit = true;
-            damage *= 2.5; // Massive boost
-            // Penetrate def
-            damage += (defender.def * 0.5);
+
+            // Synergy Logic (Olympus Crit)
+            if (attacker.isHero && this.activeSynergies[WORLDS.OLYMPUS] >= 2) {
+                const critRate = 0.15;
+                if (Math.random() < critRate) {
+                    isCrit = true;
+                    damage *= 1.5;
+                }
+            }
+
+            // [NEW] SP 충전 (일반 공격 시 25 충전)
+            attacker.sp = Math.min(attacker.maxSp, attacker.sp + 25);
         }
 
-        if (isGlancing) {
-            damage = 0; // Miss
-        }
+        if (isGlancing) damage = 0;
 
-        defender.hp -= damage;
-
-        // [NEW] Synergy Logic (Abyss Terror - DoT or Debuff?) 
-        // For simplicity, Abyss just does extra damage on hit if set 4
-        if (attacker.isHero && this.activeSynergies[WORLDS.ABYSS] >= 4) {
-            defender.hp -= (attacker.atk * 0.2); // Procs extra damage
-        }
+        defender.hp -= Math.floor(damage);
 
         this.events.emit('battle:action', {
             type: 'attack',
@@ -280,10 +308,26 @@ export default class BattleManager extends EventEmitter {
             defenderId: defender.id,
             damage: Math.floor(damage),
             isCrit: isCrit,
-            isGlancing: isGlancing,
+            isMiss: isGlancing,
+            isSkill: isSkill,
+            skillName: skillName,
+            attackerSp: attacker.sp,
+            attackerMaxSp: attacker.maxSp,
             currentHp: defender.hp,
             maxHp: defender.maxHp
         });
+    }
+
+    getSkillName(entity) {
+        // [NEW] 크리처별 전용 스킬명 매핑
+        const skills = {
+            'god_odin': '궁니르의 심판',
+            'fenrir': '라그나로크 하울',
+            'miho': '유혹의 구슬',
+            'zeus': '천둥의 심판',
+            'chronos': '시간의 균열'
+        };
+        return skills[entity.id] || '강격';
     }
 
     calculateSynergies() {
@@ -369,6 +413,7 @@ export default class BattleManager extends EventEmitter {
 
         let earnedGold = 0;
         let earnedExp = 0;
+        let nextStageId = null;
 
         if (isWin) {
             // Calculate Dynamic Rewards based on Stage
@@ -412,20 +457,37 @@ export default class BattleManager extends EventEmitter {
                     this.game.stageManager.unlockNextStage();
                 }
 
-                // [NEW] 자동 연속 전투
-                if (this.isAutoBattle) {
-                    const nextStage = this.currentStageId + 1;
-                    if (nextStage <= this.game.stageManager.getMaxStage() + 1) { // 열린 스테이지까지
-                        const waitTime = 3000 / (this.battleSpeed || 1);
+                // 자동 전투 로직
+                if (this.autoBattleMode !== 'off') {
+                    if (this.autoBattleMode === 'repeat') {
+                        nextStageId = this.currentStageId;
+                    } else if (this.autoBattleMode === 'advance') {
+                        const next = this.currentStageId + 1;
+                        // 다음 스테이지가 잠금 해제되었는지 확인 (방금 unlockNextStage 실행됨)
+                        if (next <= this.game.stageManager.getMaxStage() + 1) {
+                            nextStageId = next;
+                        } else {
+                            // 더 이상 진행 불가 시 반복? 또는 중단? -> 반복으로 전환
+                            console.log("[Battle] Max stage reached, repeating current.");
+                            nextStageId = this.currentStageId;
+                        }
+                    }
+
+                    if (nextStageId) {
+                        const waitTime = 2000 / (this.battleSpeed || 1);
                         setTimeout(() => {
-                            if (this.isAutoBattle) this.startStageBattle(nextStage);
+                            // 사용자가 그 사이 껐을 수도 있음 체크
+                            if (this.autoBattleMode !== 'off') {
+                                this.startStageBattle(nextStageId);
+                            }
                         }, waitTime);
                     }
                 }
             }
         } else {
             // 패배 시 자동 전투 중단
-            this.isAutoBattle = false;
+            this.autoBattleMode = 'off';
+            this.events.emit('battle:autoAdjusted', 'off'); // UI 업데이트용
         }
 
         // [NEW] Holistic Event for QuestManager
@@ -443,13 +505,15 @@ export default class BattleManager extends EventEmitter {
             isWin,
             reason,
             rewards: { gold: earnedGold, exp: earnedExp },
-            isAutoBattle: this.isAutoBattle
+            autoBattleMode: this.autoBattleMode,
+            nextStageId: nextStageId, // 다음 예정 스테이지 (뷰에서 표시용)
+            autoDelay: 2000 / (this.battleSpeed || 1) // 딜레이 정보 전달
         });
     }
 
-    setAutoBattle(enabled) {
-        this.isAutoBattle = enabled;
-        console.log(`[BattleManager] Auto Battle: ${enabled}`);
+    setAutoBattle(mode) {
+        this.autoBattleMode = mode;
+        console.log(`[BattleManager] Auto Battle Mode: ${mode}`);
     }
 
     setBattleSpeed(speed) {

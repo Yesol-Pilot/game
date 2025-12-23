@@ -100,13 +100,20 @@ export default class ExpeditionView extends BaseView {
 
     renderActiveExpeditions() {
         const listEl = document.getElementById('active-expedition-list');
+        const mapContainer = document.getElementById('map-units-container');
+        const logDisplay = document.getElementById('expedition-log-display');
+
         if (!listEl) return;
 
         const list = this.game.expeditionManager.getActiveExpeditions();
         listEl.innerHTML = '';
+        if (mapContainer) mapContainer.innerHTML = ''; // Clear map markers
 
         if (list.length === 0) {
             listEl.innerHTML = '<p class="placeholder-text" style="padding:20px; text-align:center; color:#666;">현재 진행 중인 탐사가 없습니다.</p>';
+            if (logDisplay && logDisplay.innerHTML.includes('signals')) {
+                logDisplay.innerHTML = '<div style="opacity:0.5;">No active signals...</div>';
+            }
             return;
         }
 
@@ -117,13 +124,13 @@ export default class ExpeditionView extends BaseView {
             const percent = Math.min(100, Math.max(0, (elapsed / totalDuration) * 100));
             const remainSec = Math.max(0, Math.ceil((exp.endTime - now) / 1000));
 
+            // 1. List Item Render
             const div = document.createElement('div');
             div.className = 'active-expedition-item glass-panel';
             div.style.padding = '15px';
             div.style.marginBottom = '10px';
 
-            // 크리처 이미지 가져오기
-            const creature = this.game.creatureManager.getCreatureById(exp.creatureId);
+            const creature = this.game.creatureManager.getCreatureById(exp.creatureInstanceId);
             const creatureImg = creature ? creature.def.image : 'images/creature_slime_green.png';
 
             div.innerHTML = `
@@ -146,7 +153,95 @@ export default class ExpeditionView extends BaseView {
                 </div>
             `;
             listEl.appendChild(div);
+
+            // 2. Map Marker Render
+            if (mapContainer) {
+                this._renderMapUnit(exp, percent, creatureImg);
+            }
+
+            // 3. Auto Log Trigger
+            this._handleAutoLogs(exp, percent);
         });
+
+        // Start ticker if not running
+        this._startMapTicker();
+    }
+
+    _renderMapUnit(exp, percent, img) {
+        const container = document.getElementById('map-units-container');
+        if (!container) return;
+
+        // 고정적이지만 탐사별로 다른 경로 시뮬레이션
+        const seed = parseInt(exp.id.split('_')[1]) || 0;
+        const startX = 10 + (seed % 20);
+        const endX = 80 + (seed % 15);
+        const startY = 10 + (seed % 70);
+        const endY = 80 - (seed % 10);
+
+        const currentX = startX + (endX - startX) * (percent / 100);
+        const currentY = startY + (endY - startY) * (percent / 100);
+
+        const unit = document.createElement('div');
+        unit.className = 'map-unit';
+        unit.style.left = `${currentX}%`;
+        unit.style.top = `${currentY}%`;
+        unit.innerHTML = `
+            <div class="map-unit-icon">
+                <img src="${img}">
+            </div>
+            <div class="map-unit-label">${exp.creatureName}</div>
+        `;
+        container.appendChild(unit);
+    }
+
+    _handleAutoLogs(exp, percent) {
+        if (!this.lastLogPercents) this.lastLogPercents = {};
+        const lastP = this.lastLogPercents[exp.id] || 0;
+
+        const logData = [
+            { p: 1, msg: "Point Alpha 도달. 정찰 개시." },
+            { p: 25, msg: "에너지 주파수 감지. 주변 탐색 중..." },
+            { p: 50, msg: "미확립 생명체 조우. 교전 회피 후 이동." },
+            { p: 75, msg: "목표 자원 확보 성공. 귀환 경로 설정." },
+            { p: 95, msg: "기지 접근 중. 차원 고정 장치 활성화." }
+        ];
+
+        logData.forEach(entry => {
+            if (percent >= entry.p && lastP < entry.p) {
+                this._addTacticalLog(exp.creatureName, entry.msg);
+            }
+        });
+
+        this.lastLogPercents[exp.id] = percent;
+    }
+
+    _addTacticalLog(name, msg) {
+        const logDisplay = document.getElementById('expedition-log-display');
+        if (!logDisplay) return;
+
+        if (logDisplay.innerHTML.includes('No active signals')) logDisplay.innerHTML = '';
+
+        const time = new Date().toLocaleTimeString([], { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        const item = document.createElement('div');
+        item.className = 'exp-log-item';
+        item.innerHTML = `<span class="time">[${time}]</span><span class="tag">${name}</span><span class="msg">${msg}</span>`;
+
+        logDisplay.prepend(item);
+
+        // Max logs
+        if (logDisplay.children.length > 20) {
+            logDisplay.removeChild(logDisplay.lastChild);
+        }
+    }
+
+    _startMapTicker() {
+        if (this.mapTicker) return;
+        this.mapTicker = setInterval(() => {
+            const activeTab = document.querySelector('.feature-view.active');
+            if (activeTab && activeTab.id === 'content-expedition') {
+                this.renderActiveExpeditions();
+            }
+        }, 3000); // 3초마다 갱신
     }
 
     _openExpeditionModal(expedition) {

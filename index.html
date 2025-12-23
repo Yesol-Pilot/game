@@ -263,8 +263,15 @@
                                         style="padding:15px 35px; font-size:1.15rem;">⚔️ 작전 개시</button>
                                     <button id="btn-next-stage" class="cyber-btn small">&gt;</button>
                                 </div>
-                                <label style="cursor:pointer; font-size:0.85em; opacity:0.8;"><input type="checkbox"
-                                        id="check-auto-battle"> 자동 전투 반복</label>
+                                <div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+                                    <span style="font-size:0.9em; color:#aaa;">자동 전투:</span>
+                                    <select id="select-auto-battle" class="cyber-select"
+                                        style="padding:5px; font-size:0.9em;">
+                                        <option value="off">꺼짐</option>
+                                        <option value="repeat">현재 스테이지 반복</option>
+                                        <option value="advance">다음 스테이지 진행</option>
+                                    </select>
+                                </div>
                             </div>
                             <hr style="border:0; border-top:1px solid #444; margin:30px 0;">
                             <div class="pvp-section">
@@ -472,13 +479,20 @@
         <div id="battle-stage">
             <!-- Entities injected by JS -->
         </div>
-        <div id="battle-controls">
-            <!-- Battle Controls restored -->
-            <button class="cyber-btn" id="btn-lobby-manage">관리</button>
-            <button class="cyber-btn" id="btn-lobby-date"
-                style="background: linear-gradient(135deg, #e91e63, #ad1457); box-shadow: 0 0 10px #e91e63;">🥂
-                데이트</button>
-            <button disabled>Auto Battle On</button>
+        <div id="battle-controls"
+            style="display:flex; gap:15px; justify-content:center; padding:20px; background:rgba(0,0,0,0.5);">
+            <button class="cyber-btn" id="btn-stop-battle"
+                style="background:linear-gradient(135deg, #e74c3c, #c0392b);">작전 중지</button>
+            <div
+                style="display:flex; align-items:center; gap:10px; background:rgba(255,255,255,0.1); padding:0 15px; border-radius:5px; border:1px solid rgba(255,255,255,0.2);">
+                <span style="font-size:0.85em; color:#aaa;">자동 전투:</span>
+                <select id="battle-auto-select" class="cyber-select"
+                    style="padding:5px; font-size:0.85em; background:transparent; color:#fff; border:none;">
+                    <option value="off">꺼짐</option>
+                    <option value="repeat">반복</option>
+                    <option value="advance">진행</option>
+                </select>
+            </div>
         </div>
     </div>
 

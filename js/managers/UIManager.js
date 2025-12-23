@@ -46,6 +46,7 @@ export default class UIManager {
             filterRarity: document.getElementById('filter-rarity'),
             filterElement: document.getElementById('filter-element'),
             btnAutoCompose: document.getElementById('btn-auto-compose'),
+            autoBattleSelect: document.getElementById('select-auto-battle'),
 
             // 로비 캐릭터
             lobbyCharacterImg: document.getElementById('lobby-character-img'),
@@ -54,6 +55,14 @@ export default class UIManager {
             goldDisplay: document.getElementById('gold-display'),
             gemDisplay: document.getElementById('gem-display'),
             energyDisplay: document.getElementById('energy-display'),
+
+            // 스테이지/전투 UI
+            stageTitle: document.getElementById('stage-title'),
+            stageInfo: document.getElementById('stage-info'),
+            stageRewards: document.getElementById('stage-rewards'),
+            btnPrevStage: document.getElementById('btn-prev-stage'),
+            btnNextStage: document.getElementById('btn-next-stage'),
+            btnStartStage: document.getElementById('btn-start-stage'),
 
             // 오버레이 및 모달
             loginOverlay: document.getElementById('login-overlay'),
@@ -203,23 +212,38 @@ export default class UIManager {
      * @description 커스텀 확인 모달을 띄웁니다.
      * @param {string} message 
      * @param {Function} onYes 
+     * @param {boolean} isHTML - HTML 태그 포함 여부
      */
-    showConfirm(message, onYes) {
+    showConfirm(message, onYes, isHTML = false) {
         if (!this.ui.modalOverlay) {
             if (confirm(message)) onYes();
             return;
         }
 
-        this.ui.modalMsg.innerText = message;
+        if (isHTML) {
+            this.ui.modalMsg.innerHTML = message;
+        } else {
+            this.ui.modalMsg.innerText = message;
+        }
+
         this.ui.modalOverlay.style.display = 'flex';
 
         this.ui.btnModalYes.onclick = () => {
             this.ui.modalOverlay.style.display = 'none';
-            onYes();
+            if (onYes) onYes();
         };
         this.ui.btnModalNo.onclick = () => {
             this.ui.modalOverlay.style.display = 'none';
         };
+    }
+
+    /**
+     * @description 모달을 강제로 닫습니다.
+     */
+    hideModal() {
+        if (this.ui.modalOverlay) {
+            this.ui.modalOverlay.style.display = 'none';
+        }
     }
 
     /**
@@ -239,8 +263,8 @@ export default class UIManager {
                 "지휘관님, 너무 가까워요!"
             ],
             legs: [
-                "꺄악! 다리는 안 돼요!",
-                "그런 취향이 있으신가요...?",
+                "무릎베개... 원하시나요?",
+                "지휘관님, 발은 조금 부끄러워요...",
                 "간지러워요!"
             ]
         };

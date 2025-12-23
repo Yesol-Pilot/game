@@ -60,7 +60,7 @@ export default class Game {
 
         // [Scenes]
         this.battleScene = new BattleScene(this);
-        this.summonScene = new SummonScene(this);
+        // this.summonScene = new SummonScene(this); // [Mod] Removed redundant legacy scene
 
         this.deckManager.init();
         this.loop = new Loop(this.update.bind(this));

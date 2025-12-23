@@ -118,7 +118,17 @@ export default class CreatureManager extends EventEmitter {
         const results = [];
         // [10+1 Logic] 10회 비용으로 11회 소환
         for (let i = 0; i < 11; i++) {
-            const rarity = (type === 'normal') ? pickRarityFromTable(NORMAL_SUMMON_TABLE) : pickRarityFromTable(PREMIUM_SUMMON_TABLE);
+            let rarity;
+            // [Algorithm Fix] 보정 로직: 11번째 소환까지 Rare 이상이 하나도 없다면 확정 지급
+            const hasGood = results.some(c => ['Unique', 'Rare', 'Special', 'SR', 'SSR', 'UR'].includes(c.def.rarity));
+
+            if (i === 10 && !hasGood) {
+                // 프리미엄은 Rare 이상, 일반은 Unique 이상 보장
+                rarity = (type === 'normal') ? 'Unique' : 'Rare';
+            } else {
+                rarity = (type === 'normal') ? pickRarityFromTable(NORMAL_SUMMON_TABLE) : pickRarityFromTable(PREMIUM_SUMMON_TABLE);
+            }
+
             const creature = this._createCreatureByRarity(rarity);
             if (creature) {
                 this.owned.push(creature);
@@ -136,8 +146,15 @@ export default class CreatureManager extends EventEmitter {
 
     // Helper: Create Creature Object
     _createCreatureByRarity(rarity) {
-        const candidates = CREATURE_DEFS.filter(c => c.rarity === rarity);
-        if (candidates.length === 0) return null;
+        // [Fix] 소환에서는 히든(진화 전용) 크리처 제외
+        const candidates = CREATURE_DEFS.filter(c => c.rarity === rarity && !c.isHidden);
+
+        if (candidates.length === 0) {
+            console.warn(`[Summon] No candidates for rarity: ${rarity}. Falling back to Normal.`);
+            // Fallback to Normal if specified rarity group is empty
+            if (rarity === RANKS.NORMAL) return null;
+            return this._createCreatureByRarity(RANKS.NORMAL);
+        }
         const def = candidates[Math.floor(Math.random() * candidates.length)];
 
         const newCreature = {

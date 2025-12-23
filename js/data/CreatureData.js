@@ -188,7 +188,7 @@ export const CREATURE_DEFS = [
         elements: ["Light", "Wind", "Magic"],
         ego: "Seeker",
         baseStr: 45, baseInt: 75,
-        image: "images/creature_god_odin.jpg",
+        image: "images/creature_god_odin.png",
         lines: {
             normal: "지혜를 원하느냐. 대가가 따를 것이다.",
             touch_head: "눈 한쪽의 대가로 얻은 지혜... 알고 싶은가?",
@@ -207,7 +207,7 @@ export const CREATURE_DEFS = [
         elements: ["Dark", "Ice", "Beast"],
         ego: "Warlord",
         baseStr: 70, baseInt: 25,
-        image: "images/creature_fenrir.jpg",
+        image: "images/creature_wolf_dire.png", // [Fix] Missing fenrir image fallback
         lines: {
             normal: "이 사슬... 끊어버리겠어!",
             touch_head: "크르릉... 쓰다듬는 건... 딱 한 번만 허락하지.",
@@ -285,7 +285,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.ASGARD,
         elements: ["Ice"],
         baseStr: 2, baseInt: 3,
-        image: "images/creature_snow.png?v=1",
+        image: "images/creature_slime.png", // [Fix] Missing creature_snow.png fallback
         lines: { normal: "사르르... 녹지 않아요." }
     },
 
