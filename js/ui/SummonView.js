@@ -106,19 +106,45 @@ export default class SummonView extends BaseView {
         this.currentSummon = null;
         this.game.save();
 
-        // 가장 높은 등급 찾기 (Cinematic용 대표 모델)
+        // 1. SR 이상인 크리처들을 모두 찾음 (내림차순 정렬: UR -> SSR -> SR)
         const rarityOrder = ['Normal', 'Unique', 'Rare', 'Special', 'SR', 'SSR', 'UR'];
-        let bestCreature = results[0];
-        results.forEach(c => {
-            if (rarityOrder.indexOf(c.def.rarity) > rarityOrder.indexOf(bestCreature.def.rarity)) {
-                bestCreature = c;
-            }
-        });
+        const highRankCreatures = results.filter(c =>
+            ['SR', 'SSR', 'UR'].includes(c.def.rarity)
+        ).sort((a, b) => rarityOrder.indexOf(b.def.rarity) - rarityOrder.indexOf(a.def.rarity));
 
-        this.playCinematic(bestCreature);
+        // 2. 큐에 담기
+        this.cinematicQueue = highRankCreatures.length > 0 ? highRankCreatures : [];
+
+        // 3. 만약 고등급이 하나도 없다면, 가장 높은 등급 하나만 연출 (기존 로직)
+        if (this.cinematicQueue.length === 0) {
+            let bestCreature = results[0];
+            results.forEach(c => {
+                if (rarityOrder.indexOf(c.def.rarity) > rarityOrder.indexOf(bestCreature.def.rarity)) {
+                    bestCreature = c;
+                }
+            });
+            this.cinematicQueue.push(bestCreature);
+        }
+
+        // 4. 순차 재생 시작
+        this.isBatchSequence = true;
+        this.playNextCinematic();
     }
 
-    async playCinematic(creature) {
+    playNextCinematic() {
+        if (this.cinematicQueue.length > 0) {
+            const nextCreature = this.cinematicQueue.shift();
+            // 다음 연출 실행 (끝나면 다시 playNextCinematic 호출)
+            this.playCinematic(nextCreature, () => {
+                this.playNextCinematic();
+            });
+        } else {
+            // 모든 연출 종료 -> 결과 그리드 표시
+            this.showBatchGrid();
+        }
+    }
+
+    playCinematic(creature, onComplete = null) {
         const overlay = document.getElementById('cinematic-overlay');
         const img = document.getElementById('cinematic-image');
         const dialogue = document.getElementById('cinematic-dialogue');
@@ -128,15 +154,26 @@ export default class SummonView extends BaseView {
         const grid = document.getElementById('cinematic-batch-grid');
         const skipHint = document.getElementById('cinematic-skip-hint');
 
-
         if (!overlay) return;
 
         this.isSkipping = false;
 
+        // 스킵 핸들러 (클릭 시 즉시 완료 처리)
+        this.currentSkipHandler = () => {
+            if (this.isSkipping) return;
+            this.isSkipping = true;
+            this.clearCinematicTimers(); // 모든 타이머 정지
+            if (onComplete) onComplete(); // 즉시 다음으로
+            else this.endCinematic(); // 단일 소환이면 종료
+        };
+
         // Reset
         overlay.className = 'active';
+        // 기존 클래스 제거 후 새로 추가 (등급 색상)
+        overlay.classList.remove('rarity-Normal', 'rarity-Unique', 'rarity-Rare', 'rarity-Special', 'rarity-SR', 'rarity-SSR', 'rarity-UR');
         overlay.classList.add(`rarity-${creature.def.rarity}`);
-        img.src = creature.def.image || 'images/creature_slime.png'; // Fallback for main image
+
+        img.src = creature.def.image || 'images/creature_slime.png';
         img.className = '';
         dialogue.innerText = '';
         dialogue.className = '';
@@ -145,103 +182,124 @@ export default class SummonView extends BaseView {
         status.style.opacity = '0';
         grid.style.display = 'none';
         grid.innerHTML = '';
-        skipHint.style.display = 'block'; // Ensure skip hint is visible at start
+        skipHint.style.display = 'block';
 
-        // --- Sequence ---
+        // Override overlay click to use new skip handler
+        overlay.onclick = this.currentSkipHandler;
+
+        // --- Sequence Timers ---
+        this.timers = [];
 
         // Phase 0: Dimensional Syncing
-        setTimeout(() => {
-            if (this.isSkipping) return;
+        this.timers.push(setTimeout(() => {
             status.style.opacity = '1';
             status.style.transform = 'translate(-50%, -50%) scale(1.1)';
-        }, 100);
+        }, 100));
 
-        setTimeout(() => {
-            if (this.isSkipping) return;
+        this.timers.push(setTimeout(() => {
             status.style.opacity = '0';
-        }, 1200);
+        }, 1200));
 
         // Phase 1: Show Magic Circle
-        setTimeout(() => {
-            if (this.isSkipping) return;
+        this.timers.push(setTimeout(() => {
             circle.classList.add('show');
-        }, 1300);
+        }, 1300));
 
-        // Phase 2: Flash & Reveal Representative
+        // Phase 2: Flash & Reveal
         const revealDelay = ['SSR', 'UR'].includes(creature.def.rarity) ? 3000 : 2200;
 
-        setTimeout(() => {
-            if (this.isSkipping) return;
+        this.timers.push(setTimeout(() => {
             circle.classList.add('reveal');
             flash.classList.add('do-flash');
-
             if (['SR', 'SSR', 'UR'].includes(creature.def.rarity)) {
                 document.body.classList.add('shake-screen');
                 setTimeout(() => document.body.classList.remove('shake-screen'), 500);
             }
-
             img.classList.add('show');
-        }, revealDelay);
+        }, revealDelay));
 
-        // Phase 3: Dialogue (Representative)
+        // Phase 3: Dialogue
         const rarityIdx = ['Normal', 'Unique', 'Rare', 'Special', 'SR', 'SSR', 'UR'].indexOf(creature.def.rarity);
         if (rarityIdx >= 3) {
-            setTimeout(() => {
-                if (this.isSkipping) return;
+            this.timers.push(setTimeout(() => {
                 const lines = creature.def.lines || {};
                 dialogue.innerText = `"${lines.normal || '새로운 세계에 오신 것을 환영합니다.'}"`;
                 dialogue.classList.add('show');
-            }, revealDelay + 800);
+            }, revealDelay + 800));
         }
 
-        // Phase 4: (Only Batch) Reveal all results in Grid
-        if (this.currentBatch) {
-            const gridDelay = revealDelay + 2500;
-            setTimeout(() => {
-                if (this.isSkipping) return;
+        // End Sequence (Next or Finish)
+        const totalDuration = rarityIdx >= 5 ? revealDelay + 3500 : revealDelay + 2500;
 
-                // Fade out representative
+        this.timers.push(setTimeout(() => {
+            if (onComplete) {
+                // 다음 시네마틱이 있으면 페이드아웃 후 실행
                 img.style.opacity = '0';
                 dialogue.style.opacity = '0';
+                setTimeout(() => onComplete(), 500);
+            } else {
+                // 단일 소환이면 종료
+                this.endCinematic();
+            }
+        }, totalDuration));
+    }
 
-                // Show Grid
-                grid.style.display = 'grid';
-                grid.style.gridTemplateColumns = 'repeat(5, 1fr)'; // Fixed layout
-                status.style.opacity = '0'; // Hide skip hint or status message
-
-                this.currentBatch.forEach((c, idx) => {
-                    const item = document.createElement('div');
-                    item.className = 'grid-item fade-in';
-                    item.style.animationDelay = `${idx * 0.1}s`;
-                    const imgPath = c.def.image || 'images/creature_slime.png'; // Fallback for grid item image
-                    item.innerHTML = `
-                        <div style="position:relative; border:1px solid rgba(255,255,255,0.2); border-radius:8px; overflow:hidden; background:rgba(0,0,0,0.5);">
-                            <img src="${imgPath}" onerror="this.src='images/creature_slime.png'" style="width:100%; height:80px; object-fit:cover;">
-                            <div style="position:absolute; bottom:0; padding:1px 5px; background:rgba(0,0,0,0.7); font-size:0.6rem; width:100%; text-align:center; color:var(--rarity-color); border-top:1px solid var(--rarity-color);">
-                                ${c.def.rarity}
-                            </div>
-                        </div>
-                    `;
-                    // Set rarity specific color for each item if needed
-                    const rarityColorMap = {
-                        'Normal': '#9e9e9e', 'Unique': '#66bb6a', 'Rare': '#42a5f5',
-                        'Special': '#ab47bc', 'SR': '#ff7043', 'SSR': '#ef5350', 'UR': '#ffd700'
-                    };
-                    item.style.setProperty('--rarity-color', rarityColorMap[c.def.rarity]);
-                    grid.appendChild(item);
-                });
-            }, gridDelay);
-
-            this.cinematicTimer = setTimeout(() => {
-                if (!this.isSkipping) this.endCinematic();
-            }, gridDelay + 3000);
-        } else {
-            // Single Auto End
-            const totalDuration = rarityIdx >= 5 ? 6500 : 5000;
-            this.cinematicTimer = setTimeout(() => {
-                if (!this.isSkipping) this.endCinematic();
-            }, totalDuration);
+    clearCinematicTimers() {
+        if (this.timers) {
+            this.timers.forEach(t => clearTimeout(t));
+            this.timers = [];
         }
+        if (this.cinematicTimer) clearTimeout(this.cinematicTimer);
+    }
+
+    showBatchGrid() {
+        const overlay = document.getElementById('cinematic-overlay');
+        const grid = document.getElementById('cinematic-batch-grid');
+        const skipHint = document.getElementById('cinematic-skip-hint');
+        const img = document.getElementById('cinematic-image');
+        const dialogue = document.getElementById('cinematic-dialogue');
+
+        // Clean up last cinematic elements
+        img.style.opacity = '0';
+        dialogue.style.opacity = '0';
+        skipHint.style.display = 'none';
+
+        if (!this.currentBatch) return;
+
+        // Show Grid
+        grid.style.display = 'grid';
+        grid.style.gridTemplateColumns = 'repeat(5, 1fr)';
+
+        // 기존 Grid 아이템 생성 로직 (5열)
+        grid.innerHTML = ''; // 초기화
+        this.currentBatch.forEach((c, idx) => {
+            const item = document.createElement('div');
+            item.className = 'grid-item fade-in';
+            item.style.animationDelay = `${idx * 0.1}s`;
+            const imgPath = c.def.image || 'images/creature_slime.png';
+
+            // 색상 매핑
+            const rarityColorMap = {
+                'Normal': '#9e9e9e', 'Unique': '#66bb6a', 'Rare': '#42a5f5',
+                'Special': '#ab47bc', 'SR': '#ff7043', 'SSR': '#ef5350', 'UR': '#ffd700'
+            };
+            const color = rarityColorMap[c.def.rarity] || '#fff';
+
+            item.innerHTML = `
+                <div style="position:relative; border:1px solid rgba(255,255,255,0.2); border-radius:8px; overflow:hidden; background:rgba(0,0,0,0.5);">
+                    <img src="${imgPath}" onerror="this.src='images/creature_slime.png'" style="width:100%; height:80px; object-fit:cover;">
+                    <div style="position:absolute; bottom:0; padding:1px 5px; background:rgba(0,0,0,0.7); font-size:0.6rem; width:100%; text-align:center; color:${color}; border-top:1px solid ${color};">
+                        ${c.def.rarity}
+                    </div>
+                </div>
+            `;
+            grid.appendChild(item);
+        });
+
+        // 결과 화면 종료 타이머 (또는 클릭 대기)
+        // 여기서는 자동으로 꺼지지 않고 사용자가 클릭해서 끄도록 유도 (Overlay onclick = endCinematic)
+        this.currentSkipHandler = () => this.endCinematic();
+        overlay.onclick = this.currentSkipHandler;
     }
 
     endCinematic() {

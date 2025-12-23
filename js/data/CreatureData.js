@@ -169,7 +169,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.OLYMPUS,
         elements: ["Wind", "Water"],
         baseStr: 2, baseInt: 4,
-        image: "images/creature_cloud_puff.png?v=1",
+        image: "images/placeholder.png", // TODO: GENERATE IMAGE
         lines: { normal: "둥실둥실..." }
     },
 
@@ -207,7 +207,8 @@ export const CREATURE_DEFS = [
         elements: ["Dark", "Ice", "Beast"],
         ego: "Warlord",
         baseStr: 70, baseInt: 25,
-        image: "images/creature_wolf_dire.png", // [Fix] Missing fenrir image fallback
+        image: "images/creature_wolf_dire.png", // [Temporary] using wolf_dire
+        // TODO: GENERATE IMAGE (Original Fenrir design)
         lines: {
             normal: "이 사슬... 끊어버리겠어!",
             touch_head: "크르릉... 쓰다듬는 건... 딱 한 번만 허락하지.",
@@ -285,7 +286,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.ASGARD,
         elements: ["Ice"],
         baseStr: 2, baseInt: 3,
-        image: "images/creature_slime.png", // [Fix] Missing creature_snow.png fallback
+        image: "images/placeholder.png", // TODO: GENERATE IMAGE
         lines: { normal: "사르르... 녹지 않아요." }
     },
 
