@@ -58,10 +58,17 @@ export default class DeckManager extends EventEmitter {
     }
 
     loadFromState(state) {
-        if (!state) return;
-        this.decks = state.decks || this.decks;
-        this.mainDeck = state.mainDeck !== undefined ? state.mainDeck : 0;
-        this.currentEditingDeck = state.currentEditingDeck !== undefined ? state.currentEditingDeck : 'main';
+        // 통합 저장 데이터에서 로드
+        if (state && state.decks) {
+            this.decks = state.decks;
+            this.mainDeck = state.mainDeck !== undefined ? state.mainDeck : 0;
+            this.currentEditingDeck = state.currentEditingDeck !== undefined ? state.currentEditingDeck : 'main';
+            console.log('[DeckManager] 덱 데이터 로드 완료:', this.decks);
+        } else {
+            // 폴백: 레거시 키에서 로드 시도
+            console.log('[DeckManager] 통합 저장에서 덱 데이터 없음, 레거시 키 확인...');
+            this.load();
+        }
         this.emit('decks:updated', this.decks);
     }
 
