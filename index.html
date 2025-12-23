@@ -77,25 +77,45 @@
                 <!-- Main Home Layout (Lobby) -->
                 <div id="content-home" class="layout-dashboard tab-content active">
                     <!-- 1. 왼쪽: 보유 크리처 -->
+                    <!-- 1. 왼쪽: 보유 크리처 / 도감 -->
                     <div id="left-panel" class="glass-panel">
-                        <div class="panel-header">
-                            <h3>보유 크리처</h3>
-                            <div class="panel-controls"></div>
+                        <!-- Panel Tabs -->
+                        <div class="panel-tabs"
+                            style="display:flex; border-bottom:1px solid rgba(255,255,255,0.1); margin-bottom:10px;">
+                            <button id="tab-btn-inventory" class="tab-btn active"
+                                style="flex:1; padding:10px; background:none; border:none; color:white; border-bottom:2px solid var(--accent-cyan); cursor:pointer;">보유
+                                (Inventory)</button>
+                            <button id="tab-btn-archive" class="tab-btn"
+                                style="flex:1; padding:10px; background:none; border:none; color:#888; border-bottom:2px solid transparent; cursor:pointer;">도감
+                                (Archive)</button>
                         </div>
-                        <div id="creature-controls">
-                            <select id="sort-order" class="cyber-select">
+
+                        <div id="creature-controls" style="display:flex; gap:5px; margin-bottom:10px; flex-wrap:wrap;">
+                            <select id="sort-order" class="cyber-select" style="flex:1; min-width:80px;">
                                 <option value="rarity_desc">등급순 ▼</option>
                                 <option value="level_desc">레벨순 ▼</option>
+                                <option value="world">신화별 (World)</option>
                                 <option value="recent">최신순</option>
                             </select>
-                            <select id="filter-rarity" class="cyber-select">
-                                <option value="all">전체</option>
+                            <select id="filter-rarity" class="cyber-select" style="flex:1; min-width:80px;">
+                                <option value="all">전체 등급</option>
                                 <option value="UR">UR</option>
                                 <option value="SSR">SSR</option>
                                 <option value="SR">SR</option>
+                                <option value="Normal">N/R (일반)</option>
                             </select>
-                            <button id="btn-auto-compose" class="cyber-btn icon-only" title="자동 합성">⚡</button>
                         </div>
+                        <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
+                            <button id="btn-auto-compose" class="cyber-btn small" title="자동 합성"
+                                style="font-size:0.8rem;">⚡ 자동 합성</button>
+                        </div>
+
+                        <!-- Archive Stats (Visible only in Archive Tab) -->
+                        <div id="archive-stats"
+                            style="display:none; padding:5px 10px; font-size:0.85em; color:var(--accent-cyan); text-align:center; background:rgba(0,0,0,0.2); border-radius:4px; margin-bottom:10px;">
+                            수집 현황 로딩중...
+                        </div>
+
                         <div id="creature-list" class="scroll-custom"></div>
                     </div>
 
@@ -122,10 +142,8 @@
                     <div id="lobby-character-panel">
                         <div id="lobby-character-wrapper">
                             <img id="lobby-character-img" src="images/creature_god_zeus.png" alt="Lobby Character">
-                            <div id="touch-head" class="touch-zone touch-head"></div>
-                            <div id="touch-body" class="touch-zone touch-body"></div>
-                            <div id="touch-legs" class="touch-zone touch-legs"></div>
-                            <div id="lobby-speech-bubble" class="speech-bubble"><span id="lobby-speech-text">...</span>
+                            <!-- touch-zones are removed because main.js uses coordinate calculation on the image itself -->
+                            <div id="lobby-speech-bubble"><span id="lobby-speech-text">...</span>
                             </div>
                             <div id="lobby-buttons"
                                 style="position:absolute; bottom:20px; right:20px; display:flex; flex-direction:column; gap:10px;">
@@ -144,220 +162,10 @@
                 <div id="content-summon" class="feature-view tab-content">
                     <div class="glass-panel full-height">
                         <div class="panel-header">
-                            <h3>차원 소환 (Dimension Summon)</h3>
-                        </div>
-                        <div style="display:flex; justify-content:center; gap:20px; margin-top:20px;">
-                            <div class="summon-box normal">
-                                <h4>일반 소환</h4>
-                                <p>300 Gold / 1회</p>
-                                <button id="btn-summon-n1" class="cyber-btn">1회 소환</button>
-                                <button id="btn-summon-n10" class="cyber-btn">10회 소환</button>
-                            </div>
-                            <div class="summon-box premium">
-                                <h4>프리미엄 소환</h4>
-                                <p>1 Gem / 1회</p>
-                                <button id="btn-summon-p1" class="cyber-btn premium">1회 소환</button>
-                                <button id="btn-summon-p10" class="cyber-btn premium">10+1회 소환</button>
-                            </div>
-                        </div>
-                        <div id="summon-result"
-                            style="margin-top:20px; min-height:200px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. Team View -->
-                <div id="content-team" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div class="panel-header">
-                            <h3>탐사대 관리 (Team Management)</h3>
-                            <button id="btn-set-main-deck" class="cyber-btn small" style="margin-left:auto;">대표 덱
-                                설정</button>
-                        </div>
-                        <div style="display:flex; gap:10px; margin-top:10px;">
-                            <button class="deck-tab active" data-deck="main">Main Deck</button>
-                            <button class="deck-tab" data-deck="sub1">Sub 1</button>
-                            <button class="deck-tab" data-deck="defense">Defense</button>
-                        </div>
-                        <div id="label-active-deck" style="margin:10px 0; font-size:0.9em; color:#aaa;">현재: 대표 덱</div>
-
-                        <div id="deck-slots" style="display:flex; gap:15px; justify-content:center; margin:20px 0;">
-                            <!-- Slots injected by JS -->
-                        </div>
-
-                        <div class="panel-header">
-                            <h3>보유 크리처 목록</h3>
-                        </div>
-                        <div id="deck-pool" class="scroll-custom"
-                            style="display:grid; grid-template-columns:repeat(auto-fill, minmax(80px, 1fr)); gap:10px; height:300px; padding:10px;">
-                            <!-- Pool injected by JS -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. Shop View -->
-                <div id="content-shop" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div class="panel-header">
-                            <h3>보급 상점 (Supply Shop)</h3>
-                        </div>
-                        <div id="shop-list" class="scroll-custom"
-                            style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:15px; padding:15px;">
-                            <!-- Items injected by JS -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Research & Mission Placeholders -->
-                <div id="content-research" class="feature-view tab-content">
-                    <div class="glass-panel">
-                        <h3>연구소 (준비중)</h3>
-                    </div>
-                </div>
-                <div id="content-mission" class="feature-view tab-content">
-                    <div class="glass-panel">
-                        <h3>미션 센터 (준비중)</h3>
-                    </div>
-                </div>
-
-                <!-- 4. Battle View (Existing) -->
-                <div id="content-battle" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div
-                            style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                            <h3 data-i18n="header.stage_operational">전술 작전 본부</h3>
-
-                            <div style="display:flex; align-items:center; gap:10px;">
-                                <!-- 배속 버튼 -->
-                                <div
-                                    style="display:flex; gap:2px; background:rgba(0,0,0,0.3); border-radius:4px; padding:2px;">
-                                    <button id="btn-speed-1" class="cyber-btn small active"
-                                        style="padding:4px 8px; font-size:0.8em; min-width:30px;">x1</button>
-                                    <button id="btn-speed-2" class="cyber-btn small"
-                                        style="padding:4px 8px; font-size:0.8em; min-width:30px;">x2</button>
-                                </div>
-
-                                <label class="toggle-container"
-                                    style="display:flex; align-items:center; gap:8px; cursor:pointer; background:rgba(255,112,67,0.1); padding:5px 12px; border-radius:20px; border:1px solid var(--accent-orange);">
-                                    <input type="checkbox" id="check-auto-battle" style="width:16px; height:16px;">
-                                    <span style="font-size:0.85em; font-weight:bold; color:var(--accent-orange);">자동 연속
-                                        전투</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="panel-header">
-                            <h2>전술 센터</h2>
-                        </div>
-                        <div style="padding: 20px;">
-                            <!-- Stage Selector -->
-                            <div id="stage-selector"
-                                style="margin-bottom: 20px; padding: 15px; background: rgba(0,0,0,0.3); border-radius: 8px;">
-                                <h3 style="color:white; margin-top:0;" data-i18n="label.stage_select">작전 구역 선택
-                                </h3>
-
-                                <!-- Dynamic Stage Info (Restored for JS) -->
-                                <div id="stage-title"
-                                    style="color: var(--accent-cyan); font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
-                                </div>
-                                <div id="stage-info" style="margin-bottom: 5px; color: #ccc;"></div>
-                                <div id="stage-rewards" style="margin-bottom: 15px; color: #f1c40f; font-size: 0.9em;">
-                                </div>
-
-                                <div style="display:flex; justify-content:space-between; align-items:center;">
-                                    <button id="btn-prev-stage" class="cyber-btn small">&lt;</button>
-                                    <button id="btn-next-stage" class="cyber-btn small">&gt;</button>
-                                </div>
-                            </div>
-
-                            <button id="btn-start-stage" class="cyber-btn action" data-i18n="btn.battle_start"
-                                style="width: 100%; padding: 20px; font-size: 1.2rem;">전투 개시 (START
-                                OPERATION)</button>
-
-                            <!-- PVP Section -->
-                            <div style="margin-top:20px; border-top:1px dashed #444; padding-top:15px;">
-                                <h3 style="color:#e74c3c;">PVP 대전</h3>
-
-                                <!-- Friend Match -->
-                                <div style="margin-bottom:15px;">
-                                    <input type="text" id="pvp-friend-code" class="cyber-input" placeholder="대전 코드 입력"
-                                        style="width:100%; box-sizing:border-box; margin-bottom:5px;">
-                                    <button id="btn-pvp-start" class="cyber-btn danger" style="width: 100%;">대전
-                                        매칭</button>
-                                </div>
-
-                                <!-- Lobby -->
-                                <div style="background:rgba(0,0,0,0.2); padding:10px; border-radius:4px;">
-                                    <div style="display:flex; gap:5px; margin-bottom:10px;">
-                                        <input type="text" id="pvp-search-input" class="cyber-input"
-                                            placeholder="유저 검색..." style="flex:1;">
-                                        <button id="btn-pvp-search" class="cyber-btn small">🔍</button>
-                                    </div>
-                                    <div id="pvp-user-list"
-                                        style="height:120px; overflow-y:auto; background:rgba(0,0,0,0.3); border:1px solid #333; padding:5px; font-size:0.8em;">
-                                        <!-- Dynamic List -->
-                                        <div style="text-align:center; padding-top:40px; color:#666;">검색 결과가 여기에 표시됩니다.
-                                        </div>
-                                    </div>
-
-                                    <!-- My Code Info -->
-                                    <div style="margin-top:10px;">
-                                        <button id="btn-show-my-code" class="cyber-btn small" style="width:100%;">내 코드
-                                            보기</button>
-                                        <div id="my-code-area"
-                                            style="display:none; margin-top:5px; padding:5px; background:#111; border:1px solid #333;">
-                                            <div style="font-size:0.8em; color:#888; margin-bottom:3px;">아래 코드를 친구에게
-                                                공유하세요</div>
-                                            <div id="my-code-display"
-                                                style="color:#2ecc71; font-family:monospace; font-weight:bold; word-break:break-all;">
-                                                -</div>
-                                            <button id="btn-get-my-code" class="cyber-btn small action"
-                                                style="width:100%; margin-top:5px;">코드 생성</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. Team View (Preserved) -->
-                <div id="content-team" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div class="panel-header">
-                            <h2>탐사대 관리</h2>
+                            <h3>차원 소환 (SUMMON)</h3>
                         </div>
                         <div
-                            style="display:flex; gap:10px; margin-bottom:15px; border-bottom:1px solid #444; padding-bottom:10px;">
-                            <button class="cyber-btn small deck-tab" data-deck="0">덱 1</button>
-                            <button class="cyber-btn small deck-tab" data-deck="1">덱 2</button>
-                            <button class="cyber-btn small deck-tab" data-deck="2">덱 3</button>
-                        </div>
-                        <div
-                            style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-                            <span id="label-active-deck" style="color:#aaa;">현재: 서브 덱</span>
-                            <button id="btn-set-main-deck" class="cyber-btn small active-btn">대표 팀으로 설정</button>
-                        </div>
-                        <div style="display:flex; justify-content:space-around; padding:20px; background:rgba(0,0,0,0.2); margin-top:20px; border-radius:8px;"
-                            id="deck-slots"></div>
-                        <div style="text-align:center; margin-top:10px; color:#666; font-size:0.9em;"
-                            data-i18n="label.pool_stats">슬롯을 클릭하여 출전 크리처를 변경하세요.</div>
-
-                        <!-- [덱 풀] -->
-                        <h4 style="margin-top:20px; border-bottom:1px solid #444; padding-bottom:5px;">보유 크리처</h4>
-                        <div id="deck-pool"
-                            style="display:grid; grid-template-columns:repeat(5, 1fr); gap:5px; margin-top:10px; max-height:300px; overflow-y:auto; padding:5px; background:rgba(0,0,0,0.2); border-radius:4px;">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3.x Summon View -->
-                <div id="content-summon" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div class="panel-header">
-                            <h2>소환 제단 (SUMMONING ALTAR)</h2>
-                        </div>
-                        <div
-                            style="padding:20px; text-align:center; display:flex; flex-direction:column; align-items:center; height:100%; justify-content:center;">
+                            style="padding:20px; text-align:center; display:flex; flex-direction:column; align-items:center; height:calc(100% - 60px); justify-content:center;">
                             <!-- Result Area -->
                             <div id="summon-result"
                                 style="flex:1; width:100%; display:flex; justify-content:center; align-items:center; flex-direction:column; min-height:200px;">
@@ -402,144 +210,135 @@
                     </div>
                 </div>
 
-                <!-- 4. Shop View (Preserved) -->
-                <div id="content-shop" class="feature-view tab-content">
+
+                <!-- 2. Team View -->
+                <div id="content-team" class="feature-view tab-content">
                     <div class="glass-panel full-height">
                         <div class="panel-header">
-                            <h2>보급소</h2>
+                            <h2>탐사대 관리 (TEAM)</h2>
                         </div>
-                        <div id="ad-banner-area"
-                            style="margin:20px; padding:30px; border:1px dashed var(--border-accent); text-align:center; color:var(--accent-primary); cursor:pointer;">
-                            [광고] 영상 시청 (+100 젬)
+                        <div style="padding:15px; flex:1; overflow-y:auto;">
+                            <div
+                                style="display:flex; gap:10px; margin-bottom:15px; border-bottom:1px solid #444; padding-bottom:10px;">
+                                <button class="cyber-btn small deck-tab active" data-deck="main">대표 덱</button>
+                                <button class="cyber-btn small deck-tab" data-deck="sub1">보조 덱 1</button>
+                                <button class="cyber-btn small deck-tab" data-deck="defense">방어 덱</button>
+                            </div>
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                                <span id="label-active-deck" style="color:var(--accent-primary); font-size:0.9em;">현재:
+                                    대표 덱</span>
+                                <button id="btn-set-main-deck" class="cyber-btn small active-btn">대표 팀으로 설정</button>
+                            </div>
+                            <div id="deck-slots"
+                                style="display:flex; justify-content:space-around; padding:20px; background:rgba(0,0,0,0.2); border-radius:8px; margin-bottom:20px;">
+                            </div>
+                            <h4 style="margin-top:20px; border-bottom:1px solid #444; padding-bottom:5px;">보유 크리처</h4>
+                            <div id="deck-pool"
+                                style="display:grid; grid-template-columns:repeat(auto-fill, minmax(75px, 1fr)); gap:10px; margin-top:10px; max-height:450px; overflow-y:auto; padding:5px;">
+                            </div>
                         </div>
-                        <div id="shop-list" class="shop-grid"></div>
                     </div>
                 </div>
 
-                <!-- 5. Mission View -->
+                <!-- 3. Battle View -->
+                <div id="content-battle" class="feature-view tab-content">
+                    <div class="glass-panel full-height">
+                        <div class="panel-header">
+                            <h2>전투 시뮬레이션 (BATTLE)</h2>
+                        </div>
+                        <div style="padding:20px; text-align:center; overflow-y: auto; height:calc(100% - 60px);">
+                            <div
+                                style="background:rgba(255,112,67,0.05); padding:20px; border-radius:12px; margin-bottom:25px; border:1px solid rgba(255,112,67,0.2);">
+                                <h3 id="stage-title"
+                                    style="font-size:1.5rem; margin-bottom:10px; color:var(--accent-orange);">Stage 1
+                                </h3>
+                                <div id="stage-info" style="margin-bottom:10px; color:#aaa; font-size:0.9em;">로드 중...
+                                </div>
+                                <div id="stage-rewards" style="margin-bottom:20px; color:#ddd; font-size:0.95em;">로드
+                                    중...</div>
+                                <div style="display:flex; justify-content:center; gap:20px; margin-bottom:15px;">
+                                    <button id="btn-prev-stage" class="cyber-btn small">&lt;</button>
+                                    <button id="btn-start-stage" class="cyber-btn action"
+                                        style="padding:15px 35px; font-size:1.15rem;">⚔️ 작전 개시</button>
+                                    <button id="btn-next-stage" class="cyber-btn small">&gt;</button>
+                                </div>
+                                <label style="cursor:pointer; font-size:0.85em; opacity:0.8;"><input type="checkbox"
+                                        id="check-auto-battle"> 자동 전투 반복</label>
+                            </div>
+                            <hr style="border:0; border-top:1px solid #444; margin:30px 0;">
+                            <div class="pvp-section">
+                                <h3 style="color:var(--accent-gold); margin-bottom:15px;">🛡️ PVP 아레나</h3>
+                                <div style="display:flex; gap:10px; margin-bottom:15px;">
+                                    <input type="text" id="pvp-search-input" placeholder="라이벌 검색..." class="cyber-input"
+                                        style="flex:1;">
+                                    <button id="btn-pvp-search" class="cyber-btn">검색</button>
+                                </div>
+                                <div id="pvp-user-list"
+                                    style="min-height:150px; background:rgba(0,0,0,0.2); padding:10px; border-radius:12px; border:1px solid #333;">
+                                </div>
+                                <div style="margin-top:15px; display:flex; justify-content:center; gap:10px;">
+                                    <button id="btn-pvp-start" class="cyber-btn small">대전 코드 입력</button>
+                                    <input type="text" id="pvp-friend-code" class="cyber-input"
+                                        style="width:100px; display:none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Expedition View -->
+                <div id="content-expedition" class="feature-view tab-content">
+                    <div class="glass-panel full-height">
+                        <div class="panel-header">
+                            <h2>탐사 본부 (EXPEDITION)</h2>
+                        </div>
+                        <div style="padding:15px; overflow-y:auto; height:calc(100% - 60px);">
+                            <h3 style="border-bottom: 1px solid #444; padding-bottom: 8px;">진행 중인 탐사</h3>
+                            <div id="active-expedition-list" style="min-height: 50px; margin-bottom:20px;"></div>
+                            <h3 style="border-bottom: 1px solid #444; padding-bottom: 8px;">탐사 구역</h3>
+                            <div id="expedition-list" class="grid-expedition" style="margin-top:15px;"></div>
+                            <label style="margin-top:10px; display:block;"><input type="checkbox"
+                                    id="check-auto-repeat"> 탐사 자동 반복</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Research View -->
+                <div id="content-research" class="feature-view tab-content">
+                    <div class="glass-panel full-height">
+                        <div class="panel-header">
+                            <h2>연구소 (LAB)</h2>
+                        </div>
+                        <div id="facility-list" style="padding:15px; overflow-y:auto; height:calc(100% - 60px);"></div>
+                    </div>
+                </div>
+
+                <!-- 6. Mission View -->
                 <div id="content-mission" class="feature-view tab-content">
                     <div class="glass-panel full-height">
                         <div class="panel-header">
-                            <h2>미션 센터</h2>
+                            <h2>미션 센터 (MISSION)</h2>
                         </div>
-                        <div style="padding: 10px;">
-                            <h3 style="border-bottom: 1px solid #444; padding-bottom: 5px;">일일 미션</h3>
-                            <div id="daily-quest-list" style="margin-bottom: 20px;"></div>
-
-                            <h3 style="border-bottom: 1px solid #444; padding-bottom: 5px;">업적</h3>
+                        <div style="padding: 15px; overflow-y:auto; height:calc(100% - 60px);">
+                            <h3 style="border-bottom: 1px solid #444; padding-bottom: 8px;">일일 미션</h3>
+                            <div id="daily-quest-list" style="margin-bottom: 25px;"></div>
+                            <h3 style="border-bottom: 1px solid #444; padding-bottom: 8px;">업적</h3>
                             <div id="achievement-list"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 6. Expedition View (Restored) -->
-                <div id="content-expedition" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div class="panel-header">
-                            <h2 data-i18n="header.expedition">탐사 본부 (EXPEDITION)</h2>
-                        </div>
-                        <div style="margin-bottom: 20px;">
-                            <h3 style="border-bottom: 1px solid #444; padding-bottom: 5px;"
-                                data-i18n="header.active_expedition">진행 중인 탐사</h3>
-                            <div id="active-expedition-list" style="min-height: 50px;"></div>
-                        </div>
-                        <div>
-                            <h3 style="border-bottom: 1px solid #444; padding-bottom: 5px;"
-                                data-i18n="header.expedition_zones">탐사 구역</h3>
-                            <div class="expedition-controls"
-                                style="margin-top:20px; display:flex; align-items:center; gap:15px; background:rgba(255,255,255,0.05); padding:10px; border-radius:8px;">
-                                <label class="toggle-container"
-                                    style="display:flex; align-items:center; gap:8px; cursor:pointer;">
-                                    <input type="checkbox" id="check-auto-repeat" style="width:18px; height:18px;">
-                                    <span style="font-size:0.9em; font-weight:bold; color:var(--accent-cyan);">탐사 자동
-                                        반복</span>
-                                </label>
-                                <div style="font-size:0.8em; opacity:0.6;">(완료 시 동일한 크리처로 재파견됩니다)</div>
-                            </div>
-
-                            <div id="expedition-list" class="grid-expedition" style="margin-top:20px;">
-                                <!-- Expedition items will be injected here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 7. Research View (Restored) -->
-                <div id="content-research" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div class="panel-header">
-                            <h2>연구소</h2>
-                        </div>
-                        <div id="facility-list" style="padding:20px; overflow-y:auto;"></div>
-                    </div>
-                </div>
-
-                <div id="content-prestige" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div class="panel-header">
-                            <h2 style="color:var(--accent-purple);">차원 도약 (DIMENSION LEAP)</h2>
-                        </div>
-                        <div style="padding: 20px; text-align: center;">
-                            <div
-                                style="background: rgba(171,71,188,0.1); border: 1px solid var(--accent-purple); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
-                                <div style="font-size: 0.9em; color: var(--accent-purple); margin-bottom: 10px;">누적된 차원
-                                    조각</div>
-                                <div id="prestige-shards-total"
-                                    style="font-size: 2.5em; font-weight: bold; font-family: 'Orbitron'; color: #fff; text-shadow: 0 0 10px var(--accent-purple);">
-                                    0</div>
-                                <div style="font-size: 0.8em; opacity: 0.7; margin-top: 5px;">현재 스테이지 기준 획득 예정: <span
-                                        id="prestige-shards-pending" style="color:var(--accent-gold);">0</span></div>
-                            </div>
-
-                            <button id="btn-execute-prestige" class="cyber-btn"
-                                style="width: 100%; padding: 20px; font-size: 1.2rem; background: linear-gradient(135deg, #6a1b9a, #ab47bc); border: none; box-shadow: 0 0 20px rgba(171,71,188,0.4); margin-bottom: 40px;">
-                                🌀 차원 도약 실행 (전체 초기화)
-                            </button>
-
-                            <h3
-                                style="text-align: left; border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 20px;">
-                                영구 영혼 강화</h3>
-                            <div class="prestige-upgrades-grid"
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                                <button class="prestige-upgrade-btn" data-type="attack_multi"
-                                    style="background: rgba(255,255,255,0.05); border: 1px solid #444; padding: 15px; border-radius: 8px; color: #fff; cursor: pointer;">
-                                    <div style="font-size: 0.8em; opacity: 0.6;">공격력 강화</div>
-                                    <div class="lv" style="font-weight: bold; color: var(--accent-primary);">Lv.<span
-                                            class="val">0</span></div>
-                                    <div style="font-size: 0.7em; margin-top: 5px; color: var(--accent-gold);">비용: <span
-                                            class="cost">10</span></div>
-                                </button>
-                                <button class="prestige-upgrade-btn" data-type="gold_multi"
-                                    style="background: rgba(255,255,255,0.05); border: 1px solid #444; padding: 15px; border-radius: 8px; color: #fff; cursor: pointer;">
-                                    <div style="font-size: 0.8em; opacity: 0.6;">골드 획득</div>
-                                    <div class="lv" style="font-weight: bold; color: var(--accent-cyan);">Lv.<span
-                                            class="val">0</span></div>
-                                    <div style="font-size: 0.7em; margin-top: 5px; color: var(--accent-gold);">비용: <span
-                                            class="cost">10</span></div>
-                                </button>
-                                <button class="prestige-upgrade-btn" data-type="exp_multi"
-                                    style="background: rgba(255,255,255,0.05); border: 1px solid #444; padding: 15px; border-radius: 8px; color: #fff; cursor: pointer;">
-                                    <div style="font-size: 0.8em; opacity: 0.6;">성장 속도</div>
-                                    <div class="lv" style="font-weight: bold; color: var(--accent-magenta);">Lv.<span
-                                            class="val">0</span></div>
-                                    <div style="font-size: 0.7em; margin-top: 5px; color: var(--accent-gold);">비용: <span
-                                            class="cost">10</span></div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 8. Shop View (Restored) -->
+                <!-- 7. Shop View -->
                 <div id="content-shop" class="feature-view tab-content">
                     <div class="glass-panel full-height">
                         <div class="panel-header">
-                            <h2>보급소</h2>
+                            <h2>보급소 (SHOP)</h2>
                         </div>
-                        <div style="flex:1; overflow-y:auto; padding:15px;">
+                        <div style="padding:15px; overflow-y:auto; height:calc(100% - 60px);">
                             <div id="ad-banner"
-                                style="height:80px; background:linear-gradient(45deg, #ff00cc, #333399); margin-bottom:20px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:bold; color:white; text-shadow:0 0 5px rgba(0,0,0,0.5);">
-                                ✨ 특별 프로모션 패키지 판매 중!
-                            </div>
+                                style="height:80px; background:linear-gradient(45deg, #ff00cc, #333399); margin-bottom:20px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:bold; color:white;">
+                                ✨ 광고 보상: 50 젬</div>
                             <div id="shop-list"
                                 style="display:grid; grid-template-columns:repeat(auto-fill, minmax(140px, 1fr)); gap:15px;">
                             </div>
@@ -547,71 +346,32 @@
                     </div>
                 </div>
 
-                <!-- 9. Battle View (Restored) -->
-                <div id="content-battle" class="feature-view tab-content">
+                <!-- 8. Prestige View -->
+                <div id="content-prestige" class="feature-view tab-content">
                     <div class="glass-panel full-height">
                         <div class="panel-header">
-                            <h2>전투 시뮬레이션</h2>
+                            <h2 style="color:var(--accent-purple);">차원 도약 (PRESTIGE)</h2>
                         </div>
-                        <div style="padding:20px; text-align:center; overflow-y: auto;">
-                            <h3 id="stage-title" style="font-size:1.5rem; margin-bottom:10px;">Stage 1</h3>
-                            <div id="stage-info" style="margin-bottom:15px; color:#aaa;"></div>
-                            <div id="stage-rewards" style="margin-bottom:20px; color:#ddd;"></div>
-
-                            <div style="display:flex; justify-content:center; gap:20px; margin-bottom:30px;">
-                                <button id="btn-prev-stage" class="cyber-btn small">&lt; 이전</button>
-                                <button id="btn-start-stage" class="cyber-btn action"
-                                    style="padding:15px 40px; font-size:1.2rem;">⚔️ 전투 시작</button>
-                                <button id="btn-next-stage" class="cyber-btn small">다음 &gt;</button>
+                        <div style="padding: 20px; text-align: center; overflow-y:auto; height:calc(100% - 60px);">
+                            <div
+                                style="background: rgba(171,71,188,0.1); border: 1px solid var(--accent-purple); padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+                                <div style="font-size: 0.9em; color: var(--accent-purple); margin-bottom: 10px;">누적된 차원
+                                    조각</div>
+                                <div id="prestige-shards-total"
+                                    style="font-size: 2.2rem; font-weight: bold; color: #fff;">0</div>
+                                <div style="font-size: 0.8em; opacity: 0.7; margin-top: 5px;">예정: <span
+                                        id="prestige-shards-pending" style="color:var(--accent-gold);">0</span></div>
                             </div>
-
-                            <div style="margin-bottom:20px;">
-                                <label style="cursor:pointer; user-select:none;"><input type="checkbox"
-                                        id="check-auto-battle"> 자동 전투 반복</label>
+                            <button id="btn-execute-prestige" class="cyber-btn"
+                                style="width: 100%; padding: 15px; background: linear-gradient(135deg, #6a1b9a, #ab47bc); margin-bottom: 20px;">🌀
+                                차원 도약 실행</button>
+                            <div class="prestige-upgrades-grid"
+                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;">
                             </div>
-
-                            <hr style="border:0; border-top:1px solid #444; margin:30px 0;">
-
-                            <h4>PvP 아레나</h4>
-                            <div style="display:flex; gap:10px; margin-bottom:15px; margin-top:10px;">
-                                <input type="text" id="pvp-search-input" placeholder="상대 검색..." class="cyber-input"
-                                    style="flex:1;">
-                                <button id="btn-pvp-search" class="cyber-btn">검색</button>
-                            </div>
-                            <div id="pvp-user-list"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 10. Team View (Restored) -->
-                <div id="content-team" class="feature-view tab-content">
-                    <div class="glass-panel full-height">
-                        <div class="panel-header">
-                            <h2>탐사대 편성</h2>
-                            <div id="label-active-deck" style="font-size:0.9em; margin-left:15px;"></div>
-                        </div>
-                        <div style="padding:15px; flex:1; overflow-y:auto;">
-                            <!-- Deck Tabs -->
-                            <div style="display:flex; gap:10px; margin-bottom:15px;">
-                                <button class="deck-tab active" data-deck="main"
-                                    style="padding:5px 15px; background:rgba(255,255,255,0.1); border-radius:4px; border:none; color:white; cursor:pointer;">MAIN</button>
-                                <button class="deck-tab" data-deck="sub1"
-                                    style="padding:5px 15px; background:rgba(255,255,255,0.1); border-radius:4px; border:none; color:white; cursor:pointer;">SUB
-                                    1</button>
-                            </div>
-                            <!-- Slots -->
-                            <div id="deck-slots"
-                                style="display:flex; gap:10px; justify-content:center; margin-bottom:20px; flex-wrap:wrap;">
-                            </div>
-                            <button id="btn-set-main-deck" class="cyber-btn"
-                                style="width:100%; display:none; margin-bottom:20px;">이 덱을 대표 덱으로 설정</button>
-
-                            <h4 style="margin:20px 0 10px;">보유 크리처</h4>
-                            <p style="color:#666; font-size:0.9em;">(홈 화면의 목록과 연동됩니다)</p>
-                            <!-- Note: Creature List is in Home Tab, logic needs revisit via UIManager moving it or cloning -->
-                        </div>
-                    </div>
-                </div>
             </div> <!-- End of content-viewport -->
         </main>
 
@@ -919,7 +679,7 @@
     </div>
 
     <script src="js/debug_overlay.js"></script>
-    <script type="module" src="js/main.js?v=resonance_v3_date"></script>
+    <script type="module" src="js/main.js?v=resonance_v3_final"></script>
 </body>
 
 </html>

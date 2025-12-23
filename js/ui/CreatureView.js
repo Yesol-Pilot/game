@@ -12,6 +12,16 @@ export default class CreatureView extends BaseView {
             }
         });
 
+        // [NEW] Tab Switching Logic
+        const tabInventory = document.getElementById('tab-btn-inventory');
+        const tabArchive = document.getElementById('tab-btn-archive');
+        this.currentTab = 'inventory'; // Default
+
+        if (tabInventory && tabArchive) {
+            tabInventory.addEventListener('click', () => this.switchTab('inventory'));
+            tabArchive.addEventListener('click', () => this.switchTab('archive'));
+        }
+
         // 자동 합성 버튼
         if (this.ui.btnAutoCompose) {
             this.ui.btnAutoCompose.addEventListener('click', () => this.handleAutoCompose());
@@ -31,6 +41,76 @@ export default class CreatureView extends BaseView {
         });
     }
 
+    switchTab(tabName) {
+        this.currentTab = tabName;
+
+        // Update Tab UI
+        const tabInventory = document.getElementById('tab-btn-inventory');
+        const tabArchive = document.getElementById('tab-btn-archive');
+
+        if (this.currentTab === 'inventory') {
+            tabInventory.classList.add('active');
+            tabInventory.style.borderBottom = '2px solid var(--accent-cyan)';
+            tabInventory.style.color = 'white';
+
+            tabArchive.classList.remove('active');
+            tabArchive.style.borderBottom = '2px solid transparent';
+            tabArchive.style.color = '#888';
+
+            document.getElementById('archive-stats').style.display = 'none';
+        } else {
+            tabArchive.classList.add('active');
+            tabArchive.style.borderBottom = '2px solid var(--accent-cyan)';
+            tabArchive.style.color = 'white';
+
+            tabInventory.classList.remove('active');
+            tabInventory.style.borderBottom = '2px solid transparent';
+            tabInventory.style.color = '#888';
+
+            document.getElementById('archive-stats').style.display = 'block';
+        }
+
+        this.renderCreatureList();
+    }
+
+    switchTab(tabName) {
+        this.currentTab = tabName;
+
+        // Update Tab UI
+        const tabInventory = document.getElementById('tab-btn-inventory');
+        const tabArchive = document.getElementById('tab-btn-archive');
+
+        if (this.currentTab === 'inventory') {
+            if (tabInventory) {
+                tabInventory.classList.add('active');
+                tabInventory.style.borderBottom = '2px solid var(--accent-cyan)';
+                tabInventory.style.color = 'white';
+            }
+            if (tabArchive) {
+                tabArchive.classList.remove('active');
+                tabArchive.style.borderBottom = '2px solid transparent';
+                tabArchive.style.color = '#888';
+            }
+            const stats = document.getElementById('archive-stats');
+            if (stats) stats.style.display = 'none';
+        } else {
+            if (tabArchive) {
+                tabArchive.classList.add('active');
+                tabArchive.style.borderBottom = '2px solid var(--accent-cyan)';
+                tabArchive.style.color = 'white';
+            }
+            if (tabInventory) {
+                tabInventory.classList.remove('active');
+                tabInventory.style.borderBottom = '2px solid transparent';
+                tabInventory.style.color = '#888';
+            }
+            const stats = document.getElementById('archive-stats');
+            if (stats) stats.style.display = 'block';
+        }
+
+        this.renderCreatureList();
+    }
+
     render() {
         this.renderCreatureList();
     }
@@ -40,6 +120,18 @@ export default class CreatureView extends BaseView {
      */
     renderCreatureList() {
         if (!this.ui.creatureList) return;
+
+        // [Archive] Stats Update (visible only in archive mode)
+        if (this.currentTab === 'archive') {
+            const cm = this.game.creatureManager;
+            const allDefs = cm.getAllCreatureDefs();
+            const uniqueOwned = new Set(cm.owned.map(c => c.dataId)).size;
+
+            const statsEl = document.getElementById('archive-stats');
+            if (statsEl) {
+                statsEl.innerText = `수집 현황: ${uniqueOwned} / ${allDefs.length} (${(uniqueOwned / allDefs.length * 100).toFixed(1)}%)`;
+            }
+        }
 
         const list = this._getFilteredAndSortedCreatures();
         this.ui.creatureList.innerHTML = '';
@@ -56,16 +148,42 @@ export default class CreatureView extends BaseView {
             return;
         }
 
+        let lastWorld = null;
+
         list.forEach(c => {
+            // [World Separator]
+            if (this.ui.sortOrder && this.ui.sortOrder.value === 'world') {
+                const currentWorld = c.def.world || 'Unknown';
+                if (currentWorld !== lastWorld) {
+                    const sep = document.createElement('div');
+                    sep.className = 'world-separator';
+                    sep.style.gridColumn = '1/-1';
+                    sep.style.marginTop = '15px';
+                    sep.style.marginBottom = '5px';
+                    sep.style.borderBottom = '1px solid rgba(255,255,255,0.2)';
+                    sep.style.paddingBottom = '5px';
+                    sep.style.color = 'var(--accent-gold)';
+                    sep.style.fontSize = '0.9em';
+                    sep.style.fontWeight = 'bold';
+                    sep.innerText = `🌍 ${currentWorld}`;
+                    this.ui.creatureList.appendChild(sep);
+                    lastWorld = currentWorld;
+                }
+            }
+
             const div = document.createElement('div');
+            // isUnobtained check
+            const isUnobtained = !!c.isUnobtained;
+
             div.className = `creature-card-mini rarity-${c.def.rarity}`;
-            div.dataset.instanceId = c.instanceId;
+            if (!isUnobtained) div.dataset.instanceId = c.instanceId;
+            if (isUnobtained) div.classList.add('locked'); // CSS grayscale
 
             // 속성 아이콘 맵
             const elementIcons = { 'fire': '🔥', 'water': '💧', 'earth': '🌿', 'light': '✨', 'dark': '🌙' };
             const elementIcon = elementIcons[c.def.element] || '';
 
-            // 등급 배지 (유저 요청: 물음표 아이콘 -> 랭크 등급)
+            // 등급 배지
             const rarityBadge = c.def.rarity === 'Normal' ? 'N' :
                 c.def.rarity === 'Unique' ? 'U' :
                     c.def.rarity === 'Rare' ? 'R' :
@@ -80,7 +198,7 @@ export default class CreatureView extends BaseView {
                 div.style.border = '2px solid #238636';
             }
 
-            const lockIcon = c.isLocked ? '<span style="position:absolute; top:5px; right:5px; font-size:12px; z-index:20;">🔒</span>' : '';
+            const lockIcon = (!isUnobtained && c.isLocked) ? '<span style="position:absolute; top:5px; right:5px; font-size:12px; z-index:20;">🔒</span>' : '';
 
             div.innerHTML = `
                 <div class="element-badge" style="font-weight:900; font-size:0.9em;">${rarityBadge}</div>
@@ -88,30 +206,35 @@ export default class CreatureView extends BaseView {
                 ${lockIcon}
                 <div class="card-overlay">
                     <div class="card-name">${elementIcon} ${c.def.name}</div>
-                    <div class="card-stats">Lv.${c.level} | ${'★'.repeat(c.star)}</div>
+                    <div class="card-stats">${isUnobtained ? '미획득' : `Lv.${c.level} | ${'★'.repeat(c.star)}`}</div>
                 </div>
             `;
 
-            div.onclick = () => {
-                if (isDeckMode) {
-                    this._handleDeckSelect(c, currentDeckIds);
-                } else {
-                    this.game.creatureManager.selectCreature(c.instanceId);
-                    // 로비 캐릭터 변경
-                    const lobbyImg = document.getElementById('lobby-character-img');
-                    if (lobbyImg && c.def) {
-                        lobbyImg.src = c.def.image;
-                        lobbyImg.alt = c.def.name;
-                        // localStorage에 저장
-                        localStorage.setItem('lobbyCharacter', JSON.stringify({
-                            image: c.def.image,
-                            name: c.def.name,
-                            instanceId: c.instanceId
-                        }));
-                        this.uiManager.addLog(`로비 캐릭터를 ${c.def.name}(으)로 변경했습니다.`, 'success');
+            if (!isUnobtained) {
+                div.onclick = () => {
+                    if (isDeckMode) {
+                        this._handleDeckSelect(c, currentDeckIds);
+                    } else {
+                        this.game.creatureManager.selectCreature(c.instanceId);
+                        // 로비 캐릭터 변경 Logic
+                        const lobbyImg = document.getElementById('lobby-character-img');
+                        if (lobbyImg && c.def) {
+                            lobbyImg.src = c.def.image;
+                            lobbyImg.alt = c.def.name;
+                            localStorage.setItem('lobbyCharacter', JSON.stringify({
+                                image: c.def.image,
+                                name: c.def.name,
+                                instanceId: c.instanceId
+                            }));
+                            this.uiManager.addLog(`로비 캐릭터를 ${c.def.name}(으)로 변경했습니다.`, 'success');
+                        }
                     }
-                }
-            };
+                };
+            } else {
+                div.onclick = () => {
+                    // Toast or Alert for unobtained
+                };
+            }
             this.ui.creatureList.appendChild(div);
         });
     }
@@ -478,7 +601,36 @@ export default class CreatureView extends BaseView {
     // --- 내부 헬퍼 메서드 ---
 
     _getFilteredAndSortedCreatures() {
-        let list = [...(this.game.creatureManager.owned || [])];
+        let list = [];
+        const isDeckMode = this.ui.creatureList.classList.contains('mode-deck-select');
+
+        // [Archive Mode]
+        if (this.currentTab === 'archive' && !isDeckMode) {
+            const allDefs = this.game.creatureManager.getAllCreatureDefs();
+            const owned = this.game.creatureManager.owned;
+
+            list = allDefs.map(def => {
+                // Find best owned instance (highest star, then level)
+                const ownedInstances = owned.filter(c => c.dataId === def.id);
+                if (ownedInstances.length > 0) {
+                    ownedInstances.sort((a, b) => (b.star - a.star) || (b.level - a.level));
+                    return ownedInstances[0]; // Return best instance
+                } else {
+                    // Create unobtained placeholder
+                    return {
+                        instanceId: 'unobtained_' + def.id,
+                        dataId: def.id,
+                        def: def,
+                        level: 0,
+                        star: 0,
+                        isUnobtained: true
+                    };
+                }
+            });
+        } else {
+            // Normal Inventory Mode (Owned Only)
+            list = [...(this.game.creatureManager.owned || [])];
+        }
 
         const rFilter = this.ui.filterRarity ? this.ui.filterRarity.value : 'all';
         const eFilter = this.ui.filterElement ? this.ui.filterElement.value : 'all';
@@ -501,6 +653,14 @@ export default class CreatureView extends BaseView {
                 return (ra !== rb) ? rb - ra : b.level - a.level;
             } else if (sort === 'level_desc') {
                 return (a.level !== b.level) ? b.level - a.level : (rarityRank[b.def.rarity] || 0) - (rarityRank[a.def.rarity] || 0);
+            } else if (sort === 'world') {
+                // Sort by World -> Rarity -> Name
+                const wa = a.def.world || 'ZZZ'; // Unknown last
+                const wb = b.def.world || 'ZZZ';
+                if (wa !== wb) return wa.localeCompare(wb);
+                const ra = rarityRank[a.def.rarity] || 0;
+                const rb = rarityRank[b.def.rarity] || 0;
+                return rb - ra;
             } else if (sort === 'recent') {
                 return b.instanceId - a.instanceId;
             }

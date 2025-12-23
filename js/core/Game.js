@@ -299,4 +299,13 @@ export default class Game {
         if (elGem) elGem.innerText = res.gem.toLocaleString();
         if (elEnergy) elEnergy.innerText = `${res.energy} / ${res.maxEnergy}`;
     }
+
+    /**
+     * @description 사운드 효과 재생 (현재 스텁)
+     * @param {string} soundId - 재생할 사운드 식별자
+     */
+    playSound(soundId) {
+        console.log(`[Sound] ${soundId} 재생 시도 (에셋 미구현)`);
+        // TODO: Web Audio API 또는 Audio 객체를 이용한 실제 재생 로직
+    }
 }

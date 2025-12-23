@@ -10,7 +10,39 @@ export default class DeckManager extends EventEmitter {
             [null, null, null, null, null]  // Deck 2
         ];
         this.mainDeck = 0; // Representative Deck index
-        this.currentEditingDeck = 0; // Currently editing deck (0, 1, or 2)
+        this.currentEditingDeck = 'main'; // Currently editing deck ('main', 'sub1', 'defense')
+    }
+
+    /**
+     * 문자열 덱 ID를 숫자 인덱스로 변환
+     * @param {number|string} deckId 
+     * @returns {number}
+     */
+    _toIndex(deckId) {
+        if (typeof deckId === 'number') return deckId;
+        if (deckId === 'main' || deckId === '0') return 0;
+        if (deckId === 'sub1' || deckId === '1') return 1;
+        if (deckId === 'defense' || deckId === '2') return 2;
+        return parseInt(deckId, 10) || 0;
+    }
+
+    /**
+     * 덱 데이터 배열 반환 (문자열/숫자 ID 모두 지원)
+     * @param {number|string} deckId 
+     * @returns {Array}
+     */
+    getDeck(deckId) {
+        const idx = this._toIndex(deckId);
+        return this.decks[idx] || [];
+    }
+
+    /**
+     * 현재 대표 덱 ID 반환 (문자열 키 형식)
+     * @returns {string}
+     */
+    get activeDeckId() {
+        const names = ['main', 'sub1', 'defense'];
+        return names[this.mainDeck] || 'main';
     }
 
     init() {
@@ -29,7 +61,7 @@ export default class DeckManager extends EventEmitter {
         if (!state) return;
         this.decks = state.decks || this.decks;
         this.mainDeck = state.mainDeck !== undefined ? state.mainDeck : 0;
-        this.currentEditingDeck = state.currentEditingDeck !== undefined ? state.currentEditingDeck : 0;
+        this.currentEditingDeck = state.currentEditingDeck !== undefined ? state.currentEditingDeck : 'main';
         this.emit('decks:updated', this.decks);
     }
 
@@ -56,7 +88,9 @@ export default class DeckManager extends EventEmitter {
     }
 
     setCreature(deckIndex, slotIndex, creatureId) {
-        if (!this.decks[deckIndex]) return false;
+        const idx = this._toIndex(deckIndex);
+
+        if (!this.decks[idx]) return false;
         if (slotIndex < 0 || slotIndex >= 5) return false;
 
         if (creatureId !== null) {
@@ -64,32 +98,37 @@ export default class DeckManager extends EventEmitter {
             if (!creature) return false;
 
             // Remove from other slots in THIS deck if present
-            const existingIdx = this.decks[deckIndex].indexOf(creatureId);
+            const existingIdx = this.decks[idx].indexOf(creatureId);
             if (existingIdx !== -1 && existingIdx !== slotIndex) {
-                this.decks[deckIndex][existingIdx] = null;
+                this.decks[idx][existingIdx] = null;
             }
         }
 
-        this.decks[deckIndex][slotIndex] = creatureId;
+        this.decks[idx][slotIndex] = creatureId;
         this.save();
         return true;
     }
 
     removeCreature(deckIndex, slotIndex) {
-        if (!this.decks[deckIndex]) return;
-        this.decks[deckIndex][slotIndex] = null;
+        const idx = this._toIndex(deckIndex);
+
+        if (!this.decks[idx]) return;
+        this.decks[idx][slotIndex] = null;
         this.save();
     }
 
     setActiveDeck(deckIndex) {
-        if (this.decks[deckIndex]) {
-            this.mainDeck = deckIndex;
+        const idx = this._toIndex(deckIndex);
+
+        if (this.decks[idx]) {
+            this.mainDeck = idx;
             this.save();
         }
     }
 
     getDeckTeam(deckIndex) {
-        const ids = this.decks[deckIndex] || [];
+        const idx = this._toIndex(deckIndex);
+        const ids = this.decks[idx] || [];
         return ids.map(id => {
             if (!id) return null;
             return this.game.creatureManager.getCreatureById(id);
@@ -102,5 +141,33 @@ export default class DeckManager extends EventEmitter {
 
     getActiveTeam() {
         return this.getDeckTeam(this.mainDeck);
+    }
+
+    /**
+     * @description Add a creature to the first empty slot of the specified deck
+     * @param {number|string} deckIndex 
+     * @param {string} creatureId 
+     * @returns {boolean} Success or failure
+     */
+    addToDeck(deckIndex, creatureId) {
+        const idx = this._toIndex(deckIndex);
+
+        if (!this.decks[idx]) return false;
+
+        const deck = this.decks[idx];
+
+        // Check if already in deck
+        if (deck.includes(creatureId)) {
+            return false; // Already equipped
+        }
+
+        // Find first empty slot
+        const emptySlot = deck.indexOf(null);
+        if (emptySlot === -1) {
+            return false; // Deck full
+        }
+
+        this.setCreature(idx, emptySlot, creatureId);
+        return true;
     }
 }

@@ -133,7 +133,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.OLYMPUS,
         elements: ["Light", "Nature"],
         baseStr: 15, baseInt: 15,
-        image: "images/creature_unicorn_young.png?v=3",
+        image: "images/creature_unicorn.png?v=2",
         lines: { normal: "순수한 자만이..." }
     },
 
@@ -145,7 +145,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.OLYMPUS,
         elements: ["Nature", "Wind"],
         baseStr: 12, baseInt: 5,
-        image: "images/creature_centaur.png?v=1",
+        image: "images/creature_centaur.png?v=2",
         lines: { normal: "다그닥! 바람보다 빠르게!" }
     },
 
@@ -251,7 +251,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.ASGARD,
         elements: ["Metal", "Fire"],
         baseStr: 18, baseInt: 15,
-        image: "images/creature_dwarf.png?v=1",
+        image: "images/creature_dwarf.png?v=4",
         lines: { normal: "망치질 시작이다! 캉! 캉!" }
     },
 
@@ -400,7 +400,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.SHANGRILA,
         elements: ["Earth", "Nature"],
         baseStr: 14, baseInt: 8,
-        image: "images/creature_panda.png?v=1",
+        image: "images/creature_panda.png?v=2",
         lines: { normal: "허허, 대나무 차 한잔 하게." }
     },
 
@@ -506,15 +506,54 @@ export const CREATURE_DEFS = [
         lines: { normal: "맛있어 보이는... 멋진 분이시네요." }
     },
     {
-        id: "kraken_baby",
-        name: "심해의 아이돌 루루",
+        id: "kraken_worldstar",
+        name: "월드스타 루루",
+        rarity: RANKS.UR,
+        world: WORLDS.ABYSS,
+        elements: ["Water", "Light", "Charm", "Voice"],
+        ego: "Star",
+        baseStr: 45, baseInt: 85,
+        isHidden: true, // 히든 진화체
+        image: "images/creature_kraken_worldstar.png",
+        lines: {
+            normal: "제 노래가... 전 우주에 닿기를!",
+            touch_head: "머리 스타일 망가져요~ 헤헷, 농담이에요.",
+            touch_chest: "두근거리는 게 느껴지시나요? 이게 바로 사랑이에요!",
+            touch_legs: "제 다리... 아니 꼬리, 매력적이죠?",
+            touch_special: "앵콜? 좋아요! 마지막까지 소리 질러!!"
+        }
+    },
+
+    // --- SR (아이돌) ---
+    {
+        id: "kraken_idol",
+        name: "아이돌 루루",
         rarity: RANKS.SR,
+        world: WORLDS.ABYSS,
+        elements: ["Water", "Light", "Charm"],
+        ego: "Star",
+        baseStr: 30, baseInt: 60,
+        image: "images/creature_kraken_idol.png",
+        // [진화 시스템] 월드스타로 진화
+        evolvesTo: "kraken_worldstar",
+        evolveConditions: { star: 5, level: 50, affectionLevel: 3 },
+        lines: { normal: "안녕하세요! 신인 아이돌 루루입니다! 잘 부탁드려요!" }
+    },
+
+    // --- Normal (연습생) ---
+    {
+        id: "kraken_baby",
+        name: "연습생 루루",
+        rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
         elements: ["Water", "Dark"],
         ego: "Star",
-        baseStr: 40, baseInt: 30,
-        image: "images/creature_kraken_baby.png?v=3",
-        lines: { normal: "루루의 라이브에 오신 걸 환영합니다~" }
+        baseStr: 5, baseInt: 15,
+        image: "images/creature_kraken_trainee.png",
+        // [진화 시스템] 아이돌로 진화
+        evolvesTo: "kraken_idol",
+        evolveConditions: { star: 5 },
+        lines: { normal: "언젠간 꼭... 무대에 설 거야!" }
     },
 
     // --- Special ---
@@ -537,7 +576,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.ABYSS,
         elements: ["Earth", "Dark"],
         baseStr: 15, baseInt: 5,
-        image: "images/creature_gargoyle.png?v=1",
+        image: "images/creature_gargoyle.png?v=2",
         lines: { normal: "침입자 발견. 굳어버려라." }
     },
 

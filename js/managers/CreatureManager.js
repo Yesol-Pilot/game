@@ -55,6 +55,14 @@ export default class CreatureManager extends EventEmitter {
         this.selectedId = null;
     }
 
+    getAllCreatureDefs() {
+        return CREATURE_DEFS;
+    }
+
+    hasCreature(dataId) {
+        return this.owned.some(c => c.dataId === dataId);
+    }
+
     tryNormalSummon() {
         if (this.resourceManager.spendGold(300)) {
             const rarity = pickRarityFromTable(NORMAL_SUMMON_TABLE);
@@ -138,7 +146,6 @@ export default class CreatureManager extends EventEmitter {
             def: def,
             level: 1,
             exp: 0,
-            star: 0,
             star: 0,
             affection: 0, // = Touch Count
             battleCount: 0,    // [NEW] 전투 횟수

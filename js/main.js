@@ -262,9 +262,15 @@ function initLobbyInteraction() {
             if (bonus > 0) setTimeout(() => createHeartEffect(e.clientX + 30, e.clientY - 30), 200);
 
             updateResonanceUI(creature);
-            game.playSound('touch_soft'); // Mock sound
+
+            // Safety check for playSound
+            if (typeof window.game.playSound === 'function') {
+                window.game.playSound('touch_soft');
+            }
         } else if (isRejected) {
-            game.playSound('touch_reject');
+            if (typeof window.game.playSound === 'function') {
+                window.game.playSound('touch_reject');
+            }
         }
 
         // 3. Animation
@@ -292,7 +298,10 @@ function initLobbyInteraction() {
 
         // 5. Display Bubble
         if (bubble) {
-            bubble.innerText = text;
+            const textEl = document.getElementById('lobby-speech-text');
+            if (textEl) textEl.innerText = text;
+            else bubble.innerText = text;
+
             bubble.classList.add('active');
 
             if (isRejected) {

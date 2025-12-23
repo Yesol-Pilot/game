@@ -138,6 +138,24 @@ export default class BattleView extends BaseView {
         }
     }
 
+    /**
+     * 랭크별 색상 반환
+     */
+    getRankColor(rank) {
+        const colors = {
+            'Bronze': '#cd7f32',
+            'Silver': '#c0c0c0',
+            'Gold': '#ffd700',
+            'Platinum': '#00d4aa',
+            'Diamond': '#00bfff',
+            'Master': '#ff4500'
+        };
+        return colors[rank] || '#ffffff';
+    }
+
+    /**
+     * PVP 로비 렌더링 (개선됨)
+     */
     renderPvPLobby(query = '') {
         const listContainer = document.getElementById('pvp-user-list');
         if (!listContainer) return;
@@ -148,24 +166,68 @@ export default class BattleView extends BaseView {
             listContainer.innerHTML = '';
 
             if (players.length === 0) {
-                listContainer.innerHTML = '<div style="text-align:center; padding:20px; color:var(--text-secondary);">검색 결과가 없습니다.</div>';
+                listContainer.innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-secondary);">🔍 검색 결과가 없습니다.</div>';
                 return;
             }
 
             players.forEach(p => {
                 const item = document.createElement('div');
                 item.className = 'pvp-list-item';
-                item.style.cssText = "display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.05); margin-bottom:8px; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.1);";
+                const rankColor = this.getRankColor(p.rank);
+
+                item.style.cssText = `
+                    display:flex; 
+                    justify-content:space-between; 
+                    align-items:center; 
+                    background:linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.08) 100%); 
+                    margin-bottom:10px; 
+                    padding:14px; 
+                    border-radius:12px; 
+                    border:1px solid rgba(255,255,255,0.1);
+                    transition: transform 0.2s, box-shadow 0.2s;
+                `;
+
+                // 호버 효과
+                item.onmouseenter = () => {
+                    item.style.transform = 'translateY(-2px)';
+                    item.style.boxShadow = '0 4px 15px rgba(0,0,0,0.3)';
+                };
+                item.onmouseleave = () => {
+                    item.style.transform = 'translateY(0)';
+                    item.style.boxShadow = 'none';
+                };
+
+                const tagHtml = p.tag ? `<span style="background:rgba(255,255,255,0.1); padding:2px 6px; border-radius:4px; font-size:0.7em; margin-left:5px;">#${p.tag}</span>` : '';
+                const recordHtml = p.record ? `<span style="color:#2ecc71; font-size:0.75em;">${p.record}</span>` : '';
 
                 item.innerHTML = `
-                    <div style="display:flex; align-items:center;">
-                        <img src="${p.avatar}" style="width:44px; height:44px; border-radius:50%; margin-right:12px; border:2px solid var(--border-accent);">
+                    <div style="display:flex; align-items:center; gap:12px;">
+                        <div style="position:relative;">
+                            <img src="${p.avatar}" 
+                                style="width:50px; height:50px; border-radius:50%; border:3px solid ${rankColor}; object-fit:cover;"
+                                onerror="this.src='images/placeholder.png'">
+                            <div style="position:absolute; bottom:-2px; right:-2px; background:${rankColor}; padding:1px 4px; border-radius:3px; font-size:0.6em; font-weight:bold;">
+                                ${p.rank.charAt(0)}
+                            </div>
+                        </div>
                         <div>
-                            <div style="font-weight:bold; color:var(--accent-gold);">${p.name} <span style="font-size:0.8em; color:var(--text-secondary);">Lv.${p.level}</span></div>
-                            <div style="font-size:0.8em; opacity:0.7;">전투력: <span style="color:var(--accent-tertiary);">${p.power}</span> | 랭크: ${p.rank}</div>
+                            <div style="font-weight:bold; color:var(--accent-gold); font-size:1em; display:flex; align-items:center; gap:5px;">
+                                ${p.name}
+                                <span style="font-size:0.75em; color:var(--text-secondary);">Lv.${p.level}</span>
+                                ${tagHtml}
+                            </div>
+                            <div style="font-size:0.8em; opacity:0.8; margin-top:3px;">
+                                ⚡ <span style="color:var(--accent-cyan);">${p.power.toLocaleString()}</span>
+                                <span style="margin:0 8px; opacity:0.5;">|</span>
+                                <span style="color:${rankColor};">${p.rank}</span>
+                                ${recordHtml ? `<span style="margin:0 8px; opacity:0.5;">|</span>${recordHtml}` : ''}
+                            </div>
                         </div>
                     </div>
-                    <button class="cyber-btn small btn-battle-rival" data-id="${p.id}">⚔️ 대전</button>
+                    <button class="cyber-btn small btn-battle-rival" data-id="${p.id}" 
+                        style="background:linear-gradient(135deg, #e74c3c, #c0392b); border:none; padding:8px 16px;">
+                        ⚔️ 도전
+                    </button>
                 `;
 
                 item.querySelector('.btn-battle-rival').onclick = () => {
@@ -174,9 +236,16 @@ export default class BattleView extends BaseView {
 
                 listContainer.appendChild(item);
             });
+
+            // 검색 힌트 추가
+            const hint = document.createElement('div');
+            hint.style.cssText = 'text-align:center; padding:10px; font-size:0.75em; opacity:0.5;';
+            hint.textContent = `총 ${players.length}명의 라이벌 발견`;
+            listContainer.appendChild(hint);
+
         }).catch(err => {
             console.error("PvP 데이터 로드 실패", err);
-            listContainer.innerHTML = '<div style="color:red; text-align:center;">데이터 로드 실패</div>';
+            listContainer.innerHTML = '<div style="color:red; text-align:center; padding:20px;">⚠️ 데이터 로드 실패</div>';
         });
     }
 }

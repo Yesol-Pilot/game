@@ -34,7 +34,7 @@ export default class TeamView extends BaseView {
     render() {
         const deckManager = this.game.deckManager;
         const currentDeckId = deckManager.currentEditingDeck || 'main';
-        const deckData = deckManager.decks[currentDeckId];
+        const deckData = deckManager.getDeck(currentDeckId);
         const activeDeckId = deckManager.activeDeckId;
 
         // 1. 탭 상태 업데이트
@@ -87,9 +87,10 @@ export default class TeamView extends BaseView {
         if (!poolContainer) return;
 
         poolContainer.innerHTML = '';
-        const allCreatures = this.game.creatureManager.owned;
+        const allCreatures = this.game.creatureManager.owned; // 필터링: 보유 목록만 사용
+
         if (!allCreatures || allCreatures.length === 0) {
-            poolContainer.innerHTML = '<div style="grid-column:1/-1; text-align:center; color:#666; padding:20px;">보유한 크리처가 없습니다. 소환을 진행해주세요.</div>';
+            poolContainer.innerHTML = '<div style="grid-column:1/-1; text-align:center; color:#AAA; padding:20px;">보유한 크리처가 없습니다. 소환을 진행해주세요.</div>';
             return;
         }
 
@@ -104,45 +105,33 @@ export default class TeamView extends BaseView {
 
         const deckManager = this.game.deckManager;
         const currentDeckId = deckManager.currentEditingDeck || 'main';
-        const currentDeck = deckManager.decks[currentDeckId] || [];
+        const currentDeck = deckManager.getDeck(currentDeckId);
 
         sorted.forEach(c => {
             const isEquipped = currentDeck.includes(c.instanceId);
-            const card = document.createElement('div');
-            card.style.cssText = `
-                position: relative;
-                aspect-ratio: 1;
-                background: #222;
-                border: 1px solid #444;
-                border-radius: 6px;
-                cursor: pointer;
-                overflow: hidden;
-                opacity: ${isEquipped ? 0.5 : 1};
-            `;
 
-            // 등급별 테두리 색상
-            const rarityColors = {
-                'UR': '#FFD700', 'SSR': '#EF5350', 'SR': '#FF7043',
-                'Special': '#AB47BC', 'Rare': '#42A5F5', 'Unique': '#66BB6A', 'Normal': '#9E9E9E'
-            };
-            const borderColor = rarityColors[c.def.rarity] || '#444';
-            card.style.border = `1px solid ${borderColor}`;
+            // Grid Item 생성 (creature-card-mini 스타일 활용 및 오버라이딩)
+            const card = document.createElement('div');
+            card.className = `creature-card-mini rarity-${c.def.rarity}`;
+            // TeamView 전용 스타일 오버라이딩
+            card.style.position = 'relative';
+            card.style.opacity = isEquipped ? '0.5' : '1';
 
             card.innerHTML = `
-                <img src="${c.def.image}" style="width:100%; height:100%; object-fit:cover;">
-                <div style="position:absolute; bottom:0; width:100%; background:rgba(0,0,0,0.7); color:white; font-size:0.7em; text-align:center; padding:2px 0;">
-                    Lv.${c.level}
+                <img src="${c.def.image}" alt="${c.def.name}">
+                <div class="card-info">
+                    <div class="card-name">${c.def.name}</div>
+                    <div class="card-stats">Lv.${c.level}</div>
                 </div>
-                ${isEquipped ? '<div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); display:flex; justify-content:center; align-items:center; font-weight:bold; color:#fff; font-size:0.8em;">장착중</div>' : ''}
+                ${isEquipped ? '<div style="position:absolute; inset:0; background:rgba(0,0,0,0.6); display:flex; justify-content:center; align-items:center; font-weight:bold; color:#fff; font-size:0.8em; z-index:10;">장착중</div>' : ''}
             `;
 
             if (!isEquipped) {
                 card.onclick = () => {
-                    // 빈 슬롯 찾기
                     const emptyIdx = currentDeck.findIndex(slot => slot === null);
                     if (emptyIdx !== -1) {
                         deckManager.addToDeck(currentDeckId, c.instanceId);
-                        this.game.events.emit('ui:deckUpdated'); // Trigger update
+                        this.game.events.emit('ui:deckUpdated');
                     } else {
                         alert("덱 슬롯이 가득 찼습니다! 슬롯을 비우고 선택해주세요.");
                     }

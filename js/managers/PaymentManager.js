@@ -91,6 +91,8 @@ export default class PaymentManager extends EventEmitter {
             // Not implemented yet
         }
 
-        this.game.playSound('payment_success'); // Mock
+        if (typeof this.game.playSound === 'function') {
+            this.game.playSound('payment_success'); // Mock
+        }
     }
 }
