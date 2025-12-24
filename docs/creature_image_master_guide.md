@@ -53,7 +53,31 @@ text, watermark, ui, signature, blurry
 
 ---
 
-## � 이미지 상태 범례
+## ✨ 검증된 성공 프롬프트 템플릿 (2024-12-24)
+
+> [!TIP]
+> **오딘 v9에서 검증됨** - 섹시 + 적당한 노출 + 블루아카이브/니케 스타일
+
+### UR급 템플릿
+
+```
+Japanese anime gacha game style illustration of extremely beautiful sexy female [캐릭터명],
+no text no UI no watermark.
+Gorgeous anime face with beautiful big eyes, [특징].
+Extremely voluptuous body with very large breasts, tiny waist, thick thighs, wide hips.
+Wearing elegant [색상] ornate armor bikini top showing cleavage,
+exposed toned midriff, flowing cape, armored skirt with high slit,
+thigh high armored boots.
+Holding [무기]. [배경].
+Confident seductive alluring expression.
+Premium UR legendary gacha quality, vibrant colors, lens flare effects
+```
+
+**핵심**: 큰 눈 + 볼륨 있는 몸매 + 갑옷 비키니/드레스 + 배 노출 OK + 허벅지 슬릿
+
+---
+
+## 📋 이미지 상태 범례
 
 | 상태 | 의미 |
 |------|------|

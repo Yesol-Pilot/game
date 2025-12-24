@@ -53,6 +53,17 @@ export const CREATURE_DEFS = [
         ego: "Warlord",
         baseStr: 55, baseInt: 65,
         image: "images/creature_god_zeus.jpg",
+        lore: {
+            title: "올림포스의 지배자",
+            story: "하늘과 번개를 다스리는 그리스 최고신. 티탄족과의 전쟁에서 승리한 후 신들의 왕좌에 올랐다. 인간 세계에 내려와 새로운 주인을 찾고 있으며, 강력한 번개의 힘으로 모든 적을 압도한다. 오만하지만 인정받은 자에게는 한없이 관대한 존재.",
+            origin: "그리스 신화 / 올림포스",
+            relationships: [
+                { id: "time_lord_chronos", type: "family", desc: "아버지를 쓰러뜨리고 왕좌에 오른 부자 관계" },
+                { id: "angel_arch", type: "ally", desc: "신성한 빛의 동맹. 함께하면 신성 공격력 증가" },
+                { id: "demon_king", type: "rival", desc: "천상과 지옥의 영원한 숙적" }
+            ],
+            synergy: { ally: ["angel_arch", "valkyrie"], rival: ["demon_king", "void_emperor"] }
+        },
         lines: {
             normal: "내 번개를 감당할 수 있겠느냐, 작은 인간아.",
             touch_head: "호오? 감히 신의 머리를... 배짱이 좋구나?",
@@ -72,6 +83,17 @@ export const CREATURE_DEFS = [
         ego: "Seeker",
         baseStr: 40, baseInt: 80,
         image: "images/creature_time_lord_chronos.png?v=5",
+        lore: {
+            title: "시간을 삼키는 자",
+            story: "태초의 티탄족 왕. 자신의 자식들에게 왕좌를 빼앗길 것을 두려워해 그들을 삼켰으나, 제우스에게 패배하고 타르타로스에 갇혔다. 시간의 흐름을 자유자재로 조종하며, 그녀의 눈동자를 바라보는 자는 자신의 과거와 미래를 모두 보게 된다.",
+            origin: "그리스 신화 / 타르타로스",
+            relationships: [
+                { id: "god_zeus", type: "family", desc: "반역한 아들. 왕좌를 빼앗긴 원한의 관계" },
+                { id: "creator_gaia", type: "family", desc: "대지의 어머니. 복잡한 모자 관계" },
+                { id: "void_emperor", type: "ally", desc: "심연의 동맹. 함께하면 시공간 왜곡 발동" }
+            ],
+            synergy: { ally: ["void_emperor", "creator_gaia"], rival: ["god_zeus", "angel_arch"] }
+        },
         lines: {
             normal: "너의 시간은 이제 내 것이야. 1초도 다른 곳을 보지 마.",
             touch_head: "움직이지 마... 지금 이 순간을 멈출 테니까.",
@@ -91,6 +113,17 @@ export const CREATURE_DEFS = [
         ego: "Star",
         baseStr: 45, baseInt: 55,
         image: "images/creature_angel_arch.png?v=5",
+        lore: {
+            title: "천상의 검",
+            story: "천계군의 최고 사령관이자 신의 칼날. 루시퍼의 반란을 진압한 전설의 전사. 순수하고 정의로운 마음을 가졌으나, 인간 세계에 내려와 다양한 감정을 경험하며 혼란스러워하고 있다. 신성한 불꽃으로 사악함을 정화한다.",
+            origin: "천상계 / 신의 군대",
+            relationships: [
+                { id: "god_zeus", type: "ally", desc: "신들의 동맹. 빛과 번개의 합공" },
+                { id: "demon_king", type: "rival", desc: "영원한 숙적. 천사와 악마의 전쟁" },
+                { id: "valkyrie", type: "ally", desc: "전장의 동료. 함께하면 광역 버프" }
+            ],
+            synergy: { ally: ["god_zeus", "valkyrie", "unicorn_young"], rival: ["demon_king", "vampire_lord"] }
+        },
         lines: {
             normal: "신성한 빛이 당신을 인도할 겁니다. 저를 믿으세요.",
             touch_head: "어머, 날개는 성감... 아니, 예민한 부분입니다!",
@@ -112,6 +145,16 @@ export const CREATURE_DEFS = [
         ego: "Warlord",
         baseStr: 50, baseInt: 20,
         image: "images/creature_titan_atlas.png?v=5",
+        lore: {
+            title: "하늘을 떠받치는 자",
+            story: "티탄족의 전사. 제우스와의 전쟁에서 패하여 영원히 하늘을 떠받치는 형벌을 받았다. 믿을 수 없는 괴력을 자랑하며, 그녀의 근육은 어떤 무게도 버텨낼 수 있다. 운동광이자 무뚝뚝하지만 정이 많다.",
+            origin: "그리스 신화 / 세계의 끝",
+            relationships: [
+                { id: "time_lord_chronos", type: "ally", desc: "티탄족 동료. 함께하면 방어력 증가" },
+                { id: "giant_hill", type: "ally", desc: "거인족 후배. 운동 메이트" }
+            ],
+            synergy: { ally: ["time_lord_chronos", "giant_hill", "golem_mud"], rival: ["god_zeus"] }
+        },
         lines: { normal: "이 정도 바위는 깃털처럼 가볍지! 운동 좀 할래?" }
     },
 
@@ -125,6 +168,16 @@ export const CREATURE_DEFS = [
         ego: "Berserker",
         baseStr: 55, baseInt: 30,
         image: "images/creature_wolf_fenrir.png",
+        lore: {
+            title: "라그나로크의 시작",
+            story: "북유럽 신화의 거대한 늑대. 신들조차 두려워하여 마법의 사슬 글레이프니르로 묶어두었다. 라그나로크의 날, 사슬이 풀리면 오딘을 삼키고 세계를 멸망시킬 운명. 야수적 본능과 싸우며 주인을 지키려 애쓴다.",
+            origin: "북유럽 신화 / 아스가르드",
+            relationships: [
+                { id: "god_odin", type: "rival", desc: "운명의 적. 펜리르가 오딘을 삼킬 운명" },
+                { id: "wolf_dire", type: "family", desc: "늑대 후배. 함께하면 공격력 버프" }
+            ],
+            synergy: { ally: ["wolf_dire", "demon_king"], rival: ["god_odin", "valkyrie"] }
+        },
         lines: {
             normal: "...사슬이 풀리는 날, 이 세계는 끝난다.",
             touch_happy: "...만져도 괜찮아. 아직은... 자제할 수 있어.",
@@ -206,6 +259,17 @@ export const CREATURE_DEFS = [
         ego: "Seeker",
         baseStr: 45, baseInt: 75,
         image: "images/creature_god_odin.png",
+        lore: {
+            title: "지혜의 대가를 치른 자",
+            story: "아홉 세계를 다스리는 북유럽의 최고신. 지혜를 위해 한쪽 눈을 희생하고, 우주의 비밀을 알기 위해 위그드라실에 9일간 목을 매달았다. 냉철하고 계산적이지만, 인정받은 전사에게는 발할라의 문을 연다. 라그나로크에서 펜리르에게 삼켜질 운명.",
+            origin: "북유럽 신화 / 아스가르드",
+            relationships: [
+                { id: "wolf_fenrir", type: "rival", desc: "운명의 적. 라그나로크에서 오딘을 삼킬 자" },
+                { id: "valkyrie", type: "ally", desc: "충실한 전사. 함께하면 치명타율 증가" },
+                { id: "god_zeus", type: "rival", desc: "신들의 왕 간의 자존심 대결" }
+            ],
+            synergy: { ally: ["valkyrie", "eagle_iron", "bear_ice"], rival: ["wolf_fenrir", "demon_king"] }
+        },
         lines: {
             normal: "지혜를 원하느냐. 대가가 따를 것이다.",
             touch_head: "눈 한쪽의 대가로 얻은 지혜... 알고 싶은가?",
@@ -246,6 +310,16 @@ export const CREATURE_DEFS = [
         ego: "Warlord",
         baseStr: 40, baseInt: 35,
         image: "images/creature_valkyrie.png?v=3",
+        lore: {
+            title: "영광의 선별자",
+            story: "오딘의 명을 받아 전장에서 가장 용맹한 전사를 발할라로 인도하는 전쟁 처녀. 냉철하고 무자비하게 보이지만, 선택받지 못한 자들을 위해 몰래 눈물 흘리는 섬세한 마음의 소유자.",
+            origin: "북유럽 신화 / 발할라",
+            relationships: [
+                { id: "god_odin", type: "ally", desc: "충성하는 주군. 함께하면 치명타 증가" },
+                { id: "angel_arch", type: "ally", desc: "천상의 동료 전사" }
+            ],
+            synergy: { ally: ["god_odin", "angel_arch", "eagle_iron"], rival: ["wolf_fenrir"] }
+        },
         lines: { normal: "전선 이상 무! 발할라를 위하여!" }
     },
     {
@@ -257,6 +331,16 @@ export const CREATURE_DEFS = [
         ego: "Devotion",
         baseStr: 45, baseInt: 15,
         image: "images/creature_giant_hill.png?v=3",
+        lore: {
+            title: "산을 품은 거인",
+            story: "서리 거인족의 후예. 거대한 체구에 어울리지 않게 온순하고 가족을 사랑한다. 작은 생명체들을 지키는 것이 취미이며, 전투에서는 동료를 위해 거대한 몸으로 방패가 된다.",
+            origin: "북유럽 신화 / 요툰하임",
+            relationships: [
+                { id: "titan_atlas", type: "ally", desc: "거인족 선배. 운동 스승" },
+                { id: "golem_mud", type: "ally", desc: "둔한 것들끼리의 우정" }
+            ],
+            synergy: { ally: ["titan_atlas", "golem_mud", "bear_ice"], rival: [] }
+        },
         lines: { normal: "작은 친구~ 쉬었다 가." }
     },
 
