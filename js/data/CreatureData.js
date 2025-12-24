@@ -253,26 +253,6 @@ export const CREATURE_DEFS = [
         lines: { normal: "다그닥! 바람보다 빠르게! ...당근 있어?" }
     },
 
-    // --- Unique ---
-    {
-        id: "wisp_faint",
-        name: "희미한 위스프",
-        rarity: RANKS.UNIQUE,
-        world: WORLDS.OLYMPUS,
-        elements: ["Light"],
-        baseStr: 1, baseInt: 8,
-        image: "images/creature_wisp_faint.png?v=3",
-        lore: {
-            title: "길잃은 빛",
-            story: "어둠 속에서 길을 잃은 영혼들을 인도하는 작은 빛. 말수가 적고 수줍음이 많지만, 위기의 순간에는 밝게 빛나 동료를 지킨다. 밤하늘의 별을 보며 혼자 반짝거리는 게 취미.",
-            origin: "올림푸스 황혼의 숲",
-            relationships: [
-                { id: "angel_arch", type: "ally", desc: "빛의 동료. 함께하면 시야 확보" }
-            ],
-            synergy: { ally: ["angel_arch"], rival: [] }
-        },
-        lines: { normal: "반짝... 저기요... 반짝..." }
-    },
 
     // --- Normal ---
     {
@@ -440,16 +420,6 @@ export const CREATURE_DEFS = [
     },
 
     // --- Normal ---
-    {
-        id: "snow_spirit",
-        name: "눈송이 정령",
-        rarity: RANKS.NORMAL,
-        world: WORLDS.ASGARD,
-        elements: ["Ice"],
-        baseStr: 2, baseInt: 3,
-        image: "images/creature_wisp_faint.png", // [Temp] Reuse wisp better than placeholder
-        lines: { normal: "사르르... 녹지 않아요." }
-    },
 
     // ==========================================
     // 🌸 SHANGRILA (무릉도원) - 환수의 맹약
@@ -985,7 +955,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.WILD,
         elements: ["Ice", "Light"],
         baseStr: 15, baseInt: 20,
-        image: "images/creature_snow_spirit_new.png",
+        image: "images/creature_snow_spirit_new.png?v=3",
         lore: {
             title: "설원의 춤꾼",
             story: "차가운 북풍이 불 때 태어나는 정령. 그녀가 춤을 추면 세상이 하얗게 물든다. 아름답지만 만지면 동상에 걸릴 수 있으니 주의. 따뜻한 코코아를 좋아하지만 마실 수는 없다.",
@@ -1024,7 +994,7 @@ export const CREATURE_DEFS = [
         world: WORLDS.WILD,
         elements: ["Light", "Spirit"],
         baseStr: 8, baseInt: 12,
-        image: "images/creature_wisp_faint_new.png",
+        image: "images/creature_wisp_faint_new.png?v=3",
         lore: {
             title: "길 잃은 영혼의 등불",
             story: "숲속을 떠도는 작은 빛. 길 잃은 여행자를 마을로 안내해주기도 하지만, 장난기가 발동하면 늪으로 유인하기도 한다. 본인은 그저 숨바꼭질이라고 생각한다.",
