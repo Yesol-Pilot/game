@@ -70,10 +70,10 @@
                         email: user.email,
                         lastSaved: new Date().toISOString()
                     }, { merge: true });
-                    console.log('[Firebase] 클라우드 저장 완료');
+                    console.log('[Firebase] 클라우드 저장 성공 (UID:', user.uid, ')');
                     return { success: true };
                 } catch (error) {
-                    console.error('[Firebase] 저장 실패:', error);
+                    console.error('[Firebase] 클라우드 저장 실패:', error);
                     return { success: false, error: error.message };
                 }
             },

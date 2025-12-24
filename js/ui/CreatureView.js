@@ -320,6 +320,7 @@ export default class CreatureView extends BaseView {
                     <button id="btn-evolve-creature" class="cyber-btn ${this._canEvolveUI(c).canEvolve ? 'premium' : ''}" ${this._canEvolveUI(c).canEvolve ? '' : 'disabled'} style="${this._canEvolveUI(c).canEvolve ? 'background:linear-gradient(135deg,#ff9800,#ff5722);' : ''}">${this._canEvolveUI(c).canEvolve ? '🦋 진화 가능!' : '🔒 진화'}</button>
                     ${this._canEvolveUI(c).evolvesTo ? `<div style="grid-column:span 2; font-size:0.8rem; color:#aaa; text-align:center;">진화 조건: ${this._canEvolveUI(c).reason || '조건 충족!'}</div>` : ''}
                     <button id="btn-set-representative" class="cyber-btn" style="grid-column: span 2; background: linear-gradient(135deg, #e91e63, #ad1457);">⭐ 대표 크리처로 설정</button>
+                    <button id="btn-set-lobby" class="cyber-btn" style="grid-column: span 2; background: linear-gradient(135deg, #00bcd4, #0097a7);">🏠 로비 캐릭터로 설정</button>
                     ${c.def.lore ? `<button id="btn-show-story" class="cyber-btn" style="grid-column: span 2; background: linear-gradient(135deg, #9c27b0, #673ab7);">📖 스토리 보기</button>` : ''}
                     <div style="grid-column: span 2; display:flex; justify-content:center; margin-top:10px;">
                         ${lockBtnHtml}
@@ -364,6 +365,24 @@ export default class CreatureView extends BaseView {
                 const lobbyImg = document.getElementById('lobby-character-img');
                 if (lobbyImg) lobbyImg.src = c.def.image;
                 alert(`${c.def.name}을(를) 대표 크리처로 설정했습니다!`);
+                modal.style.display = 'none';
+            };
+        }
+
+        // 로비 캐릭터 설정 버튼
+        const lobbyBtn = document.getElementById('btn-set-lobby');
+        if (lobbyBtn) {
+            lobbyBtn.onclick = () => {
+                localStorage.setItem('preferredLobbyCharacter', JSON.stringify({
+                    instanceId: c.instanceId,
+                    dataId: c.dataId
+                }));
+                // 즉시 로비 갱신
+                if (typeof window.updateLobbyCharacter === 'function') {
+                    window.game.currentLobbyCreature = c;
+                    window.updateLobbyCharacter();
+                }
+                alert(`${c.def.name}을(를) 로비 캐릭터로 고정했습니다!`);
                 modal.style.display = 'none';
             };
         }

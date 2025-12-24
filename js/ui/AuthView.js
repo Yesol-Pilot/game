@@ -90,21 +90,28 @@ export default class AuthView extends BaseView {
                     console.log('[AuthView] Google 로그인 성공:', user.displayName);
 
                     // 클라우드에서 데이터 로드 시도
-                    const cloudData = await window.FirebaseService.loadGameData();
-                    if (cloudData.success && cloudData.data) {
-                        console.log('[AuthView] 클라우드 데이터 복원:', cloudData.data);
-                        // localStorage에 클라우드 데이터 적용
-                        if (cloudData.data.gameState) {
-                            localStorage.setItem('gameState', JSON.stringify(cloudData.data.gameState));
-                        }
-                        this._setAuthMessage('☁️ 클라우드 데이터 복원 완료!');
-                    }
-
                     // 로컬 계정 생성/로그인 (Google 이름 사용)
                     const googleUsername = user.displayName || user.email.split('@')[0];
-                    const fakePassword = 'google_' + user.uid.substring(0, 8);
+                    const saveKey = `mclab_save_${googleUsername}`;
+
+                    // 클라우드에서 데이터 로드 시도
+                    const cloudData = await window.FirebaseService.loadGameData();
+                    if (cloudData.success && cloudData.data) {
+                        console.log('[AuthView] 클라우드 데이터 확인:', cloudData.data);
+
+                        // [신구 데이터 통합 복구 로직]
+                        // 1. 현재 사용자 전용 키 확인 -> 2. 공용 키 확인 -> 3. 구버전 키(gameState) 확인
+                        const dataToRestore = cloudData.data[saveKey] || cloudData.data['mclab_save_v1'] || cloudData.data['gameState'];
+
+                        if (dataToRestore) {
+                            localStorage.setItem(saveKey, JSON.stringify(dataToRestore));
+                            console.log(`[AuthView] 데이터 복원 완료: ${saveKey}`);
+                            this._setAuthMessage('☁️ 클라우드 데이터 복원 완료!');
+                        }
+                    }
 
                     // 회원가입 또는 로그인 시도
+                    const fakePassword = 'google_' + user.uid.substring(0, 8);
                     let authResult = await this.game.authManager.login(googleUsername, fakePassword);
                     if (!authResult.success) {
                         // 계정이 없으면 자동 생성
@@ -147,11 +154,19 @@ export default class AuthView extends BaseView {
         if (this._autoSaveInterval) clearInterval(this._autoSaveInterval);
 
         this._autoSaveInterval = setInterval(async () => {
-            if (window.FirebaseService?.isLoggedIn()) {
-                const gameState = localStorage.getItem('gameState');
-                if (gameState) {
-                    await window.FirebaseService.saveGameData({ gameState: JSON.parse(gameState) });
-                    console.log('[AutoSave] 클라우드 저장 완료');
+            const user = this.game.authManager.currentUser;
+            if (window.FirebaseService?.isLoggedIn() && user) {
+                const saveKey = `mclab_save_${user.username}`;
+                const localData = localStorage.getItem(saveKey);
+
+                if (localData) {
+                    try {
+                        const parsedData = JSON.parse(localData);
+                        await window.FirebaseService.saveGameData({ [saveKey]: parsedData });
+                        console.log(`[AutoSave] 클라우드 백업 완료 (${saveKey})`);
+                    } catch (e) {
+                        console.error('[AutoSave] 데이터 파싱 실패:', e);
+                    }
                 }
             }
         }, 5 * 60 * 1000); // 5분

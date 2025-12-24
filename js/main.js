@@ -141,15 +141,26 @@ function updateResourceDisplay() {
 // [Resonance V3] Lobby Interaction System
 // =========================================================
 
+window.updateLobbyCharacter = updateLobbyCharacter; // Global exposure for UI
 function updateLobbyCharacter() {
     const img = document.getElementById('lobby-character-img');
     const nameEl = document.getElementById('lobby-character-name');
     if (!img) return;
 
-    // 1. Priority: Existing Memory Selection (Session Persistence)
-    let creature = window.game.currentLobbyCreature;
+    // 1. Priority: Explicit User Preference (Fixed Choice)
+    if (!creature) {
+        try {
+            const preferred = JSON.parse(localStorage.getItem('preferredLobbyCharacter'));
+            if (preferred && preferred.instanceId) {
+                creature = game.creatureManager.getCreatureById(preferred.instanceId);
+            }
+        } catch (e) { console.error(e); }
+    }
 
-    // 2. Storage Selection (Persist across reloads)
+    // 2. Priority: Existing Memory Selection (Session Persistence)
+    if (!creature) creature = window.game.currentLobbyCreature;
+
+    // 3. Storage Selection (Last seen / context selection)
     if (!creature) {
         try {
             const saved = JSON.parse(localStorage.getItem('lobbyCharacter'));
@@ -193,6 +204,8 @@ function updateLobbyCharacter() {
 
         if (nameEl) nameEl.innerText = `${creature.def.name} (Lv.${creature.level})`;
 
+        // Only save to 'lobbyCharacter' (weak persistence) if it's not a fixed preference
+        // Fixed preference 'preferredLobbyCharacter' is only set via UI [Set as Lobby]
         localStorage.setItem('lobbyCharacter', JSON.stringify({
             instanceId: creature.instanceId,
             image: img.src,
