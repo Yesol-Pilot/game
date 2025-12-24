@@ -13,7 +13,7 @@ export default class SettingsView {
 
         this.inputNickname = document.getElementById('input-setting-nickname');
         this.btnChangeNickname = document.getElementById('btn-change-nickname');
-        this.btnLogout = document.getElementById('btn-logout');
+        this.btnLogout = document.getElementById('btn-setting-logout');
 
         this.isMuted = false;
 
