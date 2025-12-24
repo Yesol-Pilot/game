@@ -98,7 +98,7 @@ export function getStage(stageId) {
             atk: atk,
             def: def,
             elements: [], // Can be enhanced to match biome theme
-            skillId: 'default_attack'
+            skillId: getCreatureSkill(enemyId) // [Mod] 크리처별 고유 스킬 연결
         });
 
         totalPower += (hp / 10) + atk + def;
@@ -168,4 +168,46 @@ function getCreatureImage(id) {
 
 function getCreatureName(id) {
     return id.replace(/_/g, " ").toUpperCase();
+}
+
+/**
+ * 각 적 몹/보스에 맞는 스킬 ID 반환
+ */
+function getCreatureSkill(id) {
+    const skillMap = {
+        // 보스
+        "lion_nemean": "lion_nemean_skill",
+        "hydra_lernaean": "hydra_skill",
+        "hind_golden": "eagle_skill", // 빠른 고속 공격
+        "boar_erymanthian": "bear_skill", // 강력한 근격
+        "bird_stymphalian": "harpy_skill",
+        "minotaur_king": "minotaur_skill",
+        "dragon_ladon": "dragon_skill",
+        "cerberus_guardian": "cerberus_skill",
+        "titan_kronos_shade": "kronos_shade_skill",
+        "god_zeus_phantom": "zeus_skill",
+
+        // 일반 적
+        "wolf_dire": "wolf_skill",
+        "rat_brown": "slime_skill", // 약한 공격
+        "slime_green": "slime_skill",
+        "snake_poison": "snake_skill",
+        "deer_horn": "eagle_skill",
+        "satyr_scout": "wolf_skill",
+        "boar_wild": "bear_skill",
+        "bear_brown": "bear_skill",
+        "bird_bronze": "eagle_skill",
+        "harpy_wind": "harpy_skill",
+        "skeleton_warrior": "undead_skill",
+        "bull_mad": "golem_skill",
+        "dragon_ladon_spawn": "dragon_skill",
+        "nymph_dark": "nymph_skill",
+        "hound_hell": "wolf_skill",
+        "spirit_lost": "spirit_skill",
+        "giant_cyclops": "golem_skill",
+        "titan_spawn": "golem_skill",
+        "automaton_gold": "golem_skill",
+        "eagle_zeus": "eagle_skill"
+    };
+    return skillMap[id] || "default_attack";
 }
