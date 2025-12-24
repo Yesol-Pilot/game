@@ -15,6 +15,11 @@ export default class BattleScene {
         this.game.events.on('battle:action', (data) => this.onBattleAction(data));
         this.game.events.on('battle:end', (data) => this.onBattleEnd(data));
 
+        // [NEW] 스킬 컷인 이벤트
+        this.game.events.on('battle:skill_start', (data) => {
+            this.showSkillCutIn(data.attackerId, data.skillName, data.skillData);
+        });
+
         const btnStop = document.getElementById('btn-stop-battle');
         if (btnStop) {
             btnStop.onclick = () => {
@@ -237,17 +242,44 @@ export default class BattleScene {
         }
     }
 
-    async showSkillCutIn(attackerId, skillName) {
+    async showSkillCutIn(attackerId, skillName, skillData = null) {
         const attackerEl = document.getElementById(`battle-entity-${attackerId}`);
         if (!attackerEl) return;
 
         const imgSrc = attackerEl.querySelector('img').src;
+        const attackerName = this.entityMap[attackerId] || '사용자';
+
+        // 스킬 효과 설명 생성
+        let effectDesc = '';
+        if (skillData) {
+            const powerText = skillData.power ? `파워 ${Math.floor(skillData.power * 100)}%` : '';
+            const hitText = skillData.hitCount ? ` x${skillData.hitCount}회` : '';
+            const effectText = skillData.effects?.map(e => {
+                const effectNames = {
+                    stun: '기절', burn: '화상', poison: '중독', freeze: '동결',
+                    slow: '둔화', bleed: '출혈', silence: '침묵', shock: '감전'
+                };
+                return effectNames[e.id] || e.id;
+            }).join(', ') || '';
+
+            effectDesc = `<div class="skill-cut-in-effects">
+                ${powerText}${hitText}
+                ${effectText ? `<span class="effect-tags">${effectText}</span>` : ''}
+            </div>`;
+        }
+
         const overlay = document.createElement('div');
         overlay.className = 'skill-cut-in-overlay';
         overlay.innerHTML = `
             <div class="skill-cut-in-bg"></div>
-            <div class="skill-cut-in-text">${skillName}</div>
-            <img src="${imgSrc}" class="skill-cut-in-img">
+            <div class="skill-cut-in-content">
+                <img src="${imgSrc}" class="skill-cut-in-img">
+                <div class="skill-cut-in-info">
+                    <div class="skill-cut-in-name">${attackerName}</div>
+                    <div class="skill-cut-in-text">${skillName}</div>
+                    ${effectDesc}
+                </div>
+            </div>
         `;
         this.stage.appendChild(overlay);
 

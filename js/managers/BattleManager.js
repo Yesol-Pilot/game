@@ -474,7 +474,8 @@ export default class BattleManager extends EventEmitter {
         if (attacker.isHero) {
             this.events.emit('battle:skill_start', {
                 attackerId: attacker.id,
-                skillName: skill.name
+                skillName: skill.name,
+                skillData: skill // [NEW] 스킬 데이터 전달
             });
             // Wait for cut-in animation (approx 1.2s + buffer)
             await new Promise(resolve => setTimeout(resolve, 1500 / this.battleSpeed));
