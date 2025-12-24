@@ -147,17 +147,22 @@ function updateLobbyCharacter() {
     const nameEl = document.getElementById('lobby-character-name');
     if (!img) return;
 
-    // 1. Priority: Explicit User Preference (Fixed Choice)
+    let creature = null;
+
+    // 1. Priority: Explicit User Preference (Fixed Choice via [Set Lobby])
+    try {
+        const preferred = JSON.parse(localStorage.getItem('preferredLobbyCharacter'));
+        if (preferred && preferred.instanceId) {
+            creature = game.creatureManager.getCreatureById(preferred.instanceId);
+        }
+    } catch (e) { console.error(e); }
+
+    // 2. Priority: Representative Creature (Fixed Choice via [Set Representative])
     if (!creature) {
-        try {
-            const preferred = JSON.parse(localStorage.getItem('preferredLobbyCharacter'));
-            if (preferred && preferred.instanceId) {
-                creature = game.creatureManager.getCreatureById(preferred.instanceId);
-            }
-        } catch (e) { console.error(e); }
+        creature = game.creatureManager.getRepresentative();
     }
 
-    // 2. Priority: Existing Memory Selection (Session Persistence)
+    // 3. Priority: Existing Memory Selection (Session Persistence)
     if (!creature) creature = window.game.currentLobbyCreature;
 
     // 3. Storage Selection (Last seen / context selection)
