@@ -23,6 +23,7 @@ import { AIManager } from '../managers/AIManager.js'; // [Mod] Import AI Manager
 import SaveManager from '../utils/SaveManager.js';
 import BattleScene from '../scenes/BattleScene.js';
 import SummonScene from '../scenes/SummonScene.js';
+import AudioManager from '../managers/AudioManager.js'; // [NEW] Audio Manager
 
 import UIManager from '../managers/UIManager.js'; // [Mod] Import moved to top
 
@@ -63,6 +64,9 @@ export default class Game {
         // [Scenes]
         this.battleScene = new BattleScene(this);
         // this.summonScene = new SummonScene(this); // [Mod] Removed redundant legacy scene
+
+        // [NEW] Audio Manager
+        this.audioManager = new AudioManager(this);
 
         this.deckManager.init();
         this.loop = new Loop(this.update.bind(this));
