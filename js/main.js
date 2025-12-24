@@ -138,7 +138,6 @@ function updateResourceDisplay() {
     if (energyEl) energyEl.innerText = `${game.resourceManager.energy} / ${game.resourceManager.maxEnergy}`;
 }
 
-// =========================================================
 // [Resonance V3] Lobby Interaction System
 // =========================================================
 
@@ -147,26 +146,39 @@ function updateLobbyCharacter() {
     const nameEl = document.getElementById('lobby-character-name');
     if (!img) return;
 
-    // 1. Load Selection
-    let creature = null;
-    try {
-        const saved = JSON.parse(localStorage.getItem('lobbyCharacter'));
-        if (saved && saved.instanceId) {
-            creature = game.creatureManager.getCreatureById(saved.instanceId);
-        }
-    } catch (e) { console.error(e); }
+    // 1. Priority: Existing Memory Selection (Session Persistence)
+    let creature = window.game.currentLobbyCreature;
 
-    // Fallback logic
+    // 2. Storage Selection (Persist across reloads)
+    if (!creature) {
+        try {
+            const saved = JSON.parse(localStorage.getItem('lobbyCharacter'));
+            if (saved && saved.instanceId) {
+                creature = game.creatureManager.getCreatureById(saved.instanceId);
+            }
+        } catch (e) { console.error(e); }
+    }
+
+    // 3. Fallback: Active Team Leader
     if (!creature) {
         const team = game.deckManager.getActiveTeam();
         if (team && team[0]) creature = team[0];
     }
+
+    // 4. Fallback: Highest Rarity Owned
     if (!creature && game.creatureManager.owned.length > 0) {
-        const sorted = [...game.creatureManager.owned].sort((a, b) => b.def.rarity - a.def.rarity);
+        // Sort by Rarity (Desc) -> ID (Asc) for consistency
+        const sorted = [...game.creatureManager.owned].sort((a, b) => {
+            if (b.def.rarity !== a.def.rarity) return b.def.rarity - a.def.rarity;
+            return a.def.id.localeCompare(b.def.id);
+        });
         creature = sorted[0];
     }
 
     if (creature) {
+        // Update Memory State
+        window.game.currentLobbyCreature = creature;
+
         // [Resonance V3] Image Swap Logic
         const level = game.creatureManager.getAffectionLevel(creature);
 
@@ -200,35 +212,19 @@ function initLobbyInteraction() {
     }
 
     img.onclick = (e) => {
-        console.log('[Touch] Image clicked');
+        // 1. Use the creature currently displayed in the lobby
+        let creature = window.game.currentLobbyCreature;
 
-        let creature = null;
-
-        // 1. Try to get saved lobby character
-        try {
-            const saved = JSON.parse(localStorage.getItem('lobbyCharacter'));
-            if (saved && saved.instanceId) {
-                creature = game.creatureManager.getCreatureById(saved.instanceId);
-                console.log('[Touch] Found saved creature:', creature?.def?.name);
-            }
-        } catch (err) {
-            console.warn('[Touch] Error parsing lobbyCharacter:', err);
-        }
-
-        // 2. Fallback: Use first owned creature
         if (!creature) {
-            const owned = game.creatureManager.owned;
-            if (owned && owned.length > 0) {
-                creature = owned[0];
-                console.log('[Touch] Fallback to first owned:', creature?.def?.name);
-            }
+            // Retry update if missing
+            updateLobbyCharacter();
+            creature = window.game.currentLobbyCreature;
         }
 
         if (!creature) {
             console.warn('[Touch] No creature available for interaction');
             return;
         }
-
 
         const rect = img.getBoundingClientRect();
         const y = e.clientY - rect.top;
