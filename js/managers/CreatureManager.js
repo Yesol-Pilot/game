@@ -650,13 +650,15 @@ export default class CreatureManager extends EventEmitter {
     getSerializableState() {
         return {
             owned: this.owned,
-            nextInstanceId: this.nextInstanceId
+            nextInstanceId: this.nextInstanceId,
+            representativeId: this.representativeId
         };
     }
 
     loadFromState(state) {
         if (!state) return;
         this.nextInstanceId = state.nextInstanceId || 1;
+        this.representativeId = state.representativeId || null;
 
         this.owned = (state.owned || []).map(c => {
             if (typeof c.acquiredAt === 'string') {

@@ -144,6 +144,16 @@ export default class AuthView extends BaseView {
             this.game.startMainGame(); // 게임 시작 로직 트리거
         });
 
+        // [Fix] 초기화 시점에 이미 세션이 복구되어 있을 수 있으므로 즉시 체크
+        const currentUser = this.game.authManager.currentUser;
+        if (currentUser) {
+            console.log(`[AuthView] Detected already restored session for ${currentUser.username}`);
+            this._updateHeaderUserName(currentUser.username);
+            if (this.ui.loginOverlay) this.ui.loginOverlay.style.display = 'none';
+            // 약간의 지연 후 가동 (타 매니저 초기화 완료 대기)
+            setTimeout(() => this.game.startMainGame(), 10);
+        }
+
         // 초기화 시 UI 업데이트
         this._updatePersonaInfo();
         this._updateAuthFormUI();
