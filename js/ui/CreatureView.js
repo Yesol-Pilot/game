@@ -202,7 +202,7 @@ export default class CreatureView extends BaseView {
 
             div.innerHTML = `
                 <div class="element-badge" style="font-weight:900; font-size:0.9em;">${rarityBadge}</div>
-                <img src="${c.def.image}" alt="${c.def.name}">
+                <img src="${c.def.image}" alt="${c.def.name}" onerror="this.src='images/creature_placeholder_unknown.png'">
                 ${lockIcon}
                 <div class="card-overlay">
                     <div class="card-name">${elementIcon} ${c.def.name}</div>
@@ -277,7 +277,7 @@ export default class CreatureView extends BaseView {
                 </div>
                 
                 <div class="creature-portrait-large" style="position:relative;">
-                    <img src="${c.def.image}" alt="${c.def.name}">
+                    <img src="${c.def.image}" alt="${c.def.name}" onerror="this.src='images/creature_placeholder_unknown.png'">
                     <div class="speech-bubble-modal" style="position:absolute; bottom:10px; left:50%; transform:translateX(-50%); width:90%; background:rgba(0,0,0,0.8); border:1px solid var(--accent-primary); border-radius:8px; padding:10px; font-size:0.9rem; text-align:center; color:#fff; box-shadow:0 0 10px rgba(0,0,0,0.5);">
                         "${c.def.lines?.normal || '...'}"
                     </div>
@@ -458,12 +458,12 @@ export default class CreatureView extends BaseView {
             <div style="max-width:550px; max-height:80vh; overflow-y:auto; background:linear-gradient(135deg, #1a1a2e, #16213e); 
                         border-radius:16px; padding:25px; border:2px solid var(--accent-gold); box-shadow: 0 0 30px rgba(241,196,15,0.3);">
                 <div style="display:flex; align-items:center; gap:15px; margin-bottom:20px; padding-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.2);">
-                    <img src="${c.def.image}" style="width:80px; height:80px; border-radius:12px; object-fit:cover; border:2px solid var(--accent-gold);">
-                    <div>
-                        <h2 style="color:var(--accent-gold); margin:0; font-size:1.4rem;">📖 ${lore.title || c.def.name}</h2>
-                        <div style="color:#888; font-size:0.9rem; margin-top:5px;">출신: ${lore.origin || '불명'}</div>
-                    </div>
+                <img src="${c.def.image}" style="width:80px; height:80px; border-radius:12px; object-fit:cover; border:2px solid var(--accent-gold);" onerror="this.src='images/creature_placeholder_unknown.png'">
+                <div>
+                    <h2 style="color:var(--accent-gold); margin:0; font-size:1.4rem;">📖 ${lore.title || c.def.name}</h2>
+                    <div style="color:#888; font-size:0.9rem; margin-top:5px;">출신: ${lore.origin || '불명'}</div>
                 </div>
+            </div>
                 
                 <div style="margin-bottom:25px;">
                     <h3 style="color:var(--accent-cyan); margin-bottom:10px; font-size:1.1rem;">📜 이야기</h3>
@@ -597,7 +597,7 @@ export default class CreatureView extends BaseView {
         overlay.innerHTML = `
             <div class="evo-stage">
                 <div class="evo-particles"></div>
-                <img src="${oldImgSrc}" class="evo-img" id="evo-target-img">
+                <img src="${oldImgSrc}" class="evo-img" id="evo-target-img" onerror="this.src='images/creature_placeholder_unknown.png'">
                 <div class="evo-flash" id="evo-flash"></div>
             </div>
             <div class="evo-text" id="evo-text">
@@ -632,6 +632,7 @@ export default class CreatureView extends BaseView {
 
             setTimeout(() => {
                 // Swap Image
+                imgEl.onerror = () => { imgEl.src = 'images/creature_placeholder_unknown.png'; imgEl.onerror = null; }; // Fallback
                 imgEl.src = newCreature.def.image;
                 imgEl.style.animation = '';
                 imgEl.style.filter = 'brightness(1) drop-shadow(0 0 50px orange)';

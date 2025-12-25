@@ -182,5 +182,236 @@ export const WILD_CREATURES = [
         baseStr: 5, baseInt: 0,
         image: "images/creature_pebble_new.png",
         lines: { normal: "..." }
+    },
+    // --- 신규 추가 (40종 확장을 위한 슬롯) ---
+    {
+        id: "beast_behemoth",
+        name: "대지의 짐승 베히모스",
+        rarity: RANKS.SSR,
+        world: WORLDS.WILD,
+        elements: ["Earth", "Fire"],
+        ego: "Warlord",
+        baseStr: 65, baseInt: 25,
+        image: "images/creature_beast_behemoth.png",
+        lore: { title: "대지를 뒤흔드는 발걸음", story: "산맥을 닮은 거대한 덩치를 가진 전설의 야수. 그가 움직이면 땅이 갈라지고 산이 무너진다." }
+    },
+    {
+        id: "beast_leviathan",
+        name: "심해의 재앙 레비아탄",
+        rarity: RANKS.SSR,
+        world: WORLDS.WILD,
+        elements: ["Water", "Ice", "Chaos"],
+        ego: "Seeker",
+        baseStr: 50, baseInt: 40,
+        image: "images/placeholder_wild.png",
+        lore: { title: "바다의 종말", story: "일곱 바다를 한 입에 삼킬 수 있는 거대한 수룡. 태초의 공포를 간직한 심해의 주인." }
+    },
+    {
+        id: "beast_ziz",
+        name: "천공의 날개 지즈",
+        rarity: RANKS.SSR,
+        world: WORLDS.WILD,
+        elements: ["Wind", "Light"],
+        ego: "Star",
+        baseStr: 30, baseInt: 60,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "griffin_gold",
+        name: "황금 그리폰",
+        rarity: RANKS.SR,
+        world: WORLDS.WILD,
+        elements: ["Light", "Wind", "Beast"],
+        baseStr: 45, baseInt: 35,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "turtle_ancient_wild",
+        name: "만년 고대 거북",
+        rarity: RANKS.SR,
+        world: WORLDS.WILD,
+        elements: ["Earth", "Water"],
+        baseStr: 35, baseInt: 45,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "fairy_queen_titania",
+        name: "요정 여왕 티타니아",
+        rarity: RANKS.SSR,
+        world: WORLDS.WILD,
+        elements: ["Nature", "Light", "Charm"],
+        baseStr: 25, baseInt: 65,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "dryad_queen",
+        name: "드라이어드 여왕",
+        rarity: RANKS.SR,
+        world: WORLDS.WILD,
+        elements: ["Nature", "Earth"],
+        baseStr: 20, baseInt: 55,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "mantis_warrior",
+        name: "사마귀 무사",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.WILD,
+        elements: ["Nature", "Metal"],
+        baseStr: 35, baseInt: 15,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "electric_eel_king",
+        name: "번개 장어 왕",
+        rarity: RANKS.RARE,
+        world: WORLDS.WILD,
+        elements: ["Water", "Lightning"],
+        baseStr: 15, baseInt: 25,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "magma_slime_giant",
+        name: "대형 마그마 슬라임",
+        rarity: RANKS.RARE,
+        world: WORLDS.WILD,
+        elements: ["Fire", "Earth"],
+        baseStr: 25, baseInt: 15,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "seedling_spirit",
+        name: "새싹 정령",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.WILD,
+        elements: ["Nature"],
+        baseStr: 2, baseInt: 12,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "caterpillar_fat",
+        name: "통통한 애벌레",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.WILD,
+        elements: ["Nature"],
+        baseStr: 5, baseInt: 3,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "tadpole_wiggle",
+        name: "꼬물거리는 올챙이",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.WILD,
+        elements: ["Water"],
+        baseStr: 2, baseInt: 8,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "sand_prowler",
+        name: "모래 잠복꾼",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.WILD,
+        elements: ["Earth"],
+        baseStr: 18, baseInt: 10,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "leaf_insect",
+        name: "나뭇잎 벌레",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.WILD,
+        elements: ["Nature", "Wind"],
+        baseStr: 4, baseInt: 14,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "spark_mouse",
+        name: "번개 생쥐",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.WILD,
+        elements: ["Lightning"],
+        baseStr: 10, baseInt: 22,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "fossil_stone",
+        name: "움직이는 화석",
+        rarity: RANKS.RARE,
+        world: WORLDS.WILD,
+        elements: ["Earth", "Spirit"],
+        baseStr: 28, baseInt: 5,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "orchid_mantis",
+        name: "난초 사마귀",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.WILD,
+        elements: ["Nature", "Charm"],
+        baseStr: 15, baseInt: 35,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "boulder_beetle",
+        name: "바위 딱정벌레",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.WILD,
+        elements: ["Earth", "Metal"],
+        baseStr: 24, baseInt: 2,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "willOWisp_green",
+        name: "초록 도깨비불",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.WILD,
+        elements: ["Fire", "Nature"],
+        baseStr: 2, baseInt: 18,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "thorny_vine",
+        name: "가시 덩굴",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.WILD,
+        elements: ["Nature", "Poison"],
+        baseStr: 15, baseInt: 15,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "mist_crawler",
+        name: "안개 속의 배회자",
+        rarity: RANKS.RARE,
+        world: WORLDS.WILD,
+        elements: ["Water", "Wind"],
+        baseStr: 12, baseInt: 28,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "crystal_crab",
+        name: "수정 게",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.WILD,
+        elements: ["Earth", "Water", "Metal"],
+        baseStr: 30, baseInt: 20,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "sun_flower_spirit",
+        name: "해바라기 정령",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.WILD,
+        elements: ["Nature", "Light"],
+        baseStr: 5, baseInt: 15,
+        image: "images/placeholder_wild.png"
+    },
+    {
+        id: "moon_flower_spirit",
+        name: "달맞이꽃 정령",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.WILD,
+        elements: ["Nature", "Dark"],
+        baseStr: 2, baseInt: 18,
+        image: "images/placeholder_wild.png"
     }
 ];

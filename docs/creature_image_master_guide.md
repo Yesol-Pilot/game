@@ -35,20 +35,28 @@
 
 ## 📋 공통 프롬프트
 
-### Positive (필수)
+### Positive (필수 - 퀄리티 부스터)
 
 ```
-(blue archive art style:1.4), (nikke art style:1.2), 
-full body shot, solo, masterpiece, best quality, 8k, highly detailed,
-thick thighs, wide hips, perfect anatomy
+(best quality:1.4), (masterpiece:1.4), (official art:1.3),
+(blue archive art style:1.5), (nikke art style:1.4), (hyung-tae kim style:1.3),
+(cel shading:1.3), (2d anime:1.4), vibrant colors, high contrast,
+full body shot, solo,
+perfect anatomy, (thick thighs:1.3), (wide hips:1.3), (small waist:1.2),
+detailed beautiful face, expressive eyes, blushing,
+(glossy skin:1.2), (oiled skin:1.1), detailed clothes texture
 ```
 
-### Negative (필수)
+### Negative (필수 - 실사 방지)
 
 ```
-3d, realistic, chibi, SD, simple background, flat colors, 
-low quality, bad anatomy, deformed, worst quality, 
-text, watermark, ui, signature, blurry
+(3d:1.5), (realistic:1.5), (photorealistic:1.5), (cgi:1.5), (render:1.5), 
+(lowres:1.4), (worst quality:1.4), (bad quality:1.4),
+simple background, white background,
+chibi, SD, deformed, distorted, disfigured,
+bad anatomy, bad hands, missing fingers, extra digits,
+text, watermark, signature, username, artist name,
+western comic style, sketch, messy lines
 ```
 
 ---
@@ -58,19 +66,18 @@ text, watermark, ui, signature, blurry
 > [!TIP]
 > **오딘 v9에서 검증됨** - 섹시 + 적당한 노출 + 블루아카이브/니케 스타일
 
-### UR급 템플릿
+### ✨ UR/SSR 하이엔드 템플릿 (섹시 & 글래머)
 
 ```
-Japanese anime gacha game style illustration of extremely beautiful sexy female [캐릭터명],
-no text no UI no watermark.
-Gorgeous anime face with beautiful big eyes, [특징].
-Extremely voluptuous body with very large breasts, tiny waist, thick thighs, wide hips.
-Wearing elegant [색상] ornate armor bikini top showing cleavage,
-exposed toned midriff, flowing cape, armored skirt with high slit,
-thigh high armored boots.
-Holding [무기]. [배경].
-Confident seductive alluring expression.
-Premium UR legendary gacha quality, vibrant colors, lens flare effects
+(masterpiece:1.5), (best quality:1.5), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, [캐릭터명] inside [배경],
+extremely beautiful detailed face, captivating eyes, looking at viewer,
+(voluptuous body:1.4), (huge breasts:1.3), (extremely thick thighs:1.4), (wide hips:1.4), (tiny waist:1.2),
+[의상 묘사 - 예: latex bodysuit, revealing armor, torn clothes],
+[포즈/상황 - 예: dynamic pose, kneeling, reaching out],
+(cinematic lighting:1.3), (backlighting:1.2), tyndall effect, lens flare,
+glowing particles, magical aura, floating objects,
+vibrant saturation, cel shading, highly detailed texture
 ```
 
 **핵심**: 큰 눈 + 볼륨 있는 몸매 + 갑옷 비키니/드레스 + 배 노출 OK + 허벅지 슬릿
@@ -972,3 +979,158 @@ rocky field background, simple design, minimal details
 ---
 
 **총 작업량**: 생성 필요 12개 + 재생성 필요 10개 = **22개**
+
+---
+
+# 🚀 Priority 1: 신규 생성 프롬프트 (최신 반영 - 2025.12.25)
+
+> [!IMPORTANT]
+> **스타일 절대 준수**: 
+> `(blue archive art style:1.5)`, `(nikke art style:1.4)`, `(otaku culture:1.3)`, `(cel shading:1.3)`
+> **Negative**: `(3d:1.5)`, `(realistic:1.5)`
+
+## 🟡 UR / SSR (최우선 작업)
+
+### [SSR] 장난의 신 로키 (`god_loki`)
+- **컨셉**: 장난기 넘치는 소악마, 트릭스터, 중성적인 매력의 소녀
+- **스타일**: 보라색 & 네온 그린 컬러, 글리치 효과
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female trickster god loki,
+mischievous cute face with heterochromia eyes (green and purple), tongue out expression,
+short messy green hair with two small horns,
+wearing stylish oversized hoodie with rune patterns, thigh high striped socks,
+floating magic daggers behind back, glitch digital effects, green magic aura,
+jungle gym or chaotic geometric background,
+slender body, small chest, playful pose, dynamic camera angle,
+(cel shading:1.3), vibrant neon colors, shiny skin
+```
+
+### [SSR] 아름다움의 여신 프레야 (`god_freya`)
+- **컨셉**: 사랑과 전쟁의 여신, 화려함, 글래머러스
+- **스타일**: 핑크 & 골드, 장미, 보석
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female goddess freya,
+extremely voluptuous body, (huge breasts:1.4), (wide hips:1.4), (thick thighs:1.4),
+long flowing pink-gold gradient hair, beautiful mature face with loving eyes,
+wearing revealing bridal-style armor dress with translucent silk,
+golden necklace "Brisingamen", surrounded by falling rose petals and golden sparkles,
+fantasy garden palace background with soft sunlight,
+seductive elegance pose, reaching hand to viewer,
+(glossy skin:1.3), (oiled skin:1.2), cinematic lighting
+```
+
+### [UR] 세계의 뱀 요르문간드 (`snake_world_jormungandr`)
+- **컨셉**: 거대함, 압도적 공포, 차가운 미녀
+- **스타일**: 다크 틸(Teal) & 블랙, 물 효과
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female monster girl jormungandr,
+pale skin, long teal-green hair resembling seaweed,
+wearing tight black latex bodysuit with scales texture,
+lower body merging into massive giant snake tail coiling around the world,
+ocean storm background with giant waves, rain and lightning,
+cold emotionless eyes, holding a giant anchor chain,
+(wet skin:1.4), (giantess:1.3), perspective looking up from below,
+menacing aura, dark cinematic atmosphere
+```
+
+### [SSR] 발키리 대장 군르 (`valkyrie_leader_gunnr`)
+- **컨셉**: 전장의 아이돌, 노출이 있는 판타지 아머, 글래머러스, 금발, 파란 눈
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female valkyrie commander gunnr,
+(revealing golden bikini armor:1.4), (metal skirt:1.2), (large breasts:1.3), (perfect thighs:1.4),
+blonde braided hair with winged headpiece, holding a flag and sword,
+sky battlefield background, feathers falling, lens flare, god rays,
+confident sexy expression, looking down at viewer,
+(exposed skin:1.3), (oiled skin:1.2), heroic anime style
+```
+
+### [SSR] 아기 슬레이프니르 (`sleipnir_foal`)
+- **컨셉**: 8다리 컨셉 삭제 **(중요)** -> **2다리 육상부 미소녀**, 스피드스터
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female horse girl sleipnir,
+(normal two human legs:1.5), (sexy racing queen swimsuit:1.4), (high leg cut:1.4),
+grey and silver glossy outfit, knee high boots,
+running pose with wind effect, lightning sparks,
+long mane-like grey hair, horse ears and tail,
+racetrack background, cheerful winking expression, blushing,
+speed lines, dynamic motion blur, (cameltoe:1.1), anime cel shading
+```
+
+### [SSR] 제천대성 손오공 (`hero_wukong`)
+- **컨셉**: 말괄량이, 무술 소녀, 여의봉
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female monkey cloud king wukong,
+(tigerskin bikini armor:1.3), (micro denim shorts:1.3), (exposed toned abs:1.3),
+red scarf fluttering, holding extending Ruyi Jingu Bang (staff), riding on nimbus cloud,
+mischievous confident smile, golden eyes, monkey tail,
+mountain peak background with clouds, sun flare,
+athletic volupous body, (thighs:1.3), dynamic jumping pose, anime cel shading
+```
+
+### [SSR] 달토끼 루나 (`rabbit_moon`)
+- **컨셉**: 떡 찧는 토끼, 큐트 & 섹시, 한복 퓨전
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female moon rabbit luna,
+white bunny ears, long white hair, red eyes,
+(see-through fusion hanbok:1.3), (off-shoulder:1.3), (very short mini skirt:1.3), (exposed legs:1.3),
+holding a large pestle, sitting on a crescent moon, night sky background with stars,
+soft glow, cute shy expression, blushing,
+(thick thighs:1.4), (wide hips:1.2), pastel colors, dreamy atmosphere
+```
+
+### [SSR] 공작 왕자 (`peacock_prince`) -> **공작 공주 (Peacock Princess)**
+- **컨셉**: 화려함의 극치, 오만함, 깃털 부채
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female peacock princess,
+extravagant dress made of peacock feathers (green, blue, gold),
+holding a feather fan covering mouth, arrogant elegance,
+colorful makeup, jewel accessories,
+palace garden background, vibrant multicolored lighting,
+breathtaking beauty, detailed feathers texture, sparkling
+```
+
+### [UR] 기어다니는 혼돈 니알라토텝 (`god_nyarlathotep`)
+- **컨셉**: 형태 없음, 간호사/메이드 변장, 광기
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female nyarlathotep,
+disguised as naughty nurse or maid but with eldritch abnormalities,
+shadow tentacles emerging from skirt, crazy spiral eyes, yandere smile,
+holding a syringe with glowing purple liquid,
+chaotic void background with distorted geometry,
+dark purple and red filter, glitch effects, horror cute style
+```
+
+### [SSR] 숲의 검은 염소 (`god_shub`)
+- **컨셉**: 다산의 상징, 모성애(왜곡됨), 촉수
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female shub-niggurath,
+mature motherly figure, extremely voluptuous, pregnant appearance (optional) or just very curvy,
+wearing dark forest priestess robes, goat horns,
+surrounded by small dark blobs (young), forest corrupted by void background,
+dark green and black fog, tentacles, eerie atmosphere
+```
+
+### [SSR] 황색의 왕 하스터 (`god_hastur`)
+- **컨셉**: 노란 옷의 왕, 마스크, 미스터리
+```
+(masterpiece:1.5), (best quality:1.4), (blue archive art style:1.5), (nikke art style:1.4),
+full body shot, solo, female king in yellow hastur,
+wearing tattered elegant yellow robes/dress, hood covering hair,
+holding a pale mask in hand, revealing beautiful but unearthly face underneath,
+tentacles hidden under dress, lost city of carcosa background (twin suns),
+mysterious wind, yellow fog, cosmic horror elements
+```
+
+---
+*End of Guide*
+

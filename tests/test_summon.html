@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summon System Test</title>
+    <style>
+        body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; }
+        .pass { color: #4CAF50; }
+        .fail { color: #F44336; }
+        .log { font-family: monospace; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Summon System Verification</h1>
+    <div id="results"></div>
+
+    <script type="module">
+        import { CreatureManager } from '../js/managers/CreatureManager.js';
+        import { DeckManager } from '../js/managers/DeckManager.js';
+        
+        // Mock Game Object
+        class MockGame {
+            constructor() {
+                this.creatureManager = new CreatureManager(this);
+                this.deckManager = new DeckManager(this);
+                this.events = {
+                    on: (event, callback) => {},
+                    emit: (event, data) => console.log(`[Event] ${event}`, data)
+                };
+                this.resources = {
+                    gold: 100000,
+                    gems: 10000,
+                    keys: 10
+                };
+            }
+            save() {}
+        }
+
+        const game = new MockGame();
+        const results = document.getElementById('results');
+
+        function assert(condition, message) {
+            const div = document.createElement('div');
+            div.className = condition ? 'log pass' : 'log fail';
+            div.innerHTML = `${condition ? '✅' : '❌'} ${message}`;
+            results.appendChild(div);
+            return condition;
+        }
+
+        async function runTests() {
+            await game.creatureManager.loadData();
+            
+            // Test 1: Data Loading
+            assert(game.creatureManager.creatureDefs.length > 0, `Loaded ${game.creatureManager.creatureDefs.length} creature definitions`);
+
+            // Test 2: Normal Summon
+            const initialGold = game.resources.gold;
+            const summonResult = game.creatureManager.tryNormalSummon();
+            
+            // Since tryNormalSummon might be async or sync depending on implementation (it's sync in previous views)
+            // Wait, looking at main.js previously, it calls manager methods.
+            // Let's assume sync for now, or check manager code.
+            
+            // Actually, wait. tryNormalSummon in manager usually does checks and deducts resources.
+            // I need to verify if it returns the creature or emits event.
+            // Based on checking SummonView.js, it listens to 'summon:result'.
+            
+            // Let's overwrite emit to capture result
+            let lastEmittedCreature = null;
+            game.events.emit = (event, data) => {
+                if (event === 'summon:result') lastEmittedCreature = data;
+            };
+            
+            // Re-run summon
+            game.creatureManager.tryNormalSummon();
+            
+            assert(game.resources.gold < initialGold, "Gold deducted for Normal Summon");
+            assert(lastEmittedCreature !== null, "Summon event emitted with creature");
+            if (lastEmittedCreature) {
+                assert(lastEmittedCreature.def, `Summoned: ${lastEmittedCreature.def.name} (${lastEmittedCreature.def.rarity})`);
+            }
+
+            // Test 3: Batch Summon
+            let batchResults = null;
+            game.events.emit = (event, data) => {
+                if (event === 'summon:batch_result') batchResults = data;
+            };
+            
+            game.creatureManager.summonBatch('normal');
+            assert(batchResults !== null && batchResults.length === 10, "Batch summon returned 10 creatures");
+        }
+
+        runTests().catch(e => {
+            const div = document.createElement('div');
+            div.className = 'log fail';
+            div.innerText = `🔥 Exception: ${e.message}\n${e.stack}`;
+            results.appendChild(div);
+        });
+    </script>
+</body>
+</html>

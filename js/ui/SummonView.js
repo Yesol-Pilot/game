@@ -198,6 +198,9 @@ export default class SummonView extends BaseView {
         // Override overlay click to use new skip handler
         overlay.onclick = this.currentSkipHandler;
 
+        // [Safety] Image Fallback
+        img.onerror = () => { img.src = 'images/creature_slime.png'; img.onerror = null; };
+
         // --- Sequence Timers ---
         this.timers = [];
 

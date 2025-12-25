@@ -242,5 +242,218 @@ export const ABYSS_CREATURES = [
             synergy: { ally: ["vampire_lord", "goblin_scout"], rival: [] }
         },
         lines: { normal: "키이익... 피는 무서워..." }
+    },
+    // --- 신규 추가 (40종 확장을 위한 슬롯) ---
+    {
+        id: "god_cthulhu",
+        name: "별의 지배자 크툴루",
+        rarity: RANKS.UR,
+        world: WORLDS.ABYSS,
+        elements: ["Water", "Void", "Dark"],
+        ego: "Seeker",
+        baseStr: 45, baseInt: 80,
+        image: "images/creature_god_cthulhu.png",
+        lore: { title: "위대한 옛 것", story: "해저 깊은 곳 별의 도시 르뤼에에 잠들어 있는 공포의 화신. 그의 꿈은 현실을 왜곡시킨다." }
+    },
+    {
+        id: "god_nyarlathotep",
+        name: "기어다니는 혼돈 니알라토텝",
+        rarity: RANKS.UR,
+        world: WORLDS.ABYSS,
+        elements: ["Chaos", "Void", "Charm"],
+        ego: "Star",
+        baseStr: 30, baseInt: 85,
+        image: "images/creature_god_nyarlathotep.png",
+        lore: { title: "외신들의 사자", story: "수천 가지 전신을 가진 혼돈의 인도자. 그녀에게 인간의 파멸은 즐거운 유희일 뿐입니다." }
+    },
+    {
+        id: "god_shub",
+        name: "만 마리 새끼를 품은 숲의 염소",
+        rarity: RANKS.SSR,
+        world: WORLDS.ABYSS,
+        elements: ["Nature", "Dark", "Chaos"],
+        ego: "Devotion",
+        baseStr: 40, baseInt: 70,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "god_hastur",
+        name: "황색 옷의 왕 하스터",
+        rarity: RANKS.SSR,
+        world: WORLDS.ABYSS,
+        elements: ["Wind", "Void", "Voice"],
+        baseStr: 35, baseInt: 75,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "god_dagon",
+        name: "심해의 거신 다곤",
+        rarity: RANKS.SR,
+        world: WORLDS.ABYSS,
+        elements: ["Water", "Earth"],
+        baseStr: 60, baseInt: 20,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "knight_dullahan",
+        name: "머리 없는 기사 듀라한",
+        rarity: RANKS.SR,
+        world: WORLDS.ABYSS,
+        elements: ["Dark", "Metal"],
+        baseStr: 50, baseInt: 30,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "mimic_box",
+        name: "탐욕의 상자 미믹",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.ABYSS,
+        elements: ["Earth", "Dark"],
+        baseStr: 25, baseInt: 15,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "eye_bat",
+        name: "외눈박이 박쥐",
+        rarity: RANKS.RARE,
+        world: WORLDS.ABYSS,
+        elements: ["Dark", "Wind"],
+        baseStr: 8, baseInt: 22,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "void_tentacle",
+        name: "공허의 촉수",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Void"],
+        baseStr: 12, baseInt: 5,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "sludge_blob",
+        name: "오염된 슬러지",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Poison", "Water"],
+        baseStr: 5, baseInt: 10,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "bone_fragment_spirit",
+        name: "뼈 조각 정령",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 2,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "whispering_skull",
+        name: "속삭이는 해골",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Spirit", "Voice"],
+        baseStr: 1, baseInt: 15,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "shadow_lurker",
+        name: "그림자 잠복자",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ABYSS,
+        elements: ["Dark", "Wind"],
+        baseStr: 18, baseInt: 12,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "abyss_watcher_small",
+        name: "작은 심연의 감시자",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ABYSS,
+        elements: ["Void", "Dark"],
+        baseStr: 12, baseInt: 20,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "cursed_doll",
+        name: "저주받은 인형",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.ABYSS,
+        elements: ["Spirit", "Charm"],
+        baseStr: 5, baseInt: 40,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "ghost_lamp",
+        name: "영혼의 등불",
+        rarity: RANKS.RARE,
+        world: WORLDS.ABYSS,
+        elements: ["Light", "Spirit"],
+        baseStr: 2, baseInt: 30,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "void_larva",
+        name: "공허의 유충",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Void", "Poison"],
+        baseStr: 10, baseInt: 2,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "dark_puddles",
+        name: "검은 물웅덩이",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Water", "Dark"],
+        baseStr: 3, baseInt: 12,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "screaming_root",
+        name: "비명 지르는 뿌리",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ABYSS,
+        elements: ["Nature", "Voice"],
+        baseStr: 15, baseInt: 15,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "ghoul_scavenger",
+        name: "시체 먹는 구울",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ABYSS,
+        elements: ["Dark", "Beast"],
+        baseStr: 22, baseInt: 5,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "deep_one_soldier",
+        name: "딥 원 전사",
+        rarity: RANKS.RARE,
+        world: WORLDS.ABYSS,
+        elements: ["Water", "Earth"],
+        baseStr: 25, baseInt: 10,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "void_moth_small",
+        name: "작은 공허 나방",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Wind", "Void"],
+        baseStr: 5, baseInt: 15,
+        image: "images/placeholder_abyss.png"
+    },
+    {
+        id: "ink_squid_abyss",
+        name: "심연 먹물 오징어",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Water", "Dark"],
+        baseStr: 8, baseInt: 8,
+        image: "images/placeholder_abyss.png"
     }
 ];

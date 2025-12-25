@@ -161,5 +161,304 @@ export const ASGARD_CREATURES = [
             synergy: { ally: ["giant_hill", "snow_spirit"], rival: ["mage_flame", "phoenix_eternal"] }
         },
         lines: { normal: "추위는 익숙해. 연어 줄 거야? 아... 뭐, 안 줘도 돼..." }
+    },
+    // --- 신규 추가 (40종 확장을 위한 슬롯) ---
+    {
+        id: "god_thor",
+        name: "천둥의 망치 토르",
+        rarity: RANKS.UR,
+        world: WORLDS.ASGARD,
+        elements: ["Lightning", "Metal", "Earth"],
+        ego: "Warlord",
+        baseStr: 70, baseInt: 10,
+        image: "images/creature_god_thor.png",
+        lore: { title: "묠니르의 주인", story: "아스가르드 최강의 전사. 그의 망치가 휘둘러질 때마다 거인들이 공포에 떤다." }
+    },
+    {
+        id: "god_loki",
+        name: "장난의 신 로키",
+        rarity: RANKS.SSR,
+        world: WORLDS.ASGARD,
+        elements: ["Dark", "Magic", "Charm"],
+        ego: "Star",
+        baseStr: 20, baseInt: 65,
+        image: "images/creature_god_loki.png",
+        lore: { title: "변화무쌍한 책략가", story: "신들 사이의 말썽꾸러기이자 종말의 도화선. 그녀의 속삭임은 운명을 바꾼다." }
+    },
+    {
+        id: "god_freya",
+        name: "아름다움의 여신 프레이야",
+        rarity: RANKS.SSR,
+        world: WORLDS.ASGARD,
+        elements: ["Light", "Nature", "Charm"],
+        ego: "Princess",
+        baseStr: 25, baseInt: 55,
+        skillId: "freya_skill",
+        image: "images/creature_god_freya.png",
+        lore: { title: "사랑과 전쟁", story: "모든 신들이 사랑하는 아름다움의 여신. 그녀의 눈물은 황금이 되어 떨어진다." }
+    },
+    {
+        id: "god_hel",
+        name: "저승의 여왕 헬",
+        rarity: RANKS.SR,
+        world: WORLDS.ASGARD,
+        elements: ["Dark", "Ice"],
+        baseStr: 30, baseInt: 45,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "giant_fire_surtr",
+        name: "불의 거인 수르트",
+        rarity: RANKS.SR,
+        world: WORLDS.ASGARD,
+        elements: ["Fire", "Chaos"],
+        baseStr: 55, baseInt: 25,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "snake_world_jormungandr",
+        name: "세계뱀 요르문간드",
+        rarity: RANKS.UR,
+        world: WORLDS.ASGARD,
+        elements: ["Poison", "Water", "Earth"],
+        baseStr: 40, baseInt: 70,
+        image: "images/creature_snake_world_jormungandr.png",
+        lore: "세계를 휘감고 있는 거대한 뱀. 그녀가 움직이면 해일이 일어납니다."
+    },
+    {
+        id: "valkyrie_leader_gunnr",
+        name: "발키리 대장 군르",
+        rarity: RANKS.SSR,
+        world: WORLDS.ASGARD,
+        elements: ["Light", "Metal", "Wind"],
+        baseStr: 45, baseInt: 40,
+        image: "images/creature_valkyrie_leader_gunnr.png",
+        lore: "전장의 영혼을 인도하는 발키리의 수장. 그녀의 깃발 아래에선 패배란 없습니다."
+    },
+    {
+        id: "huginn_crow",
+        name: "오딘의 까마귀 후긴",
+        rarity: RANKS.RARE,
+        world: WORLDS.ASGARD,
+        elements: ["Dark", "Wind"],
+        baseStr: 5, baseInt: 25,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "muninn_crow",
+        name: "오딘의 까마귀 무닌",
+        rarity: RANKS.RARE,
+        world: WORLDS.ASGARD,
+        elements: ["Dark", "Wind"],
+        baseStr: 2, baseInt: 28,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "wolf_pup_asgard",
+        name: "아기 늑대",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ASGARD,
+        elements: ["Beast"],
+        baseStr: 10, baseInt: 2,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "dwarf_apprentice",
+        name: "드워프 수습전공",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ASGARD,
+        elements: ["Metal"],
+        baseStr: 12, baseInt: 5,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "troll_baby",
+        name: "아기 트롤",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ASGARD,
+        elements: ["Earth"],
+        baseStr: 15, baseInt: 1,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "ice_spirit_small",
+        name: "작은 얼음 정령",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ASGARD,
+        elements: ["Ice"],
+        baseStr: 2, baseInt: 10,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "viking_youth",
+        name: "열혈 바이킹 소년",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ASGARD,
+        elements: ["Metal", "Fire"],
+        baseStr: 18, baseInt: 5,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "valkyrie_recruit",
+        name: "신입 발키리",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ASGARD,
+        elements: ["Light", "Wind"],
+        baseStr: 12, baseInt: 12,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "einherjar_ghost",
+        name: "방황하는 에인헤랴르",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.ASGARD,
+        elements: ["Light", "Spirit"],
+        baseStr: 20, baseInt: 15,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "goat_lightning",
+        name: "번개 염소 탕그리스니르",
+        rarity: RANKS.RARE,
+        world: WORLDS.ASGARD,
+        elements: ["Lightning", "Beast"],
+        baseStr: 18, baseInt: 5,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "ratatoskr_squirrel",
+        name: "전령 다람쥐 라타토스크",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ASGARD,
+        elements: ["Nature", "Wind"],
+        baseStr: 5, baseInt: 22,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "nidhogg_spawn",
+        name: "니드호그의 자식",
+        rarity: RANKS.RARE,
+        world: WORLDS.ASGARD,
+        elements: ["Dark", "Poison"],
+        baseStr: 15, baseInt: 12,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "sleipnir_foal",
+        name: "아기 슬레이프니르",
+        rarity: RANKS.SSR,
+        world: WORLDS.ASGARD,
+        elements: ["Wind", "Light"],
+        baseStr: 35, baseInt: 25,
+        image: "images/creature_sleipnir_foal.png",
+        lore: "다리가 8개 달린 전설의 명마. 누구보다 빠르게 전장을 누빕니다."
+    },
+    {
+        id: "elk_golden",
+        name: "황금 뿔 엘크",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.ASGARD,
+        elements: ["Nature", "Light"],
+        baseStr: 15, baseInt: 20,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "yggdrasil_guardian",
+        name: "세계수 수호병",
+        rarity: RANKS.SR,
+        world: WORLDS.ASGARD,
+        elements: ["Nature", "Earth"],
+        baseStr: 30, baseInt: 20,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "mimir_spirit",
+        name: "미미르의 지혜 정령",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.ASGARD,
+        elements: ["Ice", "Void"],
+        baseStr: 5, baseInt: 45,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "frost_giant_warrior",
+        name: "서리 거인 전사",
+        rarity: RANKS.RARE,
+        world: WORLDS.ASGARD,
+        elements: ["Ice", "Earth"],
+        baseStr: 25, baseInt: 5,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "fire_giant_scout",
+        name: "화염 거인 정찰병",
+        rarity: RANKS.RARE,
+        world: WORLDS.ASGARD,
+        elements: ["Fire"],
+        baseStr: 22, baseInt: 8,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "shieldmaiden_iron",
+        name: "철벽의 방패처녀",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ASGARD,
+        elements: ["Metal", "Earth"],
+        baseStr: 20, baseInt: 10,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "beserker_bear",
+        name: "베어 버서커",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ASGARD,
+        elements: ["Beast", "Fire"],
+        baseStr: 28, baseInt: 2,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "ulfhednar_wolf",
+        name: "울프헤드나르 전사",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.ASGARD,
+        elements: ["Beast", "Dark"],
+        baseStr: 25, baseInt: 5,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "nordic_cat_freya",
+        name: "프레이야의 고양이",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.ASGARD,
+        elements: ["Beast", "Charm"],
+        baseStr: 12, baseInt: 22,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "draugr_remnant",
+        name: "낡은 드라우그",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ASGARD,
+        elements: ["Dark", "Ice"],
+        baseStr: 12, baseInt: 2,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "bifrost_wisp",
+        name: "비프뢰스트의 빛무궁",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ASGARD,
+        elements: ["Light", "Magic"],
+        baseStr: 1, baseInt: 12,
+        image: "images/placeholder_asgard.png"
+    },
+    {
+        id: "heimdall_horn_spirit",
+        name: "걀라르호른의 메아리",
+        rarity: RANKS.RARE,
+        world: WORLDS.ASGARD,
+        elements: ["Wind", "Light"],
+        baseStr: 5, baseInt: 25,
+        image: "images/placeholder_asgard.png"
     }
 ];

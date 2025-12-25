@@ -1,0 +1,1388 @@
+﻿[
+    {
+        "ID":  "zeus_skill",
+        "Name":  "",
+        "Rarity":  "UR",
+        "Image":  "images/creature_god_zeus.jpg",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "zeus_basic",
+        "Name":  "",
+        "Rarity":  "",
+        "Image":  "images/creature_god_zeus.jpg",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "zeus_shy",
+        "Name":  "",
+        "Rarity":  "",
+        "Image":  "images/creature_god_zeus_shy.jpg",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "zeus_angry",
+        "Name":  "",
+        "Rarity":  "",
+        "Image":  "images/creature_god_zeus_angry.jpg",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "zeus_love",
+        "Name":  "",
+        "Rarity":  "",
+        "Image":  "images/creature_god_zeus_love.jpg",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "chronos_skill",
+        "Name":  "?쒓컙??吏諛곗옄 ?щ줈?몄뒪",
+        "Rarity":  "UR",
+        "Image":  "images/creature_time_lord_chronos.png?v=5",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "angel_skill",
+        "Name":  "",
+        "Rarity":  "SSR",
+        "Image":  "images/creature_angel_arch.png?v=5",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "titan_atlas",
+        "Name":  "嫄곗떊 ?꾪??쇱뒪",
+        "Rarity":  "SR",
+        "Image":  "images/creature_titan_atlas.png?v=5",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "mage_flame",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/creature_mage_flame.png?v=3",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "unicorn_young",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/creature_unicorn.png?v=2",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "centaur_scout",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_centaur.png?v=2",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "cloud_puff",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_cloud_puff.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "titan_kronos_shade",
+        "Name":  "",
+        "Rarity":  "UR",
+        "Image":  "images/boss_kronos.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "minotaur_king",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/boss_minotaur.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "cerberus_guardian",
+        "Name":  "吏?ν뙆?섍씔 耳瑜대쿋濡쒖뒪",
+        "Rarity":  "SR",
+        "Image":  "images/boss_cerberus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "hydra_lernaean",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/boss_hydra.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "lion_nemean",
+        "Name":  "?ㅻ찓?꾩쓽 ?ъ옄",
+        "Rarity":  "SR",
+        "Image":  "images/boss_lion.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "god_poseidon",
+        "Name":  "?ы빐??援곗＜ ?ъ꽭?대룉",
+        "Rarity":  "SSR",
+        "Image":  "images/creature_god_poseidon.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "god_hades",
+        "Name":  "",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "god_dionysus",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "hero_hercules",
+        "Name":  "",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "medusa_cursed",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "harpy_queen",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "siren_singer",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "pegasus_colt",
+        "Name":  "?꾧린 ?섍??섏뒪",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "satyr_young",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "dryad_seed",
+        "Name":  "?쒕씪?댁뼱???⑥븮",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "cyclops_worker",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "nymph_water",
+        "Name":  "?섏쓽 ?섑봽",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "griffin_chick",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "cerberus_pup",
+        "Name":  "?꾧린 耳瑜대쿋濡쒖뒪",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "hellhound_scout",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "automaton_mini",
+        "Name":  "誘몃땲 ?ㅽ넗留덊넠",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "minotaur_calf",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "gorgon_sister_e",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "gorgon_sister_s",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "charybdis_baby",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "scylla_pup",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "talos_fragment",
+        "Name":  "?덈줈?ㅼ쓽 ?뚰렪",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "fury_hiss",
+        "Name":  "遺꾨끂???뺣졊 ?⑤━",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "muse_lyra",
+        "Name":  "?낅낫??裕ㅼ쫰",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "chimera_cub",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "sphinx_kitten",
+        "Name":  "?꾧린 ?ㅽ븨?ъ뒪",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "phoenix_chick_o",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_olympus.png",
+        "File":  "OlympusData.js"
+    },
+    {
+        "ID":  "wolf_fenrir",
+        "Name":  "",
+        "Rarity":  "SSR",
+        "Image":  "images/creature_wolf_fenrir.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "odin_skill",
+        "Name":  "理쒓퀬???ㅻ뵖",
+        "Rarity":  "UR",
+        "Image":  "images/creature_god_odin.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "valkyrie",
+        "Name":  "?꾩옣??源껊컻 釉뚮??먰듃",
+        "Rarity":  "SR",
+        "Image":  "images/creature_valkyrie.png?v=3",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "giant_hill",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/creature_giant_hill.png?v=3",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "dwarf_smith",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/creature_dwarf.png?v=4",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "eagle_iron",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_eagle_iron.png?v=3",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "bear_ice",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_bear_ice.png?v=3",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "god_thor",
+        "Name":  "泥쒕뫁??留앹튂 ?좊Ⅴ",
+        "Rarity":  "UR",
+        "Image":  "images/creature_god_thor.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "god_loki",
+        "Name":  "?λ궃????濡쒗궎",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "god_freya",
+        "Name":  "?꾨쫫?ㅼ????ъ떊 ?꾨젅?댁빞",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "god_hel",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "giant_fire_surtr",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "snake_world_jormungandr",
+        "Name":  "",
+        "Rarity":  "UR",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "valkyrie_leader_gunnr",
+        "Name":  "諛쒗궎由????援곕Ⅴ",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "huginn_crow",
+        "Name":  "?ㅻ뵖??源뚮쭏洹 ?꾧릿",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "muninn_crow",
+        "Name":  "?ㅻ뵖??源뚮쭏洹 臾대땶",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "wolf_pup_asgard",
+        "Name":  "?꾧린 ?묐?",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "dwarf_apprentice",
+        "Name":  "?쒖썙???섏뒿?꾧났",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "troll_baby",
+        "Name":  "?꾧린 ?몃·",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "ice_spirit_small",
+        "Name":  "?묒? ?쇱쓬 ?뺣졊",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "viking_youth",
+        "Name":  "?댄삁 諛붿씠???뚮뀈",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "valkyrie_recruit",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "einherjar_ghost",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "goat_lightning",
+        "Name":  "踰덇컻 ?쇱냼 ?뺢렇由ъ뒪?덈Ⅴ",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "ratatoskr_squirrel",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "nidhogg_spawn",
+        "Name":  "?덈뱶?멸렇???먯떇",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "sleipnir_foal",
+        "Name":  "?꾧린 ?щ젅?댄봽?덈Ⅴ",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "elk_golden",
+        "Name":  "?⑷툑 肉??섑겕",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "yggdrasil_guardian",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "mimir_spirit",
+        "Name":  "誘몃?瑜댁쓽 吏???뺣졊",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "frost_giant_warrior",
+        "Name":  "?쒕━ 嫄곗씤 ?꾩궗",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "fire_giant_scout",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "shieldmaiden_iron",
+        "Name":  "泥좊꼍??諛⑺뙣泥섎?",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "beserker_bear",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "ulfhednar_wolf",
+        "Name":  "?명봽?ㅻ뱶?섎Ⅴ ?꾩궗",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "nordic_cat_freya",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "draugr_remnant",
+        "Name":  "?≪? ?쒕씪?곌렇",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "bifrost_wisp",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "heimdall_horn_spirit",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_asgard.png",
+        "File":  "AsgardData.js"
+    },
+    {
+        "ID":  "dragon_ancient",
+        "Name":  "?쒖큹????諛뷀븯臾댄듃",
+        "Rarity":  "UR",
+        "Image":  "images/creature_dragon_ancient.png?v=5",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "miho_skill",
+        "Name":  "泥쒕뀈 援щ???誘명샇",
+        "Rarity":  "UR",
+        "Image":  "images/creature_fox_nine_ur.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "phoenix_eternal",
+        "Name":  "遺덈㈇???붿“ ?섏씠",
+        "Rarity":  "SSR",
+        "Image":  "images/creature_phoenix_eternal.png?v=3",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "fox_nine",
+        "Name":  "?ъ슦?붽눼 誘명샇",
+        "Rarity":  "SR",
+        "Image":  "images/creature_fox_yokai_sr.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "ninja_shadow",
+        "Name":  "洹몃┝???뚯옄",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/creature_ninja_shadow.png?v=3",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "flower_fairy",
+        "Name":  "苑껋쓽 ?붿젙",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_flower_fairy.png?v=3",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "panda_monk",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_panda.png?v=2",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "fox_baby",
+        "Name":  "?꾧린?ъ슦 誘명샇",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_fox_baby_n.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "ink_spirit",
+        "Name":  "癒밸Ъ ?붿젙",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_ink_spirit.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "god_dragon_king",
+        "Name":  "?섏젙沅곸쓽 ?⑹솗",
+        "Rarity":  "UR",
+        "Image":  "images/creature_god_dragon_king.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "hero_wukong",
+        "Name":  "",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "rabbit_moon",
+        "Name":  "?ы넗??猷⑤굹",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "dragon_azure",
+        "Name":  "泥?！",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "tiger_white",
+        "Name":  "諛깊샇",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "bird_vermilion",
+        "Name":  "二쇱옉",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "turtle_black",
+        "Name":  "?꾨Т",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "dokkeabi_king",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "crane_sage",
+        "Name":  "援щ쫫 ?꾩쓽 ???좎꽑",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "lucky_cat_kuro",
+        "Name":  "蹂?怨좎뼇??荑좊줈",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "tea_leaf_fairy",
+        "Name":  "李살옂 ?붿젙",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "rice_grain_spirit",
+        "Name":  "????뺣졊",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "bamboo_chopper",
+        "Name":  "??섎Т ?꾩궗",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "lantern_ghost",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "pears_spirit",
+        "Name":  "?곌퐙 ?꾩뵪",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "paper_charm_seal",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "heavenly_maiden_small",
+        "Name":  "瑗щ쭏 ?좊?",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "yin_yang_orb",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "cherry_blossom_petal",
+        "Name":  "踰싰퐙???붿젙",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "kumiho_servant",
+        "Name":  "誘명샇???쒖쥌",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "mountain_god_tiger",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "magpie_messenger",
+        "Name":  "諛섍???源뚯튂 ?꾨졊",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "cloud_serpent",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "bonsai_spirit",
+        "Name":  "泥쒕뀈 遺꾩옱 ?뺣졊",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "scroll_dragon",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "wind_chime_spirit",
+        "Name":  "?띻꼍 ?뚮━ ?붿젙",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "statue_lion_dog",
+        "Name":  "?댁튂 ?앹긽",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "butterfly_dream",
+        "Name":  "?μ옄???섎퉬",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "peacock_prince",
+        "Name":  "怨듭옉 ?뺤옄",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "firefly_night",
+        "Name":  "?щ갇??諛섎뵩遺덉씠",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "koi_ascending",
+        "Name":  "?⑹씠 ?섍퀬 ?띠? ?됱뼱",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_shangrila.png",
+        "File":  "ShangriLaData.js"
+    },
+    {
+        "ID":  "void_emperor",
+        "Name":  "怨듯뿀???ъ젣 ?먮젅蹂댁뒪",
+        "Rarity":  "UR",
+        "Image":  "images/creature_void_emperor.png?v=5",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "dragon_chaos",
+        "Name":  "?쇰룉???⑺씗 ?곗븘留덊듃",
+        "Rarity":  "UR",
+        "Image":  "images/creature_dragon_chaos.png?v=5",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "demon_king",
+        "Name":  "留덉솗 諛붿븣",
+        "Rarity":  "SSR",
+        "Image":  "images/creature_demon_king.png?v=5",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "vampire_lord",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/creature_vampire_lord.png?v=3",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "kraken_worldstar",
+        "Name":  "?붾뱶?ㅽ? 猷⑤（",
+        "Rarity":  "UR",
+        "Image":  "images/creature_kraken_worldstar.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "kraken_idol",
+        "Name":  "?꾩씠??猷⑤（",
+        "Rarity":  "SR",
+        "Image":  "images/creature_kraken_idol.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "kraken_baby",
+        "Name":  "?곗뒿??猷⑤（",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_kraken_trainee.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "knight_skeleton",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/creature_knight_skeleton.png?v=3",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "gargoyle_stone",
+        "Name":  "?앹긽 媛怨좎씪",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_gargoyle.png?v=2",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "goblin_scout",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/creature_goblin_scout_new.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "rat_brown",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_rat_brown_new.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "bat_small",
+        "Name":  "?묒? 諛뺤쪖",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_bat_small_new.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "god_cthulhu",
+        "Name":  "",
+        "Rarity":  "UR",
+        "Image":  "images/creature_god_cthulhu.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "god_nyarlathotep",
+        "Name":  "",
+        "Rarity":  "UR",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "god_shub",
+        "Name":  "留?留덈━ ?덈겮瑜??덉? ?뀁쓽 ?쇱냼",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "god_hastur",
+        "Name":  "",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "god_dagon",
+        "Name":  "?ы빐??嫄곗떊 ?ㅺ낀",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "knight_dullahan",
+        "Name":  "癒몃━ ?녿뒗 湲곗궗 ??쇳븳",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "mimic_box",
+        "Name":  "?먯슃???곸옄 誘몃?",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "eye_bat",
+        "Name":  "?몃늿諛뺤씠 諛뺤쪖",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "void_tentacle",
+        "Name":  "怨듯뿀??珥됱닔",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "sludge_blob",
+        "Name":  "?ㅼ뿼???щ윭吏",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "bone_fragment_spirit",
+        "Name":  "堉?議곌컖 ?뺣졊",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "whispering_skull",
+        "Name":  "?띿궘?대뒗 ?닿낏",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "shadow_lurker",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "abyss_watcher_small",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "cursed_doll",
+        "Name":  "?二쇰컺? ?명삎",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "ghost_lamp",
+        "Name":  "?곹샎???깅텋",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "void_larva",
+        "Name":  "怨듯뿀???좎땐",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "dark_puddles",
+        "Name":  "寃? 臾쇱썒?⑹씠",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "screaming_root",
+        "Name":  "鍮꾨챸 吏瑜대뒗 肉뚮━",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "ghoul_scavenger",
+        "Name":  "?쒖껜 癒밸뒗 援ъ슱",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "deep_one_soldier",
+        "Name":  "?????꾩궗",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "void_moth_small",
+        "Name":  "?묒? 怨듯뿀 ?섎갑",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "ink_squid_abyss",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_abyss.png",
+        "File":  "AbyssData.js"
+    },
+    {
+        "ID":  "creator_gaia",
+        "Name":  "李쎌“二?媛?댁븘",
+        "Rarity":  "UR",
+        "Image":  "images/creature_creator_gaia.png?v=5",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "dragon_drake",
+        "Name":  "??뿼???⑥솗 ?닿렇?덉뒪",
+        "Rarity":  "SSR",
+        "Image":  "images/creature_dragon_drake.png?v=3",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "chimera_beast",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/creature_chimera.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "ent_ancient",
+        "Name":  "怨좊? ?뷀듃",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/creature_ent_ancient.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "elemental_water",
+        "Name":  "臾쇱쓽 ?뺣졊",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/creature_elemental_water.png?v=3",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "snow_spirit",
+        "Name":  "?덉넚???뺣졊",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/creature_snow_spirit_new.png?v=3",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "wolf_dire",
+        "Name":  "?ㅼ씠???명봽",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_wolf_dire.png?v=3",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "golem_mud",
+        "Name":  "吏꾪쓾 怨⑤젞",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_golem_mud.png?v=3",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "wisp_faint",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/creature_wisp_faint_new.png?v=3",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "slime_red",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/creature_magma_slime.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "mushroom_angry",
+        "Name":  "?붾궃 踰꾩꽢",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/creature_mushroom_angry_new.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "fish_flying",
+        "Name":  "?좎튂",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/creature_fish_flying_new.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "slime_green",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_slime_green_new.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "slime_blue",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_blue_slime.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "pebble",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/creature_pebble_new.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "beast_behemoth",
+        "Name":  "?吏??吏먯듅 踰좏엳紐⑥뒪",
+        "Rarity":  "SSR",
+        "Image":  "images/creature_beast_behemoth.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "beast_leviathan",
+        "Name":  "?ы빐???ъ븰 ?덈퉬?꾪깂",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "beast_ziz",
+        "Name":  "",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "griffin_gold",
+        "Name":  "",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "turtle_ancient_wild",
+        "Name":  "留뚮뀈 怨좊? 嫄곕턿",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "fairy_queen_titania",
+        "Name":  "?붿젙 ?ъ솗 ?고??덉븘",
+        "Rarity":  "SSR",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "dryad_queen",
+        "Name":  "?쒕씪?댁뼱???ъ솗",
+        "Rarity":  "SR",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "mantis_warrior",
+        "Name":  "?щ쭏洹 臾댁궗",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "electric_eel_king",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "magma_slime_giant",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "seedling_spirit",
+        "Name":  "?덉떦 ?뺣졊",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "caterpillar_fat",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "tadpole_wiggle",
+        "Name":  "",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "sand_prowler",
+        "Name":  "",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "leaf_insect",
+        "Name":  "?섎춪??踰뚮젅",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "spark_mouse",
+        "Name":  "踰덇컻 ?앹쪖",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "fossil_stone",
+        "Name":  "?吏곸씠???붿꽍",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "orchid_mantis",
+        "Name":  "?쒖큹 ?щ쭏洹",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "boulder_beetle",
+        "Name":  "諛붿쐞 ?깆젙踰뚮젅",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "willOWisp_green",
+        "Name":  "珥덈줉 ?꾧묠鍮꾨텋",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "thorny_vine",
+        "Name":  "媛???⑷뎬",
+        "Rarity":  "UNIQUE",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "mist_crawler",
+        "Name":  "",
+        "Rarity":  "RARE",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "crystal_crab",
+        "Name":  "",
+        "Rarity":  "SPECIAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "sun_flower_spirit",
+        "Name":  "?대컮?쇨린 ?뺣졊",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    },
+    {
+        "ID":  "moon_flower_spirit",
+        "Name":  "?щ쭪?닿퐙 ?뺣졊",
+        "Rarity":  "NORMAL",
+        "Image":  "images/placeholder_wild.png",
+        "File":  "WildData.js"
+    }
+]

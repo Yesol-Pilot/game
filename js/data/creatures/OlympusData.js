@@ -205,5 +205,309 @@ export const OLYMPUS_CREATURES = [
             synergy: { ally: ["eagle_iron", "wisp_faint"], rival: [] }
         },
         lines: { normal: "둥실둥실... 오늘도 평화로워~" }
+    },
+    {
+        id: "titan_kronos_shade",
+        name: "크로노스의 그림자",
+        rarity: RANKS.UR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Time", "Void"],
+        baseStr: 60, baseInt: 60,
+        image: "images/boss_kronos.png",
+        lore: { title: "심연의 시간", story: "타르타로스 깊은 곳에 갇힌 크로노스의 집념이 형상화된 존재." }
+    },
+    {
+        id: "minotaur_king",
+        name: "미노타우로스 왕",
+        rarity: RANKS.SR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Earth"],
+        baseStr: 45, baseInt: 10,
+        image: "images/boss_minotaur.png",
+        lore: { title: "미로의 지배자", story: "크레타 미궁의 끝에서 침입자를 기다리는 거대한 황소 성인." }
+    },
+    {
+        id: "cerberus_guardian",
+        name: "지옥파수꾼 케르베로스",
+        rarity: RANKS.SR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Dark", "Fire"],
+        baseStr: 40, baseInt: 20,
+        image: "images/boss_cerberus.png",
+        lore: { title: "저승의 문지기", story: "하데스의 충견. 세 개의 머리로 침입자를 감시한다." }
+    },
+    {
+        id: "hydra_lernaean",
+        name: "레르나의 히드라",
+        rarity: RANKS.SR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Poison", "Water"],
+        baseStr: 35, baseInt: 30,
+        image: "images/boss_hydra.png",
+        lore: { title: "독니의 괴수", story: "죽지 않는 머리들을 가진 늪지대의 지배자." }
+    },
+    {
+        id: "lion_nemean",
+        name: "네메아의 사자",
+        rarity: RANKS.SR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Earth", "Metal"],
+        baseStr: 50, baseInt: 5,
+        image: "images/boss_lion.png",
+        lore: { title: "불사신의 가죽", story: "어떤 칼날도 뚫을 수 없는 가죽을 가진 맹수." }
+    },
+    {
+        id: "god_poseidon",
+        name: "심해의 군주 포세이돈",
+        rarity: RANKS.SSR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Water", "Ice", "Earth"],
+        ego: "Warlord",
+        baseStr: 55, baseInt: 45,
+        image: "images/creature_god_poseidon.png",
+        lore: {
+            title: "바다의 지배자",
+            story: "제우스의 형제이자 바다를 다스리는 신. 삼지창 트라이던트로 파도를 일으키고 대지를 뒤흔든다.",
+            origin: "그리스 신화 / 심해 궁전"
+        }
+    },
+    {
+        id: "god_hades",
+        name: "지옥의 지배자 하데스",
+        rarity: RANKS.SSR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Dark", "Earth", "Void"],
+        ego: "Seeker",
+        baseStr: 40, baseInt: 60,
+        image: "images/placeholder_olympus.png",
+        lore: {
+            title: "저승의 왕",
+            story: "죽은 자들의 땅 타르타로스를 다스리는 신. 냉철하고 엄격하지만 공정하게 영혼들을 심판한다."
+        }
+    },
+    {
+        id: "god_dionysus",
+        name: "축제의 신 디오니소스",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Nature", "Charm", "Voice"],
+        baseStr: 20, baseInt: 40,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "hero_hercules",
+        name: "불멸의 영웅 헤라클레스",
+        rarity: RANKS.SSR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Earth", "Metal", "Fire"],
+        baseStr: 65, baseInt: 15,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "medusa_cursed",
+        name: "저주받은 미모 메두사",
+        rarity: RANKS.SR,
+        world: WORLDS.OLYMPUS,
+        elements: ["Dark", "Poison", "Earth"],
+        baseStr: 30, baseInt: 50,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "harpy_queen",
+        name: "폭풍우의 하피 퀸",
+        rarity: RANKS.SPECIAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Wind", "Dark"],
+        baseStr: 25, baseInt: 15,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "siren_singer",
+        name: "유혹의 사이렌",
+        rarity: RANKS.RARE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Water", "Charm", "Voice"],
+        baseStr: 10, baseInt: 20,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "pegasus_colt",
+        name: "아기 페가수스",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Wind", "Light"],
+        baseStr: 8, baseInt: 6,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "satyr_young",
+        name: "사티로스 견습생",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Nature", "Earth"],
+        baseStr: 12, baseInt: 8,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "dryad_seed",
+        name: "드라이어드 씨앗",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Nature"],
+        baseStr: 2, baseInt: 10,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "cyclops_worker",
+        name: "키클롭스 견습공",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Earth", "Fire"],
+        baseStr: 20, baseInt: 5,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "nymph_water",
+        name: "샘의 님프",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Water"],
+        baseStr: 3, baseInt: 12,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "griffin_chick",
+        name: "아기 그리폰",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Wind", "Beast"],
+        baseStr: 15, baseInt: 5,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "cerberus_pup",
+        name: "아기 케르베로스",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Dark", "Fire"],
+        baseStr: 10, baseInt: 5,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "hellhound_scout",
+        name: "헬하운드 정찰개",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Fire", "Dark"],
+        baseStr: 18, baseInt: 10,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "automaton_mini",
+        name: "미니 오토마톤",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Metal", "Lightning"],
+        baseStr: 15, baseInt: 15,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "minotaur_calf",
+        name: "아기 미노타우로스",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Earth"],
+        baseStr: 15, baseInt: 2,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "gorgon_sister_e",
+        name: "고르곤 자매 에우리알레",
+        rarity: RANKS.RARE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Dark", "Poison"],
+        baseStr: 12, baseInt: 25,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "gorgon_sister_s",
+        name: "고르곤 자매 스테노",
+        rarity: RANKS.RARE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Dark", "Poison"],
+        baseStr: 25, baseInt: 12,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "charybdis_baby",
+        name: "소형 카리브디스",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Water", "Void"],
+        baseStr: 5, baseInt: 20,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "scylla_pup",
+        name: "새끼 스킬라",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Water", "Dark"],
+        baseStr: 18, baseInt: 8,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "talos_fragment",
+        name: "탈로스의 파편",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Metal", "Earth"],
+        baseStr: 25, baseInt: 0,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "fury_hiss",
+        name: "분노의 정령 퓨리",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Dark", "Fire"],
+        baseStr: 10, baseInt: 20,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "muse_lyra",
+        name: "악보의 뮤즈",
+        rarity: RANKS.RARE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Light", "Voice"],
+        baseStr: 2, baseInt: 25,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "chimera_cub",
+        name: "아기 키메라",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.OLYMPUS,
+        elements: ["Fire", "Nature"],
+        baseStr: 12, baseInt: 8,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "sphinx_kitten",
+        name: "아기 스핑크스",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Earth", "Void"],
+        baseStr: 10, baseInt: 25,
+        image: "images/placeholder_olympus.png"
+    },
+    {
+        id: "phoenix_chick_o",
+        name: "베이비 피닉스",
+        rarity: RANKS.RARE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Fire", "Light"],
+        baseStr: 8, baseInt: 18,
+        image: "images/placeholder_olympus.png"
     }
 ];
