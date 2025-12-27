@@ -7,6 +7,7 @@
     <meta name="description" content="차원을 넘어선 교감, 멀티버스 크리처 랩: 신화의 충돌. 성인 타겟의 고퀄리티 수집형 RPG.">
     <title>Multiverse Creature Lab</title>
     <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="manifest" href="manifest.json"> <!-- [PWA] -->
     <!-- PortOne SDK (V2) -->
     <script src="https://cdn.portone.io/v2/browser-sdk.js"></script>
     <link rel="stylesheet" href="css/style_v4.css?v=v4_adsense">
@@ -220,7 +221,8 @@
             <div style="display:flex; gap:10px; align-items:center;">
                 <button id="btn-toggle-sound" class="cyber-btn small" title="음소거">🔊</button>
                 <button id="btn-open-system" class="cyber-btn small" title="시스템 설정">⚙️</button>
-                <button id="btn-header-logout" class="cyber-btn small" title="로그아웃" style="background:linear-gradient(135deg, #e74c3c, #c0392b);">🚪</button>
+                <button id="btn-header-logout" class="cyber-btn small" title="로그아웃"
+                    style="background:linear-gradient(135deg, #e74c3c, #c0392b);">🚪</button>
                 <button id="btn-lang-toggle" class="cyber-btn small" title="언어 변경" style="display:none;">🌐 KR</button>
             </div>
         </header>
@@ -967,7 +969,18 @@
     <script src="js/secrets.js" onerror="console.warn('secrets.js not found. AI features disabled.')"></script>
 
     <script src="js/debug_overlay.js"></script>
-    <script type="module" src="js/main.js?v=resonance_v3_final"></script>
+    <script type="module" src="js/main.js"></script>
+
+    <!-- [PWA] Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('[PWA] ServiceWorker registered:', reg.scope))
+                    .catch(err => console.log('[PWA] ServiceWorker registration failed:', err));
+            });
+        }
+    </script>
     <!-- =========================
          SETTINGS MODAL
          ========================= -->
