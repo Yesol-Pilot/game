@@ -53,31 +53,10 @@ export const ASGARD_CREATURES = [
         }
     },
 
-    lore: {
-        title: "미지의 존재",
-        story: "아스가르드의 전사로서 발할라를 수호하거나 라그나로크를 대비합니다. 발키리 지휘관은(는) 특별한 능력을 지녔습니다.",
-        personality: "Unknown"
-    },
-    relationships: {
-        likes: [],
-        dislikes: [],
-        rival: null
-    },
-    touchLines: {
-        idle: ["..."],
-        interaction: ["..."],
-        gift: ["Thank you."],
-        special: ["!"]
-    }
-    },
-prompts: {
-    base: "anime style, cell shaded, 2d game art, full body, fantasy, Light, 발키리 지휘관",
-        idle: "standing pose, confident, neutral expression",
-            joy: "smiling, blushing, happy eyes, hand waving, flowers in background",
-                sad: "sad expression, looking down, tears, injured, dark atmosphere",
-                    angry: "angry, shouting, glowing eyes, battle stance, attacking effect",
-                        skill: "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-                            gallery: "alluring pose, blushing, soft lighting, detailed face, looking at viewer, charm, slight smile, high detail masterpiece, 발키리 지휘관 special illustration, intimate atmosphere"
+    sad: "sad expression, looking down, tears, injured, dark atmosphere",
+    angry: "angry, shouting, glowing eyes, battle stance, attacking effect",
+    skill: "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+    gallery: "alluring pose, blushing, soft lighting, detailed face, looking at viewer, charm, slight smile, high detail masterpiece, 발키리 지휘관 special illustration, intimate atmosphere"
 },
 lore: {
     title: "미지의 존재",
