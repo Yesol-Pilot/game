@@ -44,6 +44,7 @@ export default class ShopView extends BaseView {
         this._renderSection("💰 골드 보급 (Exchange)", allItems.goldPacks, shopListEl);
         this._renderSection("📦 특수 패키지 (Bundle)", allItems.bundles, shopListEl);
         this._renderSection("🛠️ 기타 아이템", allItems.specials, shopListEl);
+        this._renderSection("☕ 후원하기 (Support)", allItems.donations, shopListEl);
     }
 
     _renderSection(title, items, parentEl = null, isGift = false) {
@@ -103,7 +104,9 @@ export default class ShopView extends BaseView {
                         alert("선물을 받을 크리처가 없습니다.");
                     }
                 } else {
-                    this.game.shopManager.buyItem(item.id);
+                    if (confirm(`[구매 확인] ${item.name}을(를) 구매하시겠습니까?`)) {
+                        this.game.shopManager.buyItem(item.id);
+                    }
                 }
             });
 

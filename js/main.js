@@ -313,6 +313,28 @@ function initLobbyInteraction() {
 
         // Bubble
         if (bubble) {
+            // [Phase 9] PvP Button
+            const pvpBtn = document.createElement('button');
+            pvpBtn.className = 'cyber-btn';
+            pvpBtn.style.cssText = "position:absolute; bottom:160px; right:20px; z-index:10; padding:10px 20px; font-size:0.9em; background:rgba(200, 0, 0, 0.8); border:1px solid #ff4757;";
+            pvpBtn.innerHTML = "⚔️ 실시간 대전";
+            pvpBtn.onclick = () => {
+                if (game.pvpManager) {
+                    game.pvpManager.findMatch();
+                } else {
+                    alert("PvP 시스템 준비 중입니다.");
+                }
+            };
+            // Ensure only one exists
+            const existingPvP = document.getElementById('lobby-pvp-btn');
+            if (existingPvP) existingPvP.remove();
+            pvpBtn.id = 'lobby-pvp-btn';
+
+            // Add to specific container to avoid overlapping (or just body if simple)
+            // Assuming 'lobby-view' or 'content-home' is active
+            const homeView = document.getElementById('content-home');
+            if (homeView) homeView.appendChild(pvpBtn);
+
             const textEl = document.getElementById('lobby-speech-text');
             if (textEl) textEl.innerText = text;
             else bubble.innerText = text;

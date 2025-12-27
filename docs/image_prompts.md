@@ -1,5 +1,6 @@
 # 🎨 Image Generation Prompts (Queue)
-**Status**: Waiting for Quota Reset (Expected: ~16:30 KST)
+**Status**: ⛔ **Blocked** (Server Capacity Exhausted - API 429 Error)
+**Last Attempt**: 16:35 KST (Failed)
 
 ## 1. Skill Icons (Generic Elements)
 **Style**: Digital art, game icon, RPG style, glowing effect, transparent background, high contrast, circular frame.

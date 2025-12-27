@@ -1,5 +1,5 @@
 import EventEmitter from '../utils/EventEmitter.js';
-import { GOLD_PACKS, GEM_PACKS, BUNDLES, SPECIALS, GIFT_ITEMS } from '../data/ShopData.js';
+import { GOLD_PACKS, GEM_PACKS, BUNDLES, SPECIALS, GIFT_ITEMS, DONATION_ITEMS } from '../data/ShopData.js';
 
 export default class ShopManager extends EventEmitter {
     constructor(game) {
@@ -16,7 +16,8 @@ export default class ShopManager extends EventEmitter {
             gemPacks: GEM_PACKS,
             bundles: BUNDLES,
             specials: SPECIALS,
-            gifts: GIFT_ITEMS
+            gifts: GIFT_ITEMS,
+            donations: DONATION_ITEMS // Added
         };
     }
 
@@ -34,6 +35,7 @@ export default class ShopManager extends EventEmitter {
         else if (BUNDLES.find(i => i.id === itemId)) item = BUNDLES.find(i => i.id === itemId);
         else if (SPECIALS.find(i => i.id === itemId)) item = SPECIALS.find(i => i.id === itemId);
         else if (GIFT_ITEMS.find(i => i.id === itemId)) item = GIFT_ITEMS.find(i => i.id === itemId);
+        else if (DONATION_ITEMS.find(i => i.id === itemId)) item = DONATION_ITEMS.find(i => i.id === itemId);
 
         if (!item) {
             this.emit('shop:purchaseFailed', { reason: "상품을 찾을 수 없습니다." });
@@ -47,6 +49,14 @@ export default class ShopManager extends EventEmitter {
         }
 
         // 3. 결제 타입 분기
+        // 3. 결제 타입 분기
+        if (item.priceType === 'donation') {
+            if (confirm("개발자 후원 페이지(외부)로 이동하시겠습니까?")) {
+                window.open(item.url, '_blank');
+            }
+            return;
+        }
+
         if (item.priceType === 'real' || item.priceType === 'cash') {
             this._processRealPurchase(item, targetCreatureId);
             return;

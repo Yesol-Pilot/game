@@ -17,6 +17,7 @@ import MailManager from '../managers/MailManager.js'; // [Phase 4]
 import GuildManager from '../managers/GuildManager.js'; // [Phase 5]
 import RankingManager from '../managers/RankingManager.js'; // [Phase 5]
 import PassManager from '../managers/PassManager.js'; // [Phase 5]
+import PvPManager from '../managers/PvPManager.js'; // [Phase 9]
 import BattleManager from '../managers/BattleManager.js';
 import PrestigeManager from '../managers/PrestigeManager.js';
 import TutorialManager from '../managers/TutorialManager.js';
@@ -78,6 +79,8 @@ export default class Game {
         this.guildManager = new GuildManager(this); // [Phase 5] Guild
         this.rankingManager = new RankingManager(this); // [Phase 5] Ranking
         this.passManager = new PassManager(this); // [Phase 5] Battle Pass
+        this.pvpManager = new PvPManager(this); // [Phase 9] PvP
+        this.pvpManager.init();
         this.battleManager = new BattleManager(this, this.events, this.resourceManager, this.creatureManager);
         this.prestigeManager = new PrestigeManager(this, this.events, this.resourceManager);
         this.tutorialManager = new TutorialManager(this);

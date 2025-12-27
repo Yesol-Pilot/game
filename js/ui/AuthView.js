@@ -64,11 +64,28 @@ export default class AuthView extends BaseView {
         }
 
         // 4. 로그아웃 버튼 (있을 경우) - 커스텀 모달 사용
-        const btnLogout = document.getElementById('btn-logout');
         if (btnLogout) {
             btnLogout.addEventListener('click', () => {
                 // 커스텀 확인 모달 사용 (브라우저 팝업 차단 이슈 방지)
                 this._showLogoutConfirmModal();
+            });
+        }
+
+        // 4.5. [NEW] 게스트 로그인 버튼
+        const btnGuest = document.getElementById('btn-guest-login');
+        if (btnGuest) {
+            btnGuest.addEventListener('click', async () => {
+                this._setAuthMessage("게스트 로그인 중...");
+                const result = await this.game.authManager.login('guest', 'guest');
+                if (result.success) {
+                    this._updateHeaderUserName('Guest');
+                    this.game.startMainGame();
+                } else {
+                    // 게스트 계정이 만약 없다면 생성 시도
+                    await this.game.authManager.signup('guest', 'guest', 'director_vesper');
+                    this._updateHeaderUserName('Guest');
+                    this.game.startMainGame();
+                }
             });
         }
 

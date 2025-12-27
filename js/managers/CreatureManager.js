@@ -690,25 +690,29 @@ export default class CreatureManager extends EventEmitter {
 
         this.nextInstanceId = state.nextInstanceId || 1;
         this.representativeId = state.representativeId || null;
-        const foundDef = CREATURE_DEFS.find(d => d.id === c.dataId);
-        if (foundDef) {
-            c.def = foundDef;
-            this.recalculateStats(c);
-        }
+        this.pityCounter = state.pityCounter || 0; // [Load] Pity
 
-        return c;
-    });
+        if (state.owned && Array.isArray(state.owned)) {
+            this.owned = state.owned.map(c => {
+                const foundDef = CREATURE_DEFS.find(d => d.id === c.dataId);
+                if (foundDef) {
+                    c.def = foundDef;
+                    this.recalculateStats(c);
+                }
+                return c;
+            }).filter(c => c.def); // Remove invalid
+        }
 
         this.emit('creatures:updated', this.owned);
     }
 
-resetForRebirth() {
-    this.owned = [];
-    this.nextInstanceId = 1;
+    resetForRebirth() {
+        this.owned = [];
+        this.nextInstanceId = 1;
 
-    const baseRarity = pickRarityFromTable(NORMAL_SUMMON_TABLE);
-    this.summonOneByRarity(baseRarity);
+        const baseRarity = pickRarityFromTable(NORMAL_SUMMON_TABLE);
+        this.summonOneByRarity(baseRarity);
 
-    this.emit('creatures:updated', this.owned);
-}
+        this.emit('creatures:updated', this.owned);
+    }
 }
