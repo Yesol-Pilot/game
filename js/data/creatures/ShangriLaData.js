@@ -9,17 +9,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/bonsai_spirit.png",
+        image: "images/creatures/shangrila/creature_bonsai_spirit.png",
         sprites: {
-            "idle": "images/bonsai_spirit.png",
-            "joy": "images/bonsai_spirit_joy.png",
-            "sad": "images/bonsai_spirit_sad.png",
-            "angry": "images/bonsai_spirit_angry.png",
-            "skill": "images/bonsai_spirit_skill.png",
-            "victory": "images/bonsai_spirit_victory.png",
-            "defeat": "images/bonsai_spirit_defeat.png",
+            "idle": "images/creatures/shangrila/creature_bonsai_spirit.png",
+            "joy": "images/creatures/shangrila/creature_bonsai_spirit_joy.png",
+            "sad": "images/creatures/shangrila/creature_bonsai_spirit_sad.png",
+            "angry": "images/creatures/shangrila/creature_bonsai_spirit_angry.png",
+            "skill": "images/creatures/shangrila/creature_bonsai_spirit_skill.png",
+            "victory": "images/creatures/shangrila/creature_bonsai_spirit_victory.png",
+            "defeat": "images/creatures/shangrila/creature_bonsai_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/bonsai_spirit_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_bonsai_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -47,17 +47,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/panda_monk.png",
+        image: "images/creatures/shangrila/creature_panda_monk.png",
         sprites: {
-            "idle": "images/panda_monk.png",
-            "joy": "images/panda_monk_joy.png",
-            "sad": "images/panda_monk_sad.png",
-            "angry": "images/panda_monk_angry.png",
-            "skill": "images/panda_monk_skill.png",
-            "victory": "images/panda_monk_victory.png",
-            "defeat": "images/panda_monk_defeat.png",
+            "idle": "images/creatures/shangrila/creature_panda_monk.png",
+            "joy": "images/creatures/shangrila/creature_panda_monk_joy.png",
+            "sad": "images/creatures/shangrila/creature_panda_monk_sad.png",
+            "angry": "images/creatures/shangrila/creature_panda_monk_angry.png",
+            "skill": "images/creatures/shangrila/creature_panda_monk_skill.png",
+            "victory": "images/creatures/shangrila/creature_panda_monk_victory.png",
+            "defeat": "images/creatures/shangrila/creature_panda_monk_defeat.png",
             "gallery": {
-                "lv1": "images/panda_monk_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_panda_monk_gallery_lv1.png"
             }
         },
         prompts: {
@@ -85,17 +85,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/lucky_cat_kuro.png",
+        image: "images/creatures/shangrila/creature_lucky_cat_kuro.png",
         sprites: {
-            "idle": "images/lucky_cat_kuro.png",
-            "joy": "images/lucky_cat_kuro_joy.png",
-            "sad": "images/lucky_cat_kuro_sad.png",
-            "angry": "images/lucky_cat_kuro_angry.png",
-            "skill": "images/lucky_cat_kuro_skill.png",
-            "victory": "images/lucky_cat_kuro_victory.png",
-            "defeat": "images/lucky_cat_kuro_defeat.png",
+            "idle": "images/creatures/shangrila/creature_lucky_cat_kuro.png",
+            "joy": "images/creatures/shangrila/creature_lucky_cat_kuro_joy.png",
+            "sad": "images/creatures/shangrila/creature_lucky_cat_kuro_sad.png",
+            "angry": "images/creatures/shangrila/creature_lucky_cat_kuro_angry.png",
+            "skill": "images/creatures/shangrila/creature_lucky_cat_kuro_skill.png",
+            "victory": "images/creatures/shangrila/creature_lucky_cat_kuro_victory.png",
+            "defeat": "images/creatures/shangrila/creature_lucky_cat_kuro_defeat.png",
             "gallery": {
-                "lv1": "images/lucky_cat_kuro_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_lucky_cat_kuro_gallery_lv1.png"
             }
         },
         prompts: {
@@ -123,17 +123,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/heavenly_maiden_small.png",
+        image: "images/creatures/shangrila/creature_heavenly_maiden_small.png",
         sprites: {
-            "idle": "images/heavenly_maiden_small.png",
-            "joy": "images/heavenly_maiden_small_joy.png",
-            "sad": "images/heavenly_maiden_small_sad.png",
-            "angry": "images/heavenly_maiden_small_angry.png",
-            "skill": "images/heavenly_maiden_small_skill.png",
-            "victory": "images/heavenly_maiden_small_victory.png",
-            "defeat": "images/heavenly_maiden_small_defeat.png",
+            "idle": "images/creatures/shangrila/creature_heavenly_maiden_small.png",
+            "joy": "images/creatures/shangrila/creature_heavenly_maiden_small_joy.png",
+            "sad": "images/creatures/shangrila/creature_heavenly_maiden_small_sad.png",
+            "angry": "images/creatures/shangrila/creature_heavenly_maiden_small_angry.png",
+            "skill": "images/creatures/shangrila/creature_heavenly_maiden_small_skill.png",
+            "victory": "images/creatures/shangrila/creature_heavenly_maiden_small_victory.png",
+            "defeat": "images/creatures/shangrila/creature_heavenly_maiden_small_defeat.png",
             "gallery": {
-                "lv1": "images/heavenly_maiden_small_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_heavenly_maiden_small_gallery_lv1.png"
             }
         },
         prompts: {
@@ -161,17 +161,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/cloud_serpent.png",
+        image: "images/creatures/shangrila/creature_cloud_serpent.png",
         sprites: {
-            "idle": "images/cloud_serpent.png",
-            "joy": "images/cloud_serpent_joy.png",
-            "sad": "images/cloud_serpent_sad.png",
-            "angry": "images/cloud_serpent_angry.png",
-            "skill": "images/cloud_serpent_skill.png",
-            "victory": "images/cloud_serpent_victory.png",
-            "defeat": "images/cloud_serpent_defeat.png",
+            "idle": "images/creatures/shangrila/creature_cloud_serpent.png",
+            "joy": "images/creatures/shangrila/creature_cloud_serpent_joy.png",
+            "sad": "images/creatures/shangrila/creature_cloud_serpent_sad.png",
+            "angry": "images/creatures/shangrila/creature_cloud_serpent_angry.png",
+            "skill": "images/creatures/shangrila/creature_cloud_serpent_skill.png",
+            "victory": "images/creatures/shangrila/creature_cloud_serpent_victory.png",
+            "defeat": "images/creatures/shangrila/creature_cloud_serpent_defeat.png",
             "gallery": {
-                "lv1": "images/cloud_serpent_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_cloud_serpent_gallery_lv1.png"
             }
         },
         prompts: {
@@ -199,17 +199,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/statue_lion_dog.png",
+        image: "images/creatures/shangrila/creature_statue_lion_dog.png",
         sprites: {
-            "idle": "images/statue_lion_dog.png",
-            "joy": "images/statue_lion_dog_joy.png",
-            "sad": "images/statue_lion_dog_sad.png",
-            "angry": "images/statue_lion_dog_angry.png",
-            "skill": "images/statue_lion_dog_skill.png",
-            "victory": "images/statue_lion_dog_victory.png",
-            "defeat": "images/statue_lion_dog_defeat.png",
+            "idle": "images/creatures/shangrila/creature_statue_lion_dog.png",
+            "joy": "images/creatures/shangrila/creature_statue_lion_dog_joy.png",
+            "sad": "images/creatures/shangrila/creature_statue_lion_dog_sad.png",
+            "angry": "images/creatures/shangrila/creature_statue_lion_dog_angry.png",
+            "skill": "images/creatures/shangrila/creature_statue_lion_dog_skill.png",
+            "victory": "images/creatures/shangrila/creature_statue_lion_dog_victory.png",
+            "defeat": "images/creatures/shangrila/creature_statue_lion_dog_defeat.png",
             "gallery": {
-                "lv1": "images/statue_lion_dog_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_statue_lion_dog_gallery_lv1.png"
             }
         },
         prompts: {
@@ -239,15 +239,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_bamboo_chopper.png",
         sprites: {
-            "idle": "images/bamboo_chopper.png",
-            "joy": "images/bamboo_chopper_joy.png",
-            "sad": "images/bamboo_chopper_sad.png",
-            "angry": "images/bamboo_chopper_angry.png",
-            "skill": "images/bamboo_chopper_skill.png",
-            "victory": "images/bamboo_chopper_victory.png",
-            "defeat": "images/bamboo_chopper_defeat.png",
+            "idle": "images/creatures/shangrila/creature_bamboo_chopper.png",
+            "joy": "images/creatures/shangrila/creature_bamboo_chopper_joy.png",
+            "sad": "images/creatures/shangrila/creature_bamboo_chopper_sad.png",
+            "angry": "images/creatures/shangrila/creature_bamboo_chopper_angry.png",
+            "skill": "images/creatures/shangrila/creature_bamboo_chopper_skill.png",
+            "victory": "images/creatures/shangrila/creature_bamboo_chopper_victory.png",
+            "defeat": "images/creatures/shangrila/creature_bamboo_chopper_defeat.png",
             "gallery": {
-                "lv1": "images/bamboo_chopper_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_bamboo_chopper_gallery_lv1.png"
             }
         },
         prompts: {
@@ -275,17 +275,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/lantern_ghost.png",
+        image: "images/creatures/shangrila/creature_lantern_ghost.png",
         sprites: {
-            "idle": "images/lantern_ghost.png",
-            "joy": "images/lantern_ghost_joy.png",
-            "sad": "images/lantern_ghost_sad.png",
-            "angry": "images/lantern_ghost_angry.png",
-            "skill": "images/lantern_ghost_skill.png",
-            "victory": "images/lantern_ghost_victory.png",
-            "defeat": "images/lantern_ghost_defeat.png",
+            "idle": "images/creatures/shangrila/creature_lantern_ghost.png",
+            "joy": "images/creatures/shangrila/creature_lantern_ghost_joy.png",
+            "sad": "images/creatures/shangrila/creature_lantern_ghost_sad.png",
+            "angry": "images/creatures/shangrila/creature_lantern_ghost_angry.png",
+            "skill": "images/creatures/shangrila/creature_lantern_ghost_skill.png",
+            "victory": "images/creatures/shangrila/creature_lantern_ghost_victory.png",
+            "defeat": "images/creatures/shangrila/creature_lantern_ghost_defeat.png",
             "gallery": {
-                "lv1": "images/lantern_ghost_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_lantern_ghost_gallery_lv1.png"
             }
         },
         prompts: {
@@ -315,15 +315,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_kumiho_servant.png",
         sprites: {
-            "idle": "images/kumiho_servant.png",
-            "joy": "images/kumiho_servant_joy.png",
-            "sad": "images/kumiho_servant_sad.png",
-            "angry": "images/kumiho_servant_angry.png",
-            "skill": "images/kumiho_servant_skill.png",
-            "victory": "images/kumiho_servant_victory.png",
-            "defeat": "images/kumiho_servant_defeat.png",
+            "idle": "images/creatures/shangrila/creature_kumiho_servant.png",
+            "joy": "images/creatures/shangrila/creature_kumiho_servant_joy.png",
+            "sad": "images/creatures/shangrila/creature_kumiho_servant_sad.png",
+            "angry": "images/creatures/shangrila/creature_kumiho_servant_angry.png",
+            "skill": "images/creatures/shangrila/creature_kumiho_servant_skill.png",
+            "victory": "images/creatures/shangrila/creature_kumiho_servant_victory.png",
+            "defeat": "images/creatures/shangrila/creature_kumiho_servant_defeat.png",
             "gallery": {
-                "lv1": "images/kumiho_servant_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_kumiho_servant_gallery_lv1.png"
             }
         },
         prompts: {
@@ -353,15 +353,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_scroll_dragon.png",
         sprites: {
-            "idle": "images/scroll_dragon.png",
-            "joy": "images/scroll_dragon_joy.png",
-            "sad": "images/scroll_dragon_sad.png",
-            "angry": "images/scroll_dragon_angry.png",
-            "skill": "images/scroll_dragon_skill.png",
-            "victory": "images/scroll_dragon_victory.png",
-            "defeat": "images/scroll_dragon_defeat.png",
+            "idle": "images/creatures/shangrila/creature_scroll_dragon.png",
+            "joy": "images/creatures/shangrila/creature_scroll_dragon_joy.png",
+            "sad": "images/creatures/shangrila/creature_scroll_dragon_sad.png",
+            "angry": "images/creatures/shangrila/creature_scroll_dragon_angry.png",
+            "skill": "images/creatures/shangrila/creature_scroll_dragon_skill.png",
+            "victory": "images/creatures/shangrila/creature_scroll_dragon_victory.png",
+            "defeat": "images/creatures/shangrila/creature_scroll_dragon_defeat.png",
             "gallery": {
-                "lv1": "images/scroll_dragon_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_scroll_dragon_gallery_lv1.png"
             }
         },
         prompts: {
@@ -391,15 +391,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_koi_ascending.png",
         sprites: {
-            "idle": "images/koi_ascending.png",
-            "joy": "images/koi_ascending_joy.png",
-            "sad": "images/koi_ascending_sad.png",
-            "angry": "images/koi_ascending_angry.png",
-            "skill": "images/koi_ascending_skill.png",
-            "victory": "images/koi_ascending_victory.png",
-            "defeat": "images/koi_ascending_defeat.png",
+            "idle": "images/creatures/shangrila/creature_koi_ascending.png",
+            "joy": "images/creatures/shangrila/creature_koi_ascending_joy.png",
+            "sad": "images/creatures/shangrila/creature_koi_ascending_sad.png",
+            "angry": "images/creatures/shangrila/creature_koi_ascending_angry.png",
+            "skill": "images/creatures/shangrila/creature_koi_ascending_skill.png",
+            "victory": "images/creatures/shangrila/creature_koi_ascending_victory.png",
+            "defeat": "images/creatures/shangrila/creature_koi_ascending_defeat.png",
             "gallery": {
-                "lv1": "images/koi_ascending_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_koi_ascending_gallery_lv1.png"
             }
         },
         prompts: {
@@ -429,15 +429,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_tea_leaf_fairy.png",
         sprites: {
-            "idle": "images/tea_leaf_fairy.png",
-            "joy": "images/tea_leaf_fairy_joy.png",
-            "sad": "images/tea_leaf_fairy_sad.png",
-            "angry": "images/tea_leaf_fairy_angry.png",
-            "skill": "images/tea_leaf_fairy_skill.png",
-            "victory": "images/tea_leaf_fairy_victory.png",
-            "defeat": "images/tea_leaf_fairy_defeat.png",
+            "idle": "images/creatures/shangrila/creature_tea_leaf_fairy.png",
+            "joy": "images/creatures/shangrila/creature_tea_leaf_fairy_joy.png",
+            "sad": "images/creatures/shangrila/creature_tea_leaf_fairy_sad.png",
+            "angry": "images/creatures/shangrila/creature_tea_leaf_fairy_angry.png",
+            "skill": "images/creatures/shangrila/creature_tea_leaf_fairy_skill.png",
+            "victory": "images/creatures/shangrila/creature_tea_leaf_fairy_victory.png",
+            "defeat": "images/creatures/shangrila/creature_tea_leaf_fairy_defeat.png",
             "gallery": {
-                "lv1": "images/tea_leaf_fairy_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_tea_leaf_fairy_gallery_lv1.png"
             }
         },
         prompts: {
@@ -467,15 +467,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_rice_grain_spirit.png",
         sprites: {
-            "idle": "images/rice_grain_spirit.png",
-            "joy": "images/rice_grain_spirit_joy.png",
-            "sad": "images/rice_grain_spirit_sad.png",
-            "angry": "images/rice_grain_spirit_angry.png",
-            "skill": "images/rice_grain_spirit_skill.png",
-            "victory": "images/rice_grain_spirit_victory.png",
-            "defeat": "images/rice_grain_spirit_defeat.png",
+            "idle": "images/creatures/shangrila/creature_rice_grain_spirit.png",
+            "joy": "images/creatures/shangrila/creature_rice_grain_spirit_joy.png",
+            "sad": "images/creatures/shangrila/creature_rice_grain_spirit_sad.png",
+            "angry": "images/creatures/shangrila/creature_rice_grain_spirit_angry.png",
+            "skill": "images/creatures/shangrila/creature_rice_grain_spirit_skill.png",
+            "victory": "images/creatures/shangrila/creature_rice_grain_spirit_victory.png",
+            "defeat": "images/creatures/shangrila/creature_rice_grain_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/rice_grain_spirit_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_rice_grain_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -503,17 +503,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/paper_charm_seal.png",
+        image: "images/creatures/shangrila/creature_paper_charm_seal.png",
         sprites: {
-            "idle": "images/paper_charm_seal.png",
-            "joy": "images/paper_charm_seal_joy.png",
-            "sad": "images/paper_charm_seal_sad.png",
-            "angry": "images/paper_charm_seal_angry.png",
-            "skill": "images/paper_charm_seal_skill.png",
-            "victory": "images/paper_charm_seal_victory.png",
-            "defeat": "images/paper_charm_seal_defeat.png",
+            "idle": "images/creatures/shangrila/creature_paper_charm_seal.png",
+            "joy": "images/creatures/shangrila/creature_paper_charm_seal_joy.png",
+            "sad": "images/creatures/shangrila/creature_paper_charm_seal_sad.png",
+            "angry": "images/creatures/shangrila/creature_paper_charm_seal_angry.png",
+            "skill": "images/creatures/shangrila/creature_paper_charm_seal_skill.png",
+            "victory": "images/creatures/shangrila/creature_paper_charm_seal_victory.png",
+            "defeat": "images/creatures/shangrila/creature_paper_charm_seal_defeat.png",
             "gallery": {
-                "lv1": "images/paper_charm_seal_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_paper_charm_seal_gallery_lv1.png"
             }
         },
         prompts: {
@@ -543,15 +543,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_yin_yang_orb.png",
         sprites: {
-            "idle": "images/yin_yang_orb.png",
-            "joy": "images/yin_yang_orb_joy.png",
-            "sad": "images/yin_yang_orb_sad.png",
-            "angry": "images/yin_yang_orb_angry.png",
-            "skill": "images/yin_yang_orb_skill.png",
-            "victory": "images/yin_yang_orb_victory.png",
-            "defeat": "images/yin_yang_orb_defeat.png",
+            "idle": "images/creatures/shangrila/creature_yin_yang_orb.png",
+            "joy": "images/creatures/shangrila/creature_yin_yang_orb_joy.png",
+            "sad": "images/creatures/shangrila/creature_yin_yang_orb_sad.png",
+            "angry": "images/creatures/shangrila/creature_yin_yang_orb_angry.png",
+            "skill": "images/creatures/shangrila/creature_yin_yang_orb_skill.png",
+            "victory": "images/creatures/shangrila/creature_yin_yang_orb_victory.png",
+            "defeat": "images/creatures/shangrila/creature_yin_yang_orb_defeat.png",
             "gallery": {
-                "lv1": "images/yin_yang_orb_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_yin_yang_orb_gallery_lv1.png"
             }
         },
         prompts: {
@@ -581,15 +581,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_cherry_blossom_petal.png",
         sprites: {
-            "idle": "images/cherry_blossom_petal.png",
-            "joy": "images/cherry_blossom_petal_joy.png",
-            "sad": "images/cherry_blossom_petal_sad.png",
-            "angry": "images/cherry_blossom_petal_angry.png",
-            "skill": "images/cherry_blossom_petal_skill.png",
-            "victory": "images/cherry_blossom_petal_victory.png",
-            "defeat": "images/cherry_blossom_petal_defeat.png",
+            "idle": "images/creatures/shangrila/creature_cherry_blossom_petal.png",
+            "joy": "images/creatures/shangrila/creature_cherry_blossom_petal_joy.png",
+            "sad": "images/creatures/shangrila/creature_cherry_blossom_petal_sad.png",
+            "angry": "images/creatures/shangrila/creature_cherry_blossom_petal_angry.png",
+            "skill": "images/creatures/shangrila/creature_cherry_blossom_petal_skill.png",
+            "victory": "images/creatures/shangrila/creature_cherry_blossom_petal_victory.png",
+            "defeat": "images/creatures/shangrila/creature_cherry_blossom_petal_defeat.png",
             "gallery": {
-                "lv1": "images/cherry_blossom_petal_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_cherry_blossom_petal_gallery_lv1.png"
             }
         },
         prompts: {
@@ -619,15 +619,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_magpie_messenger.png",
         sprites: {
-            "idle": "images/magpie_messenger.png",
-            "joy": "images/magpie_messenger_joy.png",
-            "sad": "images/magpie_messenger_sad.png",
-            "angry": "images/magpie_messenger_angry.png",
-            "skill": "images/magpie_messenger_skill.png",
-            "victory": "images/magpie_messenger_victory.png",
-            "defeat": "images/magpie_messenger_defeat.png",
+            "idle": "images/creatures/shangrila/creature_magpie_messenger.png",
+            "joy": "images/creatures/shangrila/creature_magpie_messenger_joy.png",
+            "sad": "images/creatures/shangrila/creature_magpie_messenger_sad.png",
+            "angry": "images/creatures/shangrila/creature_magpie_messenger_angry.png",
+            "skill": "images/creatures/shangrila/creature_magpie_messenger_skill.png",
+            "victory": "images/creatures/shangrila/creature_magpie_messenger_victory.png",
+            "defeat": "images/creatures/shangrila/creature_magpie_messenger_defeat.png",
             "gallery": {
-                "lv1": "images/magpie_messenger_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_magpie_messenger_gallery_lv1.png"
             }
         },
         prompts: {
@@ -657,15 +657,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_wind_chime_spirit.png",
         sprites: {
-            "idle": "images/wind_chime_spirit.png",
-            "joy": "images/wind_chime_spirit_joy.png",
-            "sad": "images/wind_chime_spirit_sad.png",
-            "angry": "images/wind_chime_spirit_angry.png",
-            "skill": "images/wind_chime_spirit_skill.png",
-            "victory": "images/wind_chime_spirit_victory.png",
-            "defeat": "images/wind_chime_spirit_defeat.png",
+            "idle": "images/creatures/shangrila/creature_wind_chime_spirit.png",
+            "joy": "images/creatures/shangrila/creature_wind_chime_spirit_joy.png",
+            "sad": "images/creatures/shangrila/creature_wind_chime_spirit_sad.png",
+            "angry": "images/creatures/shangrila/creature_wind_chime_spirit_angry.png",
+            "skill": "images/creatures/shangrila/creature_wind_chime_spirit_skill.png",
+            "victory": "images/creatures/shangrila/creature_wind_chime_spirit_victory.png",
+            "defeat": "images/creatures/shangrila/creature_wind_chime_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/wind_chime_spirit_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_wind_chime_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -693,17 +693,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/firefly_night.png",
+        image: "images/creatures/shangrila/creature_firefly_night.png",
         sprites: {
-            "idle": "images/firefly_night.png",
-            "joy": "images/firefly_night_joy.png",
-            "sad": "images/firefly_night_sad.png",
-            "angry": "images/firefly_night_angry.png",
-            "skill": "images/firefly_night_skill.png",
-            "victory": "images/firefly_night_victory.png",
-            "defeat": "images/firefly_night_defeat.png",
+            "idle": "images/creatures/shangrila/creature_firefly_night.png",
+            "joy": "images/creatures/shangrila/creature_firefly_night_joy.png",
+            "sad": "images/creatures/shangrila/creature_firefly_night_sad.png",
+            "angry": "images/creatures/shangrila/creature_firefly_night_angry.png",
+            "skill": "images/creatures/shangrila/creature_firefly_night_skill.png",
+            "victory": "images/creatures/shangrila/creature_firefly_night_victory.png",
+            "defeat": "images/creatures/shangrila/creature_firefly_night_defeat.png",
             "gallery": {
-                "lv1": "images/firefly_night_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_firefly_night_gallery_lv1.png"
             }
         },
         prompts: {
@@ -733,17 +733,17 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_dragon_ancient.png",
         sprites: {
-            "idle": "images/creature_dragon_ancient.png",
-            "joy": "images/creature_dragon_ancient_joy.png",
-            "sad": "images/creature_dragon_ancient_sad.png",
-            "angry": "images/creature_dragon_ancient_angry.png",
-            "skill": "images/creature_dragon_ancient_skill.png",
-            "victory": "images/creature_dragon_ancient_victory.png",
-            "defeat": "images/creature_dragon_ancient_defeat.png",
+            "idle": "images/creatures/shangrila/creature_dragon_ancient.png",
+            "joy": "images/creatures/shangrila/creature_dragon_ancient_joy.png",
+            "sad": "images/creatures/shangrila/creature_dragon_ancient_sad.png",
+            "angry": "images/creatures/shangrila/creature_dragon_ancient_angry.png",
+            "skill": "images/creatures/shangrila/creature_dragon_ancient_skill.png",
+            "victory": "images/creatures/shangrila/creature_dragon_ancient_victory.png",
+            "defeat": "images/creatures/shangrila/creature_dragon_ancient_defeat.png",
             "gallery": {
-                "lv1": "images/creature_dragon_ancient_gallery_lv1.png",
-                "lv2": "images/creature_dragon_ancient_gallery_lv2.png",
-                "lv3": "images/creature_dragon_ancient_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_dragon_ancient_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_dragon_ancient_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_dragon_ancient_gallery_lv3.png"
             }
         },
         prompts: {
@@ -779,15 +779,15 @@ export const SHANGRILA_CREATURES = [
         sprites: {
             "idle": "images/creatures/shangrila/creature_fox_nine_ur.png",
             "joy": "images/creatures/shangrila/creature_fox_nine_ur_joy.png",
-            "sad": "images/creature_fox_nine_ur_sad.png",
-            "angry": "images/creature_fox_nine_ur_angry.png",
-            "skill": "images/creature_fox_nine_ur_skill.png",
-            "victory": "images/creature_fox_nine_ur_victory.png",
-            "defeat": "images/creature_fox_nine_ur_defeat.png",
+            "sad": "images/creatures/shangrila/creature_fox_nine_ur_sad.png",
+            "angry": "images/creatures/shangrila/creature_fox_nine_ur_angry.png",
+            "skill": "images/creatures/shangrila/creature_fox_nine_ur_skill.png",
+            "victory": "images/creatures/shangrila/creature_fox_nine_ur_victory.png",
+            "defeat": "images/creatures/shangrila/creature_fox_nine_ur_defeat.png",
             "gallery": {
-                "lv1": "images/creature_fox_nine_ur_gallery_lv1.png",
-                "lv2": "images/creature_fox_nine_ur_gallery_lv2.png",
-                "lv3": "images/creature_fox_nine_ur_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_fox_nine_ur_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_fox_nine_ur_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_fox_nine_ur_gallery_lv3.png"
             }
         },
         prompts: {
@@ -821,17 +821,17 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_god_dragon_king.png",
         sprites: {
-            "idle": "images/creature_god_dragon_king.png",
-            "joy": "images/creature_god_dragon_king_joy.png",
-            "sad": "images/creature_god_dragon_king_sad.png",
-            "angry": "images/creature_god_dragon_king_angry.png",
-            "skill": "images/creature_god_dragon_king_skill.png",
-            "victory": "images/creature_god_dragon_king_victory.png",
-            "defeat": "images/creature_god_dragon_king_defeat.png",
+            "idle": "images/creatures/shangrila/creature_god_dragon_king.png",
+            "joy": "images/creatures/shangrila/creature_god_dragon_king_joy.png",
+            "sad": "images/creatures/shangrila/creature_god_dragon_king_sad.png",
+            "angry": "images/creatures/shangrila/creature_god_dragon_king_angry.png",
+            "skill": "images/creatures/shangrila/creature_god_dragon_king_skill.png",
+            "victory": "images/creatures/shangrila/creature_god_dragon_king_victory.png",
+            "defeat": "images/creatures/shangrila/creature_god_dragon_king_defeat.png",
             "gallery": {
-                "lv1": "images/creature_god_dragon_king_gallery_lv1.png",
-                "lv2": "images/creature_god_dragon_king_gallery_lv2.png",
-                "lv3": "images/creature_god_dragon_king_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_god_dragon_king_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_god_dragon_king_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_god_dragon_king_gallery_lv3.png"
             }
         },
         prompts: {
@@ -863,19 +863,19 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/wild/creature_phoenix_eternal.png",
+        image: "images/creatures/shangrila/creature_phoenix_eternal.png",
         sprites: {
-            "idle": "images/creature_phoenix_eternal.png",
-            "joy": "images/creature_phoenix_eternal_joy.png",
-            "sad": "images/creature_phoenix_eternal_sad.png",
-            "angry": "images/creature_phoenix_eternal_angry.png",
-            "skill": "images/creature_phoenix_eternal_skill.png",
-            "victory": "images/creature_phoenix_eternal_victory.png",
-            "defeat": "images/creature_phoenix_eternal_defeat.png",
+            "idle": "images/creatures/shangrila/creature_phoenix_eternal.png",
+            "joy": "images/creatures/shangrila/creature_phoenix_eternal_joy.png",
+            "sad": "images/creatures/shangrila/creature_phoenix_eternal_sad.png",
+            "angry": "images/creatures/shangrila/creature_phoenix_eternal_angry.png",
+            "skill": "images/creatures/shangrila/creature_phoenix_eternal_skill.png",
+            "victory": "images/creatures/shangrila/creature_phoenix_eternal_victory.png",
+            "defeat": "images/creatures/shangrila/creature_phoenix_eternal_defeat.png",
             "gallery": {
-                "lv1": "images/creature_phoenix_eternal_gallery_lv1.png",
-                "lv2": "images/creature_phoenix_eternal_gallery_lv2.png",
-                "lv3": "images/creature_phoenix_eternal_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_phoenix_eternal_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_phoenix_eternal_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_phoenix_eternal_gallery_lv3.png"
             }
         },
         prompts: {
@@ -907,19 +907,19 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/shangrila/hero_wukong.png",
+        image: "images/creatures/shangrila/creature_hero_wukong.png",
         sprites: {
-            "idle": "images/hero_wukong.png",
-            "joy": "images/hero_wukong_joy.png",
-            "sad": "images/hero_wukong_sad.png",
-            "angry": "images/hero_wukong_angry.png",
-            "skill": "images/hero_wukong_skill.png",
-            "victory": "images/hero_wukong_victory.png",
-            "defeat": "images/hero_wukong_defeat.png",
+            "idle": "images/creatures/shangrila/creature_hero_wukong.png",
+            "joy": "images/creatures/shangrila/creature_hero_wukong_joy.png",
+            "sad": "images/creatures/shangrila/creature_hero_wukong_sad.png",
+            "angry": "images/creatures/shangrila/creature_hero_wukong_angry.png",
+            "skill": "images/creatures/shangrila/creature_hero_wukong_skill.png",
+            "victory": "images/creatures/shangrila/creature_hero_wukong_victory.png",
+            "defeat": "images/creatures/shangrila/creature_hero_wukong_defeat.png",
             "gallery": {
-                "lv1": "images/hero_wukong_gallery_lv1.png",
-                "lv2": "images/hero_wukong_gallery_lv2.png",
-                "lv3": "images/hero_wukong_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_hero_wukong_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_hero_wukong_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_hero_wukong_gallery_lv3.png"
             }
         },
         prompts: {
@@ -953,17 +953,17 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_rabbit_moon.png",
         sprites: {
-            "idle": "images/creature_rabbit_moon.png",
-            "joy": "images/creature_rabbit_moon_joy.png",
-            "sad": "images/creature_rabbit_moon_sad.png",
-            "angry": "images/creature_rabbit_moon_angry.png",
-            "skill": "images/creature_rabbit_moon_skill.png",
-            "victory": "images/creature_rabbit_moon_victory.png",
-            "defeat": "images/creature_rabbit_moon_defeat.png",
+            "idle": "images/creatures/shangrila/creature_rabbit_moon.png",
+            "joy": "images/creatures/shangrila/creature_rabbit_moon_joy.png",
+            "sad": "images/creatures/shangrila/creature_rabbit_moon_sad.png",
+            "angry": "images/creatures/shangrila/creature_rabbit_moon_angry.png",
+            "skill": "images/creatures/shangrila/creature_rabbit_moon_skill.png",
+            "victory": "images/creatures/shangrila/creature_rabbit_moon_victory.png",
+            "defeat": "images/creatures/shangrila/creature_rabbit_moon_defeat.png",
             "gallery": {
-                "lv1": "images/creature_rabbit_moon_gallery_lv1.png",
-                "lv2": "images/creature_rabbit_moon_gallery_lv2.png",
-                "lv3": "images/creature_rabbit_moon_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_rabbit_moon_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_rabbit_moon_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_rabbit_moon_gallery_lv3.png"
             }
         },
         prompts: {
@@ -997,17 +997,17 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_peacock_princess.png",
         sprites: {
-            "idle": "images/creature_peacock_princess.png",
-            "joy": "images/creature_peacock_princess_joy.png",
-            "sad": "images/creature_peacock_princess_sad.png",
-            "angry": "images/creature_peacock_princess_angry.png",
-            "skill": "images/creature_peacock_princess_skill.png",
-            "victory": "images/creature_peacock_princess_victory.png",
-            "defeat": "images/creature_peacock_princess_defeat.png",
+            "idle": "images/creatures/shangrila/creature_peacock_princess.png",
+            "joy": "images/creatures/shangrila/creature_peacock_princess_joy.png",
+            "sad": "images/creatures/shangrila/creature_peacock_princess_sad.png",
+            "angry": "images/creatures/shangrila/creature_peacock_princess_angry.png",
+            "skill": "images/creatures/shangrila/creature_peacock_princess_skill.png",
+            "victory": "images/creatures/shangrila/creature_peacock_princess_victory.png",
+            "defeat": "images/creatures/shangrila/creature_peacock_princess_defeat.png",
             "gallery": {
-                "lv1": "images/creature_peacock_princess_gallery_lv1.png",
-                "lv2": "images/creature_peacock_princess_gallery_lv2.png",
-                "lv3": "images/creature_peacock_princess_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_peacock_princess_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_peacock_princess_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_peacock_princess_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1044,14 +1044,14 @@ export const SHANGRILA_CREATURES = [
             "idle": "images/creatures/shangrila/creature_fox_yokai_sr.png",
             "joy": "images/creatures/shangrila/creature_fox_yokai_sr_joy.png",
             "sad": "images/creatures/shangrila/creature_fox_yokai_sr_sad.png",
-            "angry": "images/creatures/shangrila/creature_yokai_sr_angry.png",
+            "angry": "images/creatures/shangrila/creature_fox_yokai_sr_angry.png",
             "skill": "images/creatures/shangrila/creature_fox_yokai_sr_skill.png",
             "victory": "images/creatures/shangrila/creature_fox_yokai_sr_victory.png",
             "defeat": "images/creatures/shangrila/creature_fox_yokai_sr_defeat.png",
             "gallery": {
-                "lv1": "images/creature_fox_yokai_sr_gallery_lv1.png",
-                "lv2": "images/creature_fox_yokai_sr_gallery_lv2.png",
-                "lv3": "images/creature_fox_yokai_sr_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_fox_yokai_sr_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_fox_yokai_sr_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_fox_yokai_sr_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1083,19 +1083,19 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/shangrila/dragon_azure.png",
+        image: "images/creatures/shangrila/creature_dragon_azure.png",
         sprites: {
-            "idle": "images/dragon_azure.png",
-            "joy": "images/dragon_azure_joy.png",
-            "sad": "images/dragon_azure_sad.png",
-            "angry": "images/dragon_azure_angry.png",
-            "skill": "images/dragon_azure_skill.png",
-            "victory": "images/dragon_azure_victory.png",
-            "defeat": "images/dragon_azure_defeat.png",
+            "idle": "images/creatures/shangrila/creature_dragon_azure.png",
+            "joy": "images/creatures/shangrila/creature_dragon_azure_joy.png",
+            "sad": "images/creatures/shangrila/creature_dragon_azure_sad.png",
+            "angry": "images/creatures/shangrila/creature_dragon_azure_angry.png",
+            "skill": "images/creatures/shangrila/creature_dragon_azure_skill.png",
+            "victory": "images/creatures/shangrila/creature_dragon_azure_victory.png",
+            "defeat": "images/creatures/shangrila/creature_dragon_azure_defeat.png",
             "gallery": {
-                "lv1": "images/dragon_azure_gallery_lv1.png",
-                "lv2": "images/dragon_azure_gallery_lv2.png",
-                "lv3": "images/dragon_azure_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_dragon_azure_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_dragon_azure_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_dragon_azure_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1127,19 +1127,19 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/shangrila/tiger_white.png",
+        image: "images/creatures/shangrila/creature_tiger_white.png",
         sprites: {
-            "idle": "images/tiger_white.png",
-            "joy": "images/tiger_white_joy.png",
-            "sad": "images/tiger_white_sad.png",
-            "angry": "images/tiger_white_angry.png",
-            "skill": "images/tiger_white_skill.png",
-            "victory": "images/tiger_white_victory.png",
-            "defeat": "images/tiger_white_defeat.png",
+            "idle": "images/creatures/shangrila/creature_tiger_white.png",
+            "joy": "images/creatures/shangrila/creature_tiger_white_joy.png",
+            "sad": "images/creatures/shangrila/creature_tiger_white_sad.png",
+            "angry": "images/creatures/shangrila/creature_tiger_white_angry.png",
+            "skill": "images/creatures/shangrila/creature_tiger_white_skill.png",
+            "victory": "images/creatures/shangrila/creature_tiger_white_victory.png",
+            "defeat": "images/creatures/shangrila/creature_tiger_white_defeat.png",
             "gallery": {
-                "lv1": "images/tiger_white_gallery_lv1.png",
-                "lv2": "images/tiger_white_gallery_lv2.png",
-                "lv3": "images/tiger_white_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_tiger_white_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_tiger_white_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_tiger_white_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1171,19 +1171,19 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/shangrila/bird_vermilion.png",
+        image: "images/creatures/shangrila/creature_bird_vermilion.png",
         sprites: {
-            "idle": "images/bird_vermilion.png",
-            "joy": "images/bird_vermilion_joy.png",
-            "sad": "images/bird_vermilion_sad.png",
-            "angry": "images/bird_vermilion_angry.png",
-            "skill": "images/bird_vermilion_skill.png",
-            "victory": "images/bird_vermilion_victory.png",
-            "defeat": "images/bird_vermilion_defeat.png",
+            "idle": "images/creatures/shangrila/creature_bird_vermilion.png",
+            "joy": "images/creatures/shangrila/creature_bird_vermilion_joy.png",
+            "sad": "images/creatures/shangrila/creature_bird_vermilion_sad.png",
+            "angry": "images/creatures/shangrila/creature_bird_vermilion_angry.png",
+            "skill": "images/creatures/shangrila/creature_bird_vermilion_skill.png",
+            "victory": "images/creatures/shangrila/creature_bird_vermilion_victory.png",
+            "defeat": "images/creatures/shangrila/creature_bird_vermilion_defeat.png",
             "gallery": {
-                "lv1": "images/bird_vermilion_gallery_lv1.png",
-                "lv2": "images/bird_vermilion_gallery_lv2.png",
-                "lv3": "images/bird_vermilion_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_bird_vermilion_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_bird_vermilion_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_bird_vermilion_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1215,19 +1215,19 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/turtle_black.png",
+        image: "images/creatures/shangrila/creature_turtle_black.png",
         sprites: {
-            "idle": "images/turtle_black.png",
-            "joy": "images/turtle_black_joy.png",
-            "sad": "images/turtle_black_sad.png",
-            "angry": "images/turtle_black_angry.png",
-            "skill": "images/turtle_black_skill.png",
-            "victory": "images/turtle_black_victory.png",
-            "defeat": "images/turtle_black_defeat.png",
+            "idle": "images/creatures/shangrila/creature_turtle_black.png",
+            "joy": "images/creatures/shangrila/creature_turtle_black_joy.png",
+            "sad": "images/creatures/shangrila/creature_turtle_black_sad.png",
+            "angry": "images/creatures/shangrila/creature_turtle_black_angry.png",
+            "skill": "images/creatures/shangrila/creature_turtle_black_skill.png",
+            "victory": "images/creatures/shangrila/creature_turtle_black_victory.png",
+            "defeat": "images/creatures/shangrila/creature_turtle_black_defeat.png",
             "gallery": {
-                "lv1": "images/turtle_black_gallery_lv1.png",
-                "lv2": "images/turtle_black_gallery_lv2.png",
-                "lv3": "images/turtle_black_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_turtle_black_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_turtle_black_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_turtle_black_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1259,19 +1259,19 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/shangrila/dokkeabi_king.png",
+        image: "images/creatures/shangrila/creature_dokkeabi_king.png",
         sprites: {
-            "idle": "images/dokkeabi_king.png",
-            "joy": "images/dokkeabi_king_joy.png",
-            "sad": "images/dokkeabi_king_sad.png",
-            "angry": "images/dokkeabi_king_angry.png",
-            "skill": "images/dokkeabi_king_skill.png",
-            "victory": "images/dokkeabi_king_victory.png",
-            "defeat": "images/dokkeabi_king_defeat.png",
+            "idle": "images/creatures/shangrila/creature_dokkeabi_king.png",
+            "joy": "images/creatures/shangrila/creature_dokkeabi_king_joy.png",
+            "sad": "images/creatures/shangrila/creature_dokkeabi_king_sad.png",
+            "angry": "images/creatures/shangrila/creature_dokkeabi_king_angry.png",
+            "skill": "images/creatures/shangrila/creature_dokkeabi_king_skill.png",
+            "victory": "images/creatures/shangrila/creature_dokkeabi_king_victory.png",
+            "defeat": "images/creatures/shangrila/creature_dokkeabi_king_defeat.png",
             "gallery": {
-                "lv1": "images/dokkeabi_king_gallery_lv1.png",
-                "lv2": "images/dokkeabi_king_gallery_lv2.png",
-                "lv3": "images/dokkeabi_king_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_dokkeabi_king_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_dokkeabi_king_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_dokkeabi_king_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1303,19 +1303,19 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/shangrila/mountain_god_tiger.png",
+        image: "images/creatures/shangrila/creature_mountain_god_tiger.png",
         sprites: {
-            "idle": "images/mountain_god_tiger.png",
-            "joy": "images/mountain_god_tiger_joy.png",
-            "sad": "images/mountain_god_tiger_sad.png",
-            "angry": "images/mountain_god_tiger_angry.png",
-            "skill": "images/mountain_god_tiger_skill.png",
-            "victory": "images/mountain_god_tiger_victory.png",
-            "defeat": "images/mountain_god_tiger_defeat.png",
+            "idle": "images/creatures/shangrila/creature_mountain_god_tiger.png",
+            "joy": "images/creatures/shangrila/creature_mountain_god_tiger_joy.png",
+            "sad": "images/creatures/shangrila/creature_mountain_god_tiger_sad.png",
+            "angry": "images/creatures/shangrila/creature_mountain_god_tiger_angry.png",
+            "skill": "images/creatures/shangrila/creature_mountain_god_tiger_skill.png",
+            "victory": "images/creatures/shangrila/creature_mountain_god_tiger_victory.png",
+            "defeat": "images/creatures/shangrila/creature_mountain_god_tiger_defeat.png",
             "gallery": {
-                "lv1": "images/mountain_god_tiger_gallery_lv1.png",
-                "lv2": "images/mountain_god_tiger_gallery_lv2.png",
-                "lv3": "images/mountain_god_tiger_gallery_lv3.png"
+                "lv1": "images/creatures/shangrila/creature_mountain_god_tiger_gallery_lv1.png",
+                "lv2": "images/creatures/shangrila/creature_mountain_god_tiger_gallery_lv2.png",
+                "lv3": "images/creatures/shangrila/creature_mountain_god_tiger_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1347,17 +1347,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/wild/creature_ninja_shadow.png",
+        image: "images/creatures/shangrila/creature_ninja_shadow.png",
         sprites: {
-            "idle": "images/creature_ninja_shadow.png",
-            "joy": "images/creature_ninja_shadow_joy.png",
-            "sad": "images/creature_ninja_shadow_sad.png",
-            "angry": "images/creature_ninja_shadow_angry.png",
-            "skill": "images/creature_ninja_shadow_skill.png",
-            "victory": "images/creature_ninja_shadow_victory.png",
-            "defeat": "images/creature_ninja_shadow_defeat.png",
+            "idle": "images/creatures/shangrila/creature_ninja_shadow.png",
+            "joy": "images/creatures/shangrila/creature_ninja_shadow_joy.png",
+            "sad": "images/creatures/shangrila/creature_ninja_shadow_sad.png",
+            "angry": "images/creatures/shangrila/creature_ninja_shadow_angry.png",
+            "skill": "images/creatures/shangrila/creature_ninja_shadow_skill.png",
+            "victory": "images/creatures/shangrila/creature_ninja_shadow_victory.png",
+            "defeat": "images/creatures/shangrila/creature_ninja_shadow_defeat.png",
             "gallery": {
-                "lv1": "images/creature_ninja_shadow_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_ninja_shadow_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1385,17 +1385,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/crane_sage.png",
+        image: "images/creatures/shangrila/creature_crane_sage.png",
         sprites: {
-            "idle": "images/crane_sage.png",
-            "joy": "images/crane_sage_joy.png",
-            "sad": "images/crane_sage_sad.png",
-            "angry": "images/crane_sage_angry.png",
-            "skill": "images/crane_sage_skill.png",
-            "victory": "images/crane_sage_victory.png",
-            "defeat": "images/crane_sage_defeat.png",
+            "idle": "images/creatures/shangrila/creature_crane_sage.png",
+            "joy": "images/creatures/shangrila/creature_crane_sage_joy.png",
+            "sad": "images/creatures/shangrila/creature_crane_sage_sad.png",
+            "angry": "images/creatures/shangrila/creature_crane_sage_angry.png",
+            "skill": "images/creatures/shangrila/creature_crane_sage_skill.png",
+            "victory": "images/creatures/shangrila/creature_crane_sage_victory.png",
+            "defeat": "images/creatures/shangrila/creature_crane_sage_defeat.png",
             "gallery": {
-                "lv1": "images/crane_sage_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_crane_sage_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1423,17 +1423,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/shangrila/pears_spirit.png",
+        image: "images/creatures/shangrila/creature_pears_spirit.png",
         sprites: {
-            "idle": "images/pears_spirit.png",
-            "joy": "images/pears_spirit_joy.png",
-            "sad": "images/pears_spirit_sad.png",
-            "angry": "images/pears_spirit_angry.png",
-            "skill": "images/pears_spirit_skill.png",
-            "victory": "images/pears_spirit_victory.png",
-            "defeat": "images/pears_spirit_defeat.png",
+            "idle": "images/creatures/shangrila/creature_pears_spirit.png",
+            "joy": "images/creatures/shangrila/creature_pears_spirit_joy.png",
+            "sad": "images/creatures/shangrila/creature_pears_spirit_sad.png",
+            "angry": "images/creatures/shangrila/creature_pears_spirit_angry.png",
+            "skill": "images/creatures/shangrila/creature_pears_spirit_skill.png",
+            "victory": "images/creatures/shangrila/creature_pears_spirit_victory.png",
+            "defeat": "images/creatures/shangrila/creature_pears_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/pears_spirit_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_pears_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1461,17 +1461,17 @@ export const SHANGRILA_CREATURES = [
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/shangrila/butterfly_dream.png",
+        image: "images/creatures/shangrila/creature_butterfly_dream.png",
         sprites: {
-            "idle": "images/butterfly_dream.png",
-            "joy": "images/butterfly_dream_joy.png",
-            "sad": "images/butterfly_dream_sad.png",
-            "angry": "images/butterfly_dream_angry.png",
-            "skill": "images/butterfly_dream_skill.png",
-            "victory": "images/butterfly_dream_victory.png",
-            "defeat": "images/butterfly_dream_defeat.png",
+            "idle": "images/creatures/shangrila/creature_butterfly_dream.png",
+            "joy": "images/creatures/shangrila/creature_butterfly_dream_joy.png",
+            "sad": "images/creatures/shangrila/creature_butterfly_dream_sad.png",
+            "angry": "images/creatures/shangrila/creature_butterfly_dream_angry.png",
+            "skill": "images/creatures/shangrila/creature_butterfly_dream_skill.png",
+            "victory": "images/creatures/shangrila/creature_butterfly_dream_victory.png",
+            "defeat": "images/creatures/shangrila/creature_butterfly_dream_defeat.png",
             "gallery": {
-                "lv1": "images/butterfly_dream_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_butterfly_dream_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1501,15 +1501,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_flower_fairy.png",
         sprites: {
-            "idle": "images/creature_flower_fairy.png",
-            "joy": "images/creature_flower_fairy_joy.png",
-            "sad": "images/creature_flower_fairy_sad.png",
-            "angry": "images/creature_flower_fairy_angry.png",
-            "skill": "images/creature_flower_fairy_skill.png",
-            "victory": "images/creature_flower_fairy_victory.png",
-            "defeat": "images/creature_flower_fairy_defeat.png",
+            "idle": "images/creatures/shangrila/creature_flower_fairy.png",
+            "joy": "images/creatures/shangrila/creature_flower_fairy_joy.png",
+            "sad": "images/creatures/shangrila/creature_flower_fairy_sad.png",
+            "angry": "images/creatures/shangrila/creature_flower_fairy_angry.png",
+            "skill": "images/creatures/shangrila/creature_flower_fairy_skill.png",
+            "victory": "images/creatures/shangrila/creature_flower_fairy_victory.png",
+            "defeat": "images/creatures/shangrila/creature_flower_fairy_defeat.png",
             "gallery": {
-                "lv1": "images/creature_flower_fairy_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_flower_fairy_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1539,15 +1539,15 @@ export const SHANGRILA_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_ink_spirit.png",
         sprites: {
-            "idle": "images/creature_ink_spirit.png",
-            "joy": "images/creature_ink_spirit_joy.png",
-            "sad": "images/creature_ink_spirit_sad.png",
-            "angry": "images/creature_ink_spirit_angry.png",
-            "skill": "images/creature_ink_spirit_skill.png",
-            "victory": "images/creature_ink_spirit_victory.png",
-            "defeat": "images/creature_ink_spirit_defeat.png",
+            "idle": "images/creatures/shangrila/creature_ink_spirit.png",
+            "joy": "images/creatures/shangrila/creature_ink_spirit_joy.png",
+            "sad": "images/creatures/shangrila/creature_ink_spirit_sad.png",
+            "angry": "images/creatures/shangrila/creature_ink_spirit_angry.png",
+            "skill": "images/creatures/shangrila/creature_ink_spirit_skill.png",
+            "victory": "images/creatures/shangrila/creature_ink_spirit_victory.png",
+            "defeat": "images/creatures/shangrila/creature_ink_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/creature_ink_spirit_gallery.png"
+                "lv1": "images/creatures/shangrila/creature_ink_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1566,6 +1566,126 @@ export const SHANGRILA_CREATURES = [
         },
         relationships: { likes: [], dislikes: [], rival: null },
         touchLines: { idle: ["..."], interaction: ["..."], gift: ["Thank you."], special: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "fox_nine_new",
+        name: "신생 구미호",
+        rarity: RANKS.SSR,
+        world: WORLDS.SHANGRILA,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/shangrila/creature_fox_nine_new.png",
+        sprites: {
+            "idle": "images/creatures/shangrila/creature_fox_nine_new.png",
+            "joy": "images/creatures/shangrila/creature_fox_nine_new.png", // Fallback
+            "sad": "images/creatures/shangrila/creature_fox_nine_new.png", // Fallback
+            "angry": "images/creatures/shangrila/creature_fox_nine_new.png", // Fallback
+            "skill": "images/creatures/shangrila/creature_fox_nine_new.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 신생 구미호",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in shangrila.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "jade_rabbit",
+        name: "옥토끼",
+        rarity: RANKS.RARE,
+        world: WORLDS.SHANGRILA,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/shangrila/creature_jade_rabbit.png",
+        sprites: {
+            "idle": "images/creatures/shangrila/creature_jade_rabbit.png",
+            "joy": "images/creatures/shangrila/creature_jade_rabbit.png", // Fallback
+            "sad": "images/creatures/shangrila/creature_jade_rabbit.png", // Fallback
+            "angry": "images/creatures/shangrila/creature_jade_rabbit.png", // Fallback
+            "skill": "images/creatures/shangrila/creature_jade_rabbit.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 옥토끼",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in shangrila.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "yin_yang_fish",
+        name: "음양어",
+        rarity: RANKS.RARE,
+        world: WORLDS.SHANGRILA,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/shangrila/creature_yin_yang_fish.png",
+        sprites: {
+            "idle": "images/creatures/shangrila/creature_yin_yang_fish.png",
+            "joy": "images/creatures/shangrila/creature_yin_yang_fish.png", // Fallback
+            "sad": "images/creatures/shangrila/creature_yin_yang_fish.png", // Fallback
+            "angry": "images/creatures/shangrila/creature_yin_yang_fish.png", // Fallback
+            "skill": "images/creatures/shangrila/creature_yin_yang_fish.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 음양어",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in shangrila.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "cloud_spirit",
+        name: "운무 정령",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.SHANGRILA,
+        elements: ["Earth"],
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/shangrila/creature_cloud_spirit.png",
+        sprites: {
+            "idle": "images/creatures/shangrila/creature_cloud_spirit.png",
+            "joy": "images/creatures/shangrila/creature_cloud_spirit.png",
+            "sad": "images/creatures/shangrila/creature_cloud_spirit.png",
+            "angry": "images/creatures/shangrila/creature_cloud_spirit.png",
+            "skill": "images/creatures/shangrila/creature_cloud_spirit.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 운무 정령",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"], gift: ["Thanks"], special: ["?!"] },
         lines: { normal: "..." }
     }
 ];

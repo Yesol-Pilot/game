@@ -1,0 +1,269 @@
+{
+  "filesystem": {
+    "totalFiles": 251
+  },
+  "data": {
+    "totalCreatures": 256,
+    "creaturesWithImage": 256,
+    "uniqueImagePaths": 195,
+    "sharedImages": 30
+  },
+  "audit": {
+    "matched": 193,
+    "missingCount": 63,
+    "missingList": [
+      {
+        "id": "void_beast",
+        "path": "images/void_beast.png"
+      },
+      {
+        "id": "shadow_assassin",
+        "path": "images/shadow_assassin.png"
+      },
+      {
+        "id": "gargoyle_stone",
+        "path": "images/gargoyle_stone.png"
+      },
+      {
+        "id": "eye_of_chaos",
+        "path": "images/eye_of_chaos.png"
+      },
+      {
+        "id": "abyss_stalker",
+        "path": "images/abyss_stalker.png"
+      },
+      {
+        "id": "dark_matter_slime",
+        "path": "images/dark_matter_slime.png"
+      },
+      {
+        "id": "void_walker",
+        "path": "images/void_walker.png"
+      },
+      {
+        "id": "abyss_leech",
+        "path": "images/abyss_leech.png"
+      },
+      {
+        "id": "deep_one_soldier",
+        "path": "images/deep_one_soldier.png"
+      },
+      {
+        "id": "screaming_root",
+        "path": "images/screaming_root.png"
+      },
+      {
+        "id": "ghoul_scavenger",
+        "path": "images/ghoul_scavenger.png"
+      },
+      {
+        "id": "bone_fragment_spirit",
+        "path": "images/bone_fragment_spirit.png"
+      },
+      {
+        "id": "abyss_jellyfish",
+        "path": "images/placeholder_abyss.png"
+      },
+      {
+        "id": "void_crab",
+        "path": "images/placeholder_abyss.png"
+      },
+      {
+        "id": "dark_eel",
+        "path": "images/placeholder_abyss.png"
+      },
+      {
+        "id": "skeleton_fish",
+        "path": "images/placeholder_abyss.png"
+      },
+      {
+        "id": "phantom_ray",
+        "path": "images/placeholder_abyss.png"
+      },
+      {
+        "id": "bear_ice",
+        "path": "images/sif.png"
+      },
+      {
+        "id": "titan_kronos_shade",
+        "path": "images/titan_kronos_shade.png"
+      },
+      {
+        "id": "god_poseidon",
+        "path": "images/creatures/olympus/creature_god_poseidon.png"
+      },
+      {
+        "id": "god_hades",
+        "path": "images/god_hades.png"
+      },
+      {
+        "id": "minotaur_king",
+        "path": "images/creatures/olympus/minotaur_king.png"
+      },
+      {
+        "id": "cerberus_guardian",
+        "path": "images/creatures/olympus/cerberus_guardian.png"
+      },
+      {
+        "id": "medusa_cursed",
+        "path": "images/medusa_cursed.png"
+      },
+      {
+        "id": "harpy_queen",
+        "path": "images/harpy_queen.png"
+      },
+      {
+        "id": "bonsai_spirit",
+        "path": "images/bonsai_spirit.png"
+      },
+      {
+        "id": "panda_monk",
+        "path": "images/panda_monk.png"
+      },
+      {
+        "id": "lucky_cat_kuro",
+        "path": "images/lucky_cat_kuro.png"
+      },
+      {
+        "id": "heavenly_maiden_small",
+        "path": "images/heavenly_maiden_small.png"
+      },
+      {
+        "id": "statue_lion_dog",
+        "path": "images/statue_lion_dog.png"
+      },
+      {
+        "id": "lantern_ghost",
+        "path": "images/lantern_ghost.png"
+      },
+      {
+        "id": "paper_charm_seal",
+        "path": "images/paper_charm_seal.png"
+      },
+      {
+        "id": "firefly_night",
+        "path": "images/firefly_night.png"
+      },
+      {
+        "id": "turtle_black",
+        "path": "images/turtle_black.png"
+      },
+      {
+        "id": "crane_sage",
+        "path": "images/crane_sage.png"
+      },
+      {
+        "id": "bear_ice",
+        "path": "images/sif.png"
+      },
+      {
+        "id": "bear_ice",
+        "path": "images/sif.png"
+      },
+      {
+        "id": "beast_leviathan",
+        "path": "images/beast_leviathan.png"
+      },
+      {
+        "id": "beast_ziz",
+        "path": "images/beast_ziz.png"
+      },
+      {
+        "id": "griffin_gold",
+        "path": "images/griffin_gold.png"
+      },
+      {
+        "id": "turtle_ancient_wild",
+        "path": "images/turtle_ancient_wild.png"
+      },
+      {
+        "id": "dryad_queen",
+        "path": "images/dryad_queen.png"
+      },
+      {
+        "id": "mantis_warrior",
+        "path": "images/mantis_warrior.png"
+      },
+      {
+        "id": "orchid_mantis",
+        "path": "images/orchid_mantis.png"
+      },
+      {
+        "id": "crystal_crab",
+        "path": "images/crystal_crab.png"
+      },
+      {
+        "id": "electric_eel_king",
+        "path": "images/electric_eel_king.png"
+      },
+      {
+        "id": "magma_slime_giant",
+        "path": "images/magma_slime_giant.png"
+      },
+      {
+        "id": "fossil_stone",
+        "path": "images/fossil_stone.png"
+      },
+      {
+        "id": "forest_guardian",
+        "path": "images/forest_guardian.png"
+      },
+      {
+        "id": "sand_prowler",
+        "path": "images/sand_prowler.png"
+      },
+      {
+        "id": "boulder_beetle",
+        "path": "images/boulder_beetle.png"
+      },
+      {
+        "id": "seedling_spirit",
+        "path": "images/seedling_spirit.png"
+      },
+      {
+        "id": "caterpillar_fat",
+        "path": "images/caterpillar_fat.png"
+      },
+      {
+        "id": "tadpole_wiggle",
+        "path": "images/tadpole_wiggle.png"
+      },
+      {
+        "id": "leaf_insect",
+        "path": "images/leaf_insect.png"
+      },
+      {
+        "id": "willOWisp_green",
+        "path": "images/willOWisp_green.png"
+      },
+      {
+        "id": "sun_flower_spirit",
+        "path": "images/sun_flower_spirit.png"
+      },
+      {
+        "id": "moon_flower_spirit",
+        "path": "images/moon_flower_spirit.png"
+      },
+      {
+        "id": "desert_scorpion",
+        "path": "images/desert_scorpion.png"
+      },
+      {
+        "id": "panda_warrior",
+        "path": "images/panda_warrior.png"
+      },
+      {
+        "id": "creator_gaia",
+        "path": "images/creature_creator_gaia.png"
+      },
+      {
+        "id": "beast_behemoth",
+        "path": "images/creature_beast_behemoth.png"
+      },
+      {
+        "id": "rat_brown",
+        "path": "images/creature_rat_brown.png"
+      }
+    ]
+  }
+}

@@ -76,20 +76,14 @@ export default class SettingsView {
         });
 
         // 6. 로그아웃 (설정 모달 내)
-        this.btnLogout?.addEventListener('click', async () => {
-            if (confirm("로그아웃 하시겠습니까?")) {
-                await this.game.authManager.logout();
-                this.closeSettings();
-                location.reload(); // 새로고침
-            }
+        // 6. 로그아웃 (설정 모달 내)
+        this.btnLogout?.addEventListener('click', () => {
+            this._showLogoutModal();
         });
 
         // 7. 헤더 로그아웃 버튼 (설정 모달 없이 직접 접근)
-        this.btnHeaderLogout?.addEventListener('click', async () => {
-            if (confirm("로그아웃 하시겠습니까?")) {
-                await this.game.authManager.logout();
-                location.reload();
-            }
+        this.btnHeaderLogout?.addEventListener('click', () => {
+            this._showLogoutModal();
         });
 
         // 8. 계정 초기화 (Reset)
@@ -128,5 +122,42 @@ export default class SettingsView {
 
     closeSettings() {
         this.modalSettings.style.display = 'none';
+    }
+
+    _showLogoutModal() {
+        const modal = document.getElementById('custom-modal-overlay');
+        const msgEl = document.getElementById('custom-modal-msg');
+        const btnYes = document.getElementById('btn-modal-yes');
+        const btnNo = document.getElementById('btn-modal-no');
+
+        if (!modal || !msgEl || !btnYes || !btnNo) {
+            // [Fallback] 모달 없는 경우
+            if (confirm("로그아웃 하시겠습니까?")) {
+                this.game.authManager.logout().then(() => location.reload());
+            }
+            return;
+        }
+
+        msgEl.innerText = "로그아웃 하시겠습니까?";
+        modal.style.display = 'flex';
+
+        // Clone to clean listeners
+        const newBtnYes = btnYes.cloneNode(true);
+        const newBtnNo = btnNo.cloneNode(true);
+        btnYes.parentNode.replaceChild(newBtnYes, btnYes);
+        btnNo.parentNode.replaceChild(newBtnNo, btnNo);
+
+        // Yes Button
+        newBtnYes.onclick = async () => {
+            modal.style.display = 'none';
+            await this.game.authManager.logout();
+            this.closeSettings();
+            location.reload();
+        };
+
+        // No Button
+        newBtnNo.onclick = () => {
+            modal.style.display = 'none';
+        };
     }
 }

@@ -100,10 +100,17 @@ export default class SummonView extends BaseView {
 
         // 패널 상단(헤더 아래)에 삽입
         const header = contentSummon.querySelector('.panel-header');
-        if (header && header.nextSibling) {
+
+        // [BugFix] insertBefore requires reference node to be a direct child.
+        // If structure is complex, just appending after header if possible, or append to container.
+        if (header && header.parentNode === contentSummon) {
+            // Header is direct child, safe to use insertBefore on nextSibling
             contentSummon.insertBefore(container, header.nextSibling);
         } else {
-            contentSummon.appendChild(container);
+            // Fallback: Just append to contentSummon (might be at bottom, but safe)
+            // Or try toprepend if we want it at top (but below header if header exists?)
+            // Let's just append for safety to unblock the crash.
+            contentSummon.appendChild(container); // Safe Append
         }
     }
 

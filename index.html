@@ -988,6 +988,23 @@
             });
         }
     </script>
+
+    <!-- [URGENT RESTORE] Auto-restore all creatures on load -->
+    <script src="js/restore_creatures.js?v=urgent_fix_v1"></script>
+
+    <!-- [NEW] Custom Confirm Modal (General Purpose) -->
+    <div id="custom-modal-overlay" class="modal-overlay" style="display:none; z-index:20000;">
+        <div class="modal-content glass-panel" style="max-width:350px; text-align:center;">
+            <p id="custom-modal-msg" style="margin-bottom:20px; font-size:1.1rem; line-height:1.5;">
+                확인 메시지
+            </p>
+            <div style="display:flex; gap:10px; justify-content:center;">
+                <button id="btn-modal-yes" class="cyber-btn danger" style="flex:1;">예 (Yes)</button>
+                <button id="btn-modal-no" class="cyber-btn" style="flex:1; background:#444;">아니오 (No)</button>
+            </div>
+        </div>
+    </div>
+
     <!-- =========================
          SETTINGS MODAL
          ========================= -->

@@ -1,0 +1,1760 @@
+﻿Scanning existing images...
+Found 227 images.
+Parsed 190 creatures from data files.
+{
+  "summary": {
+    "total": 190,
+    "missingBase": 61,
+    "missingGallery": 172
+  },
+  "missing": [
+    {
+      "id": "centaur_scout",
+      "name": "耳꾪??곕줈???뺤같蹂?,
+      "rarity": "RARE",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/centaur_scout.png"
+        }
+      ]
+    },
+    {
+      "id": "titan_kronos_shade",
+      "name": "?щ줈?몄뒪??洹몃┝??,
+      "rarity": "UR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/titan_kronos_shade.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/titan_kronos_shade_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/titan_kronos_shade_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/titan_kronos_shade_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "god_poseidon",
+      "name": "?ы빐??援곗＜ ?ъ꽭?대룉",
+      "rarity": "SSR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creatures/olympus/creature_god_poseidon.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_god_poseidon_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_god_poseidon_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_god_poseidon_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "god_hades",
+      "name": "吏?μ쓽 吏諛곗옄 ?섎뜲??,
+      "rarity": "SSR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/god_hades.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/god_hades_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/god_hades_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/god_hades_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "hero_hercules",
+      "name": "遺덈㈇???곸썒 ?ㅻ씪?대젅??,
+      "rarity": "SSR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/hero_hercules_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/hero_hercules_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/hero_hercules_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "titan_atlas",
+      "name": "嫄곗떊 ?꾪??쇱뒪",
+      "rarity": "SR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_titan_atlas_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_titan_atlas_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_titan_atlas_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "minotaur_king",
+      "name": "誘몃끂??곕줈????,
+      "rarity": "SR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creatures/olympus/minotaur_king.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/minotaur_king_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/minotaur_king_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/minotaur_king_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "cerberus_guardian",
+      "name": "吏?ν뙆?섍씔 耳瑜대쿋濡쒖뒪",
+      "rarity": "SR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/cerberus_guardian_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/cerberus_guardian_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/cerberus_guardian_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "hydra_lernaean",
+      "name": "?덈Ⅴ?섏쓽 ?덈뱶??,
+      "rarity": "SR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/hydra_lernaean_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/hydra_lernaean_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/hydra_lernaean_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "lion_nemean",
+      "name": "?ㅻ찓?꾩쓽 ?ъ옄",
+      "rarity": "SR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/lion_nemean_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/lion_nemean_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/lion_nemean_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "medusa_cursed",
+      "name": "?二쇰컺? 誘몃え 硫붾몢??,
+      "rarity": "SR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/medusa_cursed.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/medusa_cursed_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/medusa_cursed_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/medusa_cursed_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "mage_flame",
+      "name": "?붿뿼 留덈쾿??,
+      "rarity": "SPECIAL",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creatures/olympus/creature_mage_flame.png"
+        }
+      ]
+    },
+    {
+      "id": "harpy_queen",
+      "name": "??뭾?곗쓽 ?섑뵾 ??,
+      "rarity": "SPECIAL",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/harpy_queen.png"
+        }
+      ]
+    },
+    {
+      "id": "god_gaia",
+      "name": "?吏???ъ떊 媛?댁븘",
+      "rarity": "UR",
+      "world": "OLYMPUS",
+      "issues": [
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "wolf_fenrir",
+      "name": "醫낅쭚???묐? ?쒕━瑜?,
+      "rarity": "SSR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "god_odin",
+      "name": "理쒓퀬???ㅻ뵖",
+      "rarity": "UR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creature_god_odin.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "valkyrie",
+      "name": "?꾩옣??源껊컻 釉뚮??먰듃",
+      "rarity": "SR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "giant_hill",
+      "name": "?吏??諛⑺뙣 洹몃줈??,
+      "rarity": "SR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "dwarf_smith",
+      "name": "?쒖썙????μ옣??,
+      "rarity": "SPECIAL",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creature_dwarf.png?v=4"
+        }
+      ]
+    },
+    {
+      "id": "god_loki",
+      "name": "?λ궃????濡쒗궎",
+      "rarity": "SSR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "god_freya",
+      "name": "誘몄쓽 ?ъ떊 ?꾨젅?댁빞",
+      "rarity": "SSR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "snake_world_jormungandr",
+      "name": "誘몃뱶媛瑜대뱶 諭 ?붾Ⅴ臾멸컙??,
+      "rarity": "UR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "god_hel",
+      "name": "吏?μ쓽 ?ъ솗 ??,
+      "rarity": "SSR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "elk_golden",
+      "name": "?⑷툑 肉??꾩씠?ъ돩瑜대땲瑜?,
+      "rarity": "SR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "mimir_head",
+      "name": "誘몃?瑜댁쓽 癒몃━",
+      "rarity": "SR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "god_thor",
+      "name": "泥쒕뫁?????좊Ⅴ",
+      "rarity": "SSR",
+      "world": "ASGARD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    },
+    {
+      "id": "bonsai_spirit",
+      "name": "泥쒕뀈 遺꾩옱 ?뺣졊",
+      "rarity": "SPECIAL",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/bonsai_spirit.png"
+        }
+      ]
+    },
+    {
+      "id": "panda_monk",
+      "name": "?먮떎 ?섎룄??,
+      "rarity": "RARE",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/panda_monk.png"
+        }
+      ]
+    },
+    {
+      "id": "lucky_cat_kuro",
+      "name": "蹂?怨좎뼇??荑좊줈",
+      "rarity": "RARE",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/lucky_cat_kuro.png"
+        }
+      ]
+    },
+    {
+      "id": "heavenly_maiden_small",
+      "name": "瑗щ쭏 ?좊?",
+      "rarity": "RARE",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/heavenly_maiden_small.png"
+        }
+      ]
+    },
+    {
+      "id": "cloud_serpent",
+      "name": "援щ쫫 ?대Т湲?,
+      "rarity": "RARE",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/cloud_serpent.png"
+        }
+      ]
+    },
+    {
+      "id": "statue_lion_dog",
+      "name": "?댁튂 ?앹긽",
+      "rarity": "RARE",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/statue_lion_dog.png"
+        }
+      ]
+    },
+    {
+      "id": "lantern_ghost",
+      "name": "珥덈”遺?洹??,
+      "rarity": "UNIQUE",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/lantern_ghost.png"
+        }
+      ]
+    },
+    {
+      "id": "paper_charm_seal",
+      "name": "遊됱씤 遺??,
+      "rarity": "NORMAL",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/paper_charm_seal.png"
+        }
+      ]
+    },
+    {
+      "id": "firefly_night",
+      "name": "?щ갇??諛섎뵩遺덉씠",
+      "rarity": "NORMAL",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/firefly_night.png"
+        }
+      ]
+    },
+    {
+      "id": "dragon_ancient",
+      "name": "?쒖큹????諛뷀븯臾댄듃",
+      "rarity": "UR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_dragon_ancient_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_dragon_ancient_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_dragon_ancient_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "fox_nine_ur",
+      "name": "泥쒕뀈 援щ???誘명샇",
+      "rarity": "UR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_fox_nine_ur_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_fox_nine_ur_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_fox_nine_ur_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "god_dragon_king",
+      "name": "?섏젙沅곸쓽 ?⑹솗",
+      "rarity": "UR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_god_dragon_king_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_god_dragon_king_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_god_dragon_king_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "phoenix_eternal",
+      "name": "遺덈㈇???붿“ ?섏씠",
+      "rarity": "SSR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_phoenix_eternal_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_phoenix_eternal_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_phoenix_eternal_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "hero_wukong",
+      "name": "?쒖쿇????먯삤怨?,
+      "rarity": "SSR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/hero_wukong_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/hero_wukong_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/hero_wukong_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "rabbit_moon",
+      "name": "?ы넗??猷⑤굹",
+      "rarity": "SSR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_rabbit_moon_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_rabbit_moon_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_rabbit_moon_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "peacock_princess",
+      "name": "怨듭옉 怨듭＜",
+      "rarity": "SSR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_peacock_princess_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_peacock_princess_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_peacock_princess_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "fox_yokai_sr",
+      "name": "?ъ슦?붽눼 誘명샇",
+      "rarity": "SR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_fox_yokai_sr_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_fox_yokai_sr_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_fox_yokai_sr_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "dragon_azure",
+      "name": "泥?！",
+      "rarity": "SR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/dragon_azure_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/dragon_azure_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/dragon_azure_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "tiger_white",
+      "name": "諛깊샇",
+      "rarity": "SR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/tiger_white_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/tiger_white_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/tiger_white_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "bird_vermilion",
+      "name": "二쇱옉",
+      "rarity": "SR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/bird_vermilion_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/bird_vermilion_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/bird_vermilion_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "turtle_black",
+      "name": "?꾨Т",
+      "rarity": "SR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/turtle_black.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/turtle_black_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/turtle_black_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/turtle_black_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "dokkeabi_king",
+      "name": "?⑷툑 諛⑸쭩???꾧묠鍮?,
+      "rarity": "SR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/dokkeabi_king_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/dokkeabi_king_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/dokkeabi_king_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "mountain_god_tiger",
+      "name": "?곗떊 ?몃옉??,
+      "rarity": "SR",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/mountain_god_tiger_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/mountain_god_tiger_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/mountain_god_tiger_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "crane_sage",
+      "name": "援щ쫫 ?꾩쓽 ???좎꽑",
+      "rarity": "SPECIAL",
+      "world": "SHANGRILA",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/crane_sage.png"
+        }
+      ]
+    },
+    {
+      "id": "void_beast",
+      "name": "怨듯뿀???쇱닔",
+      "rarity": "SR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/void_beast.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/void_beast_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/void_beast_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/void_beast_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "shadow_assassin",
+      "name": "洹몃┝???붿궡??,
+      "rarity": "SPECIAL",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/shadow_assassin.png"
+        }
+      ]
+    },
+    {
+      "id": "gargoyle_stone",
+      "name": "?앹긽 媛怨좎씪",
+      "rarity": "RARE",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/gargoyle_stone.png"
+        }
+      ]
+    },
+    {
+      "id": "eye_of_chaos",
+      "name": "?쇰룉????,
+      "rarity": "RARE",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/eye_of_chaos.png"
+        }
+      ]
+    },
+    {
+      "id": "abyss_stalker",
+      "name": "?ъ뿰??異붿쟻??,
+      "rarity": "RARE",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/abyss_stalker.png"
+        }
+      ]
+    },
+    {
+      "id": "dark_matter_slime",
+      "name": "?뷀쓳 臾쇱쭏 ?щ씪??,
+      "rarity": "UNIQUE",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/dark_matter_slime.png"
+        }
+      ]
+    },
+    {
+      "id": "void_walker",
+      "name": "怨듯뿀??蹂댄뻾??,
+      "rarity": "NORMAL",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/void_walker.png"
+        }
+      ]
+    },
+    {
+      "id": "abyss_leech",
+      "name": "?ъ뿰??嫄곕㉧由?,
+      "rarity": "NORMAL",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/abyss_leech.png"
+        }
+      ]
+    },
+    {
+      "id": "void_emperor",
+      "name": "怨듯뿀???ъ젣 ?먮젅蹂댁뒪",
+      "rarity": "UR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creatures/abyss/creature_void_emperor_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creatures/abyss/creature_void_emperor_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creatures/abyss/creature_void_emperor_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "dragon_chaos",
+      "name": "?쇰룉???⑺씗 ?곗븘留덊듃",
+      "rarity": "UR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_dragon_chaos_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_dragon_chaos_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_dragon_chaos_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "god_cthulhu",
+      "name": "蹂꾩쓽 吏諛곗옄 ?ы댋猷?,
+      "rarity": "UR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creature_god_cthulhu.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_god_cthulhu_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_god_cthulhu_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_god_cthulhu_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "god_nyarlathotep",
+      "name": "湲곗뼱?ㅻ땲???쇰룉 ?덉븣?쇳넗??,
+      "rarity": "UR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_god_nyarlathotep_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_god_nyarlathotep_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_god_nyarlathotep_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "demon_king",
+      "name": "留덉솗 諛붿븣",
+      "rarity": "SSR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_demon_king_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_demon_king_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_demon_king_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "god_shub",
+      "name": "留?留덈━ ?덈겮瑜??덉? ?뀁쓽 ?쇱냼",
+      "rarity": "SSR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_god_shub_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_god_shub_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_god_shub_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "god_hastur",
+      "name": "?⑹깋 ?룹쓽 ???섏뒪??,
+      "rarity": "SSR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/god_hastur.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/god_hastur_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/god_hastur_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/god_hastur_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "vampire_lord",
+      "name": "吏꾪솉???ъ솗 移대???,
+      "rarity": "SR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_vampire_lord_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_vampire_lord_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_vampire_lord_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "god_dagon",
+      "name": "?ы빐??嫄곗떊 ?ㅺ낀",
+      "rarity": "SR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/god_dagon_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/god_dagon_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/god_dagon_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "knight_dullahan",
+      "name": "癒몃━ ?녿뒗 湲곗궗 ??쇳븳",
+      "rarity": "SR",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/knight_dullahan_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/knight_dullahan_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/knight_dullahan_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "deep_one_soldier",
+      "name": "?????꾩궗",
+      "rarity": "RARE",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/deep_one_soldier.png"
+        }
+      ]
+    },
+    {
+      "id": "screaming_root",
+      "name": "鍮꾨챸 吏瑜대뒗 肉뚮━",
+      "rarity": "UNIQUE",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/screaming_root.png"
+        }
+      ]
+    },
+    {
+      "id": "ghoul_scavenger",
+      "name": "?쒖껜 癒밸뒗 援ъ슱",
+      "rarity": "UNIQUE",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/ghoul_scavenger.png"
+        }
+      ]
+    },
+    {
+      "id": "bone_fragment_spirit",
+      "name": "堉?議곌컖 ?뺣졊",
+      "rarity": "NORMAL",
+      "world": "ABYSS",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/bone_fragment_spirit.png"
+        }
+      ]
+    },
+    {
+      "id": "beast_leviathan",
+      "name": "?ы빐???ъ븰 ?덈퉬?꾪깂",
+      "rarity": "SSR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/beast_leviathan.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/beast_leviathan_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/beast_leviathan_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/beast_leviathan_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "beast_ziz",
+      "name": "泥쒓났???좉컻 吏利?,
+      "rarity": "SSR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/beast_ziz.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/beast_ziz_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/beast_ziz_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/beast_ziz_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "fairy_queen_titania",
+      "name": "?붿젙 ?ъ솗 ?고??덉븘",
+      "rarity": "SSR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/fairy_queen_titania_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/fairy_queen_titania_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/fairy_queen_titania_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "griffin_gold",
+      "name": "?⑷툑 洹몃━??,
+      "rarity": "SR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/griffin_gold.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/griffin_gold_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/griffin_gold_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/griffin_gold_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "turtle_ancient_wild",
+      "name": "留뚮뀈 怨좊? 嫄곕턿",
+      "rarity": "SR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/turtle_ancient_wild.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/turtle_ancient_wild_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/turtle_ancient_wild_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/turtle_ancient_wild_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "dryad_queen",
+      "name": "?쒕씪?댁뼱???ъ솗",
+      "rarity": "SR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/dryad_queen.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/dryad_queen_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/dryad_queen_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/dryad_queen_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "mantis_warrior",
+      "name": "?щ쭏洹 臾댁궗",
+      "rarity": "SPECIAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/mantis_warrior.png"
+        }
+      ]
+    },
+    {
+      "id": "orchid_mantis",
+      "name": "?쒖큹 ?щ쭏洹",
+      "rarity": "SPECIAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/orchid_mantis.png"
+        }
+      ]
+    },
+    {
+      "id": "crystal_crab",
+      "name": "?섏젙 寃?,
+      "rarity": "SPECIAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/crystal_crab.png"
+        }
+      ]
+    },
+    {
+      "id": "electric_eel_king",
+      "name": "踰덇컻 ?μ뼱 ??,
+      "rarity": "RARE",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/electric_eel_king.png"
+        }
+      ]
+    },
+    {
+      "id": "magma_slime_giant",
+      "name": "???留덇렇留??щ씪??,
+      "rarity": "RARE",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/magma_slime_giant.png"
+        }
+      ]
+    },
+    {
+      "id": "fossil_stone",
+      "name": "?吏곸씠???붿꽍",
+      "rarity": "RARE",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/fossil_stone.png"
+        }
+      ]
+    },
+    {
+      "id": "forest_guardian",
+      "name": "?뀁쓽 ?섑샇??,
+      "rarity": "RARE",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/forest_guardian.png"
+        }
+      ]
+    },
+    {
+      "id": "sand_prowler",
+      "name": "紐⑤옒 ?좊났袁?,
+      "rarity": "UNIQUE",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/sand_prowler.png"
+        }
+      ]
+    },
+    {
+      "id": "boulder_beetle",
+      "name": "諛붿쐞 ?깆젙踰뚮젅",
+      "rarity": "UNIQUE",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/boulder_beetle.png"
+        }
+      ]
+    },
+    {
+      "id": "seedling_spirit",
+      "name": "?덉떦 ?뺣졊",
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/seedling_spirit.png"
+        }
+      ]
+    },
+    {
+      "id": "caterpillar_fat",
+      "name": "?듯넻???좊쾶??,
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/caterpillar_fat.png"
+        }
+      ]
+    },
+    {
+      "id": "tadpole_wiggle",
+      "name": "瑗щЪ嫄곕━???ъ콡??,
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/tadpole_wiggle.png"
+        }
+      ]
+    },
+    {
+      "id": "leaf_insect",
+      "name": "?섎춪??踰뚮젅",
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/leaf_insect.png"
+        }
+      ]
+    },
+    {
+      "id": "willOWisp_green",
+      "name": "珥덈줉 ?꾧묠鍮꾨텋",
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/willOWisp_green.png"
+        }
+      ]
+    },
+    {
+      "id": "sun_flower_spirit",
+      "name": "?대컮?쇨린 ?뺣졊",
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/sun_flower_spirit.png"
+        }
+      ]
+    },
+    {
+      "id": "moon_flower_spirit",
+      "name": "?щ쭪?닿퐙 ?뺣졊",
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/moon_flower_spirit.png"
+        }
+      ]
+    },
+    {
+      "id": "desert_scorpion",
+      "name": "?щ쭑 ?꾧컝",
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/desert_scorpion.png"
+        }
+      ]
+    },
+    {
+      "id": "panda_warrior",
+      "name": "?먮떎 ?꾩궗",
+      "rarity": "UNIQUE",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/panda_warrior.png"
+        }
+      ]
+    },
+    {
+      "id": "creator_gaia",
+      "name": "李쎌“二?媛?댁븘",
+      "rarity": "UR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creature_creator_gaia.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_creator_gaia_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_creator_gaia_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_creator_gaia_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "dragon_drake",
+      "name": "??뿼???⑥솗 ?닿렇?덉뒪",
+      "rarity": "SSR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_dragon_drake_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_dragon_drake_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_dragon_drake_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "beast_behemoth",
+      "name": "?吏??吏먯듅 踰좏엳紐⑥뒪",
+      "rarity": "SSR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creature_beast_behemoth.png"
+        },
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_beast_behemoth_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_beast_behemoth_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_beast_behemoth_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "chimera",
+      "name": "?ㅻ찓??,
+      "rarity": "SR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "gallery_lv1",
+          "path": "images/creature_chimera_gallery_lv1.png"
+        },
+        {
+          "type": "gallery_lv2",
+          "path": "images/creature_chimera_gallery_lv2.png"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "images/creature_chimera_gallery_lv3.png"
+        }
+      ]
+    },
+    {
+      "id": "rat_brown",
+      "name": "Unknown",
+      "rarity": "NORMAL",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "base",
+          "path": "images/creature_rat_brown.png"
+        }
+      ]
+    },
+    {
+      "id": "chimera",
+      "name": "?ㅻ찓??,
+      "rarity": "SSR",
+      "world": "WILD",
+      "issues": [
+        {
+          "type": "gallery_lv2",
+          "path": "NOT_DEFINED"
+        },
+        {
+          "type": "gallery_lv3",
+          "path": "NOT_DEFINED"
+        }
+      ]
+    }
+  ]
+}

@@ -15,6 +15,7 @@ import PrestigeView from './ui/PrestigeView.js';
 import GuildView from './ui/GuildView.js'; // [Phase 6]
 import RankingView from './ui/RankingView.js'; // [Phase 6]
 import TutorialView from './ui/TutorialView.js'; // [Standardization]
+import SettingsView from './ui/SettingsView.js'; // [Fix] Import SettingsView
 
 window.game = null;
 const views = {};
@@ -42,6 +43,7 @@ window.onload = () => {
     views.guild = new GuildView(game); // [Phase 6]
     views.ranking = new RankingView(game); // [Phase 6]
     views.tutorial = new TutorialView(game); // [Standardization]
+    views.settings = new SettingsView(game); // [Fix] Instantiate SettingsView
 
     // [Fix] Initialize all views to bind events
     Object.values(views).forEach(view => {
@@ -106,11 +108,12 @@ window.onload = () => {
     console.log('[Main] System Modal:', systemModal);
 
     if (btnOpenSystem && systemModal) {
-        btnOpenSystem.onclick = () => {
-            console.log('[Main] Opening system modal...');
-            systemModal.style.display = 'flex';
-            console.log('[Main] Modal display set to:', systemModal.style.display);
-        };
+        // [Conflict Fix] Handled by SettingsView.js now
+        // btnOpenSystem.onclick = () => {
+        //     console.log('[Main] Opening system modal...');
+        //     systemModal.style.display = 'flex';
+        //     console.log('[Main] Modal display set to:', systemModal.style.display);
+        // };
     } else {
         console.warn('[Main] System button or modal not found!');
     }

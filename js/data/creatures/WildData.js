@@ -9,19 +9,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/beast_leviathan.png",
+        image: "images/creatures/wild/creature_beast_leviathan.png",
         sprites: {
-            "idle": "images/beast_leviathan.png",
-            "joy": "images/beast_leviathan_joy.png",
-            "sad": "images/beast_leviathan_sad.png",
-            "angry": "images/beast_leviathan_angry.png",
-            "skill": "images/beast_leviathan_skill.png",
-            "victory": "images/beast_leviathan_victory.png",
-            "defeat": "images/beast_leviathan_defeat.png",
+            "idle": "images/creatures/wild/creature_beast_leviathan.png",
+            "joy": "images/creatures/wild/creature_beast_leviathan_joy.png",
+            "sad": "images/creatures/wild/creature_beast_leviathan_sad.png",
+            "angry": "images/creatures/wild/creature_beast_leviathan_angry.png",
+            "skill": "images/creatures/wild/creature_beast_leviathan_skill.png",
+            "victory": "images/creatures/wild/creature_beast_leviathan_victory.png",
+            "defeat": "images/creatures/wild/creature_beast_leviathan_defeat.png",
             "gallery": {
-                "lv1": "images/beast_leviathan_gallery_lv1.png",
-                "lv2": "images/beast_leviathan_gallery_lv2.png",
-                "lv3": "images/beast_leviathan_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_beast_leviathan_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_beast_leviathan_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_beast_leviathan_gallery_lv3.png"
             }
         },
         prompts: {
@@ -53,19 +53,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/beast_ziz.png",
+        image: "images/creatures/wild/creature_beast_ziz.png",
         sprites: {
-            "idle": "images/beast_ziz.png",
-            "joy": "images/beast_ziz_joy.png",
-            "sad": "images/beast_ziz_sad.png",
-            "angry": "images/beast_ziz_angry.png",
-            "skill": "images/beast_ziz_skill.png",
-            "victory": "images/beast_ziz_victory.png",
-            "defeat": "images/beast_ziz_defeat.png",
+            "idle": "images/creatures/wild/creature_beast_ziz.png",
+            "joy": "images/creatures/wild/creature_beast_ziz_joy.png",
+            "sad": "images/creatures/wild/creature_beast_ziz_sad.png",
+            "angry": "images/creatures/wild/creature_beast_ziz_angry.png",
+            "skill": "images/creatures/wild/creature_beast_ziz_skill.png",
+            "victory": "images/creatures/wild/creature_beast_ziz_victory.png",
+            "defeat": "images/creatures/wild/creature_beast_ziz_defeat.png",
             "gallery": {
-                "lv1": "images/beast_ziz_gallery_lv1.png",
-                "lv2": "images/beast_ziz_gallery_lv2.png",
-                "lv3": "images/beast_ziz_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_beast_ziz_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_beast_ziz_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_beast_ziz_gallery_lv3.png"
             }
         },
         prompts: {
@@ -97,19 +97,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/fairy_queen_titania.png",
+        image: "images/creatures/wild/creature_fairy_queen_titania.png",
         sprites: {
-            "idle": "images/fairy_queen_titania.png",
-            "joy": "images/fairy_queen_titania_joy.png",
-            "sad": "images/fairy_queen_titania_sad.png",
-            "angry": "images/fairy_queen_titania_angry.png",
-            "skill": "images/fairy_queen_titania_skill.png",
-            "victory": "images/fairy_queen_titania_victory.png",
-            "defeat": "images/fairy_queen_titania_defeat.png",
+            "idle": "images/creatures/wild/creature_fairy_queen_titania.png",
+            "joy": "images/creatures/wild/creature_fairy_queen_titania_joy.png",
+            "sad": "images/creatures/wild/creature_fairy_queen_titania_sad.png",
+            "angry": "images/creatures/wild/creature_fairy_queen_titania_angry.png",
+            "skill": "images/creatures/wild/creature_fairy_queen_titania_skill.png",
+            "victory": "images/creatures/wild/creature_fairy_queen_titania_victory.png",
+            "defeat": "images/creatures/wild/creature_fairy_queen_titania_defeat.png",
             "gallery": {
-                "lv1": "images/fairy_queen_titania_gallery_lv1.png",
-                "lv2": "images/fairy_queen_titania_gallery_lv2.png",
-                "lv3": "images/fairy_queen_titania_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_fairy_queen_titania_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_fairy_queen_titania_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_fairy_queen_titania_gallery_lv3.png"
             }
         },
         prompts: {
@@ -141,19 +141,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/griffin_gold.png",
+        image: "images/creatures/wild/creature_griffin_gold.png",
         sprites: {
-            "idle": "images/griffin_gold.png",
-            "joy": "images/griffin_gold_joy.png",
-            "sad": "images/griffin_gold_sad.png",
-            "angry": "images/griffin_gold_angry.png",
-            "skill": "images/griffin_gold_skill.png",
-            "victory": "images/griffin_gold_victory.png",
-            "defeat": "images/griffin_gold_defeat.png",
+            "idle": "images/creatures/wild/creature_griffin_gold.png",
+            "joy": "images/creatures/wild/creature_griffin_gold_joy.png",
+            "sad": "images/creatures/wild/creature_griffin_gold_sad.png",
+            "angry": "images/creatures/wild/creature_griffin_gold_angry.png",
+            "skill": "images/creatures/wild/creature_griffin_gold_skill.png",
+            "victory": "images/creatures/wild/creature_griffin_gold_victory.png",
+            "defeat": "images/creatures/wild/creature_griffin_gold_defeat.png",
             "gallery": {
-                "lv1": "images/griffin_gold_gallery_lv1.png",
-                "lv2": "images/griffin_gold_gallery_lv2.png",
-                "lv3": "images/griffin_gold_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_griffin_gold_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_griffin_gold_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_griffin_gold_gallery_lv3.png"
             }
         },
         prompts: {
@@ -185,19 +185,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/turtle_ancient_wild.png",
+        image: "images/creatures/wild/creature_turtle_ancient_wild.png",
         sprites: {
-            "idle": "images/turtle_ancient_wild.png",
-            "joy": "images/turtle_ancient_wild_joy.png",
-            "sad": "images/turtle_ancient_wild_sad.png",
-            "angry": "images/turtle_ancient_wild_angry.png",
-            "skill": "images/turtle_ancient_wild_skill.png",
-            "victory": "images/turtle_ancient_wild_victory.png",
-            "defeat": "images/turtle_ancient_wild_defeat.png",
+            "idle": "images/creatures/wild/creature_turtle_ancient_wild.png",
+            "joy": "images/creatures/wild/creature_turtle_ancient_wild_joy.png",
+            "sad": "images/creatures/wild/creature_turtle_ancient_wild_sad.png",
+            "angry": "images/creatures/wild/creature_turtle_ancient_wild_angry.png",
+            "skill": "images/creatures/wild/creature_turtle_ancient_wild_skill.png",
+            "victory": "images/creatures/wild/creature_turtle_ancient_wild_victory.png",
+            "defeat": "images/creatures/wild/creature_turtle_ancient_wild_defeat.png",
             "gallery": {
-                "lv1": "images/turtle_ancient_wild_gallery_lv1.png",
-                "lv2": "images/turtle_ancient_wild_gallery_lv2.png",
-                "lv3": "images/turtle_ancient_wild_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_turtle_ancient_wild_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_turtle_ancient_wild_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_turtle_ancient_wild_gallery_lv3.png"
             }
         },
         prompts: {
@@ -229,19 +229,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/dryad_queen.png",
+        image: "images/creatures/wild/creature_dryad_queen.png",
         sprites: {
-            "idle": "images/dryad_queen.png",
-            "joy": "images/dryad_queen_joy.png",
-            "sad": "images/dryad_queen_sad.png",
-            "angry": "images/dryad_queen_angry.png",
-            "skill": "images/dryad_queen_skill.png",
-            "victory": "images/dryad_queen_victory.png",
-            "defeat": "images/dryad_queen_defeat.png",
+            "idle": "images/creatures/wild/creature_dryad_queen.png",
+            "joy": "images/creatures/wild/creature_dryad_queen_joy.png",
+            "sad": "images/creatures/wild/creature_dryad_queen_sad.png",
+            "angry": "images/creatures/wild/creature_dryad_queen_angry.png",
+            "skill": "images/creatures/wild/creature_dryad_queen_skill.png",
+            "victory": "images/creatures/wild/creature_dryad_queen_victory.png",
+            "defeat": "images/creatures/wild/creature_dryad_queen_defeat.png",
             "gallery": {
-                "lv1": "images/dryad_queen_gallery_lv1.png",
-                "lv2": "images/dryad_queen_gallery_lv2.png",
-                "lv3": "images/dryad_queen_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_dryad_queen_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_dryad_queen_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_dryad_queen_gallery_lv3.png"
             }
         },
         prompts: {
@@ -273,17 +273,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/mantis_warrior.png",
+        image: "images/creatures/wild/creature_mantis_warrior.png",
         sprites: {
-            "idle": "images/mantis_warrior.png",
-            "joy": "images/mantis_warrior_joy.png",
-            "sad": "images/mantis_warrior_sad.png",
-            "angry": "images/mantis_warrior_angry.png",
-            "skill": "images/mantis_warrior_skill.png",
-            "victory": "images/mantis_warrior_victory.png",
-            "defeat": "images/mantis_warrior_defeat.png",
+            "idle": "images/creatures/wild/creature_mantis_warrior.png",
+            "joy": "images/creatures/wild/creature_mantis_warrior_joy.png",
+            "sad": "images/creatures/wild/creature_mantis_warrior_sad.png",
+            "angry": "images/creatures/wild/creature_mantis_warrior_angry.png",
+            "skill": "images/creatures/wild/creature_mantis_warrior_skill.png",
+            "victory": "images/creatures/wild/creature_mantis_warrior_victory.png",
+            "defeat": "images/creatures/wild/creature_mantis_warrior_defeat.png",
             "gallery": {
-                "lv1": "images/mantis_warrior_gallery.png"
+                "lv1": "images/creatures/wild/creature_mantis_warrior_gallery_lv1.png"
             }
         },
         prompts: {
@@ -311,17 +311,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/orchid_mantis.png",
+        image: "images/creatures/wild/creature_orchid_mantis.png",
         sprites: {
-            "idle": "images/orchid_mantis.png",
-            "joy": "images/orchid_mantis_joy.png",
-            "sad": "images/orchid_mantis_sad.png",
-            "angry": "images/orchid_mantis_angry.png",
-            "skill": "images/orchid_mantis_skill.png",
-            "victory": "images/orchid_mantis_victory.png",
-            "defeat": "images/orchid_mantis_defeat.png",
+            "idle": "images/creatures/wild/creature_orchid_mantis.png",
+            "joy": "images/creatures/wild/creature_orchid_mantis_joy.png",
+            "sad": "images/creatures/wild/creature_orchid_mantis_sad.png",
+            "angry": "images/creatures/wild/creature_orchid_mantis_angry.png",
+            "skill": "images/creatures/wild/creature_orchid_mantis_skill.png",
+            "victory": "images/creatures/wild/creature_orchid_mantis_victory.png",
+            "defeat": "images/creatures/wild/creature_orchid_mantis_defeat.png",
             "gallery": {
-                "lv1": "images/orchid_mantis_gallery.png"
+                "lv1": "images/creatures/wild/creature_orchid_mantis_gallery_lv1.png"
             }
         },
         prompts: {
@@ -349,17 +349,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/crystal_crab.png",
+        image: "images/creatures/wild/creature_crystal_crab.png",
         sprites: {
-            "idle": "images/crystal_crab.png",
-            "joy": "images/crystal_crab_joy.png",
-            "sad": "images/crystal_crab_sad.png",
-            "angry": "images/crystal_crab_angry.png",
-            "skill": "images/crystal_crab_skill.png",
-            "victory": "images/crystal_crab_victory.png",
-            "defeat": "images/crystal_crab_defeat.png",
+            "idle": "images/creatures/wild/creature_crystal_crab.png",
+            "joy": "images/creatures/wild/creature_crystal_crab_joy.png",
+            "sad": "images/creatures/wild/creature_crystal_crab_sad.png",
+            "angry": "images/creatures/wild/creature_crystal_crab_angry.png",
+            "skill": "images/creatures/wild/creature_crystal_crab_skill.png",
+            "victory": "images/creatures/wild/creature_crystal_crab_victory.png",
+            "defeat": "images/creatures/wild/creature_crystal_crab_defeat.png",
             "gallery": {
-                "lv1": "images/crystal_crab_gallery.png"
+                "lv1": "images/creatures/wild/creature_crystal_crab_gallery_lv1.png"
             }
         },
         prompts: {
@@ -387,17 +387,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/electric_eel_king.png",
+        image: "images/creatures/wild/creature_electric_eel_king.png",
         sprites: {
-            "idle": "images/electric_eel_king.png",
-            "joy": "images/electric_eel_king_joy.png",
-            "sad": "images/electric_eel_king_sad.png",
-            "angry": "images/electric_eel_king_angry.png",
-            "skill": "images/electric_eel_king_skill.png",
-            "victory": "images/electric_eel_king_victory.png",
-            "defeat": "images/electric_eel_king_defeat.png",
+            "idle": "images/creatures/wild/creature_electric_eel_king.png",
+            "joy": "images/creatures/wild/creature_electric_eel_king_joy.png",
+            "sad": "images/creatures/wild/creature_electric_eel_king_sad.png",
+            "angry": "images/creatures/wild/creature_electric_eel_king_angry.png",
+            "skill": "images/creatures/wild/creature_electric_eel_king_skill.png",
+            "victory": "images/creatures/wild/creature_electric_eel_king_victory.png",
+            "defeat": "images/creatures/wild/creature_electric_eel_king_defeat.png",
             "gallery": {
-                "lv1": "images/electric_eel_king_gallery.png"
+                "lv1": "images/creatures/wild/creature_electric_eel_king_gallery_lv1.png"
             }
         },
         prompts: {
@@ -425,17 +425,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/magma_slime_giant.png",
+        image: "images/creatures/wild/creature_magma_slime_giant.png",
         sprites: {
-            "idle": "images/magma_slime_giant.png",
-            "joy": "images/magma_slime_giant_joy.png",
-            "sad": "images/magma_slime_giant_sad.png",
-            "angry": "images/magma_slime_giant_angry.png",
-            "skill": "images/magma_slime_giant_skill.png",
-            "victory": "images/magma_slime_giant_victory.png",
-            "defeat": "images/magma_slime_giant_defeat.png",
+            "idle": "images/creatures/wild/creature_magma_slime_giant.png",
+            "joy": "images/creatures/wild/creature_magma_slime_giant_joy.png",
+            "sad": "images/creatures/wild/creature_magma_slime_giant_sad.png",
+            "angry": "images/creatures/wild/creature_magma_slime_giant_angry.png",
+            "skill": "images/creatures/wild/creature_magma_slime_giant_skill.png",
+            "victory": "images/creatures/wild/creature_magma_slime_giant_victory.png",
+            "defeat": "images/creatures/wild/creature_magma_slime_giant_defeat.png",
             "gallery": {
-                "lv1": "images/magma_slime_giant_gallery.png"
+                "lv1": "images/creatures/wild/creature_magma_slime_giant_gallery_lv1.png"
             }
         },
         prompts: {
@@ -463,17 +463,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/fossil_stone.png",
+        image: "images/creatures/wild/creature_fossil_stone.png",
         sprites: {
-            "idle": "images/fossil_stone.png",
-            "joy": "images/fossil_stone_joy.png",
-            "sad": "images/fossil_stone_sad.png",
-            "angry": "images/fossil_stone_angry.png",
-            "skill": "images/fossil_stone_skill.png",
-            "victory": "images/fossil_stone_victory.png",
-            "defeat": "images/fossil_stone_defeat.png",
+            "idle": "images/creatures/wild/creature_fossil_stone.png",
+            "joy": "images/creatures/wild/creature_fossil_stone_joy.png",
+            "sad": "images/creatures/wild/creature_fossil_stone_sad.png",
+            "angry": "images/creatures/wild/creature_fossil_stone_angry.png",
+            "skill": "images/creatures/wild/creature_fossil_stone_skill.png",
+            "victory": "images/creatures/wild/creature_fossil_stone_victory.png",
+            "defeat": "images/creatures/wild/creature_fossil_stone_defeat.png",
             "gallery": {
-                "lv1": "images/fossil_stone_gallery.png"
+                "lv1": "images/creatures/wild/creature_fossil_stone_gallery_lv1.png"
             }
         },
         prompts: {
@@ -503,15 +503,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_mist_crawler.png",
         sprites: {
-            "idle": "images/mist_crawler.png",
-            "joy": "images/mist_crawler_joy.png",
-            "sad": "images/mist_crawler_sad.png",
-            "angry": "images/mist_crawler_angry.png",
-            "skill": "images/mist_crawler_skill.png",
-            "victory": "images/mist_crawler_victory.png",
-            "defeat": "images/mist_crawler_defeat.png",
+            "idle": "images/creatures/wild/creature_mist_crawler.png",
+            "joy": "images/creatures/wild/creature_mist_crawler_joy.png",
+            "sad": "images/creatures/wild/creature_mist_crawler_sad.png",
+            "angry": "images/creatures/wild/creature_mist_crawler_angry.png",
+            "skill": "images/creatures/wild/creature_mist_crawler_skill.png",
+            "victory": "images/creatures/wild/creature_mist_crawler_victory.png",
+            "defeat": "images/creatures/wild/creature_mist_crawler_defeat.png",
             "gallery": {
-                "lv1": "images/mist_crawler_gallery.png"
+                "lv1": "images/creatures/wild/creature_mist_crawler_gallery_lv1.png"
             }
         },
         prompts: {
@@ -539,17 +539,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/forest_guardian.png",
+        image: "images/creatures/wild/creature_forest_guardian.png",
         sprites: {
-            "idle": "images/forest_guardian.png",
-            "joy": "images/forest_guardian_joy.png",
-            "sad": "images/forest_guardian_sad.png",
-            "angry": "images/forest_guardian_angry.png",
-            "skill": "images/forest_guardian_skill.png",
-            "victory": "images/forest_guardian_victory.png",
-            "defeat": "images/forest_guardian_defeat.png",
+            "idle": "images/creatures/wild/creature_forest_guardian.png",
+            "joy": "images/creatures/wild/creature_forest_guardian_joy.png",
+            "sad": "images/creatures/wild/creature_forest_guardian_sad.png",
+            "angry": "images/creatures/wild/creature_forest_guardian_angry.png",
+            "skill": "images/creatures/wild/creature_forest_guardian_skill.png",
+            "victory": "images/creatures/wild/creature_forest_guardian_victory.png",
+            "defeat": "images/creatures/wild/creature_forest_guardian_defeat.png",
             "gallery": {
-                "lv1": "images/forest_guardian_gallery.png"
+                "lv1": "images/creatures/wild/creature_forest_guardian_gallery_lv1.png"
             }
         },
         prompts: {
@@ -577,17 +577,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/sand_prowler.png",
+        image: "images/creatures/wild/creature_sand_prowler.png",
         sprites: {
-            "idle": "images/sand_prowler.png",
-            "joy": "images/sand_prowler_joy.png",
-            "sad": "images/sand_prowler_sad.png",
-            "angry": "images/sand_prowler_angry.png",
-            "skill": "images/sand_prowler_skill.png",
-            "victory": "images/sand_prowler_victory.png",
-            "defeat": "images/sand_prowler_defeat.png",
+            "idle": "images/creatures/wild/creature_sand_prowler.png",
+            "joy": "images/creatures/wild/creature_sand_prowler_joy.png",
+            "sad": "images/creatures/wild/creature_sand_prowler_sad.png",
+            "angry": "images/creatures/wild/creature_sand_prowler_angry.png",
+            "skill": "images/creatures/wild/creature_sand_prowler_skill.png",
+            "victory": "images/creatures/wild/creature_sand_prowler_victory.png",
+            "defeat": "images/creatures/wild/creature_sand_prowler_defeat.png",
             "gallery": {
-                "lv1": "images/sand_prowler_gallery.png"
+                "lv1": "images/creatures/wild/creature_sand_prowler_gallery_lv1.png"
             }
         },
         prompts: {
@@ -617,15 +617,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_spark_mouse.png",
         sprites: {
-            "idle": "images/spark_mouse.png",
-            "joy": "images/spark_mouse_joy.png",
-            "sad": "images/spark_mouse_sad.png",
-            "angry": "images/spark_mouse_angry.png",
-            "skill": "images/spark_mouse_skill.png",
-            "victory": "images/spark_mouse_victory.png",
-            "defeat": "images/spark_mouse_defeat.png",
+            "idle": "images/creatures/wild/creature_spark_mouse.png",
+            "joy": "images/creatures/wild/creature_spark_mouse_joy.png",
+            "sad": "images/creatures/wild/creature_spark_mouse_sad.png",
+            "angry": "images/creatures/wild/creature_spark_mouse_angry.png",
+            "skill": "images/creatures/wild/creature_spark_mouse_skill.png",
+            "victory": "images/creatures/wild/creature_spark_mouse_victory.png",
+            "defeat": "images/creatures/wild/creature_spark_mouse_defeat.png",
             "gallery": {
-                "lv1": "images/spark_mouse_gallery.png"
+                "lv1": "images/creatures/wild/creature_spark_mouse_gallery_lv1.png"
             }
         },
         prompts: {
@@ -653,17 +653,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/boulder_beetle.png",
+        image: "images/creatures/wild/creature_boulder_beetle.png",
         sprites: {
-            "idle": "images/boulder_beetle.png",
-            "joy": "images/boulder_beetle_joy.png",
-            "sad": "images/boulder_beetle_sad.png",
-            "angry": "images/boulder_beetle_angry.png",
-            "skill": "images/boulder_beetle_skill.png",
-            "victory": "images/boulder_beetle_victory.png",
-            "defeat": "images/boulder_beetle_defeat.png",
+            "idle": "images/creatures/wild/creature_boulder_beetle.png",
+            "joy": "images/creatures/wild/creature_boulder_beetle_joy.png",
+            "sad": "images/creatures/wild/creature_boulder_beetle_sad.png",
+            "angry": "images/creatures/wild/creature_boulder_beetle_angry.png",
+            "skill": "images/creatures/wild/creature_boulder_beetle_skill.png",
+            "victory": "images/creatures/wild/creature_boulder_beetle_victory.png",
+            "defeat": "images/creatures/wild/creature_boulder_beetle_defeat.png",
             "gallery": {
-                "lv1": "images/boulder_beetle_gallery.png"
+                "lv1": "images/creatures/wild/creature_boulder_beetle_gallery_lv1.png"
             }
         },
         prompts: {
@@ -693,15 +693,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_thorny_vine.png",
         sprites: {
-            "idle": "images/thorny_vine.png",
-            "joy": "images/thorny_vine_joy.png",
-            "sad": "images/thorny_vine_sad.png",
-            "angry": "images/thorny_vine_angry.png",
-            "skill": "images/thorny_vine_skill.png",
-            "victory": "images/thorny_vine_victory.png",
-            "defeat": "images/thorny_vine_defeat.png",
+            "idle": "images/creatures/wild/creature_thorny_vine.png",
+            "joy": "images/creatures/wild/creature_thorny_vine_joy.png",
+            "sad": "images/creatures/wild/creature_thorny_vine_sad.png",
+            "angry": "images/creatures/wild/creature_thorny_vine_angry.png",
+            "skill": "images/creatures/wild/creature_thorny_vine_skill.png",
+            "victory": "images/creatures/wild/creature_thorny_vine_victory.png",
+            "defeat": "images/creatures/wild/creature_thorny_vine_defeat.png",
             "gallery": {
-                "lv1": "images/thorny_vine_gallery.png"
+                "lv1": "images/creatures/wild/creature_thorny_vine_gallery_lv1.png"
             }
         },
         prompts: {
@@ -729,17 +729,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/temp/creature_unicorn_young.png",
+        image: "images/creatures/wild/creature_unicorn_young.png",
         sprites: {
-            "idle": "images/unicorn_young.png",
-            "joy": "images/unicorn_young_joy.png",
-            "sad": "images/unicorn_young_sad.png",
-            "angry": "images/unicorn_young_angry.png",
-            "skill": "images/unicorn_young_skill.png",
-            "victory": "images/unicorn_young_victory.png",
-            "defeat": "images/unicorn_young_defeat.png",
+            "idle": "images/creatures/wild/creature_unicorn_young.png",
+            "joy": "images/creatures/wild/creature_unicorn_young_joy.png",
+            "sad": "images/creatures/wild/creature_unicorn_young_sad.png",
+            "angry": "images/creatures/wild/creature_unicorn_young_angry.png",
+            "skill": "images/creatures/wild/creature_unicorn_young_skill.png",
+            "victory": "images/creatures/wild/creature_unicorn_young_victory.png",
+            "defeat": "images/creatures/wild/creature_unicorn_young_defeat.png",
             "gallery": {
-                "lv1": "images/unicorn_young_gallery.png"
+                "lv1": "images/creatures/wild/creature_unicorn_young_gallery_lv1.png"
             }
         },
         prompts: {
@@ -767,17 +767,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/seedling_spirit.png",
+        image: "images/creatures/wild/creature_seedling_spirit.png",
         sprites: {
-            "idle": "images/seedling_spirit.png",
-            "joy": "images/seedling_spirit_joy.png",
-            "sad": "images/seedling_spirit_sad.png",
-            "angry": "images/seedling_spirit_angry.png",
-            "skill": "images/seedling_spirit_skill.png",
-            "victory": "images/seedling_spirit_victory.png",
-            "defeat": "images/seedling_spirit_defeat.png",
+            "idle": "images/creatures/wild/creature_seedling_spirit.png",
+            "joy": "images/creatures/wild/creature_seedling_spirit_joy.png",
+            "sad": "images/creatures/wild/creature_seedling_spirit_sad.png",
+            "angry": "images/creatures/wild/creature_seedling_spirit_angry.png",
+            "skill": "images/creatures/wild/creature_seedling_spirit_skill.png",
+            "victory": "images/creatures/wild/creature_seedling_spirit_victory.png",
+            "defeat": "images/creatures/wild/creature_seedling_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/seedling_spirit_gallery.png"
+                "lv1": "images/creatures/wild/creature_seedling_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -805,17 +805,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/caterpillar_fat.png",
+        image: "images/creatures/wild/creature_caterpillar_fat.png",
         sprites: {
-            "idle": "images/caterpillar_fat.png",
-            "joy": "images/caterpillar_fat_joy.png",
-            "sad": "images/caterpillar_fat_sad.png",
-            "angry": "images/caterpillar_fat_angry.png",
-            "skill": "images/caterpillar_fat_skill.png",
-            "victory": "images/caterpillar_fat_victory.png",
-            "defeat": "images/caterpillar_fat_defeat.png",
+            "idle": "images/creatures/wild/creature_caterpillar_fat.png",
+            "joy": "images/creatures/wild/creature_caterpillar_fat_joy.png",
+            "sad": "images/creatures/wild/creature_caterpillar_fat_sad.png",
+            "angry": "images/creatures/wild/creature_caterpillar_fat_angry.png",
+            "skill": "images/creatures/wild/creature_caterpillar_fat_skill.png",
+            "victory": "images/creatures/wild/creature_caterpillar_fat_victory.png",
+            "defeat": "images/creatures/wild/creature_caterpillar_fat_defeat.png",
             "gallery": {
-                "lv1": "images/caterpillar_fat_gallery.png"
+                "lv1": "images/creatures/wild/creature_caterpillar_fat_gallery_lv1.png"
             }
         },
         prompts: {
@@ -843,17 +843,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/tadpole_wiggle.png",
+        image: "images/creatures/wild/creature_tadpole_wiggle.png",
         sprites: {
-            "idle": "images/tadpole_wiggle.png",
-            "joy": "images/tadpole_wiggle_joy.png",
-            "sad": "images/tadpole_wiggle_sad.png",
-            "angry": "images/tadpole_wiggle_angry.png",
-            "skill": "images/tadpole_wiggle_skill.png",
-            "victory": "images/tadpole_wiggle_victory.png",
-            "defeat": "images/tadpole_wiggle_defeat.png",
+            "idle": "images/creatures/wild/creature_tadpole_wiggle.png",
+            "joy": "images/creatures/wild/creature_tadpole_wiggle_joy.png",
+            "sad": "images/creatures/wild/creature_tadpole_wiggle_sad.png",
+            "angry": "images/creatures/wild/creature_tadpole_wiggle_angry.png",
+            "skill": "images/creatures/wild/creature_tadpole_wiggle_skill.png",
+            "victory": "images/creatures/wild/creature_tadpole_wiggle_victory.png",
+            "defeat": "images/creatures/wild/creature_tadpole_wiggle_defeat.png",
             "gallery": {
-                "lv1": "images/tadpole_wiggle_gallery.png"
+                "lv1": "images/creatures/wild/creature_tadpole_wiggle_gallery_lv1.png"
             }
         },
         prompts: {
@@ -881,17 +881,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/leaf_insect.png",
+        image: "images/creatures/wild/creature_leaf_insect.png",
         sprites: {
-            "idle": "images/leaf_insect.png",
-            "joy": "images/leaf_insect_joy.png",
-            "sad": "images/leaf_insect_sad.png",
-            "angry": "images/leaf_insect_angry.png",
-            "skill": "images/leaf_insect_skill.png",
-            "victory": "images/leaf_insect_victory.png",
-            "defeat": "images/leaf_insect_defeat.png",
+            "idle": "images/creatures/wild/creature_leaf_insect.png",
+            "joy": "images/creatures/wild/creature_leaf_insect_joy.png",
+            "sad": "images/creatures/wild/creature_leaf_insect_sad.png",
+            "angry": "images/creatures/wild/creature_leaf_insect_angry.png",
+            "skill": "images/creatures/wild/creature_leaf_insect_skill.png",
+            "victory": "images/creatures/wild/creature_leaf_insect_victory.png",
+            "defeat": "images/creatures/wild/creature_leaf_insect_defeat.png",
             "gallery": {
-                "lv1": "images/leaf_insect_gallery.png"
+                "lv1": "images/creatures/wild/creature_leaf_insect_gallery_lv1.png"
             }
         },
         prompts: {
@@ -919,17 +919,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/willOWisp_green.png",
+        image: "images/creatures/wild/creature_willOWisp_green.png",
         sprites: {
-            "idle": "images/willOWisp_green.png",
-            "joy": "images/willOWisp_green_joy.png",
-            "sad": "images/willOWisp_green_sad.png",
-            "angry": "images/willOWisp_green_angry.png",
-            "skill": "images/willOWisp_green_skill.png",
-            "victory": "images/willOWisp_green_victory.png",
-            "defeat": "images/willOWisp_green_defeat.png",
+            "idle": "images/creatures/wild/creature_willOWisp_green.png",
+            "joy": "images/creatures/wild/creature_willOWisp_green_joy.png",
+            "sad": "images/creatures/wild/creature_willOWisp_green_sad.png",
+            "angry": "images/creatures/wild/creature_willOWisp_green_angry.png",
+            "skill": "images/creatures/wild/creature_willOWisp_green_skill.png",
+            "victory": "images/creatures/wild/creature_willOWisp_green_victory.png",
+            "defeat": "images/creatures/wild/creature_willOWisp_green_defeat.png",
             "gallery": {
-                "lv1": "images/willOWisp_green_gallery.png"
+                "lv1": "images/creatures/wild/creature_willOWisp_green_gallery_lv1.png"
             }
         },
         prompts: {
@@ -957,17 +957,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/sun_flower_spirit.png",
+        image: "images/creatures/wild/creature_sun_flower_spirit.png",
         sprites: {
-            "idle": "images/sun_flower_spirit.png",
-            "joy": "images/sun_flower_spirit_joy.png",
-            "sad": "images/sun_flower_spirit_sad.png",
-            "angry": "images/sun_flower_spirit_angry.png",
-            "skill": "images/sun_flower_spirit_skill.png",
-            "victory": "images/sun_flower_spirit_victory.png",
-            "defeat": "images/sun_flower_spirit_defeat.png",
+            "idle": "images/creatures/wild/creature_sun_flower_spirit.png",
+            "joy": "images/creatures/wild/creature_sun_flower_spirit_joy.png",
+            "sad": "images/creatures/wild/creature_sun_flower_spirit_sad.png",
+            "angry": "images/creatures/wild/creature_sun_flower_spirit_angry.png",
+            "skill": "images/creatures/wild/creature_sun_flower_spirit_skill.png",
+            "victory": "images/creatures/wild/creature_sun_flower_spirit_victory.png",
+            "defeat": "images/creatures/wild/creature_sun_flower_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/sun_flower_spirit_gallery.png"
+                "lv1": "images/creatures/wild/creature_sun_flower_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -995,17 +995,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/moon_flower_spirit.png",
+        image: "images/creatures/wild/creature_moon_flower_spirit.png",
         sprites: {
-            "idle": "images/moon_flower_spirit.png",
-            "joy": "images/moon_flower_spirit_joy.png",
-            "sad": "images/moon_flower_spirit_sad.png",
-            "angry": "images/moon_flower_spirit_angry.png",
-            "skill": "images/moon_flower_spirit_skill.png",
-            "victory": "images/moon_flower_spirit_victory.png",
-            "defeat": "images/moon_flower_spirit_defeat.png",
+            "idle": "images/creatures/wild/creature_moon_flower_spirit.png",
+            "joy": "images/creatures/wild/creature_moon_flower_spirit_joy.png",
+            "sad": "images/creatures/wild/creature_moon_flower_spirit_sad.png",
+            "angry": "images/creatures/wild/creature_moon_flower_spirit_angry.png",
+            "skill": "images/creatures/wild/creature_moon_flower_spirit_skill.png",
+            "victory": "images/creatures/wild/creature_moon_flower_spirit_victory.png",
+            "defeat": "images/creatures/wild/creature_moon_flower_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/moon_flower_spirit_gallery.png"
+                "lv1": "images/creatures/wild/creature_moon_flower_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1033,17 +1033,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/desert_scorpion.png",
+        image: "images/creatures/wild/creature_desert_scorpion.png",
         sprites: {
-            "idle": "images/desert_scorpion.png",
-            "joy": "images/desert_scorpion_joy.png",
-            "sad": "images/desert_scorpion_sad.png",
-            "angry": "images/desert_scorpion_angry.png",
-            "skill": "images/desert_scorpion_skill.png",
-            "victory": "images/desert_scorpion_victory.png",
-            "defeat": "images/desert_scorpion_defeat.png",
+            "idle": "images/creatures/wild/creature_desert_scorpion.png",
+            "joy": "images/creatures/wild/creature_desert_scorpion_joy.png",
+            "sad": "images/creatures/wild/creature_desert_scorpion_sad.png",
+            "angry": "images/creatures/wild/creature_desert_scorpion_angry.png",
+            "skill": "images/creatures/wild/creature_desert_scorpion_skill.png",
+            "victory": "images/creatures/wild/creature_desert_scorpion_victory.png",
+            "defeat": "images/creatures/wild/creature_desert_scorpion_defeat.png",
             "gallery": {
-                "lv1": "images/desert_scorpion_gallery.png"
+                "lv1": "images/creatures/wild/creature_desert_scorpion_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1071,17 +1071,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/panda_warrior.png",
+        image: "images/creatures/wild/creature_panda_warrior.png",
         sprites: {
-            "idle": "images/panda_warrior.png",
-            "joy": "images/panda_warrior_joy.png",
-            "sad": "images/panda_warrior_sad.png",
-            "angry": "images/panda_warrior_angry.png",
-            "skill": "images/panda_warrior_skill.png",
-            "victory": "images/panda_warrior_victory.png",
-            "defeat": "images/panda_warrior_defeat.png",
+            "idle": "images/creatures/wild/creature_panda_warrior.png",
+            "joy": "images/creatures/wild/creature_panda_warrior_joy.png",
+            "sad": "images/creatures/wild/creature_panda_warrior_sad.png",
+            "angry": "images/creatures/wild/creature_panda_warrior_angry.png",
+            "skill": "images/creatures/wild/creature_panda_warrior_skill.png",
+            "victory": "images/creatures/wild/creature_panda_warrior_victory.png",
+            "defeat": "images/creatures/wild/creature_panda_warrior_defeat.png",
             "gallery": {
-                "lv1": "images/panda_warrior_gallery.png"
+                "lv1": "images/creatures/wild/creature_panda_warrior_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1109,19 +1109,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creature_creator_gaia.png",
+        image: "images/creatures/wild/creature_creator_gaia.png",
         sprites: {
-            "idle": "images/creature_creator_gaia.png",
-            "joy": "images/creature_creator_gaia_joy.png",
-            "sad": "images/creature_creator_gaia_sad.png",
-            "angry": "images/creature_creator_gaia_angry.png",
-            "skill": "images/creature_creator_gaia_skill.png",
-            "victory": "images/creature_creator_gaia_victory.png",
-            "defeat": "images/creature_creator_gaia_defeat.png",
+            "idle": "images/creatures/wild/creature_creator_gaia.png",
+            "joy": "images/creatures/wild/creature_creator_gaia_joy.png",
+            "sad": "images/creatures/wild/creature_creator_gaia_sad.png",
+            "angry": "images/creatures/wild/creature_creator_gaia_angry.png",
+            "skill": "images/creatures/wild/creature_creator_gaia_skill.png",
+            "victory": "images/creatures/wild/creature_creator_gaia_victory.png",
+            "defeat": "images/creatures/wild/creature_creator_gaia_defeat.png",
             "gallery": {
-                "lv1": "images/creature_creator_gaia_gallery_lv1.png",
-                "lv2": "images/creature_creator_gaia_gallery_lv2.png",
-                "lv3": "images/creature_creator_gaia_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_creator_gaia_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_creator_gaia_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_creator_gaia_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1155,17 +1155,17 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_dragon_drake.png",
         sprites: {
-            "idle": "images/creature_dragon_drake.png",
-            "joy": "images/creature_dragon_drake_joy.png",
-            "sad": "images/creature_dragon_drake_sad.png",
-            "angry": "images/creature_dragon_drake_angry.png",
-            "skill": "images/creature_dragon_drake_skill.png",
-            "victory": "images/creature_dragon_drake_victory.png",
-            "defeat": "images/creature_dragon_drake_defeat.png",
+            "idle": "images/creatures/wild/creature_dragon_drake.png",
+            "joy": "images/creatures/wild/creature_dragon_drake_joy.png",
+            "sad": "images/creatures/wild/creature_dragon_drake_sad.png",
+            "angry": "images/creatures/wild/creature_dragon_drake_angry.png",
+            "skill": "images/creatures/wild/creature_dragon_drake_skill.png",
+            "victory": "images/creatures/wild/creature_dragon_drake_victory.png",
+            "defeat": "images/creatures/wild/creature_dragon_drake_defeat.png",
             "gallery": {
-                "lv1": "images/creature_dragon_drake_gallery_lv1.png",
-                "lv2": "images/creature_dragon_drake_gallery_lv2.png",
-                "lv3": "images/creature_dragon_drake_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_dragon_drake_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_dragon_drake_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_dragon_drake_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1197,19 +1197,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creature_beast_behemoth.png",
+        image: "images/creatures/wild/creature_beast_behemoth.png",
         sprites: {
-            "idle": "images/creature_beast_behemoth.png",
-            "joy": "images/creature_beast_behemoth_joy.png",
-            "sad": "images/creature_beast_behemoth_sad.png",
-            "angry": "images/creature_beast_behemoth_angry.png",
-            "skill": "images/creature_beast_behemoth_skill.png",
-            "victory": "images/creature_beast_behemoth_victory.png",
-            "defeat": "images/creature_beast_behemoth_defeat.png",
+            "idle": "images/creatures/wild/creature_beast_behemoth.png",
+            "joy": "images/creatures/wild/creature_beast_behemoth_joy.png",
+            "sad": "images/creatures/wild/creature_beast_behemoth_sad.png",
+            "angry": "images/creatures/wild/creature_beast_behemoth_angry.png",
+            "skill": "images/creatures/wild/creature_beast_behemoth_skill.png",
+            "victory": "images/creatures/wild/creature_beast_behemoth_victory.png",
+            "defeat": "images/creatures/wild/creature_beast_behemoth_defeat.png",
             "gallery": {
-                "lv1": "images/creature_beast_behemoth_gallery_lv1.png",
-                "lv2": "images/creature_beast_behemoth_gallery_lv2.png",
-                "lv3": "images/creature_beast_behemoth_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_beast_behemoth_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_beast_behemoth_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_beast_behemoth_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1241,19 +1241,19 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/wild/creature_chimera.png",
+        image: "images/creatures/wild/creature_chimera_joy.png",
         sprites: {
-            "idle": "images/creature_chimera.png",
-            "joy": "images/creature_chimera_joy.png",
-            "sad": "images/creature_chimera_sad.png",
-            "angry": "images/creature_chimera_angry.png",
-            "skill": "images/creature_chimera_skill.png",
-            "victory": "images/creature_chimera_victory.png",
-            "defeat": "images/creature_chimera_defeat.png",
+            "idle": "images/creatures/wild/creature_chimera_joy.png",
+            "joy": "images/creatures/wild/creature_chimera_joy.png",
+            "sad": "images/creatures/wild/creature_chimera_sad.png",
+            "angry": "images/creatures/wild/creature_chimera_angry.png",
+            "skill": "images/creatures/wild/creature_chimera_skill.png",
+            "victory": "images/creatures/wild/creature_chimera_victory.png",
+            "defeat": "images/creatures/wild/creature_chimera_defeat.png",
             "gallery": {
-                "lv1": "images/creature_chimera_gallery_lv1.png",
-                "lv2": "images/creature_chimera_gallery_lv2.png",
-                "lv3": "images/creature_chimera_gallery_lv3.png"
+                "lv1": "images/creatures/wild/creature_chimera_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_chimera_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_chimera_gallery_lv3.png"
             }
         },
         prompts: {
@@ -1287,15 +1287,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_ent_ancient.png",
         sprites: {
-            "idle": "images/creature_ent_ancient.png",
-            "joy": "images/creature_ent_ancient_joy.png",
-            "sad": "images/creature_ent_ancient_sad.png",
-            "angry": "images/creature_ent_ancient_angry.png",
-            "skill": "images/creature_ent_ancient_skill.png",
-            "victory": "images/creature_ent_ancient_victory.png",
-            "defeat": "images/creature_ent_ancient_defeat.png",
+            "idle": "images/creatures/wild/creature_ent_ancient.png",
+            "joy": "images/creatures/wild/creature_ent_ancient_joy.png",
+            "sad": "images/creatures/wild/creature_ent_ancient_sad.png",
+            "angry": "images/creatures/wild/creature_ent_ancient_angry.png",
+            "skill": "images/creatures/wild/creature_ent_ancient_skill.png",
+            "victory": "images/creatures/wild/creature_ent_ancient_victory.png",
+            "defeat": "images/creatures/wild/creature_ent_ancient_defeat.png",
             "gallery": {
-                "lv1": "images/creature_ent_ancient_gallery.png"
+                "lv1": "images/creatures/wild/creature_ent_ancient_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1325,15 +1325,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_elemental_water.png",
         sprites: {
-            "idle": "images/creature_elemental_water.png",
-            "joy": "images/creature_elemental_water_joy.png",
-            "sad": "images/creature_elemental_water_sad.png",
-            "angry": "images/creature_elemental_water_angry.png",
-            "skill": "images/creature_elemental_water_skill.png",
-            "victory": "images/creature_elemental_water_victory.png",
-            "defeat": "images/creature_elemental_water_defeat.png",
+            "idle": "images/creatures/wild/creature_elemental_water.png",
+            "joy": "images/creatures/wild/creature_elemental_water_joy.png",
+            "sad": "images/creatures/wild/creature_elemental_water_sad.png",
+            "angry": "images/creatures/wild/creature_elemental_water_angry.png",
+            "skill": "images/creatures/wild/creature_elemental_water_skill.png",
+            "victory": "images/creatures/wild/creature_elemental_water_victory.png",
+            "defeat": "images/creatures/wild/creature_elemental_water_defeat.png",
             "gallery": {
-                "lv1": "images/creature_elemental_water_gallery.png"
+                "lv1": "images/creatures/wild/creature_elemental_water_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1363,15 +1363,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_wolf_dire.png",
         sprites: {
-            "idle": "images/creature_wolf_dire.png",
-            "joy": "images/creature_wolf_dire_joy.png",
-            "sad": "images/creature_wolf_dire_sad.png",
-            "angry": "images/creature_wolf_dire_angry.png",
-            "skill": "images/creature_wolf_dire_skill.png",
-            "victory": "images/creature_wolf_dire_victory.png",
-            "defeat": "images/creature_wolf_dire_defeat.png",
+            "idle": "images/creatures/wild/creature_wolf_dire.png",
+            "joy": "images/creatures/wild/creature_wolf_dire_joy.png",
+            "sad": "images/creatures/wild/creature_wolf_dire_sad.png",
+            "angry": "images/creatures/wild/creature_wolf_dire_angry.png",
+            "skill": "images/creatures/wild/creature_wolf_dire_skill.png",
+            "victory": "images/creatures/wild/creature_wolf_dire_victory.png",
+            "defeat": "images/creatures/wild/creature_wolf_dire_defeat.png",
             "gallery": {
-                "lv1": "images/creature_wolf_dire_gallery.png"
+                "lv1": "images/creatures/wild/creature_wolf_dire_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1401,15 +1401,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_golem_mud.png",
         sprites: {
-            "idle": "images/creature_golem_mud.png",
-            "joy": "images/creature_golem_mud_joy.png",
-            "sad": "images/creature_golem_mud_sad.png",
-            "angry": "images/creature_golem_mud_angry.png",
-            "skill": "images/creature_golem_mud_skill.png",
-            "victory": "images/creature_golem_mud_victory.png",
-            "defeat": "images/creature_golem_mud_defeat.png",
+            "idle": "images/creatures/wild/creature_golem_mud.png",
+            "joy": "images/creatures/wild/creature_golem_mud_joy.png",
+            "sad": "images/creatures/wild/creature_golem_mud_sad.png",
+            "angry": "images/creatures/wild/creature_golem_mud_angry.png",
+            "skill": "images/creatures/wild/creature_golem_mud_skill.png",
+            "victory": "images/creatures/wild/creature_golem_mud_victory.png",
+            "defeat": "images/creatures/wild/creature_golem_mud_defeat.png",
             "gallery": {
-                "lv1": "images/creature_golem_mud_gallery.png"
+                "lv1": "images/creatures/wild/creature_golem_mud_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1439,15 +1439,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_magma_slime.png",
         sprites: {
-            "idle": "images/creature_magma_slime.png",
-            "joy": "images/creature_magma_slime_joy.png",
-            "sad": "images/creature_magma_slime_sad.png",
-            "angry": "images/creature_magma_slime_angry.png",
-            "skill": "images/creature_magma_slime_skill.png",
-            "victory": "images/creature_magma_slime_victory.png",
-            "defeat": "images/creature_magma_slime_defeat.png",
+            "idle": "images/creatures/wild/creature_magma_slime.png",
+            "joy": "images/creatures/wild/creature_magma_slime_joy.png",
+            "sad": "images/creatures/wild/creature_magma_slime_sad.png",
+            "angry": "images/creatures/wild/creature_magma_slime_angry.png",
+            "skill": "images/creatures/wild/creature_magma_slime_skill.png",
+            "victory": "images/creatures/wild/creature_magma_slime_victory.png",
+            "defeat": "images/creatures/wild/creature_magma_slime_defeat.png",
             "gallery": {
-                "lv1": "images/creature_magma_slime_gallery.png"
+                "lv1": "images/creatures/wild/creature_magma_slime_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1477,15 +1477,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_mushroom_angry_new.png",
         sprites: {
-            "idle": "images/creature_mushroom_angry_new.png",
-            "joy": "images/creature_mushroom_angry_new_joy.png",
-            "sad": "images/creature_mushroom_angry_new_sad.png",
-            "angry": "images/creature_mushroom_angry_new_angry.png",
-            "skill": "images/creature_mushroom_angry_new_skill.png",
-            "victory": "images/creature_mushroom_angry_new_victory.png",
-            "defeat": "images/creature_mushroom_angry_new_defeat.png",
+            "idle": "images/creatures/wild/creature_mushroom_angry_new.png",
+            "joy": "images/creatures/wild/creature_mushroom_angry_new_joy.png",
+            "sad": "images/creatures/wild/creature_mushroom_angry_new_sad.png",
+            "angry": "images/creatures/wild/creature_mushroom_angry_new_angry.png",
+            "skill": "images/creatures/wild/creature_mushroom_angry_new_skill.png",
+            "victory": "images/creatures/wild/creature_mushroom_angry_new_victory.png",
+            "defeat": "images/creatures/wild/creature_mushroom_angry_new_defeat.png",
             "gallery": {
-                "lv1": "images/creature_mushroom_angry_new_gallery.png"
+                "lv1": "images/creatures/wild/creature_mushroom_angry_new_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1515,15 +1515,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_fish_flying_new.png",
         sprites: {
-            "idle": "images/creature_fish_flying_new.png",
-            "joy": "images/creature_fish_flying_new_joy.png",
-            "sad": "images/creature_fish_flying_new_sad.png",
-            "angry": "images/creature_fish_flying_new_angry.png",
-            "skill": "images/creature_fish_flying_new_skill.png",
-            "victory": "images/creature_fish_flying_new_victory.png",
-            "defeat": "images/creature_fish_flying_new_defeat.png",
+            "idle": "images/creatures/wild/creature_fish_flying_new.png",
+            "joy": "images/creatures/wild/creature_fish_flying_new_joy.png",
+            "sad": "images/creatures/wild/creature_fish_flying_new_sad.png",
+            "angry": "images/creatures/wild/creature_fish_flying_new_angry.png",
+            "skill": "images/creatures/wild/creature_fish_flying_new_skill.png",
+            "victory": "images/creatures/wild/creature_fish_flying_new_victory.png",
+            "defeat": "images/creatures/wild/creature_fish_flying_new_defeat.png",
             "gallery": {
-                "lv1": "images/creature_fish_flying_new_gallery.png"
+                "lv1": "images/creatures/wild/creature_fish_flying_new_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1553,15 +1553,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_angel_arch.png",
         sprites: {
-            "idle": "images/creature_angel_arch.png",
-            "joy": "images/creature_angel_arch_joy.png",
-            "sad": "images/creature_angel_arch_sad.png",
-            "angry": "images/creature_angel_arch_angry.png",
-            "skill": "images/creature_angel_arch_skill.png",
-            "victory": "images/creature_angel_arch_victory.png",
-            "defeat": "images/creature_angel_arch_defeat.png",
+            "idle": "images/creatures/wild/creature_angel_arch.png",
+            "joy": "images/creatures/wild/creature_angel_arch_joy.png",
+            "sad": "images/creatures/wild/creature_angel_arch_sad.png",
+            "angry": "images/creatures/wild/creature_angel_arch_angry.png",
+            "skill": "images/creatures/wild/creature_angel_arch_skill.png",
+            "victory": "images/creatures/wild/creature_angel_arch_victory.png",
+            "defeat": "images/creatures/wild/creature_angel_arch_defeat.png",
             "gallery": {
-                "lv1": "images/creature_angel_arch_gallery.png"
+                "lv1": "images/creatures/wild/creature_angel_arch_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1591,15 +1591,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_time_lord_chronos.png",
         sprites: {
-            "idle": "images/creature_time_lord_chronos.png",
-            "joy": "images/creature_time_lord_chronos_joy.png",
-            "sad": "images/creature_time_lord_chronos_sad.png",
-            "angry": "images/creature_time_lord_chronos_angry.png",
-            "skill": "images/creature_time_lord_chronos_skill.png",
-            "victory": "images/creature_time_lord_chronos_victory.png",
-            "defeat": "images/creature_time_lord_chronos_defeat.png",
+            "idle": "images/creatures/wild/creature_time_lord_chronos.png",
+            "joy": "images/creatures/wild/creature_time_lord_chronos_joy.png",
+            "sad": "images/creatures/wild/creature_time_lord_chronos_sad.png",
+            "angry": "images/creatures/wild/creature_time_lord_chronos_angry.png",
+            "skill": "images/creatures/wild/creature_time_lord_chronos_skill.png",
+            "victory": "images/creatures/wild/creature_time_lord_chronos_victory.png",
+            "defeat": "images/creatures/wild/creature_time_lord_chronos_defeat.png",
             "gallery": {
-                "lv1": "images/creature_time_lord_chronos_gallery.png"
+                "lv1": "images/creatures/wild/creature_time_lord_chronos_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1629,15 +1629,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_god_zeus_shy.jpg",
         sprites: {
-            "idle": "images/creature_god_zeus_shy.jpg",
-            "joy": "images/creature_god_zeus_shy.jpg",
-            "sad": "images/creature_god_zeus_shy.jpg",
-            "angry": "images/creature_god_zeus_shy.jpg",
-            "skill": "images/creature_god_zeus_shy.jpg",
-            "victory": "images/creature_god_zeus_shy.jpg",
-            "defeat": "images/creature_god_zeus_shy.jpg",
+            "idle": "images/creatures/wild/creature_god_zeus_shy.jpg",
+            "joy": "images/creatures/wild/creature_god_zeus_shy.jpg",
+            "sad": "images/creatures/wild/creature_god_zeus_shy.jpg",
+            "angry": "images/creatures/wild/creature_god_zeus_shy.jpg",
+            "skill": "images/creatures/wild/creature_god_zeus_shy.jpg",
+            "victory": "images/creatures/wild/creature_god_zeus_shy.jpg",
+            "defeat": "images/creatures/wild/creature_god_zeus_shy.jpg",
             "gallery": {
-                "lv1": "images/creature_god_zeus_shy.jpg"
+                "lv1": "images/creatures/wild/creature_god_zeus_shy.jpg"
             }
         },
         prompts: {
@@ -1667,15 +1667,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_god_zeus_angry.jpg",
         sprites: {
-            "idle": "images/creature_god_zeus_angry.jpg",
-            "joy": "images/creature_god_zeus_angry.jpg",
-            "sad": "images/creature_god_zeus_angry.jpg",
-            "angry": "images/creature_god_zeus_angry.jpg",
-            "skill": "images/creature_god_zeus_angry.jpg",
-            "victory": "images/creature_god_zeus_angry.jpg",
-            "defeat": "images/creature_god_zeus_angry.jpg",
+            "idle": "images/creatures/wild/creature_god_zeus_angry.jpg",
+            "joy": "images/creatures/wild/creature_god_zeus_angry.jpg",
+            "sad": "images/creatures/wild/creature_god_zeus_angry.jpg",
+            "angry": "images/creatures/wild/creature_god_zeus_angry.jpg",
+            "skill": "images/creatures/wild/creature_god_zeus_angry.jpg",
+            "victory": "images/creatures/wild/creature_god_zeus_angry.jpg",
+            "defeat": "images/creatures/wild/creature_god_zeus_angry.jpg",
             "gallery": {
-                "lv1": "images/creature_god_zeus_angry.jpg"
+                "lv1": "images/creatures/wild/creature_god_zeus_angry.jpg"
             }
         },
         prompts: {
@@ -1705,15 +1705,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_god_zeus_love.jpg",
         sprites: {
-            "idle": "images/creature_god_zeus_love.jpg",
-            "joy": "images/creature_god_zeus_love.jpg",
-            "sad": "images/creature_god_zeus_love.jpg",
-            "angry": "images/creature_god_zeus_love.jpg",
-            "skill": "images/creature_god_zeus_love.jpg",
-            "victory": "images/creature_god_zeus_love.jpg",
-            "defeat": "images/creature_god_zeus_love.jpg",
+            "idle": "images/creatures/wild/creature_god_zeus_love.jpg",
+            "joy": "images/creatures/wild/creature_god_zeus_love.jpg",
+            "sad": "images/creatures/wild/creature_god_zeus_love.jpg",
+            "angry": "images/creatures/wild/creature_god_zeus_love.jpg",
+            "skill": "images/creatures/wild/creature_god_zeus_love.jpg",
+            "victory": "images/creatures/wild/creature_god_zeus_love.jpg",
+            "defeat": "images/creatures/wild/creature_god_zeus_love.jpg",
             "gallery": {
-                "lv1": "images/creature_god_zeus_love.jpg"
+                "lv1": "images/creatures/wild/creature_god_zeus_love.jpg"
             }
         },
         prompts: {
@@ -1741,17 +1741,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/creature_kraken_idol.png",
+        image: "images/creatures/wild/creature_kraken_idol.png",
         sprites: {
-            "idle": "images/creatures/abyss/creature_kraken_idol.png",
-            "joy": "images/creatures/abyss/creature_kraken_idol_joy.png",
-            "sad": "images/creatures/abyss/creature_kraken_idol_sad.png",
-            "angry": "images/creatures/abyss/creature_kraken_idol_angry.png",
-            "skill": "images/creatures/abyss/creature_kraken_idol_skill.png",
-            "victory": "images/creatures/abyss/creature_kraken_idol_victory.png",
-            "defeat": "images/creatures/abyss/creature_kraken_idol_defeat.png",
+            "idle": "images/creatures/wild/creature_kraken_idol.png",
+            "joy": "images/creatures/wild/creature_kraken_idol_joy.png",
+            "sad": "images/creatures/wild/creature_kraken_idol_sad.png",
+            "angry": "images/creatures/wild/creature_kraken_idol_angry.png",
+            "skill": "images/creatures/wild/creature_kraken_idol_skill.png",
+            "victory": "images/creatures/wild/creature_kraken_idol_victory.png",
+            "defeat": "images/creatures/wild/creature_kraken_idol_defeat.png",
             "gallery": {
-                "lv1": "images/creatures/abyss/creature_kraken_idol_gallery.png"
+                "lv1": "images/creatures/wild/creature_kraken_idol_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1781,15 +1781,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_kraken_baby.png",
         sprites: {
-            "idle": "images/creature_kraken_baby.png",
-            "joy": "images/creature_kraken_baby_joy.png",
-            "sad": "images/creature_kraken_baby_sad.png",
-            "angry": "images/creature_kraken_baby_angry.png",
-            "skill": "images/creature_kraken_baby_skill.png",
-            "victory": "images/creature_kraken_baby_victory.png",
-            "defeat": "images/creature_kraken_baby_defeat.png",
+            "idle": "images/creatures/wild/creature_kraken_baby.png",
+            "joy": "images/creatures/wild/creature_kraken_baby_joy.png",
+            "sad": "images/creatures/wild/creature_kraken_baby_sad.png",
+            "angry": "images/creatures/wild/creature_kraken_baby_angry.png",
+            "skill": "images/creatures/wild/creature_kraken_baby_skill.png",
+            "victory": "images/creatures/wild/creature_kraken_baby_victory.png",
+            "defeat": "images/creatures/wild/creature_kraken_baby_defeat.png",
             "gallery": {
-                "lv1": "images/creature_kraken_baby_gallery.png"
+                "lv1": "images/creatures/wild/creature_kraken_baby_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1817,17 +1817,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creature_rat_brown.png",
+        image: "images/creatures/wild/creature_rat_brown.png",
         sprites: {
-            "idle": "images/creature_rat_brown.png",
-            "joy": "images/creature_rat_brown_joy.png",
-            "sad": "images/creature_rat_brown_sad.png",
-            "angry": "images/creature_rat_brown_angry.png",
-            "skill": "images/creature_rat_brown_skill.png",
-            "victory": "images/creature_rat_brown_victory.png",
-            "defeat": "images/creature_rat_brown_defeat.png",
+            "idle": "images/creatures/wild/creature_rat_brown.png",
+            "joy": "images/creatures/wild/creature_rat_brown_joy.png",
+            "sad": "images/creatures/wild/creature_rat_brown_sad.png",
+            "angry": "images/creatures/wild/creature_rat_brown_angry.png",
+            "skill": "images/creatures/wild/creature_rat_brown_skill.png",
+            "victory": "images/creatures/wild/creature_rat_brown_victory.png",
+            "defeat": "images/creatures/wild/creature_rat_brown_defeat.png",
             "gallery": {
-                "lv1": "images/creature_rat_brown_gallery.png"
+                "lv1": "images/creatures/wild/creature_rat_brown_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1857,15 +1857,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_slime_green_new.png",
         sprites: {
-            "idle": "images/creature_slime_green_new.png",
-            "joy": "images/creature_slime_green_new_joy.png",
-            "sad": "images/creature_slime_green_new_sad.png",
-            "angry": "images/creature_slime_green_new_angry.png",
-            "skill": "images/creature_slime_green_new_skill.png",
-            "victory": "images/creature_slime_green_new_victory.png",
-            "defeat": "images/creature_slime_green_new_defeat.png",
+            "idle": "images/creatures/wild/creature_slime_green_new.png",
+            "joy": "images/creatures/wild/creature_slime_green_new_joy.png",
+            "sad": "images/creatures/wild/creature_slime_green_new_sad.png",
+            "angry": "images/creatures/wild/creature_slime_green_new_angry.png",
+            "skill": "images/creatures/wild/creature_slime_green_new_skill.png",
+            "victory": "images/creatures/wild/creature_slime_green_new_victory.png",
+            "defeat": "images/creatures/wild/creature_slime_green_new_defeat.png",
             "gallery": {
-                "lv1": "images/creature_slime_green_new_gallery.png"
+                "lv1": "images/creatures/wild/creature_slime_green_new_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1895,15 +1895,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_blue_slime.png",
         sprites: {
-            "idle": "images/creature_blue_slime.png",
-            "joy": "images/creature_blue_slime_joy.png",
-            "sad": "images/creature_blue_slime_sad.png",
-            "angry": "images/creature_blue_slime_angry.png",
-            "skill": "images/creature_blue_slime_skill.png",
-            "victory": "images/creature_blue_slime_victory.png",
-            "defeat": "images/creature_blue_slime_defeat.png",
+            "idle": "images/creatures/wild/creature_blue_slime.png",
+            "joy": "images/creatures/wild/creature_blue_slime_joy.png",
+            "sad": "images/creatures/wild/creature_blue_slime_sad.png",
+            "angry": "images/creatures/wild/creature_blue_slime_angry.png",
+            "skill": "images/creatures/wild/creature_blue_slime_skill.png",
+            "victory": "images/creatures/wild/creature_blue_slime_victory.png",
+            "defeat": "images/creatures/wild/creature_blue_slime_defeat.png",
             "gallery": {
-                "lv1": "images/creature_blue_slime_gallery.png"
+                "lv1": "images/creatures/wild/creature_blue_slime_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1933,15 +1933,15 @@ export const WILD_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/wild/creature_pebble_new.png",
         sprites: {
-            "idle": "images/creature_pebble_new.png",
-            "joy": "images/creature_pebble_new_joy.png",
-            "sad": "images/creature_pebble_new_sad.png",
-            "angry": "images/creature_pebble_new_angry.png",
-            "skill": "images/creature_pebble_new_skill.png",
-            "victory": "images/creature_pebble_new_victory.png",
-            "defeat": "images/creature_pebble_new_defeat.png",
+            "idle": "images/creatures/wild/creature_pebble_new.png",
+            "joy": "images/creatures/wild/creature_pebble_new_joy.png",
+            "sad": "images/creatures/wild/creature_pebble_new_sad.png",
+            "angry": "images/creatures/wild/creature_pebble_new_angry.png",
+            "skill": "images/creatures/wild/creature_pebble_new_skill.png",
+            "victory": "images/creatures/wild/creature_pebble_new_victory.png",
+            "defeat": "images/creatures/wild/creature_pebble_new_defeat.png",
             "gallery": {
-                "lv1": "images/creature_pebble_new_gallery.png"
+                "lv1": "images/creatures/wild/creature_pebble_new_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1969,17 +1969,17 @@ export const WILD_CREATURES = [
         world: WORLDS.WILD,
         elements: ["Fire", "Dark", "Beast"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/wild/creature_chimera.png",
+        image: "images/creatures/wild/creature_chimera_joy.png",
         sprites: {
-            "idle": "images/creatures/wild/creature_chimera.png",
-            "joy": "images/creatures/wild/creature_chimera.png",
-            "sad": "images/creatures/wild/creature_chimera.png",
-            "angry": "images/creatures/wild/creature_chimera.png",
-            "skill": "images/creatures/wild/creature_chimera.png",
-            "victory": "images/creatures/wild/creature_chimera.png",
-            "defeat": "images/creatures/wild/creature_chimera.png",
+            "idle": "images/creatures/wild/creature_chimera_joy.png",
+            "joy": "images/creatures/wild/creature_chimera_joy.png",
+            "sad": "images/creatures/wild/creature_chimera_joy.png",
+            "angry": "images/creatures/wild/creature_chimera_joy.png",
+            "skill": "images/creatures/wild/creature_chimera_joy.png",
+            "victory": "images/creatures/wild/creature_chimera_joy.png",
+            "defeat": "images/creatures/wild/creature_chimera_joy.png",
             "gallery": {
-                "lv1": "images/creatures/wild/creature_chimera.png"
+                "lv1": "images/creatures/wild/creature_chimera_joy.png"
             }
         },
         prompts: {
@@ -1998,6 +1998,126 @@ export const WILD_CREATURES = [
         },
         relationships: { likes: [], dislikes: [], rival: null },
         touchLines: { idle: ["..."], interaction: ["..."], gift: ["Thank you."], special: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "creature_unicorn",
+        name: "유니콘",
+        rarity: RANKS.SR,
+        world: WORLDS.WILD,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/wild/creature_creature_unicorn.png",
+        sprites: {
+            "idle": "images/creatures/wild/creature_creature_unicorn.png",
+            "joy": "images/creatures/wild/creature_creature_unicorn.png", // Fallback
+            "sad": "images/creatures/wild/creature_creature_unicorn.png", // Fallback
+            "angry": "images/creatures/wild/creature_creature_unicorn.png", // Fallback
+            "skill": "images/creatures/wild/creature_creature_unicorn.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 유니콘",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in wild.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "creature_giant_hill",
+        name: "언덕 거인",
+        rarity: RANKS.RARE,
+        world: WORLDS.WILD,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/wild/creature_creature_giant_hill.png",
+        sprites: {
+            "idle": "images/creatures/wild/creature_creature_giant_hill.png",
+            "joy": "images/creatures/wild/creature_creature_giant_hill.png", // Fallback
+            "sad": "images/creatures/wild/creature_creature_giant_hill.png", // Fallback
+            "angry": "images/creatures/wild/creature_creature_giant_hill.png", // Fallback
+            "skill": "images/creatures/wild/creature_creature_giant_hill.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 언덕 거인",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in wild.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "creature_bat_small",
+        name: "동굴 박쥐",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.WILD,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/wild/creature_creature_bat_small.png",
+        sprites: {
+            "idle": "images/creatures/wild/creature_creature_bat_small.png",
+            "joy": "images/creatures/wild/creature_creature_bat_small.png", // Fallback
+            "sad": "images/creatures/wild/creature_creature_bat_small.png", // Fallback
+            "angry": "images/creatures/wild/creature_creature_bat_small.png", // Fallback
+            "skill": "images/creatures/wild/creature_creature_bat_small.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 동굴 박쥐",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in wild.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "snow_spirit",
+        name: "설원 정령",
+        rarity: RANKS.RARE,
+        world: WORLDS.WILD,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/wild/creature_snow_spirit.png",
+        sprites: {
+            "idle": "images/creatures/wild/creature_snow_spirit.png",
+            "joy": "images/creatures/wild/creature_snow_spirit.png", // Fallback
+            "sad": "images/creatures/wild/creature_snow_spirit.png", // Fallback
+            "angry": "images/creatures/wild/creature_snow_spirit.png", // Fallback
+            "skill": "images/creatures/wild/creature_snow_spirit.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 설원 정령",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in wild.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
         lines: { normal: "..." }
     }
 ];

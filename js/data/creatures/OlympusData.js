@@ -9,17 +9,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/centaur_scout.png",
+        image: "images/creatures/olympus/creature_centaur_scout.png",
         sprites: {
-            "idle": "images/centaur_scout.png",
-            "joy": "images/centaur_scout_joy.png",
-            "sad": "images/centaur_scout_sad.png",
-            "angry": "images/centaur_scout_angry.png",
-            "skill": "images/centaur_scout_skill.png",
-            "victory": "images/centaur_scout_victory.png",
-            "defeat": "images/centaur_scout_defeat.png",
+            "idle": "images/creatures/olympus/creature_centaur_scout.png",
+            "joy": "images/creatures/olympus/creature_centaur_scout_joy.png",
+            "sad": "images/creatures/olympus/creature_centaur_scout_sad.png",
+            "angry": "images/creatures/olympus/creature_centaur_scout_angry.png",
+            "skill": "images/creatures/olympus/creature_centaur_scout_skill.png",
+            "victory": "images/creatures/olympus/creature_centaur_scout_victory.png",
+            "defeat": "images/creatures/olympus/creature_centaur_scout_defeat.png",
             "gallery": {
-                "lv1": "images/centaur_scout_gallery.png"
+                "lv1": "images/creatures/olympus/creature_centaur_scout_gallery_lv1.png"
             }
         },
         prompts: {
@@ -47,19 +47,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creature_god_zeus.jpg",
+        image: "images/creatures/olympus/creature_god_zeus.jpg",
         sprites: {
-            "idle": "images/creature_god_zeus.jpg",
-            "joy": "images/creature_god_zeus.jpg",
-            "sad": "images/creature_god_zeus.jpg",
-            "angry": "images/creature_god_zeus.jpg",
-            "skill": "images/creature_god_zeus.jpg",
-            "victory": "images/creature_god_zeus.jpg",
-            "defeat": "images/creature_god_zeus.jpg",
+            "idle": "images/creatures/olympus/creature_god_zeus.jpg",
+            "joy": "images/creatures/olympus/creature_god_zeus.jpg",
+            "sad": "images/creatures/olympus/creature_god_zeus.jpg",
+            "angry": "images/creatures/olympus/creature_god_zeus.jpg",
+            "skill": "images/creatures/olympus/creature_god_zeus.jpg",
+            "victory": "images/creatures/olympus/creature_god_zeus.jpg",
+            "defeat": "images/creatures/olympus/creature_god_zeus.jpg",
             "gallery": {
-                "lv1": "images/creature_god_zeus.jpg",
-                "lv2": "images/creature_god_zeus.jpg",
-                "lv3": "images/creature_god_zeus.jpg"
+                "lv1": "images/creatures/olympus/creature_god_zeus.jpg",
+                "lv2": "images/creatures/olympus/creature_god_zeus.jpg",
+                "lv3": "images/creatures/olympus/creature_god_zeus.jpg"
             }
         },
         prompts: {
@@ -91,19 +91,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/titan_kronos_shade.png",
+        image: "images/creatures/olympus/creature_titan_kronos_shade.png",
         sprites: {
-            "idle": "images/titan_kronos_shade.png",
-            "joy": "images/titan_kronos_shade_joy.png",
-            "sad": "images/titan_kronos_shade_sad.png",
-            "angry": "images/titan_kronos_shade_angry.png",
-            "skill": "images/titan_kronos_shade_skill.png",
-            "victory": "images/titan_kronos_shade_victory.png",
-            "defeat": "images/titan_kronos_shade_defeat.png",
+            "idle": "images/creatures/olympus/creature_titan_kronos_shade.png",
+            "joy": "images/creatures/olympus/creature_titan_kronos_shade_joy.png",
+            "sad": "images/creatures/olympus/creature_titan_kronos_shade_sad.png",
+            "angry": "images/creatures/olympus/creature_titan_kronos_shade_angry.png",
+            "skill": "images/creatures/olympus/creature_titan_kronos_shade_skill.png",
+            "victory": "images/creatures/olympus/creature_titan_kronos_shade_victory.png",
+            "defeat": "images/creatures/olympus/creature_titan_kronos_shade_defeat.png",
             "gallery": {
-                "lv1": "images/titan_kronos_shade_gallery_lv1.png",
-                "lv2": "images/titan_kronos_shade_gallery_lv2.png",
-                "lv3": "images/titan_kronos_shade_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_titan_kronos_shade_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_titan_kronos_shade_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_titan_kronos_shade_gallery_lv3.png"
             }
         },
         prompts: {
@@ -137,17 +137,17 @@ export const OLYMPUS_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/olympus/creature_god_poseidon.png",
         sprites: {
-            "idle": "images/creature_god_poseidon.png",
-            "joy": "images/creature_god_poseidon_joy.png",
-            "sad": "images/creature_god_poseidon_sad.png",
-            "angry": "images/creature_god_poseidon_angry.png",
-            "skill": "images/creature_god_poseidon_skill.png",
-            "victory": "images/creature_god_poseidon_victory.png",
-            "defeat": "images/creature_god_poseidon_defeat.png",
+            "idle": "images/creatures/olympus/creature_god_poseidon.png",
+            "joy": "images/creatures/olympus/creature_god_poseidon_joy.png",
+            "sad": "images/creatures/olympus/creature_god_poseidon_sad.png",
+            "angry": "images/creatures/olympus/creature_god_poseidon_angry.png",
+            "skill": "images/creatures/olympus/creature_god_poseidon_skill.png",
+            "victory": "images/creatures/olympus/creature_god_poseidon_victory.png",
+            "defeat": "images/creatures/olympus/creature_god_poseidon_defeat.png",
             "gallery": {
-                "lv1": "images/creature_god_poseidon_gallery_lv1.png",
-                "lv2": "images/creature_god_poseidon_gallery_lv2.png",
-                "lv3": "images/creature_god_poseidon_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_god_poseidon_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_god_poseidon_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_god_poseidon_gallery_lv3.png"
             }
         },
         prompts: {
@@ -179,19 +179,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/god_hades.png",
+        image: "images/creatures/olympus/creature_god_hades.png",
         sprites: {
-            "idle": "images/god_hades.png",
-            "joy": "images/god_hades_joy.png",
-            "sad": "images/god_hades_sad.png",
-            "angry": "images/god_hades_angry.png",
-            "skill": "images/god_hades_skill.png",
-            "victory": "images/god_hades_victory.png",
-            "defeat": "images/god_hades_defeat.png",
+            "idle": "images/creatures/olympus/creature_god_hades.png",
+            "joy": "images/creatures/olympus/creature_god_hades_joy.png",
+            "sad": "images/creatures/olympus/creature_god_hades_sad.png",
+            "angry": "images/creatures/olympus/creature_god_hades_angry.png",
+            "skill": "images/creatures/olympus/creature_god_hades_skill.png",
+            "victory": "images/creatures/olympus/creature_god_hades_victory.png",
+            "defeat": "images/creatures/olympus/creature_god_hades_defeat.png",
             "gallery": {
-                "lv1": "images/god_hades_gallery_lv1.png",
-                "lv2": "images/god_hades_gallery_lv2.png",
-                "lv3": "images/god_hades_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_god_hades_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_god_hades_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_god_hades_gallery_lv3.png"
             }
         },
         prompts: {
@@ -223,19 +223,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/hero_hercules.png",
+        image: "images/creatures/olympus/creature_hero_hercules.png",
         sprites: {
-            "idle": "images/hero_hercules.png",
-            "joy": "images/hero_hercules_joy.png",
-            "sad": "images/hero_hercules_sad.png",
-            "angry": "images/hero_hercules_angry.png",
-            "skill": "images/hero_hercules_skill.png",
-            "victory": "images/hero_hercules_victory.png",
-            "defeat": "images/hero_hercules_defeat.png",
+            "idle": "images/creatures/olympus/creature_hero_hercules.png",
+            "joy": "images/creatures/olympus/creature_hero_hercules_joy.png",
+            "sad": "images/creatures/olympus/creature_hero_hercules_sad.png",
+            "angry": "images/creatures/olympus/creature_hero_hercules_angry.png",
+            "skill": "images/creatures/olympus/creature_hero_hercules_skill.png",
+            "victory": "images/creatures/olympus/creature_hero_hercules_victory.png",
+            "defeat": "images/creatures/olympus/creature_hero_hercules_defeat.png",
             "gallery": {
-                "lv1": "images/hero_hercules_gallery_lv1.png",
-                "lv2": "images/hero_hercules_gallery_lv2.png",
-                "lv3": "images/hero_hercules_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_hero_hercules_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_hero_hercules_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_hero_hercules_gallery_lv3.png"
             }
         },
         prompts: {
@@ -267,19 +267,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/wild/creature_titan_atlas.png",
+        image: "images/creatures/olympus/creature_titan_atlas.png",
         sprites: {
-            "idle": "images/creature_titan_atlas.png",
-            "joy": "images/creature_titan_atlas_joy.png",
-            "sad": "images/creature_titan_atlas_sad.png",
-            "angry": "images/creature_titan_atlas_angry.png",
-            "skill": "images/creature_titan_atlas_skill.png",
-            "victory": "images/creature_titan_atlas_victory.png",
-            "defeat": "images/creature_titan_atlas_defeat.png",
+            "idle": "images/creatures/olympus/creature_titan_atlas.png",
+            "joy": "images/creatures/olympus/creature_titan_atlas_joy.png",
+            "sad": "images/creatures/olympus/creature_titan_atlas_sad.png",
+            "angry": "images/creatures/olympus/creature_titan_atlas_angry.png",
+            "skill": "images/creatures/olympus/creature_titan_atlas_skill.png",
+            "victory": "images/creatures/olympus/creature_titan_atlas_victory.png",
+            "defeat": "images/creatures/olympus/creature_titan_atlas_defeat.png",
             "gallery": {
-                "lv1": "images/creature_titan_atlas_gallery_lv1.png",
-                "lv2": "images/creature_titan_atlas_gallery_lv2.png",
-                "lv3": "images/creature_titan_atlas_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_titan_atlas_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_titan_atlas_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_titan_atlas_gallery_lv3.png"
             }
         },
         prompts: {
@@ -311,19 +311,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/minotaur_king.png",
+        image: "images/creatures/olympus/creature_minotaur_king.png",
         sprites: {
-            "idle": "images/minotaur_king.png",
-            "joy": "images/minotaur_king_joy.png",
-            "sad": "images/minotaur_king_sad.png",
-            "angry": "images/minotaur_king_angry.png",
-            "skill": "images/minotaur_king_skill.png",
-            "victory": "images/minotaur_king_victory.png",
-            "defeat": "images/minotaur_king_defeat.png",
+            "idle": "images/creatures/olympus/creature_minotaur_king.png",
+            "joy": "images/creatures/olympus/creature_minotaur_king_joy.png",
+            "sad": "images/creatures/olympus/creature_minotaur_king_sad.png",
+            "angry": "images/creatures/olympus/creature_minotaur_king_angry.png",
+            "skill": "images/creatures/olympus/creature_minotaur_king_skill.png",
+            "victory": "images/creatures/olympus/creature_minotaur_king_victory.png",
+            "defeat": "images/creatures/olympus/creature_minotaur_king_defeat.png",
             "gallery": {
-                "lv1": "images/minotaur_king_gallery_lv1.png",
-                "lv2": "images/minotaur_king_gallery_lv2.png",
-                "lv3": "images/minotaur_king_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_minotaur_king_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_minotaur_king_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_minotaur_king_gallery_lv3.png"
             }
         },
         prompts: {
@@ -355,19 +355,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/cerberus_guardian.png",
+        image: "images/creatures/olympus/creature_cerberus_guardian.png",
         sprites: {
-            "idle": "images/cerberus_guardian.png",
-            "joy": "images/cerberus_guardian_joy.png",
-            "sad": "images/cerberus_guardian_sad.png",
-            "angry": "images/cerberus_guardian_angry.png",
-            "skill": "images/cerberus_guardian_skill.png",
-            "victory": "images/cerberus_guardian_victory.png",
-            "defeat": "images/cerberus_guardian_defeat.png",
+            "idle": "images/creatures/olympus/creature_cerberus_guardian.png",
+            "joy": "images/creatures/olympus/creature_cerberus_guardian_joy.png",
+            "sad": "images/creatures/olympus/creature_cerberus_guardian_sad.png",
+            "angry": "images/creatures/olympus/creature_cerberus_guardian_angry.png",
+            "skill": "images/creatures/olympus/creature_cerberus_guardian_skill.png",
+            "victory": "images/creatures/olympus/creature_cerberus_guardian_victory.png",
+            "defeat": "images/creatures/olympus/creature_cerberus_guardian_defeat.png",
             "gallery": {
-                "lv1": "images/cerberus_guardian_gallery_lv1.png",
-                "lv2": "images/cerberus_guardian_gallery_lv2.png",
-                "lv3": "images/cerberus_guardian_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_cerberus_guardian_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_cerberus_guardian_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_cerberus_guardian_gallery_lv3.png"
             }
         },
         prompts: {
@@ -399,19 +399,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/hydra_lernaean.png",
+        image: "images/creatures/olympus/creature_hydra_lernaean.png",
         sprites: {
-            "idle": "images/hydra_lernaean.png",
-            "joy": "images/hydra_lernaean_joy.png",
-            "sad": "images/hydra_lernaean_sad.png",
-            "angry": "images/hydra_lernaean_angry.png",
-            "skill": "images/hydra_lernaean_skill.png",
-            "victory": "images/hydra_lernaean_victory.png",
-            "defeat": "images/hydra_lernaean_defeat.png",
+            "idle": "images/creatures/olympus/creature_hydra_lernaean.png",
+            "joy": "images/creatures/olympus/creature_hydra_lernaean_joy.png",
+            "sad": "images/creatures/olympus/creature_hydra_lernaean_sad.png",
+            "angry": "images/creatures/olympus/creature_hydra_lernaean_angry.png",
+            "skill": "images/creatures/olympus/creature_hydra_lernaean_skill.png",
+            "victory": "images/creatures/olympus/creature_hydra_lernaean_victory.png",
+            "defeat": "images/creatures/olympus/creature_hydra_lernaean_defeat.png",
             "gallery": {
-                "lv1": "images/hydra_lernaean_gallery_lv1.png",
-                "lv2": "images/hydra_lernaean_gallery_lv2.png",
-                "lv3": "images/hydra_lernaean_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_hydra_lernaean_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_hydra_lernaean_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_hydra_lernaean_gallery_lv3.png"
             }
         },
         prompts: {
@@ -443,19 +443,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/lion_nemean.png",
+        image: "images/creatures/olympus/creature_lion_nemean.png",
         sprites: {
-            "idle": "images/lion_nemean.png",
-            "joy": "images/lion_nemean_joy.png",
-            "sad": "images/lion_nemean_sad.png",
-            "angry": "images/lion_nemean_angry.png",
-            "skill": "images/lion_nemean_skill.png",
-            "victory": "images/lion_nemean_victory.png",
-            "defeat": "images/lion_nemean_defeat.png",
+            "idle": "images/creatures/olympus/creature_lion_nemean.png",
+            "joy": "images/creatures/olympus/creature_lion_nemean_joy.png",
+            "sad": "images/creatures/olympus/creature_lion_nemean_sad.png",
+            "angry": "images/creatures/olympus/creature_lion_nemean_angry.png",
+            "skill": "images/creatures/olympus/creature_lion_nemean_skill.png",
+            "victory": "images/creatures/olympus/creature_lion_nemean_victory.png",
+            "defeat": "images/creatures/olympus/creature_lion_nemean_defeat.png",
             "gallery": {
-                "lv1": "images/lion_nemean_gallery_lv1.png",
-                "lv2": "images/lion_nemean_gallery_lv2.png",
-                "lv3": "images/lion_nemean_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_lion_nemean_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_lion_nemean_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_lion_nemean_gallery_lv3.png"
             }
         },
         prompts: {
@@ -487,19 +487,19 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/medusa_cursed.png",
+        image: "images/creatures/olympus/creature_medusa_cursed.png",
         sprites: {
-            "idle": "images/medusa_cursed.png",
-            "joy": "images/medusa_cursed_joy.png",
-            "sad": "images/medusa_cursed_sad.png",
-            "angry": "images/medusa_cursed_angry.png",
-            "skill": "images/medusa_cursed_skill.png",
-            "victory": "images/medusa_cursed_victory.png",
-            "defeat": "images/medusa_cursed_defeat.png",
+            "idle": "images/creatures/olympus/creature_medusa_cursed.png",
+            "joy": "images/creatures/olympus/creature_medusa_cursed_joy.png",
+            "sad": "images/creatures/olympus/creature_medusa_cursed_sad.png",
+            "angry": "images/creatures/olympus/creature_medusa_cursed_angry.png",
+            "skill": "images/creatures/olympus/creature_medusa_cursed_skill.png",
+            "victory": "images/creatures/olympus/creature_medusa_cursed_victory.png",
+            "defeat": "images/creatures/olympus/creature_medusa_cursed_defeat.png",
             "gallery": {
-                "lv1": "images/medusa_cursed_gallery_lv1.png",
-                "lv2": "images/medusa_cursed_gallery_lv2.png",
-                "lv3": "images/medusa_cursed_gallery_lv3.png"
+                "lv1": "images/creatures/olympus/creature_medusa_cursed_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_medusa_cursed_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_medusa_cursed_gallery_lv3.png"
             }
         },
         prompts: {
@@ -534,14 +534,14 @@ export const OLYMPUS_CREATURES = [
         image: "images/creatures/olympus/creature_mage_flame.png",
         sprites: {
             "idle": "images/creatures/olympus/creature_mage_flame.png",
-            "joy": "images/creature_mage_flame_joy.png",
-            "sad": "images/creature_mage_flame_sad.png",
-            "angry": "images/creature_mage_flame_angry.png",
-            "skill": "images/creature_mage_flame_skill.png",
-            "victory": "images/creature_mage_flame_victory.png",
-            "defeat": "images/creature_mage_flame_defeat.png",
+            "joy": "images/creatures/olympus/creature_mage_flame_joy.png",
+            "sad": "images/creatures/olympus/creature_mage_flame_sad.png",
+            "angry": "images/creatures/olympus/creature_mage_flame_angry.png",
+            "skill": "images/creatures/olympus/creature_mage_flame_skill.png",
+            "victory": "images/creatures/olympus/creature_mage_flame_victory.png",
+            "defeat": "images/creatures/olympus/creature_mage_flame_defeat.png",
             "gallery": {
-                "lv1": "images/creature_mage_flame_gallery.png"
+                "lv1": "images/creatures/olympus/creature_mage_flame_gallery_lv1.png"
             }
         },
         prompts: {
@@ -569,17 +569,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/god_dionysus.png",
+        image: "images/creatures/olympus/creature_god_dionysus.png",
         sprites: {
-            "idle": "images/god_dionysus.png",
-            "joy": "images/god_dionysus_joy.png",
-            "sad": "images/god_dionysus_sad.png",
-            "angry": "images/god_dionysus_angry.png",
-            "skill": "images/god_dionysus_skill.png",
-            "victory": "images/god_dionysus_victory.png",
-            "defeat": "images/god_dionysus_defeat.png",
+            "idle": "images/creatures/olympus/creature_god_dionysus.png",
+            "joy": "images/creatures/olympus/creature_god_dionysus_joy.png",
+            "sad": "images/creatures/olympus/creature_god_dionysus_sad.png",
+            "angry": "images/creatures/olympus/creature_god_dionysus_angry.png",
+            "skill": "images/creatures/olympus/creature_god_dionysus_skill.png",
+            "victory": "images/creatures/olympus/creature_god_dionysus_victory.png",
+            "defeat": "images/creatures/olympus/creature_god_dionysus_defeat.png",
             "gallery": {
-                "lv1": "images/god_dionysus_gallery.png"
+                "lv1": "images/creatures/olympus/creature_god_dionysus_gallery_lv1.png"
             }
         },
         prompts: {
@@ -607,17 +607,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/harpy_queen.png",
+        image: "images/creatures/olympus/creature_harpy_queen.png",
         sprites: {
-            "idle": "images/harpy_queen.png",
-            "joy": "images/harpy_queen_joy.png",
-            "sad": "images/harpy_queen_sad.png",
-            "angry": "images/harpy_queen_angry.png",
-            "skill": "images/harpy_queen_skill.png",
-            "victory": "images/harpy_queen_victory.png",
-            "defeat": "images/harpy_queen_defeat.png",
+            "idle": "images/creatures/olympus/creature_harpy_queen.png",
+            "joy": "images/creatures/olympus/creature_harpy_queen_joy.png",
+            "sad": "images/creatures/olympus/creature_harpy_queen_sad.png",
+            "angry": "images/creatures/olympus/creature_harpy_queen_angry.png",
+            "skill": "images/creatures/olympus/creature_harpy_queen_skill.png",
+            "victory": "images/creatures/olympus/creature_harpy_queen_victory.png",
+            "defeat": "images/creatures/olympus/creature_harpy_queen_defeat.png",
             "gallery": {
-                "lv1": "images/harpy_queen_gallery.png"
+                "lv1": "images/creatures/olympus/creature_harpy_queen_gallery_lv1.png"
             }
         },
         prompts: {
@@ -645,17 +645,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/siren_singer.png",
+        image: "images/creatures/olympus/creature_siren_singer.png",
         sprites: {
-            "idle": "images/siren_singer.png",
-            "joy": "images/siren_singer_joy.png",
-            "sad": "images/siren_singer_sad.png",
-            "angry": "images/siren_singer_angry.png",
-            "skill": "images/siren_singer_skill.png",
-            "victory": "images/siren_singer_victory.png",
-            "defeat": "images/siren_singer_defeat.png",
+            "idle": "images/creatures/olympus/creature_siren_singer.png",
+            "joy": "images/creatures/olympus/creature_siren_singer_joy.png",
+            "sad": "images/creatures/olympus/creature_siren_singer_sad.png",
+            "angry": "images/creatures/olympus/creature_siren_singer_angry.png",
+            "skill": "images/creatures/olympus/creature_siren_singer_skill.png",
+            "victory": "images/creatures/olympus/creature_siren_singer_victory.png",
+            "defeat": "images/creatures/olympus/creature_siren_singer_defeat.png",
             "gallery": {
-                "lv1": "images/siren_singer_gallery.png"
+                "lv1": "images/creatures/olympus/creature_siren_singer_gallery_lv1.png"
             }
         },
         prompts: {
@@ -683,17 +683,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/gorgon_sister_e.png",
+        image: "images/creatures/olympus/creature_gorgon_sister_e.png",
         sprites: {
-            "idle": "images/gorgon_sister_e.png",
-            "joy": "images/gorgon_sister_e_joy.png",
-            "sad": "images/gorgon_sister_e_sad.png",
-            "angry": "images/gorgon_sister_e_angry.png",
-            "skill": "images/gorgon_sister_e_skill.png",
-            "victory": "images/gorgon_sister_e_victory.png",
-            "defeat": "images/gorgon_sister_e_defeat.png",
+            "idle": "images/creatures/olympus/creature_gorgon_sister_e.png",
+            "joy": "images/creatures/olympus/creature_gorgon_sister_e_joy.png",
+            "sad": "images/creatures/olympus/creature_gorgon_sister_e_sad.png",
+            "angry": "images/creatures/olympus/creature_gorgon_sister_e_angry.png",
+            "skill": "images/creatures/olympus/creature_gorgon_sister_e_skill.png",
+            "victory": "images/creatures/olympus/creature_gorgon_sister_e_victory.png",
+            "defeat": "images/creatures/olympus/creature_gorgon_sister_e_defeat.png",
             "gallery": {
-                "lv1": "images/gorgon_sister_e_gallery.png"
+                "lv1": "images/creatures/olympus/creature_gorgon_sister_e_gallery_lv1.png"
             }
         },
         prompts: {
@@ -721,17 +721,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/gorgon_sister_s.png",
+        image: "images/creatures/olympus/creature_gorgon_sister_s.png",
         sprites: {
-            "idle": "images/gorgon_sister_s.png",
-            "joy": "images/gorgon_sister_s_joy.png",
-            "sad": "images/gorgon_sister_s_sad.png",
-            "angry": "images/gorgon_sister_s_angry.png",
-            "skill": "images/gorgon_sister_s_skill.png",
-            "victory": "images/gorgon_sister_s_victory.png",
-            "defeat": "images/gorgon_sister_s_defeat.png",
+            "idle": "images/creatures/olympus/creature_gorgon_sister_s.png",
+            "joy": "images/creatures/olympus/creature_gorgon_sister_s_joy.png",
+            "sad": "images/creatures/olympus/creature_gorgon_sister_s_sad.png",
+            "angry": "images/creatures/olympus/creature_gorgon_sister_s_angry.png",
+            "skill": "images/creatures/olympus/creature_gorgon_sister_s_skill.png",
+            "victory": "images/creatures/olympus/creature_gorgon_sister_s_victory.png",
+            "defeat": "images/creatures/olympus/creature_gorgon_sister_s_defeat.png",
             "gallery": {
-                "lv1": "images/gorgon_sister_s_gallery.png"
+                "lv1": "images/creatures/olympus/creature_gorgon_sister_s_gallery_lv1.png"
             }
         },
         prompts: {
@@ -759,17 +759,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/muse_lyra.png",
+        image: "images/creatures/olympus/creature_muse_lyra.png",
         sprites: {
-            "idle": "images/muse_lyra.png",
-            "joy": "images/muse_lyra_joy.png",
-            "sad": "images/muse_lyra_sad.png",
-            "angry": "images/muse_lyra_angry.png",
-            "skill": "images/muse_lyra_skill.png",
-            "victory": "images/muse_lyra_victory.png",
-            "defeat": "images/muse_lyra_defeat.png",
+            "idle": "images/creatures/olympus/creature_muse_lyra.png",
+            "joy": "images/creatures/olympus/creature_muse_lyra_joy.png",
+            "sad": "images/creatures/olympus/creature_muse_lyra_sad.png",
+            "angry": "images/creatures/olympus/creature_muse_lyra_angry.png",
+            "skill": "images/creatures/olympus/creature_muse_lyra_skill.png",
+            "victory": "images/creatures/olympus/creature_muse_lyra_victory.png",
+            "defeat": "images/creatures/olympus/creature_muse_lyra_defeat.png",
             "gallery": {
-                "lv1": "images/muse_lyra_gallery.png"
+                "lv1": "images/creatures/olympus/creature_muse_lyra_gallery_lv1.png"
             }
         },
         prompts: {
@@ -797,17 +797,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/phoenix_chick_o.png",
+        image: "images/creatures/olympus/creature_phoenix_chick_o.png",
         sprites: {
-            "idle": "images/phoenix_chick_o.png",
-            "joy": "images/phoenix_chick_o_joy.png",
-            "sad": "images/phoenix_chick_o_sad.png",
-            "angry": "images/phoenix_chick_o_angry.png",
-            "skill": "images/phoenix_chick_o_skill.png",
-            "victory": "images/phoenix_chick_o_victory.png",
-            "defeat": "images/phoenix_chick_o_defeat.png",
+            "idle": "images/creatures/olympus/creature_phoenix_chick_o.png",
+            "joy": "images/creatures/olympus/creature_phoenix_chick_o_joy.png",
+            "sad": "images/creatures/olympus/creature_phoenix_chick_o_sad.png",
+            "angry": "images/creatures/olympus/creature_phoenix_chick_o_angry.png",
+            "skill": "images/creatures/olympus/creature_phoenix_chick_o_skill.png",
+            "victory": "images/creatures/olympus/creature_phoenix_chick_o_victory.png",
+            "defeat": "images/creatures/olympus/creature_phoenix_chick_o_defeat.png",
             "gallery": {
-                "lv1": "images/phoenix_chick_o_gallery.png"
+                "lv1": "images/creatures/olympus/creature_phoenix_chick_o_gallery_lv1.png"
             }
         },
         prompts: {
@@ -835,17 +835,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/hellhound_scout.png",
+        image: "images/creatures/olympus/creature_hellhound_scout.png",
         sprites: {
-            "idle": "images/hellhound_scout.png",
-            "joy": "images/hellhound_scout_joy.png",
-            "sad": "images/hellhound_scout_sad.png",
-            "angry": "images/hellhound_scout_angry.png",
-            "skill": "images/hellhound_scout_skill.png",
-            "victory": "images/hellhound_scout_victory.png",
-            "defeat": "images/hellhound_scout_defeat.png",
+            "idle": "images/creatures/olympus/creature_hellhound_scout.png",
+            "joy": "images/creatures/olympus/creature_hellhound_scout_joy.png",
+            "sad": "images/creatures/olympus/creature_hellhound_scout_sad.png",
+            "angry": "images/creatures/olympus/creature_hellhound_scout_angry.png",
+            "skill": "images/creatures/olympus/creature_hellhound_scout_skill.png",
+            "victory": "images/creatures/olympus/creature_hellhound_scout_victory.png",
+            "defeat": "images/creatures/olympus/creature_hellhound_scout_defeat.png",
             "gallery": {
-                "lv1": "images/hellhound_scout_gallery.png"
+                "lv1": "images/creatures/olympus/creature_hellhound_scout_gallery_lv1.png"
             }
         },
         prompts: {
@@ -873,17 +873,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/automaton_mini.png",
+        image: "images/creatures/olympus/creature_automaton_mini.png",
         sprites: {
-            "idle": "images/automaton_mini.png",
-            "joy": "images/automaton_mini_joy.png",
-            "sad": "images/automaton_mini_sad.png",
-            "angry": "images/automaton_mini_angry.png",
-            "skill": "images/automaton_mini_skill.png",
-            "victory": "images/automaton_mini_victory.png",
-            "defeat": "images/automaton_mini_defeat.png",
+            "idle": "images/creatures/olympus/creature_automaton_mini.png",
+            "joy": "images/creatures/olympus/creature_automaton_mini_joy.png",
+            "sad": "images/creatures/olympus/creature_automaton_mini_sad.png",
+            "angry": "images/creatures/olympus/creature_automaton_mini_angry.png",
+            "skill": "images/creatures/olympus/creature_automaton_mini_skill.png",
+            "victory": "images/creatures/olympus/creature_automaton_mini_victory.png",
+            "defeat": "images/creatures/olympus/creature_automaton_mini_defeat.png",
             "gallery": {
-                "lv1": "images/automaton_mini_gallery.png"
+                "lv1": "images/creatures/olympus/creature_automaton_mini_gallery_lv1.png"
             }
         },
         prompts: {
@@ -911,17 +911,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/talos_fragment.png",
+        image: "images/creatures/olympus/creature_talos_fragment.png",
         sprites: {
-            "idle": "images/talos_fragment.png",
-            "joy": "images/talos_fragment_joy.png",
-            "sad": "images/talos_fragment_sad.png",
-            "angry": "images/talos_fragment_angry.png",
-            "skill": "images/talos_fragment_skill.png",
-            "victory": "images/talos_fragment_victory.png",
-            "defeat": "images/talos_fragment_defeat.png",
+            "idle": "images/creatures/olympus/creature_talos_fragment.png",
+            "joy": "images/creatures/olympus/creature_talos_fragment_joy.png",
+            "sad": "images/creatures/olympus/creature_talos_fragment_sad.png",
+            "angry": "images/creatures/olympus/creature_talos_fragment_angry.png",
+            "skill": "images/creatures/olympus/creature_talos_fragment_skill.png",
+            "victory": "images/creatures/olympus/creature_talos_fragment_victory.png",
+            "defeat": "images/creatures/olympus/creature_talos_fragment_defeat.png",
             "gallery": {
-                "lv1": "images/talos_fragment_gallery.png"
+                "lv1": "images/creatures/olympus/creature_talos_fragment_gallery_lv1.png"
             }
         },
         prompts: {
@@ -949,17 +949,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/fury_hiss.png",
+        image: "images/creatures/olympus/creature_fury_hiss.png",
         sprites: {
-            "idle": "images/fury_hiss.png",
-            "joy": "images/fury_hiss_joy.png",
-            "sad": "images/fury_hiss_sad.png",
-            "angry": "images/fury_hiss_angry.png",
-            "skill": "images/fury_hiss_skill.png",
-            "victory": "images/fury_hiss_victory.png",
-            "defeat": "images/fury_hiss_defeat.png",
+            "idle": "images/creatures/olympus/creature_fury_hiss.png",
+            "joy": "images/creatures/olympus/creature_fury_hiss_joy.png",
+            "sad": "images/creatures/olympus/creature_fury_hiss_sad.png",
+            "angry": "images/creatures/olympus/creature_fury_hiss_angry.png",
+            "skill": "images/creatures/olympus/creature_fury_hiss_skill.png",
+            "victory": "images/creatures/olympus/creature_fury_hiss_victory.png",
+            "defeat": "images/creatures/olympus/creature_fury_hiss_defeat.png",
             "gallery": {
-                "lv1": "images/fury_hiss_gallery.png"
+                "lv1": "images/creatures/olympus/creature_fury_hiss_gallery_lv1.png"
             }
         },
         prompts: {
@@ -987,17 +987,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/sphinx_kitten.png",
+        image: "images/creatures/olympus/creature_sphinx_kitten.png",
         sprites: {
-            "idle": "images/sphinx_kitten.png",
-            "joy": "images/sphinx_kitten_joy.png",
-            "sad": "images/sphinx_kitten_sad.png",
-            "angry": "images/sphinx_kitten_angry.png",
-            "skill": "images/sphinx_kitten_skill.png",
-            "victory": "images/sphinx_kitten_victory.png",
-            "defeat": "images/sphinx_kitten_defeat.png",
+            "idle": "images/creatures/olympus/creature_sphinx_kitten.png",
+            "joy": "images/creatures/olympus/creature_sphinx_kitten_joy.png",
+            "sad": "images/creatures/olympus/creature_sphinx_kitten_sad.png",
+            "angry": "images/creatures/olympus/creature_sphinx_kitten_angry.png",
+            "skill": "images/creatures/olympus/creature_sphinx_kitten_skill.png",
+            "victory": "images/creatures/olympus/creature_sphinx_kitten_victory.png",
+            "defeat": "images/creatures/olympus/creature_sphinx_kitten_defeat.png",
             "gallery": {
-                "lv1": "images/sphinx_kitten_gallery.png"
+                "lv1": "images/creatures/olympus/creature_sphinx_kitten_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1025,17 +1025,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/wild/creature_cloud_puff.png",
+        image: "images/creatures/olympus/creature_cloud_puff.png",
         sprites: {
-            "idle": "images/creature_cloud_puff.png",
-            "joy": "images/creature_cloud_puff_joy.png",
-            "sad": "images/creature_cloud_puff_sad.png",
-            "angry": "images/creature_cloud_puff_angry.png",
-            "skill": "images/creature_cloud_puff_skill.png",
-            "victory": "images/creature_cloud_puff_victory.png",
-            "defeat": "images/creature_cloud_puff_defeat.png",
+            "idle": "images/creatures/olympus/creature_cloud_puff.png",
+            "joy": "images/creatures/olympus/creature_cloud_puff_joy.png",
+            "sad": "images/creatures/olympus/creature_cloud_puff_sad.png",
+            "angry": "images/creatures/olympus/creature_cloud_puff_angry.png",
+            "skill": "images/creatures/olympus/creature_cloud_puff_skill.png",
+            "victory": "images/creatures/olympus/creature_cloud_puff_victory.png",
+            "defeat": "images/creatures/olympus/creature_cloud_puff_defeat.png",
             "gallery": {
-                "lv1": "images/creature_cloud_puff_gallery.png"
+                "lv1": "images/creatures/olympus/creature_cloud_puff_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1063,17 +1063,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/pegasus_colt.png",
+        image: "images/creatures/olympus/creature_pegasus_colt.png",
         sprites: {
-            "idle": "images/pegasus_colt.png",
-            "joy": "images/pegasus_colt_joy.png",
-            "sad": "images/pegasus_colt_sad.png",
-            "angry": "images/pegasus_colt_angry.png",
-            "skill": "images/pegasus_colt_skill.png",
-            "victory": "images/pegasus_colt_victory.png",
-            "defeat": "images/pegasus_colt_defeat.png",
+            "idle": "images/creatures/olympus/creature_pegasus_colt.png",
+            "joy": "images/creatures/olympus/creature_pegasus_colt_joy.png",
+            "sad": "images/creatures/olympus/creature_pegasus_colt_sad.png",
+            "angry": "images/creatures/olympus/creature_pegasus_colt_angry.png",
+            "skill": "images/creatures/olympus/creature_pegasus_colt_skill.png",
+            "victory": "images/creatures/olympus/creature_pegasus_colt_victory.png",
+            "defeat": "images/creatures/olympus/creature_pegasus_colt_defeat.png",
             "gallery": {
-                "lv1": "images/pegasus_colt_gallery.png"
+                "lv1": "images/creatures/olympus/creature_pegasus_colt_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1101,17 +1101,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/satyr_young.png",
+        image: "images/creatures/olympus/creature_satyr_young.png",
         sprites: {
-            "idle": "images/satyr_young.png",
-            "joy": "images/satyr_young_joy.png",
-            "sad": "images/satyr_young_sad.png",
-            "angry": "images/satyr_young_angry.png",
-            "skill": "images/satyr_young_skill.png",
-            "victory": "images/satyr_young_victory.png",
-            "defeat": "images/satyr_young_defeat.png",
+            "idle": "images/creatures/olympus/creature_satyr_young.png",
+            "joy": "images/creatures/olympus/creature_satyr_young_joy.png",
+            "sad": "images/creatures/olympus/creature_satyr_young_sad.png",
+            "angry": "images/creatures/olympus/creature_satyr_young_angry.png",
+            "skill": "images/creatures/olympus/creature_satyr_young_skill.png",
+            "victory": "images/creatures/olympus/creature_satyr_young_victory.png",
+            "defeat": "images/creatures/olympus/creature_satyr_young_defeat.png",
             "gallery": {
-                "lv1": "images/satyr_young_gallery.png"
+                "lv1": "images/creatures/olympus/creature_satyr_young_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1139,17 +1139,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/dryad_seed.png",
+        image: "images/creatures/olympus/creature_dryad_seed.png",
         sprites: {
-            "idle": "images/dryad_seed.png",
-            "joy": "images/dryad_seed_joy.png",
-            "sad": "images/dryad_seed_sad.png",
-            "angry": "images/dryad_seed_angry.png",
-            "skill": "images/dryad_seed_skill.png",
-            "victory": "images/dryad_seed_victory.png",
-            "defeat": "images/dryad_seed_defeat.png",
+            "idle": "images/creatures/olympus/creature_dryad_seed.png",
+            "joy": "images/creatures/olympus/creature_dryad_seed_joy.png",
+            "sad": "images/creatures/olympus/creature_dryad_seed_sad.png",
+            "angry": "images/creatures/olympus/creature_dryad_seed_angry.png",
+            "skill": "images/creatures/olympus/creature_dryad_seed_skill.png",
+            "victory": "images/creatures/olympus/creature_dryad_seed_victory.png",
+            "defeat": "images/creatures/olympus/creature_dryad_seed_defeat.png",
             "gallery": {
-                "lv1": "images/dryad_seed_gallery.png"
+                "lv1": "images/creatures/olympus/creature_dryad_seed_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1177,17 +1177,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/cyclops_worker.png",
+        image: "images/creatures/olympus/creature_cyclops_worker.png",
         sprites: {
-            "idle": "images/cyclops_worker.png",
-            "joy": "images/cyclops_worker_joy.png",
-            "sad": "images/cyclops_worker_sad.png",
-            "angry": "images/cyclops_worker_angry.png",
-            "skill": "images/cyclops_worker_skill.png",
-            "victory": "images/cyclops_worker_victory.png",
-            "defeat": "images/cyclops_worker_defeat.png",
+            "idle": "images/creatures/olympus/creature_cyclops_worker.png",
+            "joy": "images/creatures/olympus/creature_cyclops_worker_joy.png",
+            "sad": "images/creatures/olympus/creature_cyclops_worker_sad.png",
+            "angry": "images/creatures/olympus/creature_cyclops_worker_angry.png",
+            "skill": "images/creatures/olympus/creature_cyclops_worker_skill.png",
+            "victory": "images/creatures/olympus/creature_cyclops_worker_victory.png",
+            "defeat": "images/creatures/olympus/creature_cyclops_worker_defeat.png",
             "gallery": {
-                "lv1": "images/cyclops_worker_gallery.png"
+                "lv1": "images/creatures/olympus/creature_cyclops_worker_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1215,17 +1215,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/nymph_water.png",
+        image: "images/creatures/olympus/creature_nymph_water.png",
         sprites: {
-            "idle": "images/nymph_water.png",
-            "joy": "images/nymph_water_joy.png",
-            "sad": "images/nymph_water_sad.png",
-            "angry": "images/nymph_water_angry.png",
-            "skill": "images/nymph_water_skill.png",
-            "victory": "images/nymph_water_victory.png",
-            "defeat": "images/nymph_water_defeat.png",
+            "idle": "images/creatures/olympus/creature_nymph_water.png",
+            "joy": "images/creatures/olympus/creature_nymph_water_joy.png",
+            "sad": "images/creatures/olympus/creature_nymph_water_sad.png",
+            "angry": "images/creatures/olympus/creature_nymph_water_angry.png",
+            "skill": "images/creatures/olympus/creature_nymph_water_skill.png",
+            "victory": "images/creatures/olympus/creature_nymph_water_victory.png",
+            "defeat": "images/creatures/olympus/creature_nymph_water_defeat.png",
             "gallery": {
-                "lv1": "images/nymph_water_gallery.png"
+                "lv1": "images/creatures/olympus/creature_nymph_water_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1253,17 +1253,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/griffin_chick.png",
+        image: "images/creatures/olympus/creature_griffin_chick.png",
         sprites: {
-            "idle": "images/griffin_chick.png",
-            "joy": "images/griffin_chick_joy.png",
-            "sad": "images/griffin_chick_sad.png",
-            "angry": "images/griffin_chick_angry.png",
-            "skill": "images/griffin_chick_skill.png",
-            "victory": "images/griffin_chick_victory.png",
-            "defeat": "images/griffin_chick_defeat.png",
+            "idle": "images/creatures/olympus/creature_griffin_chick.png",
+            "joy": "images/creatures/olympus/creature_griffin_chick_joy.png",
+            "sad": "images/creatures/olympus/creature_griffin_chick_sad.png",
+            "angry": "images/creatures/olympus/creature_griffin_chick_angry.png",
+            "skill": "images/creatures/olympus/creature_griffin_chick_skill.png",
+            "victory": "images/creatures/olympus/creature_griffin_chick_victory.png",
+            "defeat": "images/creatures/olympus/creature_griffin_chick_defeat.png",
             "gallery": {
-                "lv1": "images/griffin_chick_gallery.png"
+                "lv1": "images/creatures/olympus/creature_griffin_chick_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1291,17 +1291,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/cerberus_pup.png",
+        image: "images/creatures/olympus/creature_cerberus_pup.png",
         sprites: {
-            "idle": "images/cerberus_pup.png",
-            "joy": "images/cerberus_pup_joy.png",
-            "sad": "images/cerberus_pup_sad.png",
-            "angry": "images/cerberus_pup_angry.png",
-            "skill": "images/cerberus_pup_skill.png",
-            "victory": "images/cerberus_pup_victory.png",
-            "defeat": "images/cerberus_pup_defeat.png",
+            "idle": "images/creatures/olympus/creature_cerberus_pup.png",
+            "joy": "images/creatures/olympus/creature_cerberus_pup_joy.png",
+            "sad": "images/creatures/olympus/creature_cerberus_pup_sad.png",
+            "angry": "images/creatures/olympus/creature_cerberus_pup_angry.png",
+            "skill": "images/creatures/olympus/creature_cerberus_pup_skill.png",
+            "victory": "images/creatures/olympus/creature_cerberus_pup_victory.png",
+            "defeat": "images/creatures/olympus/creature_cerberus_pup_defeat.png",
             "gallery": {
-                "lv1": "images/cerberus_pup_gallery.png"
+                "lv1": "images/creatures/olympus/creature_cerberus_pup_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1329,17 +1329,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/minotaur_calf.png",
+        image: "images/creatures/olympus/creature_minotaur_calf.png",
         sprites: {
-            "idle": "images/minotaur_calf.png",
-            "joy": "images/minotaur_calf_joy.png",
-            "sad": "images/minotaur_calf_sad.png",
-            "angry": "images/minotaur_calf_angry.png",
-            "skill": "images/minotaur_calf_skill.png",
-            "victory": "images/minotaur_calf_victory.png",
-            "defeat": "images/minotaur_calf_defeat.png",
+            "idle": "images/creatures/olympus/creature_minotaur_calf.png",
+            "joy": "images/creatures/olympus/creature_minotaur_calf_joy.png",
+            "sad": "images/creatures/olympus/creature_minotaur_calf_sad.png",
+            "angry": "images/creatures/olympus/creature_minotaur_calf_angry.png",
+            "skill": "images/creatures/olympus/creature_minotaur_calf_skill.png",
+            "victory": "images/creatures/olympus/creature_minotaur_calf_victory.png",
+            "defeat": "images/creatures/olympus/creature_minotaur_calf_defeat.png",
             "gallery": {
-                "lv1": "images/minotaur_calf_gallery.png"
+                "lv1": "images/creatures/olympus/creature_minotaur_calf_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1367,17 +1367,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/charybdis_baby.png",
+        image: "images/creatures/olympus/creature_charybdis_baby.png",
         sprites: {
-            "idle": "images/charybdis_baby.png",
-            "joy": "images/charybdis_baby_joy.png",
-            "sad": "images/charybdis_baby_sad.png",
-            "angry": "images/charybdis_baby_angry.png",
-            "skill": "images/charybdis_baby_skill.png",
-            "victory": "images/charybdis_baby_victory.png",
-            "defeat": "images/charybdis_baby_defeat.png",
+            "idle": "images/creatures/olympus/creature_charybdis_baby.png",
+            "joy": "images/creatures/olympus/creature_charybdis_baby_joy.png",
+            "sad": "images/creatures/olympus/creature_charybdis_baby_sad.png",
+            "angry": "images/creatures/olympus/creature_charybdis_baby_angry.png",
+            "skill": "images/creatures/olympus/creature_charybdis_baby_skill.png",
+            "victory": "images/creatures/olympus/creature_charybdis_baby_victory.png",
+            "defeat": "images/creatures/olympus/creature_charybdis_baby_defeat.png",
             "gallery": {
-                "lv1": "images/charybdis_baby_gallery.png"
+                "lv1": "images/creatures/olympus/creature_charybdis_baby_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1405,17 +1405,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/scylla_pup.png",
+        image: "images/creatures/olympus/creature_scylla_pup.png",
         sprites: {
-            "idle": "images/scylla_pup.png",
-            "joy": "images/scylla_pup_joy.png",
-            "sad": "images/scylla_pup_sad.png",
-            "angry": "images/scylla_pup_angry.png",
-            "skill": "images/scylla_pup_skill.png",
-            "victory": "images/scylla_pup_victory.png",
-            "defeat": "images/scylla_pup_defeat.png",
+            "idle": "images/creatures/olympus/creature_scylla_pup.png",
+            "joy": "images/creatures/olympus/creature_scylla_pup_joy.png",
+            "sad": "images/creatures/olympus/creature_scylla_pup_sad.png",
+            "angry": "images/creatures/olympus/creature_scylla_pup_angry.png",
+            "skill": "images/creatures/olympus/creature_scylla_pup_skill.png",
+            "victory": "images/creatures/olympus/creature_scylla_pup_victory.png",
+            "defeat": "images/creatures/olympus/creature_scylla_pup_defeat.png",
             "gallery": {
-                "lv1": "images/scylla_pup_gallery.png"
+                "lv1": "images/creatures/olympus/creature_scylla_pup_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1443,17 +1443,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/chimera_cub.png",
+        image: "images/creatures/olympus/creature_chimera_cub.png",
         sprites: {
-            "idle": "images/chimera_cub.png",
-            "joy": "images/chimera_cub_joy.png",
-            "sad": "images/chimera_cub_sad.png",
-            "angry": "images/chimera_cub_angry.png",
-            "skill": "images/chimera_cub_skill.png",
-            "victory": "images/chimera_cub_victory.png",
-            "defeat": "images/chimera_cub_defeat.png",
+            "idle": "images/creatures/olympus/creature_chimera_cub.png",
+            "joy": "images/creatures/olympus/creature_chimera_cub_joy.png",
+            "sad": "images/creatures/olympus/creature_chimera_cub_sad.png",
+            "angry": "images/creatures/olympus/creature_chimera_cub_angry.png",
+            "skill": "images/creatures/olympus/creature_chimera_cub_skill.png",
+            "victory": "images/creatures/olympus/creature_chimera_cub_victory.png",
+            "defeat": "images/creatures/olympus/creature_chimera_cub_defeat.png",
             "gallery": {
-                "lv1": "images/chimera_cub_gallery.png"
+                "lv1": "images/creatures/olympus/creature_chimera_cub_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1481,17 +1481,17 @@ export const OLYMPUS_CREATURES = [
         world: WORLDS.OLYMPUS,
         elements: ["Earth", "Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/olympus/creature_god_gaia.png",
+        image: "images/creatures/olympus/creature_god_gaia_joy.png",
         sprites: {
-            "idle": "images/creatures/olympus/creature_god_gaia.png",
-            "joy": "images/creatures/olympus/creature_god_gaia.png",
-            "sad": "images/creatures/olympus/creature_god_gaia.png",
-            "angry": "images/creatures/olympus/creature_god_gaia.png",
-            "skill": "images/creatures/olympus/creature_god_gaia.png",
-            "victory": "images/creatures/olympus/creature_god_gaia.png",
-            "defeat": "images/creatures/olympus/creature_god_gaia.png",
+            "idle": "images/creatures/olympus/creature_god_gaia_joy.png",
+            "joy": "images/creatures/olympus/creature_god_gaia_joy.png",
+            "sad": "images/creatures/olympus/creature_god_gaia_joy.png",
+            "angry": "images/creatures/olympus/creature_god_gaia_joy.png",
+            "skill": "images/creatures/olympus/creature_god_gaia_joy.png",
+            "victory": "images/creatures/olympus/creature_god_gaia_joy.png",
+            "defeat": "images/creatures/olympus/creature_god_gaia_joy.png",
             "gallery": {
-                "lv1": "images/creatures/olympus/creature_god_gaia.png"
+                "lv1": "images/creatures/olympus/creature_god_gaia_joy.png"
             }
         },
         prompts: {
@@ -1510,6 +1510,36 @@ export const OLYMPUS_CREATURES = [
         },
         relationships: { likes: [], dislikes: [], rival: null },
         touchLines: { idle: ["..."], interaction: ["..."], gift: ["Thank you."], special: ["!"] },
+        lines: { normal: "..." }
+    }
+,
+    {
+        id: "nymph_dark",
+        name: "어둠의 님프",
+        rarity: RANKS.RARE,
+        world: WORLDS.OLYMPUS,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/olympus/creature_nymph_dark.png",
+        sprites: {
+            "idle": "images/creatures/olympus/creature_nymph_dark.png",
+            "joy": "images/creatures/olympus/creature_nymph_dark.png", // Fallback
+            "sad": "images/creatures/olympus/creature_nymph_dark.png", // Fallback
+            "angry": "images/creatures/olympus/creature_nymph_dark.png", // Fallback
+            "skill": "images/creatures/olympus/creature_nymph_dark.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 어둠의 님프",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in olympus.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
         lines: { normal: "..." }
     }
 ];

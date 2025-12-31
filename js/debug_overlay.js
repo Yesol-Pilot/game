@@ -75,7 +75,7 @@
         let added = 0;
 
         // Import CREATURE_DEF_MAP dynamically
-        import('../data/CreatureData.js').then(module => {
+        import('./js/data/CreatureData.js').then(module => {
             creatureIds.forEach(id => {
                 const def = module.CREATURE_DEF_MAP[id];
                 if (!def) {
@@ -130,7 +130,7 @@
         const cm = window.game.creatureManager;
         let added = 0;
 
-        import('./data/CreatureData.js').then(module => {
+        import('./js/data/CreatureData.js').then(module => {
             const allDefs = module.CREATURE_DEFS;
 
             allDefs.forEach(def => {

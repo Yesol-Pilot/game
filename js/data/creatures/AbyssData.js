@@ -9,19 +9,19 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/void_beast.png",
+        image: "images/creatures/abyss/creature_void_beast.png",
         sprites: {
-            "idle": "images/void_beast.png",
-            "joy": "images/void_beast_joy.png",
-            "sad": "images/void_beast_sad.png",
-            "angry": "images/void_beast_angry.png",
-            "skill": "images/void_beast_skill.png",
-            "victory": "images/void_beast_victory.png",
-            "defeat": "images/void_beast_defeat.png",
+            "idle": "images/creatures/abyss/creature_void_beast.png",
+            "joy": "images/creatures/abyss/creature_void_beast_joy.png",
+            "sad": "images/creatures/abyss/creature_void_beast_sad.png",
+            "angry": "images/creatures/abyss/creature_void_beast_angry.png",
+            "skill": "images/creatures/abyss/creature_void_beast_skill.png",
+            "victory": "images/creatures/abyss/creature_void_beast_victory.png",
+            "defeat": "images/creatures/abyss/creature_void_beast_defeat.png",
             "gallery": {
-                "lv1": "images/void_beast_gallery_lv1.png",
-                "lv2": "images/void_beast_gallery_lv2.png",
-                "lv3": "images/void_beast_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_void_beast_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_void_beast_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_void_beast_gallery_lv3.png"
             }
         },
         prompts: {
@@ -53,17 +53,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/shadow_assassin.png",
+        image: "images/creatures/abyss/creature_shadow_assassin.png",
         sprites: {
-            "idle": "images/shadow_assassin.png",
-            "joy": "images/shadow_assassin_joy.png",
-            "sad": "images/shadow_assassin_sad.png",
-            "angry": "images/shadow_assassin_angry.png",
-            "skill": "images/shadow_assassin_skill.png",
-            "victory": "images/shadow_assassin_victory.png",
-            "defeat": "images/shadow_assassin_defeat.png",
+            "idle": "images/creatures/abyss/creature_shadow_assassin.png",
+            "joy": "images/creatures/abyss/creature_shadow_assassin_joy.png",
+            "sad": "images/creatures/abyss/creature_shadow_assassin_sad.png",
+            "angry": "images/creatures/abyss/creature_shadow_assassin_angry.png",
+            "skill": "images/creatures/abyss/creature_shadow_assassin_skill.png",
+            "victory": "images/creatures/abyss/creature_shadow_assassin_victory.png",
+            "defeat": "images/creatures/abyss/creature_shadow_assassin_defeat.png",
             "gallery": {
-                "lv1": "images/shadow_assassin_gallery.png"
+                "lv1": "images/creatures/abyss/creature_shadow_assassin_gallery_lv1.png"
             }
         },
         prompts: {
@@ -91,17 +91,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/gargoyle_stone.png",
+        image: "images/creatures/abyss/creature_gargoyle_stone.png",
         sprites: {
-            "idle": "images/gargoyle_stone.png",
-            "joy": "images/gargoyle_stone_joy.png",
-            "sad": "images/gargoyle_stone_sad.png",
-            "angry": "images/gargoyle_stone_angry.png",
-            "skill": "images/gargoyle_stone_skill.png",
-            "victory": "images/gargoyle_stone_victory.png",
-            "defeat": "images/gargoyle_stone_defeat.png",
+            "idle": "images/creatures/abyss/creature_gargoyle_stone.png",
+            "joy": "images/creatures/abyss/creature_gargoyle_stone_joy.png",
+            "sad": "images/creatures/abyss/creature_gargoyle_stone_sad.png",
+            "angry": "images/creatures/abyss/creature_gargoyle_stone_angry.png",
+            "skill": "images/creatures/abyss/creature_gargoyle_stone_skill.png",
+            "victory": "images/creatures/abyss/creature_gargoyle_stone_victory.png",
+            "defeat": "images/creatures/abyss/creature_gargoyle_stone_defeat.png",
             "gallery": {
-                "lv1": "images/gargoyle_stone_gallery.png"
+                "lv1": "images/creatures/abyss/creature_gargoyle_stone_gallery_lv1.png"
             }
         },
         prompts: {
@@ -129,17 +129,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/eye_of_chaos.png",
+        image: "images/creatures/abyss/creature_eye_of_chaos.png",
         sprites: {
-            "idle": "images/eye_of_chaos.png",
-            "joy": "images/eye_of_chaos_joy.png",
-            "sad": "images/eye_of_chaos_sad.png",
-            "angry": "images/eye_of_chaos_angry.png",
-            "skill": "images/eye_of_chaos_skill.png",
-            "victory": "images/eye_of_chaos_victory.png",
-            "defeat": "images/eye_of_chaos_defeat.png",
+            "idle": "images/creatures/abyss/creature_eye_of_chaos.png",
+            "joy": "images/creatures/abyss/creature_eye_of_chaos_joy.png",
+            "sad": "images/creatures/abyss/creature_eye_of_chaos_sad.png",
+            "angry": "images/creatures/abyss/creature_eye_of_chaos_angry.png",
+            "skill": "images/creatures/abyss/creature_eye_of_chaos_skill.png",
+            "victory": "images/creatures/abyss/creature_eye_of_chaos_victory.png",
+            "defeat": "images/creatures/abyss/creature_eye_of_chaos_defeat.png",
             "gallery": {
-                "lv1": "images/eye_of_chaos_gallery.png"
+                "lv1": "images/creatures/abyss/creature_eye_of_chaos_gallery_lv1.png"
             }
         },
         prompts: {
@@ -167,17 +167,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/abyss_stalker.png",
+        image: "images/creatures/abyss/creature_abyss_stalker.png",
         sprites: {
-            "idle": "images/abyss_stalker.png",
-            "joy": "images/abyss_stalker_joy.png",
-            "sad": "images/abyss_stalker_sad.png",
-            "angry": "images/abyss_stalker_angry.png",
-            "skill": "images/abyss_stalker_skill.png",
-            "victory": "images/abyss_stalker_victory.png",
-            "defeat": "images/abyss_stalker_defeat.png",
+            "idle": "images/creatures/abyss/creature_abyss_stalker.png",
+            "joy": "images/creatures/abyss/creature_abyss_stalker_joy.png",
+            "sad": "images/creatures/abyss/creature_abyss_stalker_sad.png",
+            "angry": "images/creatures/abyss/creature_abyss_stalker_angry.png",
+            "skill": "images/creatures/abyss/creature_abyss_stalker_skill.png",
+            "victory": "images/creatures/abyss/creature_abyss_stalker_victory.png",
+            "defeat": "images/creatures/abyss/creature_abyss_stalker_defeat.png",
             "gallery": {
-                "lv1": "images/abyss_stalker_gallery.png"
+                "lv1": "images/creatures/abyss/creature_abyss_stalker_gallery_lv1.png"
             }
         },
         prompts: {
@@ -205,17 +205,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/dark_matter_slime.png",
+        image: "images/creatures/abyss/creature_dark_matter_slime.png",
         sprites: {
-            "idle": "images/dark_matter_slime.png",
-            "joy": "images/dark_matter_slime_joy.png",
-            "sad": "images/dark_matter_slime_sad.png",
-            "angry": "images/dark_matter_slime_angry.png",
-            "skill": "images/dark_matter_slime_skill.png",
-            "victory": "images/dark_matter_slime_victory.png",
-            "defeat": "images/dark_matter_slime_defeat.png",
+            "idle": "images/creatures/abyss/creature_dark_matter_slime.png",
+            "joy": "images/creatures/abyss/creature_dark_matter_slime_joy.png",
+            "sad": "images/creatures/abyss/creature_dark_matter_slime_sad.png",
+            "angry": "images/creatures/abyss/creature_dark_matter_slime_angry.png",
+            "skill": "images/creatures/abyss/creature_dark_matter_slime_skill.png",
+            "victory": "images/creatures/abyss/creature_dark_matter_slime_victory.png",
+            "defeat": "images/creatures/abyss/creature_dark_matter_slime_defeat.png",
             "gallery": {
-                "lv1": "images/dark_matter_slime_gallery.png"
+                "lv1": "images/creatures/abyss/creature_dark_matter_slime_gallery_lv1.png"
             }
         },
         prompts: {
@@ -243,17 +243,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/void_walker.png",
+        image: "images/creatures/abyss/creature_void_walker.png",
         sprites: {
-            "idle": "images/void_walker.png",
-            "joy": "images/void_walker_joy.png",
-            "sad": "images/void_walker_sad.png",
-            "angry": "images/void_walker_angry.png",
-            "skill": "images/void_walker_skill.png",
-            "victory": "images/void_walker_victory.png",
-            "defeat": "images/void_walker_defeat.png",
+            "idle": "images/creatures/abyss/creature_void_walker.png",
+            "joy": "images/creatures/abyss/creature_void_walker_joy.png",
+            "sad": "images/creatures/abyss/creature_void_walker_sad.png",
+            "angry": "images/creatures/abyss/creature_void_walker_angry.png",
+            "skill": "images/creatures/abyss/creature_void_walker_skill.png",
+            "victory": "images/creatures/abyss/creature_void_walker_victory.png",
+            "defeat": "images/creatures/abyss/creature_void_walker_defeat.png",
             "gallery": {
-                "lv1": "images/void_walker_gallery.png"
+                "lv1": "images/creatures/abyss/creature_void_walker_gallery_lv1.png"
             }
         },
         prompts: {
@@ -281,17 +281,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/abyss_leech.png",
+        image: "images/creatures/abyss/creature_abyss_leech.png",
         sprites: {
-            "idle": "images/abyss_leech.png",
-            "joy": "images/abyss_leech_joy.png",
-            "sad": "images/abyss_leech_sad.png",
-            "angry": "images/abyss_leech_angry.png",
-            "skill": "images/abyss_leech_skill.png",
-            "victory": "images/abyss_leech_victory.png",
-            "defeat": "images/abyss_leech_defeat.png",
+            "idle": "images/creatures/abyss/creature_abyss_leech.png",
+            "joy": "images/creatures/abyss/creature_abyss_leech_joy.png",
+            "sad": "images/creatures/abyss/creature_abyss_leech_sad.png",
+            "angry": "images/creatures/abyss/creature_abyss_leech_angry.png",
+            "skill": "images/creatures/abyss/creature_abyss_leech_skill.png",
+            "victory": "images/creatures/abyss/creature_abyss_leech_victory.png",
+            "defeat": "images/creatures/abyss/creature_abyss_leech_defeat.png",
             "gallery": {
-                "lv1": "images/abyss_leech_gallery.png"
+                "lv1": "images/creatures/abyss/creature_abyss_leech_gallery_lv1.png"
             }
         },
         prompts: {
@@ -365,17 +365,17 @@ export const ABYSS_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_dragon_chaos.png",
         sprites: {
-            "idle": "images/creature_dragon_chaos.png",
-            "joy": "images/creature_dragon_chaos_joy.png",
-            "sad": "images/creature_dragon_chaos_sad.png",
-            "angry": "images/creature_dragon_chaos_angry.png",
-            "skill": "images/creature_dragon_chaos_skill.png",
-            "victory": "images/creature_dragon_chaos_victory.png",
-            "defeat": "images/creature_dragon_chaos_defeat.png",
+            "idle": "images/creatures/abyss/creature_dragon_chaos.png",
+            "joy": "images/creatures/abyss/creature_dragon_chaos_joy.png",
+            "sad": "images/creatures/abyss/creature_dragon_chaos_sad.png",
+            "angry": "images/creatures/abyss/creature_dragon_chaos_angry.png",
+            "skill": "images/creatures/abyss/creature_dragon_chaos_skill.png",
+            "victory": "images/creatures/abyss/creature_dragon_chaos_victory.png",
+            "defeat": "images/creatures/abyss/creature_dragon_chaos_defeat.png",
             "gallery": {
-                "lv1": "images/creature_dragon_chaos_gallery_lv1.png",
-                "lv2": "images/creature_dragon_chaos_gallery_lv2.png",
-                "lv3": "images/creature_dragon_chaos_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_dragon_chaos_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_dragon_chaos_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_dragon_chaos_gallery_lv3.png"
             }
         },
         prompts: {
@@ -407,9 +407,9 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/creature_kraken_worldstar.png",
+        image: "images/creatures/abyss/creature_kraken_worldstar_gallery_lv3.png",
         sprites: {
-            "idle": "images/creatures/abyss/creature_kraken_worldstar.png",
+            "idle": "images/creatures/abyss/creature_kraken_worldstar_gallery_lv3.png",
             "joy": "images/creatures/abyss/creature_kraken_worldstar_joy.png",
             "sad": "images/creatures/abyss/creature_kraken_worldstar_sad.png",
             "angry": "images/creatures/abyss/creature_kraken_worldstar_angry.png",
@@ -417,9 +417,9 @@ export const ABYSS_CREATURES = [
             "victory": "images/creatures/abyss/creature_kraken_worldstar_victory.png",
             "defeat": "images/creatures/abyss/creature_kraken_worldstar_defeat.png",
             "gallery": {
-                "lv1": "images/creatures/abyss/creature_kraken_trainee.png",
-                "lv2": "images/creatures/abyss/creature_kraken_idol.png",
-                "lv3": "images/creatures/abyss/creature_kraken_worldstar.png"
+                "lv1": "images/creatures/abyss/creature_kraken_worldstar_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_kraken_worldstar_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_kraken_worldstar_gallery_lv3.png"
             }
         },
         prompts: {
@@ -451,19 +451,19 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creature_god_cthulhu.png",
+        image: "images/creatures/abyss/creature_god_cthulhu.png",
         sprites: {
-            "idle": "images/creature_god_cthulhu.png",
-            "joy": "images/creature_god_cthulhu_joy.png",
-            "sad": "images/creature_god_cthulhu_sad.png",
-            "angry": "images/creature_god_cthulhu_angry.png",
-            "skill": "images/creature_god_cthulhu_skill.png",
-            "victory": "images/creature_god_cthulhu_victory.png",
-            "defeat": "images/creature_god_cthulhu_defeat.png",
+            "idle": "images/creatures/abyss/creature_god_cthulhu.png",
+            "joy": "images/creatures/abyss/creature_god_cthulhu_joy.png",
+            "sad": "images/creatures/abyss/creature_god_cthulhu_sad.png",
+            "angry": "images/creatures/abyss/creature_god_cthulhu_angry.png",
+            "skill": "images/creatures/abyss/creature_god_cthulhu_skill.png",
+            "victory": "images/creatures/abyss/creature_god_cthulhu_victory.png",
+            "defeat": "images/creatures/abyss/creature_god_cthulhu_defeat.png",
             "gallery": {
-                "lv1": "images/creature_god_cthulhu_gallery_lv1.png",
-                "lv2": "images/creature_god_cthulhu_gallery_lv2.png",
-                "lv3": "images/creature_god_cthulhu_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_god_cthulhu_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_god_cthulhu_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_god_cthulhu_gallery_lv3.png"
             }
         },
         prompts: {
@@ -497,21 +497,21 @@ export const ABYSS_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_god_nyarlathotep.png",
         sprites: {
-            "idle": "images/creature_god_nyarlathotep.png",
-            "joy": "images/creature_god_nyarlathotep_joy.png",
-            "sad": "images/creature_god_nyarlathotep_sad.png",
-            "angry": "images/creature_god_nyarlathotep_angry.png",
-            "skill": "images/creature_god_nyarlathotep_skill.png",
-            "victory": "images/creature_god_nyarlathotep_victory.png",
-            "defeat": "images/creature_god_nyarlathotep_defeat.png",
+            "idle": "images/creatures/abyss/creature_god_nyarlathotep.png",
+            "joy": "images/creatures/abyss/creature_god_nyarlathotep_joy.png",
+            "sad": "images/creatures/abyss/creature_god_nyarlathotep_sad.png",
+            "angry": "images/creatures/abyss/creature_god_nyarlathotep_angry.png",
+            "skill": "images/creatures/abyss/creature_god_nyarlathotep_skill.png",
+            "victory": "images/creatures/abyss/creature_god_nyarlathotep_victory.png",
+            "defeat": "images/creatures/abyss/creature_god_nyarlathotep_defeat.png",
             "gallery": {
-                "lv1": "images/creature_god_nyarlathotep_gallery_lv1.png",
-                "lv2": "images/creature_god_nyarlathotep_gallery_lv2.png",
-                "lv3": "images/creature_god_nyarlathotep_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_god_nyarlathotep_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_god_nyarlathotep_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_god_nyarlathotep_gallery_lv3.png"
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 기어다니는 혼돈 니알라토텝",
+            "base": "(masterpiece, best quality, ultra-detailed), distinct nikke style, hyung-tae kim style, oil painting texture, thick coating, glossy skin, extremely beautiful female nyarlathotep, crawling chaos, long wavy silver hair, glowing red eyes with heart-shaped pupils, wearing stylish black body-con dress with futuristic red energy lines, thigh-high boots, heavy cleavage, sideboob, standing full body pose, posing playfully with finger on lips, simple purple gradient background, soft lighting, perfect anatomy, thick thighs, extremely wide hips, tiny waist, (human-like:1.5), semi-realism anime face, attractive and cute, NO tentacles on face, NO slime, NO monster features, NO text",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -539,23 +539,23 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/wild/creature_demon_king.png",
+        image: "images/creatures/abyss/creature_demon_king.png",
         sprites: {
-            "idle": "images/creature_demon_king.png",
-            "joy": "images/creature_demon_king_joy.png",
-            "sad": "images/creature_demon_king_sad.png",
-            "angry": "images/creature_demon_king_angry.png",
-            "skill": "images/creature_demon_king_skill.png",
-            "victory": "images/creature_demon_king_victory.png",
-            "defeat": "images/creature_demon_king_defeat.png",
+            "idle": "images/creatures/abyss/creature_demon_king.png",
+            "joy": "images/creatures/abyss/creature_demon_king_joy.png",
+            "sad": "images/creatures/abyss/creature_demon_king_sad.png",
+            "angry": "images/creatures/abyss/creature_demon_king_angry.png",
+            "skill": "images/creatures/abyss/creature_demon_king_skill.png",
+            "victory": "images/creatures/abyss/creature_demon_king_victory.png",
+            "defeat": "images/creatures/abyss/creature_demon_king_defeat.png",
             "gallery": {
-                "lv1": "images/creature_demon_king_gallery_lv1.png",
-                "lv2": "images/creature_demon_king_gallery_lv2.png",
-                "lv3": "images/creature_demon_king_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_demon_king_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_demon_king_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_demon_king_gallery_lv3.png"
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 마왕 바알",
+            "base": "(masterpiece, best quality, ultra-detailed), distinct nikke style, hyung-tae kim style, oil painting texture, thick coating, glossy skin, extremely beautiful female demon king baal, long straight black hair, small bat wings on back, elegant curved horns, wearing stylish black and red gothic military uniform with mini skirt, black pantyhose, garter belt, high heels, cape on shoulders, standing full body pose, arms crossed under breasts, arrogant expression looking down at viewer, simple red gradient background, spotlight effect, perfect anatomy, thick thighs, wide hips, curvy figure, (human-like:1.5), semi-realism anime face, attractive dominant vibe, NO monster features, NO ugly face, NO text",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -585,21 +585,21 @@ export const ABYSS_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_god_shub.png",
         sprites: {
-            "idle": "images/creature_god_shub.png",
-            "joy": "images/creature_god_shub_joy.png",
-            "sad": "images/creature_god_shub_sad.png",
-            "angry": "images/creature_god_shub_angry.png",
-            "skill": "images/creature_god_shub_skill.png",
-            "victory": "images/creature_god_shub_victory.png",
-            "defeat": "images/creature_god_shub_defeat.png",
+            "idle": "images/creatures/abyss/creature_god_shub.png",
+            "joy": "images/creatures/abyss/creature_god_shub_joy.png",
+            "sad": "images/creatures/abyss/creature_god_shub_sad.png",
+            "angry": "images/creatures/abyss/creature_god_shub_angry.png",
+            "skill": "images/creatures/abyss/creature_god_shub_skill.png",
+            "victory": "images/creatures/abyss/creature_god_shub_victory.png",
+            "defeat": "images/creatures/abyss/creature_god_shub_defeat.png",
             "gallery": {
-                "lv1": "images/creature_god_shub_gallery_lv1.png",
-                "lv2": "images/creature_god_shub_gallery_lv2.png",
-                "lv3": "images/creature_god_shub_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_god_shub_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_god_shub_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_god_shub_gallery_lv3.png"
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 만 마리 새끼를 품은 숲의 염소",
+            "base": "(masterpiece, best quality, ultra-detailed), distinct nikke style, hyung-tae kim style, oil painting texture, thick coating, glossy skin, extremely beautiful female shub-niggurath, black goat of the woods, voluminous white hair reaching floor, elegant curved goat horns, wearing revealing white silk druid priestess robe with gold ornaments (see-through fabric), dress slit high to hips, deep neckline showing massive breasts, standing full body pose, gentle motherly smile, hand reaching out, simple green and soft sunlight background, nature particles, perfect anatomy, extremely wide hips, thick thighs, voluptuous body, (human-like:1.5), semi-realism anime face, attractive, NO monster features, NO slime, NO horror, NO text",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -627,19 +627,19 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/god_hastur.png",
+        image: "images/creatures/abyss/creature_god_hastur.png",
         sprites: {
-            "idle": "images/god_hastur.png",
-            "joy": "images/god_hastur_joy.png",
-            "sad": "images/god_hastur_sad.png",
-            "angry": "images/god_hastur_angry.png",
-            "skill": "images/god_hastur_skill.png",
-            "victory": "images/god_hastur_victory.png",
-            "defeat": "images/god_hastur_defeat.png",
+            "idle": "images/creatures/abyss/creature_god_hastur.png",
+            "joy": "images/creatures/abyss/creature_god_hastur_joy.png",
+            "sad": "images/creatures/abyss/creature_god_hastur_sad.png",
+            "angry": "images/creatures/abyss/creature_god_hastur_angry.png",
+            "skill": "images/creatures/abyss/creature_god_hastur_skill.png",
+            "victory": "images/creatures/abyss/creature_god_hastur_victory.png",
+            "defeat": "images/creatures/abyss/creature_god_hastur_defeat.png",
             "gallery": {
-                "lv1": "images/god_hastur_gallery_lv1.png",
-                "lv2": "images/god_hastur_gallery_lv2.png",
-                "lv3": "images/god_hastur_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_god_hastur_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_god_hastur_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_god_hastur_gallery_lv3.png"
             }
         },
         prompts: {
@@ -671,19 +671,19 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/wild/creature_vampire_lord.png",
+        image: "images/creatures/abyss/creature_vampire_lord.png",
         sprites: {
-            "idle": "images/creature_vampire_lord.png",
-            "joy": "images/creature_vampire_lord_joy.png",
-            "sad": "images/creature_vampire_lord_sad.png",
-            "angry": "images/creature_vampire_lord_angry.png",
-            "skill": "images/creature_vampire_lord_skill.png",
-            "victory": "images/creature_vampire_lord_victory.png",
-            "defeat": "images/creature_vampire_lord_defeat.png",
+            "idle": "images/creatures/abyss/creature_vampire_lord.png",
+            "joy": "images/creatures/abyss/creature_vampire_lord_joy.png",
+            "sad": "images/creatures/abyss/creature_vampire_lord_sad.png",
+            "angry": "images/creatures/abyss/creature_vampire_lord_angry.png",
+            "skill": "images/creatures/abyss/creature_vampire_lord_skill.png",
+            "victory": "images/creatures/abyss/creature_vampire_lord_victory.png",
+            "defeat": "images/creatures/abyss/creature_vampire_lord_defeat.png",
             "gallery": {
-                "lv1": "images/creature_vampire_lord_gallery_lv1.png",
-                "lv2": "images/creature_vampire_lord_gallery_lv2.png",
-                "lv3": "images/creature_vampire_lord_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_vampire_lord_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_vampire_lord_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_vampire_lord_gallery_lv3.png"
             }
         },
         prompts: {
@@ -715,19 +715,19 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/god_dagon.png",
+        image: "images/creatures/abyss/creature_god_dagon.png",
         sprites: {
-            "idle": "images/god_dagon.png",
-            "joy": "images/god_dagon_joy.png",
-            "sad": "images/god_dagon_sad.png",
-            "angry": "images/god_dagon_angry.png",
-            "skill": "images/god_dagon_skill.png",
-            "victory": "images/god_dagon_victory.png",
-            "defeat": "images/god_dagon_defeat.png",
+            "idle": "images/creatures/abyss/creature_god_dagon.png",
+            "joy": "images/creatures/abyss/creature_god_dagon_joy.png",
+            "sad": "images/creatures/abyss/creature_god_dagon_sad.png",
+            "angry": "images/creatures/abyss/creature_god_dagon_angry.png",
+            "skill": "images/creatures/abyss/creature_god_dagon_skill.png",
+            "victory": "images/creatures/abyss/creature_god_dagon_victory.png",
+            "defeat": "images/creatures/abyss/creature_god_dagon_defeat.png",
             "gallery": {
-                "lv1": "images/god_dagon_gallery_lv1.png",
-                "lv2": "images/god_dagon_gallery_lv2.png",
-                "lv3": "images/god_dagon_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_god_dagon_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_god_dagon_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_god_dagon_gallery_lv3.png"
             }
         },
         prompts: {
@@ -759,19 +759,19 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/knight_dullahan.png",
+        image: "images/creatures/abyss/creature_knight_dullahan.png",
         sprites: {
-            "idle": "images/knight_dullahan.png",
-            "joy": "images/knight_dullahan_joy.png",
-            "sad": "images/knight_dullahan_sad.png",
-            "angry": "images/knight_dullahan_angry.png",
-            "skill": "images/knight_dullahan_skill.png",
-            "victory": "images/knight_dullahan_victory.png",
-            "defeat": "images/knight_dullahan_defeat.png",
+            "idle": "images/creatures/abyss/creature_knight_dullahan.png",
+            "joy": "images/creatures/abyss/creature_knight_dullahan_joy.png",
+            "sad": "images/creatures/abyss/creature_knight_dullahan_sad.png",
+            "angry": "images/creatures/abyss/creature_knight_dullahan_angry.png",
+            "skill": "images/creatures/abyss/creature_knight_dullahan_skill.png",
+            "victory": "images/creatures/abyss/creature_knight_dullahan_victory.png",
+            "defeat": "images/creatures/abyss/creature_knight_dullahan_defeat.png",
             "gallery": {
-                "lv1": "images/knight_dullahan_gallery_lv1.png",
-                "lv2": "images/knight_dullahan_gallery_lv2.png",
-                "lv3": "images/knight_dullahan_gallery_lv3.png"
+                "lv1": "images/creatures/abyss/creature_knight_dullahan_gallery_lv1.png",
+                "lv2": "images/creatures/abyss/creature_knight_dullahan_gallery_lv2.png",
+                "lv3": "images/creatures/abyss/creature_knight_dullahan_gallery_lv3.png"
             }
         },
         prompts: {
@@ -805,15 +805,15 @@ export const ABYSS_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_knight_skeleton.png",
         sprites: {
-            "idle": "images/creature_knight_skeleton.png",
-            "joy": "images/creature_knight_skeleton_joy.png",
-            "sad": "images/creature_knight_skeleton_sad.png",
-            "angry": "images/creature_knight_skeleton_angry.png",
-            "skill": "images/creature_knight_skeleton_skill.png",
-            "victory": "images/creature_knight_skeleton_victory.png",
-            "defeat": "images/creature_knight_skeleton_defeat.png",
+            "idle": "images/creatures/abyss/creature_knight_skeleton.png",
+            "joy": "images/creatures/abyss/creature_knight_skeleton_joy.png",
+            "sad": "images/creatures/abyss/creature_knight_skeleton_sad.png",
+            "angry": "images/creatures/abyss/creature_knight_skeleton_angry.png",
+            "skill": "images/creatures/abyss/creature_knight_skeleton_skill.png",
+            "victory": "images/creatures/abyss/creature_knight_skeleton_victory.png",
+            "defeat": "images/creatures/abyss/creature_knight_skeleton_defeat.png",
             "gallery": {
-                "lv1": "images/creature_knight_skeleton_gallery.png"
+                "lv1": "images/creatures/abyss/creature_knight_skeleton_gallery_lv1.png"
             }
         },
         prompts: {
@@ -841,17 +841,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/mimic_box.png",
+        image: "images/creatures/abyss/creature_mimic_box.png",
         sprites: {
-            "idle": "images/mimic_box.png",
-            "joy": "images/mimic_box_joy.png",
-            "sad": "images/mimic_box_sad.png",
-            "angry": "images/mimic_box_angry.png",
-            "skill": "images/mimic_box_skill.png",
-            "victory": "images/mimic_box_victory.png",
-            "defeat": "images/mimic_box_defeat.png",
+            "idle": "images/creatures/abyss/creature_mimic_box.png",
+            "joy": "images/creatures/abyss/creature_mimic_box_joy.png",
+            "sad": "images/creatures/abyss/creature_mimic_box_sad.png",
+            "angry": "images/creatures/abyss/creature_mimic_box_angry.png",
+            "skill": "images/creatures/abyss/creature_mimic_box_skill.png",
+            "victory": "images/creatures/abyss/creature_mimic_box_victory.png",
+            "defeat": "images/creatures/abyss/creature_mimic_box_defeat.png",
             "gallery": {
-                "lv1": "images/mimic_box_gallery.png"
+                "lv1": "images/creatures/abyss/creature_mimic_box_gallery_lv1.png"
             }
         },
         prompts: {
@@ -879,17 +879,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/cursed_doll.png",
+        image: "images/creatures/abyss/creature_cursed_doll.png",
         sprites: {
-            "idle": "images/cursed_doll.png",
-            "joy": "images/cursed_doll_joy.png",
-            "sad": "images/cursed_doll_sad.png",
-            "angry": "images/cursed_doll_angry.png",
-            "skill": "images/cursed_doll_skill.png",
-            "victory": "images/cursed_doll_victory.png",
-            "defeat": "images/cursed_doll_defeat.png",
+            "idle": "images/creatures/abyss/creature_cursed_doll.png",
+            "joy": "images/creatures/abyss/creature_cursed_doll_joy.png",
+            "sad": "images/creatures/abyss/creature_cursed_doll_sad.png",
+            "angry": "images/creatures/abyss/creature_cursed_doll_angry.png",
+            "skill": "images/creatures/abyss/creature_cursed_doll_skill.png",
+            "victory": "images/creatures/abyss/creature_cursed_doll_victory.png",
+            "defeat": "images/creatures/abyss/creature_cursed_doll_defeat.png",
             "gallery": {
-                "lv1": "images/cursed_doll_gallery.png"
+                "lv1": "images/creatures/abyss/creature_cursed_doll_gallery_lv1.png"
             }
         },
         prompts: {
@@ -917,17 +917,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/eye_bat.png",
+        image: "images/creatures/abyss/creature_eye_bat.png",
         sprites: {
-            "idle": "images/eye_bat.png",
-            "joy": "images/eye_bat_joy.png",
-            "sad": "images/eye_bat_sad.png",
-            "angry": "images/eye_bat_angry.png",
-            "skill": "images/eye_bat_skill.png",
-            "victory": "images/eye_bat_victory.png",
-            "defeat": "images/eye_bat_defeat.png",
+            "idle": "images/creatures/abyss/creature_eye_bat.png",
+            "joy": "images/creatures/abyss/creature_eye_bat_joy.png",
+            "sad": "images/creatures/abyss/creature_eye_bat_sad.png",
+            "angry": "images/creatures/abyss/creature_eye_bat_angry.png",
+            "skill": "images/creatures/abyss/creature_eye_bat_skill.png",
+            "victory": "images/creatures/abyss/creature_eye_bat_victory.png",
+            "defeat": "images/creatures/abyss/creature_eye_bat_defeat.png",
             "gallery": {
-                "lv1": "images/eye_bat_gallery.png"
+                "lv1": "images/creatures/abyss/creature_eye_bat_gallery_lv1.png"
             }
         },
         prompts: {
@@ -955,17 +955,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/ghost_lamp.png",
+        image: "images/creatures/abyss/creature_ghost_lamp.png",
         sprites: {
-            "idle": "images/ghost_lamp.png",
-            "joy": "images/ghost_lamp_joy.png",
-            "sad": "images/ghost_lamp_sad.png",
-            "angry": "images/ghost_lamp_angry.png",
-            "skill": "images/ghost_lamp_skill.png",
-            "victory": "images/ghost_lamp_victory.png",
-            "defeat": "images/ghost_lamp_defeat.png",
+            "idle": "images/creatures/abyss/creature_ghost_lamp.png",
+            "joy": "images/creatures/abyss/creature_ghost_lamp_joy.png",
+            "sad": "images/creatures/abyss/creature_ghost_lamp_sad.png",
+            "angry": "images/creatures/abyss/creature_ghost_lamp_angry.png",
+            "skill": "images/creatures/abyss/creature_ghost_lamp_skill.png",
+            "victory": "images/creatures/abyss/creature_ghost_lamp_victory.png",
+            "defeat": "images/creatures/abyss/creature_ghost_lamp_defeat.png",
             "gallery": {
-                "lv1": "images/ghost_lamp_gallery.png"
+                "lv1": "images/creatures/abyss/creature_ghost_lamp_gallery_lv1.png"
             }
         },
         prompts: {
@@ -993,17 +993,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/deep_one_soldier.png",
+        image: "images/creatures/abyss/creature_deep_one_soldier.png",
         sprites: {
-            "idle": "images/deep_one_soldier.png",
-            "joy": "images/deep_one_soldier_joy.png",
-            "sad": "images/deep_one_soldier_sad.png",
-            "angry": "images/deep_one_soldier_angry.png",
-            "skill": "images/deep_one_soldier_skill.png",
-            "victory": "images/deep_one_soldier_victory.png",
-            "defeat": "images/deep_one_soldier_defeat.png",
+            "idle": "images/creatures/abyss/creature_deep_one_soldier.png",
+            "joy": "images/creatures/abyss/creature_deep_one_soldier_joy.png",
+            "sad": "images/creatures/abyss/creature_deep_one_soldier_sad.png",
+            "angry": "images/creatures/abyss/creature_deep_one_soldier_angry.png",
+            "skill": "images/creatures/abyss/creature_deep_one_soldier_skill.png",
+            "victory": "images/creatures/abyss/creature_deep_one_soldier_victory.png",
+            "defeat": "images/creatures/abyss/creature_deep_one_soldier_defeat.png",
             "gallery": {
-                "lv1": "images/deep_one_soldier_gallery.png"
+                "lv1": "images/creatures/abyss/creature_deep_one_soldier_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1033,15 +1033,15 @@ export const ABYSS_CREATURES = [
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_goblin_scout_new.png",
         sprites: {
-            "idle": "images/creature_goblin_scout_new.png",
-            "joy": "images/creature_goblin_scout_new_joy.png",
-            "sad": "images/creature_goblin_scout_new_sad.png",
-            "angry": "images/creature_goblin_scout_new_angry.png",
-            "skill": "images/creature_goblin_scout_new_skill.png",
-            "victory": "images/creature_goblin_scout_new_victory.png",
-            "defeat": "images/creature_goblin_scout_new_defeat.png",
+            "idle": "images/creatures/abyss/creature_goblin_scout_new.png",
+            "joy": "images/creatures/abyss/creature_goblin_scout_new_joy.png",
+            "sad": "images/creatures/abyss/creature_goblin_scout_new_sad.png",
+            "angry": "images/creatures/abyss/creature_goblin_scout_new_angry.png",
+            "skill": "images/creatures/abyss/creature_goblin_scout_new_skill.png",
+            "victory": "images/creatures/abyss/creature_goblin_scout_new_victory.png",
+            "defeat": "images/creatures/abyss/creature_goblin_scout_new_defeat.png",
             "gallery": {
-                "lv1": "images/creature_goblin_scout_new_gallery.png"
+                "lv1": "images/creatures/abyss/creature_goblin_scout_new_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1069,17 +1069,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/shadow_lurker.png",
+        image: "images/creatures/abyss/creature_shadow_lurker.png",
         sprites: {
-            "idle": "images/shadow_lurker.png",
-            "joy": "images/shadow_lurker_joy.png",
-            "sad": "images/shadow_lurker_sad.png",
-            "angry": "images/shadow_lurker_angry.png",
-            "skill": "images/shadow_lurker_skill.png",
-            "victory": "images/shadow_lurker_victory.png",
-            "defeat": "images/shadow_lurker_defeat.png",
+            "idle": "images/creatures/abyss/creature_shadow_lurker.png",
+            "joy": "images/creatures/abyss/creature_shadow_lurker_joy.png",
+            "sad": "images/creatures/abyss/creature_shadow_lurker_sad.png",
+            "angry": "images/creatures/abyss/creature_shadow_lurker_angry.png",
+            "skill": "images/creatures/abyss/creature_shadow_lurker_skill.png",
+            "victory": "images/creatures/abyss/creature_shadow_lurker_victory.png",
+            "defeat": "images/creatures/abyss/creature_shadow_lurker_defeat.png",
             "gallery": {
-                "lv1": "images/shadow_lurker_gallery.png"
+                "lv1": "images/creatures/abyss/creature_shadow_lurker_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1107,17 +1107,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/abyss_watcher_small.png",
+        image: "images/creatures/abyss/creature_abyss_watcher_small.png",
         sprites: {
-            "idle": "images/abyss_watcher_small.png",
-            "joy": "images/abyss_watcher_small_joy.png",
-            "sad": "images/abyss_watcher_small_sad.png",
-            "angry": "images/abyss_watcher_small_angry.png",
-            "skill": "images/abyss_watcher_small_skill.png",
-            "victory": "images/abyss_watcher_small_victory.png",
-            "defeat": "images/abyss_watcher_small_defeat.png",
+            "idle": "images/creatures/abyss/creature_abyss_watcher_small.png",
+            "joy": "images/creatures/abyss/creature_abyss_watcher_small_joy.png",
+            "sad": "images/creatures/abyss/creature_abyss_watcher_small_sad.png",
+            "angry": "images/creatures/abyss/creature_abyss_watcher_small_angry.png",
+            "skill": "images/creatures/abyss/creature_abyss_watcher_small_skill.png",
+            "victory": "images/creatures/abyss/creature_abyss_watcher_small_victory.png",
+            "defeat": "images/creatures/abyss/creature_abyss_watcher_small_defeat.png",
             "gallery": {
-                "lv1": "images/abyss_watcher_small_gallery.png"
+                "lv1": "images/creatures/abyss/creature_abyss_watcher_small_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1145,17 +1145,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/screaming_root.png",
+        image: "images/creatures/abyss/creature_screaming_root.png",
         sprites: {
-            "idle": "images/screaming_root.png",
-            "joy": "images/screaming_root_joy.png",
-            "sad": "images/screaming_root_sad.png",
-            "angry": "images/screaming_root_angry.png",
-            "skill": "images/screaming_root_skill.png",
-            "victory": "images/screaming_root_victory.png",
-            "defeat": "images/screaming_root_defeat.png",
+            "idle": "images/creatures/abyss/creature_screaming_root.png",
+            "joy": "images/creatures/abyss/creature_screaming_root_joy.png",
+            "sad": "images/creatures/abyss/creature_screaming_root_sad.png",
+            "angry": "images/creatures/abyss/creature_screaming_root_angry.png",
+            "skill": "images/creatures/abyss/creature_screaming_root_skill.png",
+            "victory": "images/creatures/abyss/creature_screaming_root_victory.png",
+            "defeat": "images/creatures/abyss/creature_screaming_root_defeat.png",
             "gallery": {
-                "lv1": "images/screaming_root_gallery.png"
+                "lv1": "images/creatures/abyss/creature_screaming_root_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1183,17 +1183,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/ghoul_scavenger.png",
+        image: "images/creatures/abyss/creature_ghoul_scavenger.png",
         sprites: {
-            "idle": "images/ghoul_scavenger.png",
-            "joy": "images/ghoul_scavenger_joy.png",
-            "sad": "images/ghoul_scavenger_sad.png",
-            "angry": "images/ghoul_scavenger_angry.png",
-            "skill": "images/ghoul_scavenger_skill.png",
-            "victory": "images/ghoul_scavenger_victory.png",
-            "defeat": "images/ghoul_scavenger_defeat.png",
+            "idle": "images/creatures/abyss/creature_ghoul_scavenger.png",
+            "joy": "images/creatures/abyss/creature_ghoul_scavenger_joy.png",
+            "sad": "images/creatures/abyss/creature_ghoul_scavenger_sad.png",
+            "angry": "images/creatures/abyss/creature_ghoul_scavenger_angry.png",
+            "skill": "images/creatures/abyss/creature_ghoul_scavenger_skill.png",
+            "victory": "images/creatures/abyss/creature_ghoul_scavenger_victory.png",
+            "defeat": "images/creatures/abyss/creature_ghoul_scavenger_defeat.png",
             "gallery": {
-                "lv1": "images/ghoul_scavenger_gallery.png"
+                "lv1": "images/creatures/abyss/creature_ghoul_scavenger_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1221,17 +1221,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/void_tentacle.png",
+        image: "images/creatures/abyss/creature_void_tentacle.png",
         sprites: {
-            "idle": "images/void_tentacle.png",
-            "joy": "images/void_tentacle_joy.png",
-            "sad": "images/void_tentacle_sad.png",
-            "angry": "images/void_tentacle_angry.png",
-            "skill": "images/void_tentacle_skill.png",
-            "victory": "images/void_tentacle_victory.png",
-            "defeat": "images/void_tentacle_defeat.png",
+            "idle": "images/creatures/abyss/creature_void_tentacle.png",
+            "joy": "images/creatures/abyss/creature_void_tentacle_joy.png",
+            "sad": "images/creatures/abyss/creature_void_tentacle_sad.png",
+            "angry": "images/creatures/abyss/creature_void_tentacle_angry.png",
+            "skill": "images/creatures/abyss/creature_void_tentacle_skill.png",
+            "victory": "images/creatures/abyss/creature_void_tentacle_victory.png",
+            "defeat": "images/creatures/abyss/creature_void_tentacle_defeat.png",
             "gallery": {
-                "lv1": "images/void_tentacle_gallery.png"
+                "lv1": "images/creatures/abyss/creature_void_tentacle_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1259,17 +1259,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/sludge_blob.png",
+        image: "images/creatures/abyss/creature_sludge_blob.png",
         sprites: {
-            "idle": "images/sludge_blob.png",
-            "joy": "images/sludge_blob_joy.png",
-            "sad": "images/sludge_blob_sad.png",
-            "angry": "images/sludge_blob_angry.png",
-            "skill": "images/sludge_blob_skill.png",
-            "victory": "images/sludge_blob_victory.png",
-            "defeat": "images/sludge_blob_defeat.png",
+            "idle": "images/creatures/abyss/creature_sludge_blob.png",
+            "joy": "images/creatures/abyss/creature_sludge_blob_joy.png",
+            "sad": "images/creatures/abyss/creature_sludge_blob_sad.png",
+            "angry": "images/creatures/abyss/creature_sludge_blob_angry.png",
+            "skill": "images/creatures/abyss/creature_sludge_blob_skill.png",
+            "victory": "images/creatures/abyss/creature_sludge_blob_victory.png",
+            "defeat": "images/creatures/abyss/creature_sludge_blob_defeat.png",
             "gallery": {
-                "lv1": "images/sludge_blob_gallery.png"
+                "lv1": "images/creatures/abyss/creature_sludge_blob_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1297,17 +1297,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/bone_fragment_spirit.png",
+        image: "images/creatures/abyss/creature_bone_fragment_spirit.png",
         sprites: {
-            "idle": "images/bone_fragment_spirit.png",
-            "joy": "images/bone_fragment_spirit_joy.png",
-            "sad": "images/bone_fragment_spirit_sad.png",
-            "angry": "images/bone_fragment_spirit_angry.png",
-            "skill": "images/bone_fragment_spirit_skill.png",
-            "victory": "images/bone_fragment_spirit_victory.png",
-            "defeat": "images/bone_fragment_spirit_defeat.png",
+            "idle": "images/creatures/abyss/creature_bone_fragment_spirit.png",
+            "joy": "images/creatures/abyss/creature_bone_fragment_spirit_joy.png",
+            "sad": "images/creatures/abyss/creature_bone_fragment_spirit_sad.png",
+            "angry": "images/creatures/abyss/creature_bone_fragment_spirit_angry.png",
+            "skill": "images/creatures/abyss/creature_bone_fragment_spirit_skill.png",
+            "victory": "images/creatures/abyss/creature_bone_fragment_spirit_victory.png",
+            "defeat": "images/creatures/abyss/creature_bone_fragment_spirit_defeat.png",
             "gallery": {
-                "lv1": "images/bone_fragment_spirit_gallery.png"
+                "lv1": "images/creatures/abyss/creature_bone_fragment_spirit_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1335,17 +1335,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/whispering_skull.png",
+        image: "images/creatures/abyss/creature_whispering_skull.png",
         sprites: {
-            "idle": "images/whispering_skull.png",
-            "joy": "images/whispering_skull_joy.png",
-            "sad": "images/whispering_skull_sad.png",
-            "angry": "images/whispering_skull_angry.png",
-            "skill": "images/whispering_skull_skill.png",
-            "victory": "images/whispering_skull_victory.png",
-            "defeat": "images/whispering_skull_defeat.png",
+            "idle": "images/creatures/abyss/creature_whispering_skull.png",
+            "joy": "images/creatures/abyss/creature_whispering_skull_joy.png",
+            "sad": "images/creatures/abyss/creature_whispering_skull_sad.png",
+            "angry": "images/creatures/abyss/creature_whispering_skull_angry.png",
+            "skill": "images/creatures/abyss/creature_whispering_skull_skill.png",
+            "victory": "images/creatures/abyss/creature_whispering_skull_victory.png",
+            "defeat": "images/creatures/abyss/creature_whispering_skull_defeat.png",
             "gallery": {
-                "lv1": "images/whispering_skull_gallery.png"
+                "lv1": "images/creatures/abyss/creature_whispering_skull_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1373,17 +1373,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/void_larva.png",
+        image: "images/creatures/abyss/creature_void_larva.png",
         sprites: {
-            "idle": "images/void_larva.png",
-            "joy": "images/void_larva_joy.png",
-            "sad": "images/void_larva_sad.png",
-            "angry": "images/void_larva_angry.png",
-            "skill": "images/void_larva_skill.png",
-            "victory": "images/void_larva_victory.png",
-            "defeat": "images/void_larva_defeat.png",
+            "idle": "images/creatures/abyss/creature_void_larva.png",
+            "joy": "images/creatures/abyss/creature_void_larva_joy.png",
+            "sad": "images/creatures/abyss/creature_void_larva_sad.png",
+            "angry": "images/creatures/abyss/creature_void_larva_angry.png",
+            "skill": "images/creatures/abyss/creature_void_larva_skill.png",
+            "victory": "images/creatures/abyss/creature_void_larva_victory.png",
+            "defeat": "images/creatures/abyss/creature_void_larva_defeat.png",
             "gallery": {
-                "lv1": "images/void_larva_gallery.png"
+                "lv1": "images/creatures/abyss/creature_void_larva_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1411,17 +1411,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/dark_puddles.png",
+        image: "images/creatures/abyss/creature_dark_puddles.png",
         sprites: {
-            "idle": "images/dark_puddles.png",
-            "joy": "images/dark_puddles_joy.png",
-            "sad": "images/dark_puddles_sad.png",
-            "angry": "images/dark_puddles_angry.png",
-            "skill": "images/dark_puddles_skill.png",
-            "victory": "images/dark_puddles_victory.png",
-            "defeat": "images/dark_puddles_defeat.png",
+            "idle": "images/creatures/abyss/creature_dark_puddles.png",
+            "joy": "images/creatures/abyss/creature_dark_puddles_joy.png",
+            "sad": "images/creatures/abyss/creature_dark_puddles_sad.png",
+            "angry": "images/creatures/abyss/creature_dark_puddles_angry.png",
+            "skill": "images/creatures/abyss/creature_dark_puddles_skill.png",
+            "victory": "images/creatures/abyss/creature_dark_puddles_victory.png",
+            "defeat": "images/creatures/abyss/creature_dark_puddles_defeat.png",
             "gallery": {
-                "lv1": "images/dark_puddles_gallery.png"
+                "lv1": "images/creatures/abyss/creature_dark_puddles_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1449,17 +1449,17 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/void_moth_small.png",
+        image: "images/creatures/abyss/creature_void_moth_small.png",
         sprites: {
-            "idle": "images/void_moth_small.png",
-            "joy": "images/void_moth_small_joy.png",
-            "sad": "images/void_moth_small_sad.png",
-            "angry": "images/void_moth_small_angry.png",
-            "skill": "images/void_moth_small_skill.png",
-            "victory": "images/void_moth_small_victory.png",
-            "defeat": "images/void_moth_small_defeat.png",
+            "idle": "images/creatures/abyss/creature_void_moth_small.png",
+            "joy": "images/creatures/abyss/creature_void_moth_small_joy.png",
+            "sad": "images/creatures/abyss/creature_void_moth_small_sad.png",
+            "angry": "images/creatures/abyss/creature_void_moth_small_angry.png",
+            "skill": "images/creatures/abyss/creature_void_moth_small_skill.png",
+            "victory": "images/creatures/abyss/creature_void_moth_small_victory.png",
+            "defeat": "images/creatures/abyss/creature_void_moth_small_defeat.png",
             "gallery": {
-                "lv1": "images/void_moth_small_gallery.png"
+                "lv1": "images/creatures/abyss/creature_void_moth_small_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1488,17 +1488,17 @@ export const ABYSS_CREATURES = [
 
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
-        image: "images/creatures/abyss/ink_squid_abyss.png",
+        image: "images/creatures/abyss/creature_ink_squid_abyss.png",
         sprites: {
-            "idle": "images/ink_squid_abyss.png",
-            "joy": "images/ink_squid_abyss_joy.png",
-            "sad": "images/ink_squid_abyss_sad.png",
-            "angry": "images/ink_squid_abyss_angry.png",
-            "skill": "images/ink_squid_abyss_skill.png",
-            "victory": "images/ink_squid_abyss_victory.png",
-            "defeat": "images/ink_squid_abyss_defeat.png",
+            "idle": "images/creatures/abyss/creature_ink_squid_abyss.png",
+            "joy": "images/creatures/abyss/creature_ink_squid_abyss_joy.png",
+            "sad": "images/creatures/abyss/creature_ink_squid_abyss_sad.png",
+            "angry": "images/creatures/abyss/creature_ink_squid_abyss_angry.png",
+            "skill": "images/creatures/abyss/creature_ink_squid_abyss_skill.png",
+            "victory": "images/creatures/abyss/creature_ink_squid_abyss_victory.png",
+            "defeat": "images/creatures/abyss/creature_ink_squid_abyss_defeat.png",
             "gallery": {
-                "lv1": "images/ink_squid_abyss_gallery.png"
+                "lv1": "images/creatures/abyss/creature_ink_squid_abyss_gallery_lv1.png"
             }
         },
         prompts: {
@@ -1518,8 +1518,7 @@ export const ABYSS_CREATURES = [
         relationships: { likes: [], dislikes: [], rival: null },
         touchLines: { idle: ["..."], interaction: ["..."], gift: ["Thank you."], special: ["!"] },
         lines: { normal: "..." }
-
-
+    },
     {
         id: "abyss_jellyfish",
         name: "심연의 해파리",
@@ -1527,7 +1526,7 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Water", "Void"],
         baseStr: 6, baseInt: 10,
-        image: "images/placeholder_abyss.png"
+        image: "images/creatures/abyss/creature_abyss_jellyfish.png"
     },
     {
         id: "void_crab",
@@ -1536,7 +1535,7 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Water", "Earth"],
         baseStr: 12, baseInt: 4,
-        image: "images/placeholder_abyss.png"
+        image: "images/creatures/abyss/creature_abyss_jellyfish.png"
     },
     {
         id: "dark_eel",
@@ -1545,7 +1544,7 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Water", "Dark"],
         baseStr: 14, baseInt: 5,
-        image: "images/placeholder_abyss.png"
+        image: "images/creatures/abyss/creature_abyss_jellyfish.png"
     },
     {
         id: "skeleton_fish",
@@ -1554,7 +1553,7 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Spirit", "Water"],
         baseStr: 8, baseInt: 8,
-        image: "images/placeholder_abyss.png"
+        image: "images/creatures/abyss/creature_abyss_jellyfish.png"
     },
     {
         id: "phantom_ray",
@@ -1563,7 +1562,37 @@ export const ABYSS_CREATURES = [
         world: WORLDS.ABYSS,
         elements: ["Spirit", "Void"],
         baseStr: 10, baseInt: 18,
-        image: "images/placeholder_abyss.png"
+        image: "images/creatures/abyss/creature_abyss_jellyfish.png"
 
+    }
+,
+    {
+        id: "wisp_faint",
+        name: "희미한 위습",
+        rarity: RANKS.NORMAL,
+        world: WORLDS.ABYSS,
+        elements: ["Earth"], // Default element
+        baseStr: 10, baseInt: 10,
+        image: "images/creatures/abyss/creature_wisp_faint.png",
+        sprites: {
+            "idle": "images/creatures/abyss/creature_wisp_faint.png",
+            "joy": "images/creatures/abyss/creature_wisp_faint.png", // Fallback
+            "sad": "images/creatures/abyss/creature_wisp_faint.png", // Fallback
+            "angry": "images/creatures/abyss/creature_wisp_faint.png", // Fallback
+            "skill": "images/creatures/abyss/creature_wisp_faint.png",
+            "gallery": {}
+        },
+        prompts: {
+            "base": "anime style, 희미한 위습",
+            "idle": "standing"
+        },
+        lore: {
+            "title": "New Discovery",
+            "story": "A newly discovered creature in abyss.",
+            "personality": "Unknown"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: { idle: ["..."], interaction: ["!"] },
+        lines: { normal: "..." }
     }
 ];
