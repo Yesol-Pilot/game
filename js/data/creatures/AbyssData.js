@@ -4,11 +4,11 @@ import { WORLDS } from '../WorldData.js';
 export const ABYSS_CREATURES = [
     {
         id: "void_beast",
-        name: "공허의 야수",
+        name: "공허???�수",
         rarity: RANKS.SR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 18, baseInt: 18,
         image: "images/creatures/abyss/creature_void_beast.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_void_beast.png",
@@ -25,7 +25,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허의 야수",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허???�수",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -33,13 +33,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 공허의 야수, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 공허의 야수, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 공허의 야수, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, 공허???�수, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 공허???�수, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 공허???�수, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 공허의 야수은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 공허???�수?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -48,11 +48,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "shadow_assassin",
-        name: "그림자 암살자",
+        name: "그림???�살??,
         rarity: RANKS.SPECIAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 15, baseInt: 15,
         image: "images/creatures/abyss/creature_shadow_assassin.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_shadow_assassin.png",
@@ -67,17 +67,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 그림자 암살자",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 그림???�살??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 그림자 암살자, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, 그림???�살?? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 그림자 암살자은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 그림???�살?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -86,11 +86,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "gargoyle_stone",
-        name: "석상 가고일",
+        name: "?�상 가고일",
         rarity: RANKS.RARE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 12, baseInt: 12,
         image: "images/creatures/abyss/creature_gargoyle_stone.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_gargoyle_stone.png",
@@ -105,17 +105,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 석상 가고일",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�상 가고일",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 석상 가고일, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�상 가고일, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 석상 가고일은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�상 가고일?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -124,11 +124,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "eye_of_chaos",
-        name: "혼돈의 눈",
+        name: "?�돈????,
         rarity: RANKS.RARE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 12, baseInt: 12,
         image: "images/creatures/abyss/creature_eye_of_chaos.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_eye_of_chaos.png",
@@ -143,17 +143,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 혼돈의 눈",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�돈????,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 혼돈의 눈, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�돈???? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 혼돈의 눈은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�돈???��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -162,11 +162,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "abyss_stalker",
-        name: "심연의 추적자",
+        name: "?�연??추적??,
         rarity: RANKS.RARE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 12, baseInt: 12,
         image: "images/creatures/abyss/creature_abyss_stalker.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_abyss_stalker.png",
@@ -181,17 +181,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 심연의 추적자",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�연??추적??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 심연의 추적자, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�연??추적?? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 심연의 추적자은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�연??추적?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -200,10 +200,10 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "dark_matter_slime",
-        name: "암흑 물질 슬라임",
+        name: "?�흑 물질 ?�라??,
         rarity: RANKS.UNIQUE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
+        elements: ["Dark"],
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_dark_matter_slime.png",
         sprites: {
@@ -219,17 +219,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 암흑 물질 슬라임",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�흑 물질 ?�라??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 암흑 물질 슬라임, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�흑 물질 ?�라?? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 암흑 물질 슬라임은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�흑 물질 ?�라?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -238,11 +238,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "void_walker",
-        name: "공허의 보행자",
+        name: "공허??보행??,
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_void_walker.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_void_walker.png",
@@ -257,17 +257,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허의 보행자",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허??보행??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 공허의 보행자, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, 공허??보행?? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 공허의 보행자은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 공허??보행?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -276,11 +276,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "abyss_leech",
-        name: "심연의 거머리",
+        name: "?�연??거머�?,
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_abyss_leech.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_abyss_leech.png",
@@ -295,17 +295,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 심연의 거머리",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�연??거머�?,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 심연의 거머리, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�연??거머�? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 심연의 거머리은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�연??거머리�?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -314,11 +314,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "void_emperor",
-        name: "공허의 여제 에레보스",
+        name: "공허???�제 ?�레보스",
         rarity: RANKS.UR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 30, baseInt: 30,
         image: "images/creatures/abyss/creature_void_emperor.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_void_emperor.png",
@@ -335,7 +335,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허의 여제 에레보스",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허???�제 ?�레보스",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -343,13 +343,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 공허의 여제 에레보스, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 공허의 여제 에레보스, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 공허의 여제 에레보스, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, 공허???�제 ?�레보스, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 공허???�제 ?�레보스, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 공허???�제 ?�레보스, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 공허의 여제 에레보스은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 공허???�제 ?�레보스?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -358,11 +358,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "dragon_chaos",
-        name: "혼돈의 용희 티아마트",
+        name: "?�돈???�희 ?�아마트",
         rarity: RANKS.UR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 30, baseInt: 30,
         image: "images/creatures/abyss/creature_dragon_chaos.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_dragon_chaos.png",
@@ -379,7 +379,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 혼돈의 용희 티아마트",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�돈???�희 ?�아마트",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -387,13 +387,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 혼돈의 용희 티아마트, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 혼돈의 용희 티아마트, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 혼돈의 용희 티아마트, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, ?�돈???�희 ?�아마트, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, ?�돈???�희 ?�아마트, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, ?�돈???�희 ?�아마트, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 혼돈의 용희 티아마트은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�돈???�희 ?�아마트?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -402,11 +402,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "kraken_worldstar",
-        name: "월드스타 루루",
+        name: "?�드?��? 루루",
         rarity: RANKS.UR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 30, baseInt: 30,
         image: "images/creatures/abyss/creature_kraken_worldstar_gallery_lv3.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_kraken_worldstar_gallery_lv3.png",
@@ -423,7 +423,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 월드스타 루루",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�드?��? 루루",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -431,13 +431,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 월드스타 루루, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 월드스타 루루, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 월드스타 루루, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, ?�드?��? 루루, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, ?�드?��? 루루, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, ?�드?��? 루루, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 월드스타 루루은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�드?��? 루루?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -446,11 +446,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "god_cthulhu",
-        name: "별의 지배자 크툴루",
+        name: "별의 지배자 ?�툴�?,
         rarity: RANKS.UR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 30, baseInt: 30,
         image: "images/creatures/abyss/creature_god_cthulhu.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_god_cthulhu.png",
@@ -467,7 +467,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 별의 지배자 크툴루",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 별의 지배자 ?�툴�?,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -475,13 +475,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 별의 지배자 크툴루, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 별의 지배자 크툴루, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 별의 지배자 크툴루, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, 별의 지배자 ?�툴�? shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 별의 지배자 ?�툴�? intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 별의 지배자 ?�툴�? seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 별의 지배자 크툴루은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 별의 지배자 ?�툴루�?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -490,11 +490,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "god_nyarlathotep",
-        name: "기어다니는 혼돈 니알라토텝",
+        name: "기어?�니???�돈 ?�알?�토??,
         rarity: RANKS.UR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 30, baseInt: 30,
         image: "images/creatures/abyss/creature_god_nyarlathotep.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_god_nyarlathotep.png",
@@ -519,13 +519,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 기어다니는 혼돈 니알라토텝, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 기어다니는 혼돈 니알라토텝, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 기어다니는 혼돈 니알라토텝, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, 기어?�니???�돈 ?�알?�토?? shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 기어?�니???�돈 ?�알?�토?? intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 기어?�니???�돈 ?�알?�토?? seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 기어다니는 혼돈 니알라토텝은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 기어?�니???�돈 ?�알?�토?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -537,8 +537,8 @@ export const ABYSS_CREATURES = [
         name: "마왕 바알",
         rarity: RANKS.SSR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 22, baseInt: 22,
         image: "images/creatures/abyss/creature_demon_king.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_demon_king.png",
@@ -568,8 +568,8 @@ export const ABYSS_CREATURES = [
             "gallery_lv3": "dating sim event, 마왕 바알, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 마왕 바알은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 마왕 바알?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -578,11 +578,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "god_shub",
-        name: "만 마리 새끼를 품은 숲의 염소",
+        name: "�?마리 ?�끼�??��? ?�의 ?�소",
         rarity: RANKS.SSR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 22, baseInt: 22,
         image: "images/creatures/abyss/creature_god_shub.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_god_shub.png",
@@ -607,13 +607,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 만 마리 새끼를 품은 숲의 염소, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 만 마리 새끼를 품은 숲의 염소, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 만 마리 새끼를 품은 숲의 염소, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, �?마리 ?�끼�??��? ?�의 ?�소, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, �?마리 ?�끼�??��? ?�의 ?�소, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, �?마리 ?�끼�??��? ?�의 ?�소, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 만 마리 새끼를 품은 숲의 염소은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? �?마리 ?�끼�??��? ?�의 ?�소?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -622,11 +622,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "god_hastur",
-        name: "황색 옷의 왕 하스터",
+        name: "?�색 ?�의 ???�스??,
         rarity: RANKS.SSR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 22, baseInt: 22,
         image: "images/creatures/abyss/creature_god_hastur.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_god_hastur.png",
@@ -643,7 +643,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 황색 옷의 왕 하스터",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�색 ?�의 ???�스??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -651,13 +651,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 황색 옷의 왕 하스터, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 황색 옷의 왕 하스터, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 황색 옷의 왕 하스터, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, ?�색 ?�의 ???�스?? shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, ?�색 ?�의 ???�스?? intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, ?�색 ?�의 ???�스?? seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 황색 옷의 왕 하스터은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�색 ?�의 ???�스?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -666,11 +666,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "vampire_lord",
-        name: "진홍의 여왕 카밀라",
+        name: "진홍???�왕 카�???,
         rarity: RANKS.SR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 18, baseInt: 18,
         image: "images/creatures/abyss/creature_vampire_lord.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_vampire_lord.png",
@@ -687,7 +687,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 진홍의 여왕 카밀라",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 진홍???�왕 카�???,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -695,13 +695,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 진홍의 여왕 카밀라, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 진홍의 여왕 카밀라, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 진홍의 여왕 카밀라, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, 진홍???�왕 카�??? shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 진홍???�왕 카�??? intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 진홍???�왕 카�??? seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 진홍의 여왕 카밀라은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 진홍???�왕 카�??��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -710,11 +710,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "god_dagon",
-        name: "심해의 거신 다곤",
+        name: "?�해??거신 ?�곤",
         rarity: RANKS.SR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 18, baseInt: 18,
         image: "images/creatures/abyss/creature_god_dagon.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_god_dagon.png",
@@ -731,7 +731,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 심해의 거신 다곤",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�해??거신 ?�곤",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -739,13 +739,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 심해의 거신 다곤, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 심해의 거신 다곤, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 심해의 거신 다곤, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, ?�해??거신 ?�곤, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, ?�해??거신 ?�곤, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, ?�해??거신 ?�곤, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 심해의 거신 다곤은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�해??거신 ?�곤?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -754,11 +754,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "knight_dullahan",
-        name: "머리 없는 기사 듀라한",
+        name: "머리 ?�는 기사 ?�?�한",
         rarity: RANKS.SR,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 18, baseInt: 18,
         image: "images/creatures/abyss/creature_knight_dullahan.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_knight_dullahan.png",
@@ -775,7 +775,7 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 머리 없는 기사 듀라한",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 머리 ?�는 기사 ?�?�한",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
@@ -783,13 +783,13 @@ export const ABYSS_CREATURES = [
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
             "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
             "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 머리 없는 기사 듀라한, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 머리 없는 기사 듀라한, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 머리 없는 기사 듀라한, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "gallery_lv1": "dating sim event, 머리 ?�는 기사 ?�?�한, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 머리 ?�는 기사 ?�?�한, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 머리 ?�는 기사 ?�?�한, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 머리 없는 기사 듀라한은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 머리 ?�는 기사 ?�?�한?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -798,11 +798,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "knight_skeleton",
-        name: "스켈레톤 나이트",
+        name: "?�켈?�톤 ?�이??,
         rarity: RANKS.SPECIAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 15, baseInt: 15,
         image: "images/creatures/abyss/creature_knight_skeleton.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_knight_skeleton.png",
@@ -817,17 +817,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 스켈레톤 나이트",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�켈?�톤 ?�이??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 스켈레톤 나이트, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�켈?�톤 ?�이?? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 스켈레톤 나이트은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�켈?�톤 ?�이?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -836,11 +836,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "mimic_box",
-        name: "탐욕의 상자 미믹",
+        name: "?�욕???�자 미�?",
         rarity: RANKS.SPECIAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 15, baseInt: 15,
         image: "images/creatures/abyss/creature_mimic_box.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_mimic_box.png",
@@ -855,17 +855,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 탐욕의 상자 미믹",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�욕???�자 미�?",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 탐욕의 상자 미믹, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�욕???�자 미�?, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 탐욕의 상자 미믹은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�욕???�자 미�??�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -874,11 +874,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "cursed_doll",
-        name: "저주받은 인형",
+        name: "?�주받?� ?�형",
         rarity: RANKS.SPECIAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 15, baseInt: 15,
         image: "images/creatures/abyss/creature_cursed_doll.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_cursed_doll.png",
@@ -893,17 +893,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 저주받은 인형",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�주받?� ?�형",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 저주받은 인형, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�주받?� ?�형, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 저주받은 인형은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�주받?� ?�형?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -912,11 +912,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "eye_bat",
-        name: "외눈박이 박쥐",
+        name: "?�눈박이 박쥐",
         rarity: RANKS.RARE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 12, baseInt: 12,
         image: "images/creatures/abyss/creature_eye_bat.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_eye_bat.png",
@@ -931,17 +931,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 외눈박이 박쥐",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�눈박이 박쥐",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 외눈박이 박쥐, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�눈박이 박쥐, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 외눈박이 박쥐은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�눈박이 박쥐?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -950,11 +950,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "ghost_lamp",
-        name: "영혼의 등불",
+        name: "?�혼???�불",
         rarity: RANKS.RARE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 12, baseInt: 12,
         image: "images/creatures/abyss/creature_ghost_lamp.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_ghost_lamp.png",
@@ -969,17 +969,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 영혼의 등불",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�혼???�불",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 영혼의 등불, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�혼???�불, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 영혼의 등불은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�혼???�불?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -988,11 +988,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "deep_one_soldier",
-        name: "딥 원 전사",
+        name: "?????�사",
         rarity: RANKS.RARE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 12, baseInt: 12,
         image: "images/creatures/abyss/creature_deep_one_soldier.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_deep_one_soldier.png",
@@ -1007,17 +1007,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 딥 원 전사",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?????�사",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 딥 원 전사, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?????�사, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 딥 원 전사은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?????�사?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1026,10 +1026,10 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "goblin_scout_new",
-        name: "고블린 정찰병",
+        name: "고블�??�찰�?,
         rarity: RANKS.UNIQUE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
+        elements: ["Dark"],
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_goblin_scout_new.png",
         sprites: {
@@ -1045,17 +1045,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 고블린 정찰병",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 고블�??�찰�?,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 고블린 정찰병, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, 고블�??�찰�? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 고블린 정찰병은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 고블�??�찰병�?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1064,10 +1064,10 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "shadow_lurker",
-        name: "그림자 잠복자",
+        name: "그림???�복??,
         rarity: RANKS.UNIQUE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
+        elements: ["Dark"],
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_shadow_lurker.png",
         sprites: {
@@ -1083,17 +1083,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 그림자 잠복자",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 그림???�복??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 그림자 잠복자, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, 그림???�복?? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 그림자 잠복자은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 그림???�복?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1102,10 +1102,10 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "abyss_watcher_small",
-        name: "작은 심연의 감시자",
+        name: "?��? ?�연??감시??,
         rarity: RANKS.UNIQUE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
+        elements: ["Dark"],
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_abyss_watcher_small.png",
         sprites: {
@@ -1121,17 +1121,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 작은 심연의 감시자",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?��? ?�연??감시??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 작은 심연의 감시자, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?��? ?�연??감시?? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 작은 심연의 감시자은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?��? ?�연??감시?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1143,7 +1143,7 @@ export const ABYSS_CREATURES = [
         name: "비명 지르는 뿌리",
         rarity: RANKS.UNIQUE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
+        elements: ["Dark"],
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_screaming_root.png",
         sprites: {
@@ -1168,8 +1168,8 @@ export const ABYSS_CREATURES = [
             "gallery_lv1": "cute pose, 비명 지르는 뿌리, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 비명 지르는 뿌리은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 비명 지르는 뿌리?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1178,10 +1178,10 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "ghoul_scavenger",
-        name: "시체 먹는 구울",
+        name: "?�체 먹는 구울",
         rarity: RANKS.UNIQUE,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
+        elements: ["Dark"],
         baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_ghoul_scavenger.png",
         sprites: {
@@ -1197,17 +1197,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 시체 먹는 구울",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�체 먹는 구울",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 시체 먹는 구울, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�체 먹는 구울, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 시체 먹는 구울은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�체 먹는 구울?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1216,11 +1216,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "void_tentacle",
-        name: "공허의 촉수",
+        name: "공허??촉수",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_void_tentacle.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_void_tentacle.png",
@@ -1235,17 +1235,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허의 촉수",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허??촉수",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 공허의 촉수, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, 공허??촉수, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 공허의 촉수은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 공허??촉수?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1254,11 +1254,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "sludge_blob",
-        name: "오염된 슬러지",
+        name: "?�염???�러지",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_sludge_blob.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_sludge_blob.png",
@@ -1273,17 +1273,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 오염된 슬러지",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�염???�러지",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 오염된 슬러지, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�염???�러지, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 오염된 슬러지은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�염???�러지?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1292,11 +1292,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "bone_fragment_spirit",
-        name: "뼈 조각 정령",
+        name: "�?조각 ?�령",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_bone_fragment_spirit.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_bone_fragment_spirit.png",
@@ -1311,17 +1311,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 뼈 조각 정령",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, �?조각 ?�령",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 뼈 조각 정령, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, �?조각 ?�령, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 뼈 조각 정령은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? �?조각 ?�령?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1330,11 +1330,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "whispering_skull",
-        name: "속삭이는 해골",
+        name: "?�삭?�는 ?�골",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_whispering_skull.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_whispering_skull.png",
@@ -1349,17 +1349,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 속삭이는 해골",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�삭?�는 ?�골",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 속삭이는 해골, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�삭?�는 ?�골, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 속삭이는 해골은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�삭?�는 ?�골?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1368,11 +1368,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "void_larva",
-        name: "공허의 유충",
+        name: "공허???�충",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_void_larva.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_void_larva.png",
@@ -1387,17 +1387,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허의 유충",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 공허???�충",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 공허의 유충, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, 공허???�충, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 공허의 유충은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 공허???�충?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1406,11 +1406,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "dark_puddles",
-        name: "검은 물웅덩이",
+        name: "검?� 물웅?�이",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_dark_puddles.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_dark_puddles.png",
@@ -1425,17 +1425,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 검은 물웅덩이",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 검?� 물웅?�이",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 검은 물웅덩이, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, 검?� 물웅?�이, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 검은 물웅덩이은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? 검?� 물웅?�이?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1444,11 +1444,11 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "void_moth_small",
-        name: "작은 공허 나방",
+        name: "?��? 공허 ?�방",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_void_moth_small.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_void_moth_small.png",
@@ -1463,17 +1463,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 작은 공허 나방",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?��? 공허 ?�방",
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 작은 공허 나방, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?��? 공허 ?�방, energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 작은 공허 나방은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?��? 공허 ?�방?�(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1482,12 +1482,12 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "ink_squid_abyss",
-        name: "심연 먹물 오징어",
+        name: "?�연 먹물 ?�징??,
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
 
-        elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        elements: ["Dark"],
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_ink_squid_abyss.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_ink_squid_abyss.png",
@@ -1502,17 +1502,17 @@ export const ABYSS_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, 심연 먹물 오징어",
+            "base": "anime style, cell shaded, 2d game art, full body, dark fantasy, eldritch horror, purple and black energy, tentacles, void, Light, ?�연 먹물 ?�징??,
             "idle": "standing pose, confident, neutral expression",
             "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
             "sad": "sad expression, looking down, tears, injured, dark atmosphere",
             "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
             "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "gallery_lv1": "cute pose, 심연 먹물 오징어, energetic, detailed, looking at viewer"
+            "gallery_lv1": "cute pose, ?�연 먹물 ?�징?? energetic, detailed, looking at viewer"
         },
         lore: {
-            "title": "미지의 존재",
-            "story": "심연의 깊은 곳에서 기어 올라온 혼돈의 존재입니다. 심연 먹물 오징어은(는) 특별한 능력을 지녔습니다.",
+            "title": "미�???존재",
+            "story": "?�연??깊�? 곳에??기어 ?�라???�돈??존재?�니?? ?�연 먹물 ?�징?��?(?? ?�별???�력??지?�습?�다.",
             "personality": "Unknown"
         },
         relationships: { likes: [], dislikes: [], rival: null },
@@ -1521,34 +1521,34 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "abyss_jellyfish",
-        name: "심연의 해파리",
+        name: "?�연???�파�?,
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
         elements: ["Water", "Void"],
-        baseStr: 6, baseInt: 10,
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_abyss_jellyfish.png"
     },
     {
         id: "void_crab",
-        name: "공허 게",
+        name: "공허 �?,
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
         elements: ["Water", "Earth"],
-        baseStr: 12, baseInt: 4,
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_void_crab.png"
     },
     {
         id: "dark_eel",
-        name: "암흑 장어",
+        name: "?�흑 ?�어",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
         elements: ["Water", "Dark"],
-        baseStr: 14, baseInt: 5,
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_dark_eel.png"
     },
     {
         id: "skeleton_fish",
-        name: "해골 물고기",
+        name: "?�골 물고�?,
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
         elements: ["Spirit", "Water"],
@@ -1557,22 +1557,22 @@ export const ABYSS_CREATURES = [
     },
     {
         id: "phantom_ray",
-        name: "유령 가오리",
+        name: "?�령 가?�리",
         rarity: RANKS.UNIQUE,
         world: WORLDS.ABYSS,
         elements: ["Spirit", "Void"],
-        baseStr: 10, baseInt: 18,
+        baseStr: 10, baseInt: 10,
         image: "images/creatures/abyss/creature_abyss_jellyfish.png"
 
     }
     ,
     {
         id: "wisp_faint",
-        name: "희미한 위습",
+        name: "?��????�습",
         rarity: RANKS.NORMAL,
         world: WORLDS.ABYSS,
         elements: ["Earth"], // Default element
-        baseStr: 10, baseInt: 10,
+        baseStr: 8, baseInt: 8,
         image: "images/creatures/abyss/creature_wisp_faint.png",
         sprites: {
             "idle": "images/creatures/abyss/creature_wisp_faint.png",
@@ -1583,7 +1583,7 @@ export const ABYSS_CREATURES = [
             "gallery": {}
         },
         prompts: {
-            "base": "anime style, 희미한 위습",
+            "base": "anime style, ?��????�습",
             "idle": "standing"
         },
         lore: {
@@ -1596,3 +1596,5 @@ export const ABYSS_CREATURES = [
         lines: { normal: "..." }
     }
 ];
+
+
