@@ -730,7 +730,7 @@ export const SHANGRILA_CREATURES = [
         rarity: RANKS.UR,
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        baseStr: 50, baseInt: 40,
         image: "images/creatures/shangrila/creature_dragon_ancient.png",
         sprites: {
             "idle": "images/creatures/shangrila/creature_dragon_ancient.png",
@@ -747,17 +747,17 @@ export const SHANGRILA_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, oriental fantasy, ink painting style, mystical mist, jade details, Light, 태초의 용 바하무트",
-            "idle": "standing pose, confident, neutral expression",
-            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
-            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
-            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
-            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
-            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 태초의 용 바하무트, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 태초의 용 바하무트, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 태초의 용 바하무트, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "base": "(masterpiece:1.5), (best quality:1.4), (nikke style:1.4), (blue archive style:1.2), full body, solo, dragon_ancient, female, (beautiful authoritative face:1.4), (glowing dragon eyes:1.3), long silver hair, dragon horns, large black dragon wings, fierce dragon tail, (revealing scale armor:1.3), (glamorous body:1.4), (huge breasts:1.3), (wide hips:1.4), (thick thighs:1.3), metallic scales on skin, epic cloudy sky background, lightning, domineering pose",
+            "idle": "standing pose, arms crossed, confident smirk, looking down at viewer, wind blowing hair, no text, no ui",
+            "joy": "laughing heartily, head tilted back, flushed cheeks, powerful aura, happy eyes, no text, no ui",
+            "sad": "looking away, touching chest, slightly tearing up, rain falling, gloomy atmosphere, no text, no ui",
+            "angry": "roaring expression, mouth open, glowing throat (breath), violent energy, shaking ground, no text, no ui",
+            "skill": "flying in sky, gathering massive energy ball, cinematic angle, epic lighting, destruction background, no text, no ui",
+            "victory": "standing on defeated enemies, triumphant pose, holding a flag or weapon high, glorious light, no text, no ui",
+            "defeat": "kneeling on ground, armor broken, heavy breathing, sweat, looking frustrated, dust and scratches, no text, no ui",
+            "gallery_lv1": "dating sim event, sitting on a cliff edge, watching sunset, wind blowing, looking back at viewer with a soft smile, peaceful atmosphere, no text, no ui",
+            "gallery_lv2": "dating sim event, bathing in a mountain hot spring, steam, wet skin, scales glistening, covering chest slightly, blushing, inviting look, no text, no ui",
+            "gallery_lv3": "dating sim event, lying on a hoard of gold and treasures, sultry pose, heavy blush, heart shaped pupils, sweat, dragon tail wrapping around leg, overwhelming desire, no text, no ui"
         },
         lore: {
             "title": "미지의 존재",
@@ -774,7 +774,7 @@ export const SHANGRILA_CREATURES = [
         rarity: RANKS.UR,
         world: WORLDS.SHANGRILA,
         elements: ["Light"],
-        baseStr: 10, baseInt: 10,
+        baseStr: 20, baseInt: 60,
         image: "images/creatures/shangrila/creature_fox_nine_ur.png",
         sprites: {
             "idle": "images/creatures/shangrila/creature_fox_nine_ur.png",
@@ -791,17 +791,17 @@ export const SHANGRILA_CREATURES = [
             }
         },
         prompts: {
-            "base": "anime style, cell shaded, 2d game art, full body, oriental fantasy, ink painting style, mystical mist, jade details, Light, 천년 구미호 미호",
-            "idle": "standing pose, confident, neutral expression",
-            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
-            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
-            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
-            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
-            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
-            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
-            "gallery_lv1": "dating sim event, 천년 구미호 미호, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
-            "gallery_lv2": "dating sim event, 천년 구미호 미호, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
-            "gallery_lv3": "dating sim event, 천년 구미호 미호, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+            "base": "(masterpiece:1.5), (best quality:1.4), (nikke style:1.4), (blue archive style:1.2), full body, solo, kumiho_miho, female, (beautiful seductive face:1.4), (fox ears:1.2), (nine fluffy fox tails:1.4), long white hair, golden eyes, wearing traditional fancy hanbok with off-shoulder and mini skirt modification, (glamorous body:1.4), (huge breasts:1.3), (wide hips:1.4), (thick thighs:1.3), oriental palace background, cherry blossoms, mystical aura",
+            "idle": "standing pose, holding a fan, seductive smile, winking, graceful posture, no text, no ui",
+            "joy": "giggling, covering mouth with fan, happy eyes, fox ears twitching, flowers floating, no text, no ui",
+            "sad": "droopy fox ears, looking down, tearing up, fan closed, melancholic atmosphere, no text, no ui",
+            "angry": "baring fangs, glowing eyes, blue fox fire aura, tails flared up, aggressive stance, no text, no ui",
+            "skill": "dancing with fox fire, summoning spiritual energy, cinematic lighting, petals blowing, masterpiece, no text, no ui",
+            "victory": "sitting on air, crossing legs, triumphant smile, spinning fan, looking down, no text, no ui",
+            "defeat": "collapsed on floor, hanbok torn, messy hair, panting, sweat, looking resentful, no text, no ui",
+            "gallery_lv1": "dating sim event, walking under moonlight, holding a lantern, looking back at viewer, mysterious smile, oriental garden background, no text, no ui",
+            "gallery_lv2": "dating sim event, sitting on a veranda, drinking tea, hanbok loosening, exposing shoulder and cleavage, flushed face, tipsy, intimate atmosphere, no text, no ui",
+            "gallery_lv3": "dating sim event, lying on silk bedding, hanbok disheveled, exposing skin, heart shaped pupils, tails wrapping around body, heavy blush, seducing viewer, no text, no ui"
         },
         lore: {
             "title": "천년 복의 구미호",
@@ -1089,6 +1089,48 @@ export const SHANGRILA_CREATURES = [
         lines: { normal: "..." }
     },
     {
+        id: "miho_baby",
+        name: "아기 여우 미호",
+        rarity: RANKS.UNIQUE,
+        world: WORLDS.SHANGRILA,
+        elements: ["Light"],
+        baseStr: 8, baseInt: 8,
+        image: "images/creatures/shangrila/creature_kumiho_servant.png", // 임시 플레이스홀더
+        evolvesTo: "fox_yokai_sr",
+        sprites: {
+            "idle": "images/creatures/shangrila/creature_kumiho_servant.png",
+            "joy": "images/creatures/shangrila/creature_kumiho_servant_joy.png",
+            "sad": "images/creatures/shangrila/creature_kumiho_servant_sad.png",
+            "angry": "images/creatures/shangrila/creature_kumiho_servant_angry.png",
+            "skill": "images/creatures/shangrila/creature_kumiho_servant_skill.png",
+            "victory": "images/creatures/shangrila/creature_kumiho_servant_victory.png",
+            "defeat": "images/creatures/shangrila/creature_kumiho_servant_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/shangrila/creature_kumiho_servant_gallery_lv1.png"
+            }
+        },
+        prompts: {
+            "base": "anime style, cell shaded, 2d game art, full body, oriental fantasy, cute baby fox girl, fluffy tail, innocent look, Light, 아기 여우 미호",
+            "idle": "sitting pose, curious eyes, tilting head",
+            "gallery_lv1": "playing with butterfly, cute paws, sunny garden"
+        },
+        lore: {
+            "title": "천년의 시작",
+            "story": "훗날 천년 구미호가 될 미호의 어린 시절. 아직 꼬리는 하나뿐이며, 장난치기를 좋아한다. 자신의 잠재력을 모른 채 숲속을 뛰어다닌다.",
+            "origin": "무릉도원 깊은 숲",
+            "personality": "Playful & Innocent"
+        },
+        relationships: { likes: [], dislikes: [], rival: null },
+        touchLines: {
+            idle: ["(갸웃거리며 바라본다)", "낑? 낑!", "놀아줘~ 놀아줘~"],
+            interaction: ["간지러워!", "내 꼬리 잡지 마~", "헤헤, 재미있다!"],
+            gift: ["와아! 이거 뭐야?", "맛있는 냄새!", "고마워, 친구야!"],
+            special: ["나도 언젠가 멋진 여우가 될 거야!", "꼬리가 더 생길 것 같은 기분이야!", "으르렁~ 무섭지?"]
+        },
+        lines: { normal: "캥!" }
+    },
+
+    {
         id: "fox_yokai_sr",
         name: "여우요괴 미호",
         rarity: RANKS.SR,
@@ -1096,6 +1138,7 @@ export const SHANGRILA_CREATURES = [
         elements: ["Light"],
         baseStr: 10, baseInt: 10,
         image: "images/creatures/shangrila/creature_fox_yokai_sr.png",
+        evolvesTo: "fox_nine_ur",
         sprites: {
             "idle": "images/creatures/shangrila/creature_fox_yokai_sr.png",
             "joy": "images/creatures/shangrila/creature_fox_yokai_sr_joy.png",

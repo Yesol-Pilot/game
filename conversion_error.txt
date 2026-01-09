@@ -1,0 +1,16 @@
+Error in ShangriLaData.js: Unexpected token ':'
+evalmachine.<anonymous>:811
+    lore: {
+        ^
+
+SyntaxError: Unexpected token ':'
+    at new Script (node:vm:117:7)
+    at createScript (node:vm:269:10)
+    at Object.runInContext (node:vm:300:10)
+    at D:\test\multiverse-creature-lab\tools\convert_all_data_to_json.js:71:12
+    at Array.forEach (<anonymous>)
+    at Object.<anonymous> (D:\test\multiverse-creature-lab\tools\convert_all_data_to_json.js:44:11)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)

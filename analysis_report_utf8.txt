@@ -1,0 +1,40 @@
+
+--- Data Integrity Analysis ---
+Total Unique Creature IDs across investigated files: 223
+
+--- Overlap Analysis for Asgard ---
+AsgardData.js unique IDs: 29
+AsgardTail.js unique IDs: 33
+temp_tail.js unique IDs: 31
+Total Unique Asgard IDs Combined: 47
+
+--- File Details ---
+
+File: AsgardData.js
+  - Total IDs found: 37
+  - Backup IDs found: 37
+
+File: AsgardTail.js
+  - Total IDs found: 66
+  - Backup IDs found: 66
+
+File: temp_tail.js
+  - Total IDs found: 59
+  - Backup IDs found: 59
+
+File: WildData.js
+  - Total IDs found: 56
+  - Backup IDs found: 56
+
+File: ShangriLaData.js
+  - Total IDs found: 44
+  - Backup IDs found: 44
+
+File: OlympusData.js
+  - Total IDs found: 40
+  - Backup IDs found: 40
+
+File: AbyssData.js
+  - Total IDs found: 46
+  - Backup IDs found: 46
+

@@ -1,34 +1,27 @@
 import { RANKS } from './RankData.js';
 import { WORLDS, FACTIONS, WORLD_TO_FACTION } from './WorldData.js';
 
-// 신화별 데이터 import
-import { OLYMPUS_CREATURES } from './creatures/OlympusData.js';
-import { ASGARD_CREATURES } from './creatures/AsgardData.js';
-import { SHANGRILA_CREATURES } from './creatures/ShangriLaData.js';
-import { ABYSS_CREATURES } from './creatures/AbyssData.js';
-import { WILD_CREATURES } from './creatures/WildData.js';
+// 기존 정적 임포트 제거
+// 데이터는 DataManager에 의해 비동기로 로드되어 아래 배열들에 주입됩니다.
 
-// 상수를 재수출하여 기존 코드 하이퍼 호환성 유지
 export { WORLDS, FACTIONS, WORLD_TO_FACTION };
 
-/**
- * 전체 크리처 정의 리스트 통합
- */
-export const CREATURE_DEFS = [
-    ...OLYMPUS_CREATURES,
-    ...ASGARD_CREATURES,
-    ...SHANGRILA_CREATURES,
-    ...ABYSS_CREATURES,
-    ...WILD_CREATURES
-];
+// Mutable Arrays for DataManager to populate
+export const OLYMPUS_CREATURES = [];
+export const ASGARD_CREATURES = [];
+export const SHANGRILA_CREATURES = [];
+export const ABYSS_CREATURES = [];
+export const WILD_CREATURES = [];
 
 /**
- * 크리처 ID -> 정의 맵
+ * 전체 크리처 정의 리스트 통합 (DataManager.rebuildIndex()에 의해 갱신됨)
+ */
+export const CREATURE_DEFS = [];
+
+/**
+ * 크리처 ID -> 정의 맵 (DataManager.rebuildIndex()에 의해 갱신됨)
  */
 export const CREATURE_DEF_MAP = {};
-CREATURE_DEFS.forEach(def => {
-    CREATURE_DEF_MAP[def.id] = def;
-});
 
 /**
  * 월드별 크리처 필터 헬퍼

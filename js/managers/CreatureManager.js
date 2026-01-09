@@ -29,12 +29,8 @@ const RESONANCE_WEIGHTS = {
 };
 
 // [Resonance V3] 호감도 레벨 정의
-export const AFFECTION_LEVELS = {
-    0: { min: 0, label: '경계', color: '#9e9e9e' },
-    1: { min: 100, label: '관심', color: '#66bb6a' },
-    2: { min: 300, label: '신뢰', color: '#f48fb1' },
-    3: { min: 1000, label: '서약', color: '#ad1457' }
-};
+// [Resonance V3] 호감도 레벨 정의 (Centralized)
+export const AFFECTION_LEVELS = GameConfig.AFFECTION_LEVELS;
 
 // 합성 성공 확률
 const COMPOSE_SUCCESS_RATES = {
@@ -93,8 +89,8 @@ export default class CreatureManager extends EventEmitter {
     }
 
     tryNormalSummon() {
-        // [Refactor] Use Config if possible, but hardcoded 300 for now or use GameConfig.GACHA constants if added
-        if (this.resourceManager.spendGold(300)) {
+        const cost = GameConfig.SUMMON_COST.NORMAL.amount;
+        if (this.resourceManager.spendGold(cost)) {
             const rarity = pickRarityFromTable(NORMAL_SUMMON_TABLE);
             this.summonOneByRarity(rarity);
             return true;
@@ -133,8 +129,8 @@ export default class CreatureManager extends EventEmitter {
 
     summonBatch(type) {
         const costs = {
-            'normal': { resource: 'gold', amount: 3000 },
-            'premium': { resource: 'gem', amount: 10 }
+            'normal': { resource: 'gold', amount: GameConfig.SUMMON_COST.NORMAL_10.amount },
+            'premium': { resource: 'gem', amount: GameConfig.SUMMON_COST.PREMIUM_10.amount }
         };
 
         const cost = costs[type];

@@ -1,0 +1,2471 @@
+[
+    {
+        "id": "centaur_scout",
+        "name": "켄타우로스 정찰병",
+        "rarity": "Rare",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_centaur_scout.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_centaur_scout.png",
+            "joy": "images/creatures/olympus/creature_centaur_scout_joy.png",
+            "sad": "images/creatures/olympus/creature_centaur_scout_sad.png",
+            "angry": "images/creatures/olympus/creature_centaur_scout_angry.png",
+            "skill": "images/creatures/olympus/creature_centaur_scout_skill.png",
+            "victory": "images/creatures/olympus/creature_centaur_scout_victory.png",
+            "defeat": "images/creatures/olympus/creature_centaur_scout_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_centaur_scout_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 켄타우로스 정찰병",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 켄타우로스 정찰병, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 켄타우로스 정찰병은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "god_zeus",
+        "name": "천둥의 신 제우스",
+        "rarity": "UR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_god_zeus.jpg",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_god_zeus.jpg",
+            "joy": "images/creatures/olympus/creature_god_zeus.jpg",
+            "sad": "images/creatures/olympus/creature_god_zeus.jpg",
+            "angry": "images/creatures/olympus/creature_god_zeus.jpg",
+            "skill": "images/creatures/olympus/creature_god_zeus.jpg",
+            "victory": "images/creatures/olympus/creature_god_zeus.jpg",
+            "defeat": "images/creatures/olympus/creature_god_zeus.jpg",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_god_zeus.jpg",
+                "lv2": "images/creatures/olympus/creature_god_zeus.jpg",
+                "lv3": "images/creatures/olympus/creature_god_zeus.jpg"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 천둥의 신 제우스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 천둥의 신 제우스, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 천둥의 신 제우스, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 천둥의 신 제우스, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "올림포스의 최고신",
+            "story": "하늘과 천둥을 다스리는 올림포스의 왕. 티탄과의 전쟁에서 승리하여 신들의 지배자가 되었다. 강력한 힘과 권위를 지녔으나, 인간 여성들에 대한 관심으로도 유명하다. 번개를 무기로 사용하며, 정의와 질서의 수호자이자 파괴자이다.",
+            "origin": "그리스 신화 / 올림포스",
+            "personality": "Majestic & Charismatic"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "올림포스의 영광이 여기에 있다.",
+                "천둥과 번개가 내 의지대로 움직인다.",
+                "신들의 왕 앞에 있음을 잊지 마라."
+            ],
+            "interaction": [
+                "호오, 대담하군. 신을 직접 만지다니.",
+                "이 힘... 느껴지는가? 천둥의 울림이.",
+                "흥미롭군. 인간치고는 당당하다."
+            ],
+            "gift": [
+                "선물인가? 괜찮은데. 나쁘지 않아.",
+                "하하! 신을 기쁘게 하려는 모양이지?",
+                "이 정도면 올림포스에 초대해줄 만하군."
+            ],
+            "special": [
+                "천둥이여, 내 적을 멸하라!",
+                "올림포스의 분노를 보여주마!",
+                "신왕의 권능을 받아라!"
+            ]
+        },
+        "lines": {
+            "normal": "올림포스의 권위를 보여주마.",
+            "touch_head": "왕관을 만지는가? 허허, 대담하군.",
+            "touch_chest": "이 근육... 신의 힘이 느껴지는가?",
+            "touch_legs": "감히... 하하, 재미있어!",
+            "touch_special": "너만은 특별히 올림포스에 있어도 좋다."
+        }
+    },
+    {
+        "id": "titan_kronos_shade",
+        "name": "크로노스의 그림자",
+        "rarity": "UR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_titan_kronos_shade.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_titan_kronos_shade.png",
+            "joy": "images/creatures/olympus/creature_titan_kronos_shade_joy.png",
+            "sad": "images/creatures/olympus/creature_titan_kronos_shade_sad.png",
+            "angry": "images/creatures/olympus/creature_titan_kronos_shade_angry.png",
+            "skill": "images/creatures/olympus/creature_titan_kronos_shade_skill.png",
+            "victory": "images/creatures/olympus/creature_titan_kronos_shade_victory.png",
+            "defeat": "images/creatures/olympus/creature_titan_kronos_shade_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_titan_kronos_shade_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_titan_kronos_shade_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_titan_kronos_shade_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 크로노스의 그림자",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 크로노스의 그림자, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 크로노스의 그림자, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 크로노스의 그림자, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "시간의 지배자",
+            "story": "티탄족의 왕이자 시간을 다스리는 자. 자식들에게 권좌를 빼앗길 것이라는 예언을 두려워하여 자식들을 삼켜버렸으나, 제우스에 의해 타르타로스에 봉인되었다. 이곳에서는 그의 그림자만이 현현하여, 복수의 기회를 노리고 있다. 시간을 멈추거나 되돌리는 능력을 지녔으나, 온전한 힘은 아니다.",
+            "origin": "그리스 신화 / 타르타로스",
+            "personality": "Vengeful & Paranoid"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "시간은 모든 것을 삼킨다...",
+                "복수의 때가 다가온다.",
+                "타르타로스는 영원한 감옥이 아니야."
+            ],
+            "interaction": [
+                "티탄의 왕을 만지다니... 대가를 치르게 될 것이다.",
+                "이 어리석은... 아니, 용기는 인정하지.",
+                "시간이 지나면 모든 것은 사라져."
+            ],
+            "gift": [
+                "선물? 흥... 오랜만에 받아보는군.",
+                "이것으로 내 마음을 얻으려는 건가?",
+                "...나쁘지 않아. 오래간만의 온기로군."
+            ],
+            "special": [
+                "시간이여, 멈춰라!",
+                "티탄의 분노를 보여주겠다!",
+                "모든 것을 과거로 되돌리리라!"
+            ]
+        },
+        "lines": {
+            "normal": "제우스... 반드시 복수하리라.",
+            "touch_head": "왕관은 이미 빼앗겼어... 하지만 언젠가.",
+            "touch_chest": "이 가슴의 분노, 느껴지는가?",
+            "touch_legs": "타르타로스의 사슬도 언젠간 끊어질 것이다.",
+            "touch_special": "너만은... 내 편이 되어주겠는가?"
+        }
+    },
+    {
+        "id": "god_poseidon",
+        "name": "심해의 군주 포세이돈",
+        "rarity": "SSR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_god_poseidon.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_god_poseidon.png",
+            "joy": "images/creatures/olympus/creature_god_poseidon_joy.png",
+            "sad": "images/creatures/olympus/creature_god_poseidon_sad.png",
+            "angry": "images/creatures/olympus/creature_god_poseidon_angry.png",
+            "skill": "images/creatures/olympus/creature_god_poseidon_skill.png",
+            "victory": "images/creatures/olympus/creature_god_poseidon_victory.png",
+            "defeat": "images/creatures/olympus/creature_god_poseidon_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_god_poseidon_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_god_poseidon_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_god_poseidon_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 심해의 군주 포세이돈",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 심해의 군주 포세이돈, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 심해의 군주 포세이돈, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 심해의 군주 포세이돈, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 심해의 군주 포세이돈은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "god_hades",
+        "name": "지옥의 지배자 하데스",
+        "rarity": "SSR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_god_hades.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_god_hades.png",
+            "joy": "images/creatures/olympus/creature_god_hades_joy.png",
+            "sad": "images/creatures/olympus/creature_god_hades_sad.png",
+            "angry": "images/creatures/olympus/creature_god_hades_angry.png",
+            "skill": "images/creatures/olympus/creature_god_hades_skill.png",
+            "victory": "images/creatures/olympus/creature_god_hades_victory.png",
+            "defeat": "images/creatures/olympus/creature_god_hades_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_god_hades_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_god_hades_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_god_hades_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 지옥의 지배자 하데스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 지옥의 지배자 하데스, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 지옥의 지배자 하데스, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 지옥의 지배자 하데스, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 지옥의 지배자 하데스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "hero_hercules",
+        "name": "불멸의 영웅 헤라클레스",
+        "rarity": "SSR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_hero_hercules.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_hero_hercules.png",
+            "joy": "images/creatures/olympus/creature_hero_hercules_joy.png",
+            "sad": "images/creatures/olympus/creature_hero_hercules_sad.png",
+            "angry": "images/creatures/olympus/creature_hero_hercules_angry.png",
+            "skill": "images/creatures/olympus/creature_hero_hercules_skill.png",
+            "victory": "images/creatures/olympus/creature_hero_hercules_victory.png",
+            "defeat": "images/creatures/olympus/creature_hero_hercules_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_hero_hercules_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_hero_hercules_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_hero_hercules_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 불멸의 영웅 헤라클레스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 불멸의 영웅 헤라클레스, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 불멸의 영웅 헤라클레스, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 불멸의 영웅 헤라클레스, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 불멸의 영웅 헤라클레스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "titan_atlas",
+        "name": "거신 아틀라스",
+        "rarity": "SR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_titan_atlas.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_titan_atlas.png",
+            "joy": "images/creatures/olympus/creature_titan_atlas_joy.png",
+            "sad": "images/creatures/olympus/creature_titan_atlas_sad.png",
+            "angry": "images/creatures/olympus/creature_titan_atlas_angry.png",
+            "skill": "images/creatures/olympus/creature_titan_atlas_skill.png",
+            "victory": "images/creatures/olympus/creature_titan_atlas_victory.png",
+            "defeat": "images/creatures/olympus/creature_titan_atlas_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_titan_atlas_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_titan_atlas_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_titan_atlas_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 거신 아틀라스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 거신 아틀라스, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 거신 아틀라스, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 거신 아틀라스, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 거신 아틀라스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "minotaur_king",
+        "name": "미노타우로스 왕",
+        "rarity": "SR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_minotaur_king.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_minotaur_king.png",
+            "joy": "images/creatures/olympus/creature_minotaur_king_joy.png",
+            "sad": "images/creatures/olympus/creature_minotaur_king_sad.png",
+            "angry": "images/creatures/olympus/creature_minotaur_king_angry.png",
+            "skill": "images/creatures/olympus/creature_minotaur_king_skill.png",
+            "victory": "images/creatures/olympus/creature_minotaur_king_victory.png",
+            "defeat": "images/creatures/olympus/creature_minotaur_king_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_minotaur_king_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_minotaur_king_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_minotaur_king_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 미노타우로스 왕",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 미노타우로스 왕, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 미노타우로스 왕, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 미노타우로스 왕, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 미노타우로스 왕은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "cerberus_guardian",
+        "name": "지옥파수꾼 케르베로스",
+        "rarity": "SR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_cerberus_guardian.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_cerberus_guardian.png",
+            "joy": "images/creatures/olympus/creature_cerberus_guardian_joy.png",
+            "sad": "images/creatures/olympus/creature_cerberus_guardian_sad.png",
+            "angry": "images/creatures/olympus/creature_cerberus_guardian_angry.png",
+            "skill": "images/creatures/olympus/creature_cerberus_guardian_skill.png",
+            "victory": "images/creatures/olympus/creature_cerberus_guardian_victory.png",
+            "defeat": "images/creatures/olympus/creature_cerberus_guardian_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_cerberus_guardian_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_cerberus_guardian_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_cerberus_guardian_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 지옥파수꾼 케르베로스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 지옥파수꾼 케르베로스, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 지옥파수꾼 케르베로스, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 지옥파수꾼 케르베로스, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 지옥파수꾼 케르베로스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "hydra_lernaean",
+        "name": "레르나의 히드라",
+        "rarity": "SR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_hydra_lernaean.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_hydra_lernaean.png",
+            "joy": "images/creatures/olympus/creature_hydra_lernaean_joy.png",
+            "sad": "images/creatures/olympus/creature_hydra_lernaean_sad.png",
+            "angry": "images/creatures/olympus/creature_hydra_lernaean_angry.png",
+            "skill": "images/creatures/olympus/creature_hydra_lernaean_skill.png",
+            "victory": "images/creatures/olympus/creature_hydra_lernaean_victory.png",
+            "defeat": "images/creatures/olympus/creature_hydra_lernaean_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_hydra_lernaean_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_hydra_lernaean_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_hydra_lernaean_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 레르나의 히드라",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 레르나의 히드라, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 레르나의 히드라, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 레르나의 히드라, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 레르나의 히드라은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "lion_nemean",
+        "name": "네메아의 사자",
+        "rarity": "SR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_lion_nemean.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_lion_nemean.png",
+            "joy": "images/creatures/olympus/creature_lion_nemean_joy.png",
+            "sad": "images/creatures/olympus/creature_lion_nemean_sad.png",
+            "angry": "images/creatures/olympus/creature_lion_nemean_angry.png",
+            "skill": "images/creatures/olympus/creature_lion_nemean_skill.png",
+            "victory": "images/creatures/olympus/creature_lion_nemean_victory.png",
+            "defeat": "images/creatures/olympus/creature_lion_nemean_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_lion_nemean_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_lion_nemean_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_lion_nemean_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 네메아의 사자",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 네메아의 사자, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 네메아의 사자, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 네메아의 사자, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 네메아의 사자은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "medusa_cursed",
+        "name": "저주받은 미모 메두사",
+        "rarity": "SR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_medusa_cursed.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_medusa_cursed.png",
+            "joy": "images/creatures/olympus/creature_medusa_cursed_joy.png",
+            "sad": "images/creatures/olympus/creature_medusa_cursed_sad.png",
+            "angry": "images/creatures/olympus/creature_medusa_cursed_angry.png",
+            "skill": "images/creatures/olympus/creature_medusa_cursed_skill.png",
+            "victory": "images/creatures/olympus/creature_medusa_cursed_victory.png",
+            "defeat": "images/creatures/olympus/creature_medusa_cursed_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_medusa_cursed_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_medusa_cursed_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_medusa_cursed_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 저주받은 미모 메두사",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "victory": "winning pose, cheering, victory sign, energetic, confident smile, battlefield background",
+            "defeat": "defeated pose, kneeling, clothes torn, exhausted, injured, dirt on face, sad expression",
+            "gallery_lv1": "dating sim event, 저주받은 미모 메두사, shy look, cafe or park background, soft lighting, slight blush, holding hands context",
+            "gallery_lv2": "dating sim event, 저주받은 미모 메두사, intimate moment, bedroom or private room, close up, blushing hard, romantic atmosphere, looking into eyes",
+            "gallery_lv3": "dating sim event, 저주받은 미모 메두사, seducing pose, bed or hot spring background, wet skin or messy clothes, intense eye contact, masterpiece, extremely detailed, heart eyes"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 저주받은 미모 메두사은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "mage_flame",
+        "name": "화염 마법사",
+        "rarity": "Special",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_mage_flame.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_mage_flame.png",
+            "joy": "images/creatures/olympus/creature_mage_flame_joy.png",
+            "sad": "images/creatures/olympus/creature_mage_flame_sad.png",
+            "angry": "images/creatures/olympus/creature_mage_flame_angry.png",
+            "skill": "images/creatures/olympus/creature_mage_flame_skill.png",
+            "victory": "images/creatures/olympus/creature_mage_flame_victory.png",
+            "defeat": "images/creatures/olympus/creature_mage_flame_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_mage_flame_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 화염 마법사",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 화염 마법사, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 화염 마법사은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "god_dionysus",
+        "name": "축제의 신 디오니소스",
+        "rarity": "Special",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_god_dionysus.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_god_dionysus.png",
+            "joy": "images/creatures/olympus/creature_god_dionysus_joy.png",
+            "sad": "images/creatures/olympus/creature_god_dionysus_sad.png",
+            "angry": "images/creatures/olympus/creature_god_dionysus_angry.png",
+            "skill": "images/creatures/olympus/creature_god_dionysus_skill.png",
+            "victory": "images/creatures/olympus/creature_god_dionysus_victory.png",
+            "defeat": "images/creatures/olympus/creature_god_dionysus_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_god_dionysus_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 축제의 신 디오니소스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 축제의 신 디오니소스, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 축제의 신 디오니소스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "harpy_queen",
+        "name": "폭풍우의 하피 퀸",
+        "rarity": "Special",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_harpy_queen.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_harpy_queen.png",
+            "joy": "images/creatures/olympus/creature_harpy_queen_joy.png",
+            "sad": "images/creatures/olympus/creature_harpy_queen_sad.png",
+            "angry": "images/creatures/olympus/creature_harpy_queen_angry.png",
+            "skill": "images/creatures/olympus/creature_harpy_queen_skill.png",
+            "victory": "images/creatures/olympus/creature_harpy_queen_victory.png",
+            "defeat": "images/creatures/olympus/creature_harpy_queen_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_harpy_queen_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 폭풍우의 하피 퀸",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 폭풍우의 하피 퀸, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 폭풍우의 하피 퀸은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "siren_singer",
+        "name": "유혹의 사이렌",
+        "rarity": "Rare",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_siren_singer.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_siren_singer.png",
+            "joy": "images/creatures/olympus/creature_siren_singer_joy.png",
+            "sad": "images/creatures/olympus/creature_siren_singer_sad.png",
+            "angry": "images/creatures/olympus/creature_siren_singer_angry.png",
+            "skill": "images/creatures/olympus/creature_siren_singer_skill.png",
+            "victory": "images/creatures/olympus/creature_siren_singer_victory.png",
+            "defeat": "images/creatures/olympus/creature_siren_singer_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_siren_singer_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 유혹의 사이렌",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 유혹의 사이렌, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 유혹의 사이렌은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "gorgon_sister_e",
+        "name": "고르곤 자매 에우리알레",
+        "rarity": "Rare",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_gorgon_sister_e.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_gorgon_sister_e.png",
+            "joy": "images/creatures/olympus/creature_gorgon_sister_e_joy.png",
+            "sad": "images/creatures/olympus/creature_gorgon_sister_e_sad.png",
+            "angry": "images/creatures/olympus/creature_gorgon_sister_e_angry.png",
+            "skill": "images/creatures/olympus/creature_gorgon_sister_e_skill.png",
+            "victory": "images/creatures/olympus/creature_gorgon_sister_e_victory.png",
+            "defeat": "images/creatures/olympus/creature_gorgon_sister_e_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_gorgon_sister_e_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 고르곤 자매 에우리알레",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 고르곤 자매 에우리알레, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 고르곤 자매 에우리알레은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "gorgon_sister_s",
+        "name": "고르곤 자매 스테노",
+        "rarity": "Rare",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_gorgon_sister_s.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_gorgon_sister_s.png",
+            "joy": "images/creatures/olympus/creature_gorgon_sister_s_joy.png",
+            "sad": "images/creatures/olympus/creature_gorgon_sister_s_sad.png",
+            "angry": "images/creatures/olympus/creature_gorgon_sister_s_angry.png",
+            "skill": "images/creatures/olympus/creature_gorgon_sister_s_skill.png",
+            "victory": "images/creatures/olympus/creature_gorgon_sister_s_victory.png",
+            "defeat": "images/creatures/olympus/creature_gorgon_sister_s_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_gorgon_sister_s_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 고르곤 자매 스테노",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 고르곤 자매 스테노, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 고르곤 자매 스테노은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "muse_lyra",
+        "name": "악보의 뮤즈",
+        "rarity": "Rare",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_muse_lyra.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_muse_lyra.png",
+            "joy": "images/creatures/olympus/creature_muse_lyra_joy.png",
+            "sad": "images/creatures/olympus/creature_muse_lyra_sad.png",
+            "angry": "images/creatures/olympus/creature_muse_lyra_angry.png",
+            "skill": "images/creatures/olympus/creature_muse_lyra_skill.png",
+            "victory": "images/creatures/olympus/creature_muse_lyra_victory.png",
+            "defeat": "images/creatures/olympus/creature_muse_lyra_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_muse_lyra_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 악보의 뮤즈",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 악보의 뮤즈, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 악보의 뮤즈은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "phoenix_chick_o",
+        "name": "베이비 피닉스",
+        "rarity": "Rare",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_phoenix_chick_o.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_phoenix_chick_o.png",
+            "joy": "images/creatures/olympus/creature_phoenix_chick_o_joy.png",
+            "sad": "images/creatures/olympus/creature_phoenix_chick_o_sad.png",
+            "angry": "images/creatures/olympus/creature_phoenix_chick_o_angry.png",
+            "skill": "images/creatures/olympus/creature_phoenix_chick_o_skill.png",
+            "victory": "images/creatures/olympus/creature_phoenix_chick_o_victory.png",
+            "defeat": "images/creatures/olympus/creature_phoenix_chick_o_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_phoenix_chick_o_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 베이비 피닉스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 베이비 피닉스, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 베이비 피닉스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "hellhound_scout",
+        "name": "헬하운드 정찰개",
+        "rarity": "Unique",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_hellhound_scout.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_hellhound_scout.png",
+            "joy": "images/creatures/olympus/creature_hellhound_scout_joy.png",
+            "sad": "images/creatures/olympus/creature_hellhound_scout_sad.png",
+            "angry": "images/creatures/olympus/creature_hellhound_scout_angry.png",
+            "skill": "images/creatures/olympus/creature_hellhound_scout_skill.png",
+            "victory": "images/creatures/olympus/creature_hellhound_scout_victory.png",
+            "defeat": "images/creatures/olympus/creature_hellhound_scout_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_hellhound_scout_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 헬하운드 정찰개",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 헬하운드 정찰개, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 헬하운드 정찰개은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "automaton_mini",
+        "name": "미니 오토마톤",
+        "rarity": "Unique",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_automaton_mini.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_automaton_mini.png",
+            "joy": "images/creatures/olympus/creature_automaton_mini_joy.png",
+            "sad": "images/creatures/olympus/creature_automaton_mini_sad.png",
+            "angry": "images/creatures/olympus/creature_automaton_mini_angry.png",
+            "skill": "images/creatures/olympus/creature_automaton_mini_skill.png",
+            "victory": "images/creatures/olympus/creature_automaton_mini_victory.png",
+            "defeat": "images/creatures/olympus/creature_automaton_mini_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_automaton_mini_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 미니 오토마톤",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 미니 오토마톤, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 미니 오토마톤은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "talos_fragment",
+        "name": "탈로스의 파편",
+        "rarity": "Unique",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_talos_fragment.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_talos_fragment.png",
+            "joy": "images/creatures/olympus/creature_talos_fragment_joy.png",
+            "sad": "images/creatures/olympus/creature_talos_fragment_sad.png",
+            "angry": "images/creatures/olympus/creature_talos_fragment_angry.png",
+            "skill": "images/creatures/olympus/creature_talos_fragment_skill.png",
+            "victory": "images/creatures/olympus/creature_talos_fragment_victory.png",
+            "defeat": "images/creatures/olympus/creature_talos_fragment_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_talos_fragment_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 탈로스의 파편",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 탈로스의 파편, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 탈로스의 파편은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "fury_hiss",
+        "name": "분노의 정령 퓨리",
+        "rarity": "Unique",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_fury_hiss.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_fury_hiss.png",
+            "joy": "images/creatures/olympus/creature_fury_hiss_joy.png",
+            "sad": "images/creatures/olympus/creature_fury_hiss_sad.png",
+            "angry": "images/creatures/olympus/creature_fury_hiss_angry.png",
+            "skill": "images/creatures/olympus/creature_fury_hiss_skill.png",
+            "victory": "images/creatures/olympus/creature_fury_hiss_victory.png",
+            "defeat": "images/creatures/olympus/creature_fury_hiss_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_fury_hiss_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 분노의 정령 퓨리",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 분노의 정령 퓨리, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 분노의 정령 퓨리은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "sphinx_kitten",
+        "name": "아기 스핑크스",
+        "rarity": "Unique",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_sphinx_kitten.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_sphinx_kitten.png",
+            "joy": "images/creatures/olympus/creature_sphinx_kitten_joy.png",
+            "sad": "images/creatures/olympus/creature_sphinx_kitten_sad.png",
+            "angry": "images/creatures/olympus/creature_sphinx_kitten_angry.png",
+            "skill": "images/creatures/olympus/creature_sphinx_kitten_skill.png",
+            "victory": "images/creatures/olympus/creature_sphinx_kitten_victory.png",
+            "defeat": "images/creatures/olympus/creature_sphinx_kitten_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_sphinx_kitten_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 아기 스핑크스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 아기 스핑크스, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 아기 스핑크스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "cloud_puff",
+        "name": "구름 솜사탕",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_cloud_puff.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_cloud_puff.png",
+            "joy": "images/creatures/olympus/creature_cloud_puff_joy.png",
+            "sad": "images/creatures/olympus/creature_cloud_puff_sad.png",
+            "angry": "images/creatures/olympus/creature_cloud_puff_angry.png",
+            "skill": "images/creatures/olympus/creature_cloud_puff_skill.png",
+            "victory": "images/creatures/olympus/creature_cloud_puff_victory.png",
+            "defeat": "images/creatures/olympus/creature_cloud_puff_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_cloud_puff_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 구름 솜사탕",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 구름 솜사탕, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 구름 솜사탕은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "pegasus_colt",
+        "name": "아기 페가수스",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_pegasus_colt.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_pegasus_colt.png",
+            "joy": "images/creatures/olympus/creature_pegasus_colt_joy.png",
+            "sad": "images/creatures/olympus/creature_pegasus_colt_sad.png",
+            "angry": "images/creatures/olympus/creature_pegasus_colt_angry.png",
+            "skill": "images/creatures/olympus/creature_pegasus_colt_skill.png",
+            "victory": "images/creatures/olympus/creature_pegasus_colt_victory.png",
+            "defeat": "images/creatures/olympus/creature_pegasus_colt_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_pegasus_colt_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 아기 페가수스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 아기 페가수스, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 아기 페가수스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "satyr_young",
+        "name": "사티로스 견습생",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_satyr_young.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_satyr_young.png",
+            "joy": "images/creatures/olympus/creature_satyr_young_joy.png",
+            "sad": "images/creatures/olympus/creature_satyr_young_sad.png",
+            "angry": "images/creatures/olympus/creature_satyr_young_angry.png",
+            "skill": "images/creatures/olympus/creature_satyr_young_skill.png",
+            "victory": "images/creatures/olympus/creature_satyr_young_victory.png",
+            "defeat": "images/creatures/olympus/creature_satyr_young_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_satyr_young_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 사티로스 견습생",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 사티로스 견습생, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 사티로스 견습생은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "dryad_seed",
+        "name": "드라이어드 씨앗",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_dryad_seed.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_dryad_seed.png",
+            "joy": "images/creatures/olympus/creature_dryad_seed_joy.png",
+            "sad": "images/creatures/olympus/creature_dryad_seed_sad.png",
+            "angry": "images/creatures/olympus/creature_dryad_seed_angry.png",
+            "skill": "images/creatures/olympus/creature_dryad_seed_skill.png",
+            "victory": "images/creatures/olympus/creature_dryad_seed_victory.png",
+            "defeat": "images/creatures/olympus/creature_dryad_seed_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_dryad_seed_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 드라이어드 씨앗",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 드라이어드 씨앗, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 드라이어드 씨앗은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "cyclops_worker",
+        "name": "키클롭스 견습공",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_cyclops_worker.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_cyclops_worker.png",
+            "joy": "images/creatures/olympus/creature_cyclops_worker_joy.png",
+            "sad": "images/creatures/olympus/creature_cyclops_worker_sad.png",
+            "angry": "images/creatures/olympus/creature_cyclops_worker_angry.png",
+            "skill": "images/creatures/olympus/creature_cyclops_worker_skill.png",
+            "victory": "images/creatures/olympus/creature_cyclops_worker_victory.png",
+            "defeat": "images/creatures/olympus/creature_cyclops_worker_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_cyclops_worker_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 키클롭스 견습공",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 키클롭스 견습공, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 키클롭스 견습공은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "nymph_water",
+        "name": "샘의 님프",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_nymph_water.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_nymph_water.png",
+            "joy": "images/creatures/olympus/creature_nymph_water_joy.png",
+            "sad": "images/creatures/olympus/creature_nymph_water_sad.png",
+            "angry": "images/creatures/olympus/creature_nymph_water_angry.png",
+            "skill": "images/creatures/olympus/creature_nymph_water_skill.png",
+            "victory": "images/creatures/olympus/creature_nymph_water_victory.png",
+            "defeat": "images/creatures/olympus/creature_nymph_water_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_nymph_water_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 샘의 님프",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 샘의 님프, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 샘의 님프은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "griffin_chick",
+        "name": "아기 그리폰",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_griffin_chick.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_griffin_chick.png",
+            "joy": "images/creatures/olympus/creature_griffin_chick_joy.png",
+            "sad": "images/creatures/olympus/creature_griffin_chick_sad.png",
+            "angry": "images/creatures/olympus/creature_griffin_chick_angry.png",
+            "skill": "images/creatures/olympus/creature_griffin_chick_skill.png",
+            "victory": "images/creatures/olympus/creature_griffin_chick_victory.png",
+            "defeat": "images/creatures/olympus/creature_griffin_chick_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_griffin_chick_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 아기 그리폰",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 아기 그리폰, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 아기 그리폰은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "cerberus_pup",
+        "name": "아기 케르베로스",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_cerberus_pup.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_cerberus_pup.png",
+            "joy": "images/creatures/olympus/creature_cerberus_pup_joy.png",
+            "sad": "images/creatures/olympus/creature_cerberus_pup_sad.png",
+            "angry": "images/creatures/olympus/creature_cerberus_pup_angry.png",
+            "skill": "images/creatures/olympus/creature_cerberus_pup_skill.png",
+            "victory": "images/creatures/olympus/creature_cerberus_pup_victory.png",
+            "defeat": "images/creatures/olympus/creature_cerberus_pup_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_cerberus_pup_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 아기 케르베로스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 아기 케르베로스, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 아기 케르베로스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "minotaur_calf",
+        "name": "아기 미노타우로스",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_minotaur_calf.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_minotaur_calf.png",
+            "joy": "images/creatures/olympus/creature_minotaur_calf_joy.png",
+            "sad": "images/creatures/olympus/creature_minotaur_calf_sad.png",
+            "angry": "images/creatures/olympus/creature_minotaur_calf_angry.png",
+            "skill": "images/creatures/olympus/creature_minotaur_calf_skill.png",
+            "victory": "images/creatures/olympus/creature_minotaur_calf_victory.png",
+            "defeat": "images/creatures/olympus/creature_minotaur_calf_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_minotaur_calf_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 아기 미노타우로스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 아기 미노타우로스, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 아기 미노타우로스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "charybdis_baby",
+        "name": "소형 카리브디스",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_charybdis_baby.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_charybdis_baby.png",
+            "joy": "images/creatures/olympus/creature_charybdis_baby_joy.png",
+            "sad": "images/creatures/olympus/creature_charybdis_baby_sad.png",
+            "angry": "images/creatures/olympus/creature_charybdis_baby_angry.png",
+            "skill": "images/creatures/olympus/creature_charybdis_baby_skill.png",
+            "victory": "images/creatures/olympus/creature_charybdis_baby_victory.png",
+            "defeat": "images/creatures/olympus/creature_charybdis_baby_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_charybdis_baby_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 소형 카리브디스",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 소형 카리브디스, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 소형 카리브디스은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "scylla_pup",
+        "name": "새끼 스킬라",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_scylla_pup.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_scylla_pup.png",
+            "joy": "images/creatures/olympus/creature_scylla_pup_joy.png",
+            "sad": "images/creatures/olympus/creature_scylla_pup_sad.png",
+            "angry": "images/creatures/olympus/creature_scylla_pup_angry.png",
+            "skill": "images/creatures/olympus/creature_scylla_pup_skill.png",
+            "victory": "images/creatures/olympus/creature_scylla_pup_victory.png",
+            "defeat": "images/creatures/olympus/creature_scylla_pup_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_scylla_pup_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 새끼 스킬라",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 새끼 스킬라, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 새끼 스킬라은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "chimera_cub",
+        "name": "아기 키메라",
+        "rarity": "Normal",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_chimera_cub.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_chimera_cub.png",
+            "joy": "images/creatures/olympus/creature_chimera_cub_joy.png",
+            "sad": "images/creatures/olympus/creature_chimera_cub_sad.png",
+            "angry": "images/creatures/olympus/creature_chimera_cub_angry.png",
+            "skill": "images/creatures/olympus/creature_chimera_cub_skill.png",
+            "victory": "images/creatures/olympus/creature_chimera_cub_victory.png",
+            "defeat": "images/creatures/olympus/creature_chimera_cub_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_chimera_cub_gallery_lv1.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, greek mythology, marble, gold ornaments, bright sunlight, divine, Light, 아기 키메라",
+            "idle": "standing pose, confident, neutral expression",
+            "joy": "smiling, blushing, happy eyes, hand waving, flowers in background",
+            "sad": "sad expression, looking down, tears, injured, dark atmosphere",
+            "angry": "angry, shouting, glowing eyes, battle stance, attacking effect",
+            "skill": "extreme dynamic angle, close up, unleashing ultimate skill, cinematic lighting, masterpiece",
+            "gallery_lv1": "cute pose, 아기 키메라, energetic, detailed, looking at viewer"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "올림포스 신들의 축복을 받거나 저주를 받은 존재입니다. 아기 키메라은(는) 특별한 능력을 지녔습니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "god_gaia",
+        "name": "대지의 여신 가이아",
+        "rarity": "UR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Earth",
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_god_gaia_joy.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_god_gaia.png",
+            "joy": "images/creatures/olympus/creature_god_gaia_joy.png",
+            "sad": "images/creatures/olympus/creature_god_gaia_sad.png",
+            "angry": "images/creatures/olympus/creature_god_gaia_angry.png",
+            "skill": "images/creatures/olympus/creature_god_gaia_skill.png",
+            "victory": "images/creatures/olympus/creature_god_gaia_victory.png",
+            "defeat": "images/creatures/olympus/creature_god_gaia_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/olympus/creature_god_gaia_gallery_lv1.png",
+                "lv2": "images/creatures/olympus/creature_god_gaia_gallery_lv2.png",
+                "lv3": "images/creatures/olympus/creature_god_gaia_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "(masterpiece:1.5), (best quality:1.4), (nikke style:1.4), (blue archive style:1.2), full body, solo, god_gaia, (extremely beautiful vibrant face:1.4), (seductive golden eyes:1.3), long wavy gradient green hair with glowing flowers, (revealing fusion fantasy dress made of vines and translucent silk:1.3), (nature-themed bikini armor elements), (glamorous body:1.4), (massive breasts:1.3), (wide hips:1.4), (plump thighs:1.3), luscious glossy skin, sunlight rim lighting, lush magical forest background, floating petals, seductive pose, looking at viewer, inviting smile, embodying desire and nature",
+            "idle": "standing seductive pose, hand on hip, confident smile, wind blowing, simple forest background",
+            "joy": "laughing happily, throwing flower petals, winking, dynamic pose, vibrant energy, simple forest background, no text, no ui",
+            "sad": "sitting on withered grass, crying, covering face with hands, raining background, wilted flowers, sad atmosphere, no text, no ui",
+            "angry": "angry shouting face, summoning giant thorny vines, stormy forest, glowing green eyes, aggressive stance, no text, no ui",
+            "skill": "floating, blooming flowers everywhere, glowing green energy waves, mother nature casting spell, vibrant colors, extreme dynamic angle, cinematic lighting, no text, no ui",
+            "victory": "holding a basket of fruits, winking, cheerful victory pose, surrounded by happy animals, simple forest background, no text, no ui",
+            "defeat": "collapsed on ground, breathing heavily, dress torn, messy hair, vulnerable look, sweat on skin, simple forest background, no text, no ui",
+            "gallery_lv1": "bathing in forest lake, water level up to chest, wet hair, surprised but smiling, water drops on skin, looking at viewer, no text, no ui",
+            "gallery_lv2": "sitting inside a giant tree hollow, patting the space next to her, seductive motherly smile, dim cozy lighting, looking at viewer, no text, no ui",
+            "gallery_lv3": "hugging viewer tightly, vines wrapping around both, soft breasts pressing against screen, loving gaze, flush, extreme close-up, no text, no ui"
+        },
+        "lore": {
+            "title": "대지의 어머니",
+            "story": "모든 생명의 어머니이자 대지 그 자체입니다. 가이아의 분노는 지진을 일으키고, 자애는 만물을 피어나게 합니다.",
+            "personality": "Motherly"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "archangel_michael",
+        "name": "대천사 미카엘",
+        "rarity": "SSR",
+        "world": "OLYMPUS",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_archangel_michael.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_archangel_michael.png"
+        },
+        "prompts": {
+            "base": "anime style, 대천사 미카엘"
+        },
+        "lore": {
+            "title": "천상의 전사",
+            "story": "정의와 빛의 힘을 지닌 전사입니다.",
+            "personality": "정의로운"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "정의는 승리한다."
+            ],
+            "interaction": [
+                "함께 싸우자."
+            ],
+            "gift": [
+                "감사."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "어둠을 물리친다!"
+        }
+    },
+    {
+        "id": "nymph_dark",
+        "name": "어둠의 님프",
+        "rarity": "Rare",
+        "world": "OLYMPUS",
+        "elements": [
+            "Earth"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/olympus/creature_nymph_dark.png",
+        "sprites": {
+            "idle": "images/creatures/olympus/creature_nymph_dark.png",
+            "joy": "images/creatures/olympus/creature_nymph_dark.png",
+            "sad": "images/creatures/olympus/creature_nymph_dark.png",
+            "angry": "images/creatures/olympus/creature_nymph_dark.png",
+            "skill": "images/creatures/olympus/creature_nymph_dark.png",
+            "gallery": {}
+        },
+        "prompts": {
+            "base": "anime style, 어둠의 님프",
+            "idle": "standing"
+        },
+        "lore": {
+            "title": "미확인 생명체",
+            "story": "이 생명체에 대한 상세 기록은 아직 발견되지 않았습니다. 심층 탐사가 필요합니다.",
+            "personality": "알 수 없음"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    }
+]

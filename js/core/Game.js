@@ -106,6 +106,14 @@ export default class Game {
 
         // [DEBUG] 전역 노출
         window.game = this;
+
+        // [Safety] Data Ready Flag
+        this.isDataReady = false;
+    }
+
+    markDataReady() {
+        this.isDataReady = true;
+        console.log("[Game] System is marked as READY. Auto-save enabled.");
     }
 
     static getInstance() {
@@ -114,13 +122,13 @@ export default class Game {
     }
 
     // 주의: init()은 순수 초기화만 수행. 앱 시작은 main.js에서 제어.
-    init() {
+    async init() {
         console.log("[Game] Initializing...");
-        this.authManager.init();
+        // Future async initialization (e.g. Firebase Auth check, Server Config) can go here.
+        await this.authManager.init();
 
-        // [Phase 4] Offline Reward Check
-        this.checkOfflineProgress();
-        // Save heartbeat every minute for offline calculation
+        // [Phase 4] Offline Reward Check is handled in applyLoadedState
+        // Heartbeat is saved automatically in update loop autosave or manual interval
         setInterval(() => {
             localStorage.setItem('lastHeartbeat', Date.now());
         }, 60000);
@@ -129,30 +137,16 @@ export default class Game {
         // 로그인 체크 및 앱 시작은 main.js에서 처리
     }
 
-    checkOfflineProgress() {
-        const lastTime = localStorage.getItem('lastHeartbeat');
-        if (lastTime) {
-            const now = Date.now();
-            const diffMs = now - parseInt(lastTime);
-            const diffMin = Math.floor(diffMs / 60000);
+    markDataReady() {
+        console.log("[Game] Data marked as ready.");
+        this.isDataReady = true;
 
-            if (diffMin >= 5) { // Minimum 5 minutes
-                // Logic: 10 Gold per minute * Stage Level (Avg)
-                const maxStage = this.stageManager.getMaxStage() || 1;
-                const earnedGold = diffMin * 10 * maxStage;
-                // Cap at 24 hours (1440 mins)
-                const cap = 1440 * 10 * maxStage;
-                const finalGold = Math.min(earnedGold, cap);
-
-                this.resourceManager.addGold(finalGold);
-                // Wait for UI to be ready then show toast
-                setTimeout(() => {
-                    alert(`[오프라인 보상]\n게임에 접속하지 않은 ${Math.floor(diffMin / 60)}시간 ${diffMin % 60}분 동안\n💰 ${finalGold} 골드를 획득했습니다!`);
-                }, 1000);
-            }
-        }
-        localStorage.setItem('lastHeartbeat', Date.now());
+        // Notify managers if needed
+        if (this.battleManager) this.battleManager.onGameDataReady();
     }
+
+    // checkOfflineProgress removed - logic consolidated in handleOfflineRewards
+
 
     startMainGame() {
         console.log("[Game] Starting main game...");
@@ -176,11 +170,14 @@ export default class Game {
     }
 
     // 사용자 데이터 로드 (로그인 후 main.js에서 호출)
-    loadUserData() {
+    async loadUserData() {
         const user = this.authManager.currentUser;
         const saveKey = user ? user.username : 'guest';
 
         console.log(`[Game] Loading data for ${saveKey}...`);
+
+        // Simulate async load (or replace with actual server call later)
+        // await new Promise(resolve => setTimeout(resolve, 0));
 
         const saveData = SaveManager.loadGame(saveKey);
         if (saveData) {
@@ -243,6 +240,11 @@ export default class Game {
 
     // [저장/로드 시스템]
     save() {
+        if (!this.isDataReady) {
+            console.warn("[Game] Save blocked: System data not ready.");
+            return;
+        }
+
         const user = this.authManager.currentUser;
         const saveKey = user ? user.username : 'guest';
 

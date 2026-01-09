@@ -1,0 +1,111 @@
+[
+    {
+        "id": "beast_leviathan",
+        "name": "심해의 재앙 레비아탄",
+        "rarity": "SSR",
+        "world": "Wild",
+        "elements": [
+            "Light"
+        ],
+        "baseStr": 10,
+        "baseInt": 10,
+        "image": "images/creatures/wild/creature_beast_leviathan.png",
+        "sprites": {
+            "idle": "images/creatures/wild/creature_beast_leviathan.png",
+            "joy": "images/creatures/wild/creature_beast_leviathan_joy.png",
+            "sad": "images/creatures/wild/creature_beast_leviathan_sad.png",
+            "angry": "images/creatures/wild/creature_beast_leviathan_angry.png",
+            "skill": "images/creatures/wild/creature_beast_leviathan_skill.png",
+            "victory": "images/creatures/wild/creature_beast_leviathan_victory.png",
+            "defeat": "images/creatures/wild/creature_beast_leviathan_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/wild/creature_beast_leviathan_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_beast_leviathan_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_beast_leviathan_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime style, cell shaded, 2d game art, full body, nature, wild untamed, organic, forests, elemental, Light, 심해의 재앙 레비아탄",
+            "idle": "standing pose, confident, neutral expression"
+        },
+        "lore": {
+            "title": "미지의 존재",
+            "story": "대자연의 정령들과 함께 숲과 대지를 지킵니다. 심해의 재앙 레비아탄은(는) 특별한 능력을 지녔습니다.",
+            "personality": "Unknown"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "..."
+            ],
+            "gift": [
+                "Thank you."
+            ],
+            "special": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    },
+    {
+        "id": "time_lord_chronos",
+        "name": "시간의 지배자 크로노스",
+        "rarity": "UR",
+        "world": "Wild",
+        "elements": [
+            "Light",
+            "Dark"
+        ],
+        "baseStr": 40,
+        "baseInt": 80,
+        "image": "images/creatures/wild/creature_time_lord_chronos.png",
+        "sprites": {
+            "idle": "images/creatures/wild/creature_time_lord_chronos.png",
+            "joy": "images/creatures/wild/creature_time_lord_chronos_joy.png",
+            "sad": "images/creatures/wild/creature_time_lord_chronos_sad.png",
+            "angry": "images/creatures/wild/creature_time_lord_chronos_angry.png",
+            "skill": "images/creatures/wild/creature_time_lord_chronos_skill.png",
+            "victory": "images/creatures/wild/creature_time_lord_chronos_victory.png",
+            "defeat": "images/creatures/wild/creature_time_lord_chronos_defeat.png",
+            "gallery": {
+                "lv1": "images/creatures/wild/creature_time_lord_chronos_gallery_lv1.png",
+                "lv2": "images/creatures/wild/creature_time_lord_chronos_gallery_lv2.png",
+                "lv3": "images/creatures/wild/creature_time_lord_chronos_gallery_lv3.png"
+            }
+        },
+        "prompts": {
+            "base": "anime, blue archive style, nikke style, full body, chronos time goddess girl, beautiful face, heterochromia eyes, long flowing blue to purple gradient hair, silver gear headpiece, navy blue and gold dress, asymmetric skirt, slim glamorous body, holding hourglass staff, giant time scythe, golden time magic circle background",
+            "idle": "standing pose, confident, neutral expression"
+        },
+        "lore": {
+            "title": "시간의 지배자",
+            "story": "과거와 미래를 잇는 절대적인 시간의 지배자.",
+            "personality": "Mysterious"
+        },
+        "relationships": {
+            "likes": [],
+            "dislikes": [],
+            "rival": null
+        },
+        "touchLines": {
+            "idle": [
+                "..."
+            ],
+            "interaction": [
+                "!"
+            ]
+        },
+        "lines": {
+            "normal": "..."
+        }
+    }
+]

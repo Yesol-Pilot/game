@@ -1,6 +1,5 @@
 import EventEmitter from '../utils/EventEmitter.js';
 import { GameConfig } from '../data/GameConfig.js';
-import { GAME_CONFIG } from '../config/GameConfig.js';
 
 export default class ResourceManager extends EventEmitter {
     constructor() {
@@ -8,13 +7,13 @@ export default class ResourceManager extends EventEmitter {
         this.resources = {
             gold: GameConfig.RESOURCES.STARTING_GOLD,
             gem: GameConfig.RESOURCES.STARTING_GEMS,
-            energy: 100
+            energy: GameConfig.ENERGY.MAX_DEFAULT
         };
-        this.maxEnergy = 100; // Default fallback if config missing
+        this.maxEnergy = GameConfig.ENERGY.MAX_DEFAULT;
 
         // [NEW] 에너지 자동 회복 관련
         this.recoveryTimer = 0;
-        this.RECOVERY_INTERVAL = GAME_CONFIG.ENERGY.RECOVERY_INTERVAL_SEC; // 5분 (초 단위)
+        this.RECOVERY_INTERVAL = GameConfig.ENERGY.RECOVERY_INTERVAL_SEC; // 5분 (초 단위)
 
         console.log("ResourceManager: Initialized with", this.resources);
     }
